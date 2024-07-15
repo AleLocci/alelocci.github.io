@@ -1,0 +1,805 @@
+@prefix : <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#> .
+
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> rdf:type owl:Ontology ;
+                                                                          owl:versionIRI <http://www.semanticweb.org/alelo/ontologies/2024/5/milto> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API
+:API rdf:type owl:Class ;
+     rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API_Directory
+:API_Directory rdf:type owl:Class ;
+               rdfs:subClassOf :API .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API_Libraries
+:API_Libraries rdf:type owl:Class ;
+               rdfs:subClassOf :Library .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Activation_Function
+:Activation_Function rdf:type owl:Class ;
+                     rdfs:subClassOf :Layers .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Algorithm
+:Algorithm rdf:type owl:Class ;
+           rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Build_failure
+:Build_failure rdf:type owl:Class ;
+               rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Categories_of_Root_Causes
+:Categories_of_Root_Causes rdf:type owl:Class ;
+                           rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Categories_of_Symptoms
+:Categories_of_Symptoms rdf:type owl:Class ;
+                        rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Colab
+:Colab rdf:type owl:Class ;
+       rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Components
+:Components rdf:type owl:Class ;
+            rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Computation_Graph
+:Computation_Graph rdf:type owl:Class ;
+                   rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Concurrency
+:Concurrency rdf:type owl:Class ;
+             rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Contrib_Directory
+:Contrib_Directory rdf:type owl:Class ;
+                   rdfs:subClassOf :Contribution .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Contribution
+:Contribution rdf:type owl:Class ;
+              rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Conﬁguration_error
+:Conﬁguration_error rdf:type owl:Class ;
+                    rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Corner_Case
+:Corner_Case rdf:type owl:Class ;
+             rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Crash
+:Crash rdf:type owl:Class ;
+       rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Dataset_Tensorflow
+:Dataset_Tensorflow rdf:type owl:Class ;
+                    rdfs:subClassOf :Resources .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Dimension_Mismatch
+:Dimension_Mismatch rdf:type owl:Class ;
+                    rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Directory_API
+:Directory_API rdf:type owl:Class ;
+               rdfs:subClassOf :API_Libraries .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Documentation
+:Documentation rdf:type owl:Class ;
+               rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Dopamine
+:Dopamine rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Ecosystem
+:Ecosystem rdf:type owl:Class ;
+           rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Failure
+:Failure rdf:type owl:Class ;
+         rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Fairness_Indicators
+:Fairness_Indicators rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Framework
+:Framework rdf:type owl:Class ;
+           rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Functional_error
+:Functional_error rdf:type owl:Class ;
+                  rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#GPU_Usage
+:GPU_Usage rdf:type owl:Class ;
+           rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Google_Cloud_Public_Datasets
+:Google_Cloud_Public_Datasets rdf:type owl:Class ;
+                              rdfs:subClassOf :Dataset_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Hang
+:Hang rdf:type owl:Class ;
+      rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Hyperparameters
+:Hyperparameters rdf:type owl:Class ;
+                 rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Image_Classification
+:Image_Classification rdf:type owl:Class ;
+                      rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Inconsistency
+:Inconsistency rdf:type owl:Class ;
+               rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kaagle_Datasets
+:Kaagle_Datasets rdf:type owl:Class ;
+                 rdfs:subClassOf :Dataset_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kaggle_Model
+:Kaggle_Model rdf:type owl:Class ;
+              rdfs:subClassOf :Model_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Keras
+:Keras rdf:type owl:Class ;
+       rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#KerasNLP
+:KerasNLP rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kernel
+:Kernel rdf:type owl:Class ;
+        rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kernel_Directory
+:Kernel_Directory rdf:type owl:Class ;
+                  rdfs:subClassOf :Kernel .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Layer_Properties
+:Layer_Properties rdf:type owl:Class ;
+                  rdfs:subClassOf :Layers .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Layers
+:Layers rdf:type owl:Class ;
+        rdfs:subClassOf :Model .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Logic_error
+:Logic_error rdf:type owl:Class ;
+             rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Loss_Function
+:Loss_Function rdf:type owl:Class ;
+               rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#MLIR
+:MLIR rdf:type owl:Class ;
+      rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#ML_Metadata
+:ML_Metadata rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#ML_Perf
+:ML_Perf rdf:type owl:Class ;
+         rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Memory
+:Memory rdf:type owl:Class ;
+        rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Missing_Preprocessing
+:Missing_Preprocessing rdf:type owl:Class ;
+                       rdfs:subClassOf :Preprocessing_of_Trainning_Data .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model
+:Model rdf:type owl:Class ;
+       rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Card_Toolkit
+:Model_Card_Toolkit rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Garden
+:Model_Garden rdf:type owl:Class ;
+              rdfs:subClassOf :Model_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Optimization_Toolkit
+:Model_Optimization_Toolkit rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Tensorflow
+:Model_Tensorflow rdf:type owl:Class ;
+                  rdfs:subClassOf :Resources .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Natural_Language_Processing
+:Natural_Language_Processing rdf:type owl:Class ;
+                             rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#NdArray
+:NdArray rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Neural_Structured_Learning
+:Neural_Structured_Learning rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Optimizer
+:Optimizer rdf:type owl:Class ;
+           rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Performance_degradation
+:Performance_degradation rdf:type owl:Class ;
+                         rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Platform_Directory
+:Platform_Directory rdf:type owl:Class ;
+                    rdfs:subClassOf :Platform .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Preprocessing_of_Trainning_Data
+:Preprocessing_of_Trainning_Data rdf:type owl:Class ;
+                                 rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Processing
+:Processing rdf:type owl:Class ;
+            rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Recommendation_systems
+:Recommendation_systems rdf:type owl:Class ;
+                        rdfs:subClassOf :Ecosystem .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Recommender_System
+:Recommender_System rdf:type owl:Class ;
+                    rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Referenced_types_error
+:Referenced_types_error rdf:type owl:Class ;
+                        rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Resources
+:Resources rdf:type owl:Class ;
+           rdfs:subClassOf :Ecosystem .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Responsible_AI
+:Responsible_AI rdf:type owl:Class ;
+                rdfs:subClassOf :Ecosystem .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Runtime
+:Runtime rdf:type owl:Class ;
+         rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Sonnet
+:Sonnet rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TFX
+:TFX rdf:type owl:Class ;
+     rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TFX-Addons
+:TFX-Addons rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TPU_Research_Cloud
+:TPU_Research_Cloud rdf:type owl:Class ;
+                    rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorBoard
+:TensorBoard rdf:type owl:Class ;
+             rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow.js
+:TensorFlow.js rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Addons
+:TensorFlow_Addons rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Agents
+:TensorFlow_Agents rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Compression
+:TensorFlow_Compression rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Data_Validation
+:TensorFlow_Data_Validation rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Decision_Forests
+:TensorFlow_Decision_Forests rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Federated
+:TensorFlow_Federated rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_GNN
+:TensorFlow_GNN rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Graphics
+:TensorFlow_Graphics rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Hub
+:TensorFlow_Hub rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_IO
+:TensorFlow_IO rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_JVM
+:TensorFlow_JVM rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Lattice
+:TensorFlow_Lattice rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Lite_Micro
+:TensorFlow_Lite_Micro rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Lite_Model_Maker
+:TensorFlow_Lite_Model_Maker rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Lite_Support
+:TensorFlow_Lite_Support rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Metadata
+:TensorFlow_Metadata rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Model_Analysis
+:TensorFlow_Model_Analysis rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> ;
+                           rdfs:comment "The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook." .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Model_Remediation
+:TensorFlow_Model_Remediation rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Official_Datasets
+:TensorFlow_Official_Datasets rdf:type owl:Class ;
+                              rdfs:subClassOf :Dataset_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Privacy
+:TensorFlow_Privacy rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Probability
+:TensorFlow_Probability rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Quantum
+:TensorFlow_Quantum rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Ranking
+:TensorFlow_Ranking rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Recommenders
+:TensorFlow_Recommenders rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Recommenders_Addons
+:TensorFlow_Recommenders_Addons rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Serving
+:TensorFlow_Serving rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Text
+:TensorFlow_Text rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Transform
+:TensorFlow_Transform rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow
+:Tensorflow rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow.js_Models
+:Tensorflow.js_Models rdf:type owl:Class ;
+                      rdfs:subClassOf :Model_Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow_Playground
+:Tensorflow_Playground rdf:type owl:Class ;
+                       rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Test
+:Test rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Time_Series_Forecasting
+:Time_Series_Forecasting rdf:type owl:Class ;
+                         rdfs:subClassOf :Task .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:subClassOf :Components .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tool_Directory
+:Tool_Directory rdf:type owl:Class ;
+                rdfs:subClassOf :Tool .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tools
+:Tools rdf:type owl:Class ;
+       rdfs:subClassOf :Ecosystem .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Trainning
+:Trainning rdf:type owl:Class ;
+           rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Trainning_Data
+:Trainning_Data rdf:type owl:Class ;
+                rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Trainning_Process
+:Trainning_Process rdf:type owl:Class ;
+                   rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Type_Confusion
+:Type_Confusion rdf:type owl:Class ;
+                rdfs:subClassOf :Categories_of_Root_Causes .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Version
+:Version rdf:type owl:Class ;
+         rdfs:subClassOf :Tensorflow .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Version_Keras
+:Version_Keras rdf:type owl:Class ;
+               rdfs:subClassOf :Keras .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Visual_Block
+:Visual_Block rdf:type owl:Class ;
+              rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Warning-style_error
+:Warning-style_error rdf:type owl:Class ;
+                     rdfs:subClassOf :Categories_of_Symptoms .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#What_If
+:What_If rdf:type owl:Class ;
+         rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Input
+:Wrong_Input rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensors_&_Inputs> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Input_Format
+:Wrong_Input_Format rdf:type owl:Class ;
+                    rdfs:subClassOf :Wrong_Input .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Preprocessing
+:Wrong_Preprocessing rdf:type owl:Class ;
+                     rdfs:subClassOf :Preprocessing_of_Trainning_Data .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Shape_of_Input
+:Wrong_Shape_of_Input rdf:type owl:Class ;
+                      rdfs:subClassOf :Wrong_Input .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Tensor_Shape
+:Wrong_Tensor_Shape rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensors_&_Inputs> .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Type_of_Input_Data
+:Wrong_Type_of_Input_Data rdf:type owl:Class ;
+                          rdfs:subClassOf :Wrong_Input .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#XLA
+:XLA rdf:type owl:Class ;
+     rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#c
+:c rdf:type owl:Class ;
+   rdfs:subClassOf :API_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#cc
+:cc rdf:type owl:Class ;
+    rdfs:subClassOf :API_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#examples
+:examples rdf:type owl:Class ;
+          rdfs:subClassOf :Documentation .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#java
+:java rdf:type owl:Class ;
+      rdfs:subClassOf :API_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#python
+:python rdf:type owl:Class ;
+        rdfs:subClassOf :API_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#root
+:root rdf:type owl:Class ;
+      rdfs:subClassOf :Directory_API .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#third-party
+:third-party rdf:type owl:Class ;
+             rdfs:subClassOf :Directory_API .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Libraries_&_Extensions> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf :Ecosystem .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Missing/Redundant/Wrong_Layer
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Missing/Redundant/Wrong_Layer> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :Layers .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Type_&_Propertes
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Model_Type_&_Propertes> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf :Model .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensors_&_Inputs
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensors_&_Inputs> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf :Failure .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Validation/Testing
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Validation/Testing> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf :Trainning .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#contrib/seq2seq
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#contrib/seq2seq> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf :Contrib_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/common_runtime
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/common_runtime> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/debug
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/debug> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/distributed_runtime
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/distributed_runtime> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/example
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/example> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/framework
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/framework> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/graph
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/graph> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/grappler
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/grappler> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/kernels
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/kernels> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/lib
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/lib> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :Directory_API .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/ops
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/ops> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/platform
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/platform> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :Platform_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/profile
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/profile> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/protobuf
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/protobuf> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :Kernel_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/tpu
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/tpu> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :Platform_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/util
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/util> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :Directory_API .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#tools/git
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#tools/git> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :Tool_Directory .
+
+
+###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#tools/pippackage
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#tools/pippackage> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf :Tool_Directory .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
