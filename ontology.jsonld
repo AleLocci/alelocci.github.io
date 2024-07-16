@@ -651,7 +651,10 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\""
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow.js_Models",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

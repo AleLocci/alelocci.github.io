@@ -535,7 +535,8 @@
 
 
 ###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow
-:Tensorflow rdf:type owl:Class .
+:Tensorflow rdf:type owl:Class ;
+            rdfs:comment "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\"" .
 
 
 ###  http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tensorflow.js_Models
