@@ -1,14 +1,62 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#"
      xml:base="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/alelo/ontologies/2024/5/milto"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ime.usp.br/acvm/</dc:creator>
+        <dc:creator>https://alexandrelocci.wixsite.com/locci</dc:creator>
+        <dc:description xml:lang="en">The Machine Learning Test Ontology was built to characterize failures that have been identified during the use of machine learning tools, in particular the TensorFlow tool.</dc:description>
+        <dc:title xml:lang="en">Machine Learning Test Ontology</dc:title>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by-nc-sa/4.0/</terms:license>
+        <terms:license></terms:license>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 

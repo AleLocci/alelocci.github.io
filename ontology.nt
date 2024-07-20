@@ -1,5 +1,32 @@
 <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/alelo/ontologies/2024/5/milto> .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/elements/1.1/creator> "https://www.ime.usp.br/acvm/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/elements/1.1/creator> "https://alexandrelocci.wixsite.com/locci" .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/elements/1.1/description> "The Machine Learning Test Ontology was built to characterize failures that have been identified during the use of machine learning tools, in particular the TensorFlow tool."@en .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/elements/1.1/title> "Machine Learning Test Ontology"@en .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/4.0/"@en .
+<http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8> <http://purl.org/dc/terms/license> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################

@@ -1,6 +1,38 @@
 [ {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.ime.usp.br/acvm/"
+  }, {
+    "@value" : "https://alexandrelocci.wixsite.com/locci"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The Machine Learning Test Ontology was built to characterize failures that have been identified during the use of machine learning tools, in particular the TensorFlow tool."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Machine Learning Test Ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  }, {
+    "@value" : ""
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/milto"
   } ]
