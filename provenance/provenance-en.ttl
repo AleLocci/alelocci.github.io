@@ -9,7 +9,6 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8>;
-	 prov:wasRevisionOf <4>;
 	 prov:wasGeneratedAt "14/07/2024";
 .
 :agent0 a prov:Agent; foaf:name "Ana Cristina Vieira de Melo".
