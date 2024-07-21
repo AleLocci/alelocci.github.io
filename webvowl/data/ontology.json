@@ -53,10 +53,10 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "26",
@@ -74,7 +74,7 @@
     "id" : "52",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
     "id" : "55",
@@ -113,22 +113,22 @@
     "id" : "80",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
+    "id" : "82",
     "type" : "owl:Class"
   }, {
     "id" : "83",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "85",
     "type" : "owl:Class"
   }, {
     "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "79",
+    "id" : "86",
     "type" : "owl:Class"
   }, {
     "id" : "88",
@@ -179,13 +179,13 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
     "id" : "76",
     "type" : "owl:Class"
   }, {
     "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
     "type" : "owl:Class"
   }, {
     "id" : "72",
@@ -194,7 +194,7 @@
     "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "107",
     "type" : "owl:Class"
   }, {
     "id" : "121",
@@ -227,7 +227,7 @@
     "id" : "146",
     "type" : "owl:Class"
   }, {
-    "id" : "82",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
     "id" : "148",
@@ -236,10 +236,10 @@
     "id" : "149",
     "type" : "owl:Class"
   }, {
-    "id" : "150",
+    "id" : "102",
     "type" : "owl:Class"
   }, {
-    "id" : "104",
+    "id" : "150",
     "type" : "owl:Class"
   }, {
     "id" : "87",
@@ -269,7 +269,7 @@
     "id" : "178",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
+    "id" : "110",
     "type" : "owl:Class"
   }, {
     "id" : "182",
@@ -296,22 +296,22 @@
     "id" : "194",
     "type" : "owl:Class"
   }, {
-    "id" : "102",
+    "id" : "100",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "103",
     "type" : "owl:Class"
   }, {
-    "id" : "110",
+    "id" : "108",
     "type" : "owl:Class"
   }, {
     "id" : "201",
     "type" : "owl:Class"
   }, {
-    "id" : "107",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "19",
@@ -320,10 +320,10 @@
     "id" : "196",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "100",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
     "id" : "198",
@@ -344,7 +344,7 @@
     "id" : "147",
     "type" : "owl:Class"
   }, {
-    "id" : "108",
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "112",
@@ -425,7 +425,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "103",
+    "id" : "101",
     "type" : "owl:Class"
   }, {
     "id" : "68",
@@ -464,7 +464,7 @@
     "id" : "139",
     "type" : "owl:Class"
   }, {
-    "id" : "106",
+    "id" : "104",
     "type" : "owl:Class"
   }, {
     "id" : "119",
@@ -482,10 +482,10 @@
     "id" : "118",
     "type" : "owl:Class"
   }, {
-    "id" : "287",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "287",
     "type" : "owl:Class"
   }, {
     "id" : "27",
@@ -547,15 +547,6 @@
     "id" : "3",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow.js",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensorFlow.js"
-    },
-    "id" : "12",
-    "superClasses" : [ "4" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Preprocessing_of_Trainning_Data",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -565,6 +556,15 @@
     "subClasses" : [ "24", "25" ],
     "id" : "22",
     "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow.js",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensorFlow.js"
+    },
+    "id" : "12",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Google_Cloud_Public_Datasets",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -602,23 +602,23 @@
     "id" : "32",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Data_Validation",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensorFlow_Data_Validation"
-    },
-    "id" : "52",
-    "superClasses" : [ "4" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Logic_error",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Logic_error"
     },
-    "id" : "53",
-    "superClasses" : [ "54" ]
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Data_Validation",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensorFlow_Data_Validation"
+    },
+    "id" : "54",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Addons",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -720,22 +720,14 @@
     "id" : "77",
     "superClasses" : [ "78" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Test",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Test"
-    },
-    "id" : "80"
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Version",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Version"
     },
-    "id" : "81",
-    "superClasses" : [ "82" ]
+    "id" : "80",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Concurrency",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -743,8 +735,8 @@
     "label" : {
       "IRI-based" : "Concurrency"
     },
-    "id" : "83",
-    "superClasses" : [ "54" ]
+    "id" : "82",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#contrib/seq2seq",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -752,8 +744,16 @@
     "label" : {
       "IRI-based" : "contrib/seq2seq"
     },
-    "id" : "84",
-    "superClasses" : [ "85" ]
+    "id" : "83",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Test",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Test"
+    },
+    "id" : "85"
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kernel",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -765,15 +765,6 @@
     "id" : "66",
     "superClasses" : [ "16" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Version_Keras",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Version_Keras"
-    },
-    "id" : "86",
-    "superClasses" : [ "87" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Wrong_Tensor_Shape",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -782,6 +773,15 @@
     },
     "id" : "79",
     "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Version_Keras",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Version_Keras"
+    },
+    "id" : "86",
+    "superClasses" : [ "87" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/util",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -801,23 +801,23 @@
     "id" : "89",
     "superClasses" : [ "76" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Computation_Graph",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Computation_Graph"
-    },
-    "id" : "90",
-    "superClasses" : [ "16" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_IO",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TensorFlow_IO"
     },
-    "id" : "91",
+    "id" : "90",
     "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Computation_Graph",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Computation_Graph"
+    },
+    "id" : "91",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Official_Datasets",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -855,16 +855,6 @@
     "id" : "94",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "API"
-    },
-    "subClasses" : [ "1" ],
-    "id" : "95",
-    "superClasses" : [ "16" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Model_Analysis",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -874,8 +864,18 @@
     "comment" : {
       "undefined" : "The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook."
     },
-    "id" : "96",
+    "id" : "95",
     "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "API"
+    },
+    "subClasses" : [ "1" ],
+    "id" : "96",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Contribution",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -883,7 +883,7 @@
     "label" : {
       "IRI-based" : "Contribution"
     },
-    "subClasses" : [ "85" ],
+    "subClasses" : [ "84" ],
     "id" : "36",
     "superClasses" : [ "16" ]
   }, {
@@ -932,15 +932,25 @@
     "id" : "51",
     "superClasses" : [ "4" ]
   }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Categories_of_Root_Causes",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Categories_of_Root_Causes"
+    },
+    "subClasses" : [ "100", "101", "102", "103", "104", "105", "82", "52", "106", "107", "108" ],
+    "id" : "53",
+    "superClasses" : [ "78" ]
+  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Directory_API",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Directory_API"
     },
-    "subClasses" : [ "101", "75", "89", "88" ],
+    "subClasses" : [ "110", "75", "89", "88" ],
     "id" : "76",
-    "superClasses" : [ "100" ]
+    "superClasses" : [ "109" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#ML_Metadata",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -950,16 +960,6 @@
     },
     "id" : "34",
     "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Categories_of_Root_Causes",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Categories_of_Root_Causes"
-    },
-    "subClasses" : [ "102", "103", "104", "105", "106", "107", "83", "53", "108", "109", "110" ],
-    "id" : "54",
-    "superClasses" : [ "78" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Tools",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -986,8 +986,8 @@
     "label" : {
       "IRI-based" : "Conﬁguration_error"
     },
-    "id" : "109",
-    "superClasses" : [ "54" ]
+    "id" : "107",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/ops",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1086,11 +1086,11 @@
     "label" : {
       "IRI-based" : "Tensorflow"
     },
-    "subClasses" : [ "16", "111", "81", "87", "147", "78" ],
+    "subClasses" : [ "16", "111", "80", "87", "147", "78" ],
     "comment" : {
       "undefined" : "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\""
     },
-    "id" : "82"
+    "id" : "81"
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_JVM",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1101,22 +1101,13 @@
     "id" : "148",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Text",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensorFlow_Text"
-    },
-    "id" : "149",
-    "superClasses" : [ "4" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Decision_Forests",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TensorFlow_Decision_Forests"
     },
-    "id" : "150",
+    "id" : "149",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Memory",
@@ -1125,8 +1116,17 @@
     "label" : {
       "IRI-based" : "Memory"
     },
-    "id" : "104",
-    "superClasses" : [ "54" ]
+    "id" : "102",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Text",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensorFlow_Text"
+    },
+    "id" : "150",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Keras",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1136,7 +1136,7 @@
     },
     "subClasses" : [ "86" ],
     "id" : "87",
-    "superClasses" : [ "82" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Layers",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1218,7 +1218,7 @@
     "label" : {
       "IRI-based" : "core/lib"
     },
-    "id" : "101",
+    "id" : "110",
     "superClasses" : [ "76" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/protobuf",
@@ -1300,8 +1300,8 @@
     "label" : {
       "IRI-based" : "Referenced_types_error"
     },
-    "id" : "102",
-    "superClasses" : [ "54" ]
+    "id" : "100",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Inconsistency",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1309,8 +1309,8 @@
     "label" : {
       "IRI-based" : "Inconsistency"
     },
-    "id" : "105",
-    "superClasses" : [ "54" ]
+    "id" : "103",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Corner_Case",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1318,8 +1318,8 @@
     "label" : {
       "IRI-based" : "Corner_Case"
     },
-    "id" : "110",
-    "superClasses" : [ "54" ]
+    "id" : "108",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Responsible_AI",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1330,15 +1330,6 @@
     "id" : "201",
     "superClasses" : [ "111" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Algorithm",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Algorithm"
-    },
-    "id" : "107",
-    "superClasses" : [ "54" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Ecosystem",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -1347,7 +1338,16 @@
     },
     "subClasses" : [ "4", "193", "201", "72", "202" ],
     "id" : "111",
-    "superClasses" : [ "82" ]
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Algorithm",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Algorithm"
+    },
+    "id" : "105",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Graphics",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1367,16 +1367,6 @@
     "id" : "196",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Contrib_Directory",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Contrib_Directory"
-    },
-    "subClasses" : [ "84" ],
-    "id" : "85",
-    "superClasses" : [ "36" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#API_Libraries",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -1384,8 +1374,18 @@
       "IRI-based" : "API_Libraries"
     },
     "subClasses" : [ "76" ],
-    "id" : "100",
+    "id" : "109",
     "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Contrib_Directory",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contrib_Directory"
+    },
+    "subClasses" : [ "83" ],
+    "id" : "84",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorFlow_Recommenders",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1440,7 +1440,7 @@
     },
     "subClasses" : [ "220", "162", "221", "217" ],
     "id" : "147",
-    "superClasses" : [ "82" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Processing",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1448,8 +1448,8 @@
     "label" : {
       "IRI-based" : "Processing"
     },
-    "id" : "108",
-    "superClasses" : [ "54" ]
+    "id" : "106",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#What_If",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1484,7 +1484,7 @@
     "label" : {
       "IRI-based" : "Library"
     },
-    "subClasses" : [ "100" ],
+    "subClasses" : [ "109" ],
     "id" : "64",
     "superClasses" : [ "16" ]
   }, {
@@ -1689,7 +1689,7 @@
     },
     "subClasses" : [ "0", "122", "99", "32" ],
     "id" : "1",
-    "superClasses" : [ "95" ]
+    "superClasses" : [ "96" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Dimension_Mismatch",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1697,8 +1697,8 @@
     "label" : {
       "IRI-based" : "Dimension_Mismatch"
     },
-    "id" : "103",
-    "superClasses" : [ "54" ]
+    "id" : "101",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Framework",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1715,9 +1715,9 @@
     "label" : {
       "IRI-based" : "Failure"
     },
-    "subClasses" : [ "59", "134", "219", "54", "77", "23" ],
+    "subClasses" : [ "59", "134", "219", "53", "77", "23" ],
     "id" : "78",
-    "superClasses" : [ "82" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Resources",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1816,8 +1816,8 @@
     "label" : {
       "IRI-based" : "Type_Confusion"
     },
-    "id" : "106",
-    "superClasses" : [ "54" ]
+    "id" : "104",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#TensorBoard",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1844,9 +1844,9 @@
     "label" : {
       "IRI-based" : "Components"
     },
-    "subClasses" : [ "90", "15", "144", "95", "66", "64", "68", "70", "36", "38" ],
+    "subClasses" : [ "91", "15", "144", "96", "66", "64", "68", "70", "36", "38" ],
     "id" : "16",
-    "superClasses" : [ "82" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Kaagle_Datasets",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1866,15 +1866,6 @@
     "id" : "118",
     "superClasses" : [ "72" ]
   }, {
-    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/tpu",
-    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "core/tpu"
-    },
-    "id" : "287",
-    "superClasses" : [ "125" ]
-  }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Runtime",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
     "instances" : 0,
@@ -1883,6 +1874,15 @@
     },
     "id" : "70",
     "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#core/tpu",
+    "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "core/tpu"
+    },
+    "id" : "287",
+    "superClasses" : [ "125" ]
   }, {
     "iri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#Dataset_Tensorflow",
     "baseIri" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8",
@@ -1900,7 +1900,7 @@
     "label" : {
       "IRI-based" : "Libraries_&_Extensions"
     },
-    "subClasses" : [ "45", "47", "49", "51", "31", "34", "3", "6", "8", "10", "12", "14", "19", "21", "196", "198", "126", "170", "91", "184", "186", "188", "52", "146", "55", "173", "175", "177", "148", "150", "149", "93", "60", "94", "152", "96", "155", "157", "97" ],
+    "subClasses" : [ "45", "47", "49", "51", "31", "34", "3", "6", "8", "10", "12", "14", "19", "21", "196", "198", "126", "170", "90", "184", "186", "188", "54", "146", "55", "173", "175", "177", "148", "149", "150", "93", "60", "94", "152", "95", "155", "157", "97" ],
     "id" : "4",
     "superClasses" : [ "111" ]
   }, {
@@ -2624,7 +2624,7 @@
     "id" : "151"
   }, {
     "range" : "4",
-    "domain" : "96",
+    "domain" : "95",
     "attributes" : [ "object", "anonymous" ],
     "id" : "153"
   }, {
@@ -2649,12 +2649,12 @@
     "id" : "159"
   }, {
     "range" : "4",
-    "domain" : "150",
+    "domain" : "149",
     "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
     "range" : "4",
-    "domain" : "149",
+    "domain" : "150",
     "attributes" : [ "object", "anonymous" ],
     "id" : "163"
   }, {
@@ -2699,7 +2699,7 @@
     "id" : "180"
   }, {
     "range" : "4",
-    "domain" : "91",
+    "domain" : "90",
     "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
@@ -2719,7 +2719,7 @@
     "id" : "187"
   }, {
     "range" : "4",
-    "domain" : "52",
+    "domain" : "54",
     "attributes" : [ "object", "anonymous" ],
     "id" : "190"
   }, {
@@ -2814,7 +2814,7 @@
     "id" : "225"
   }, {
     "range" : "64",
-    "domain" : "100",
+    "domain" : "109",
     "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
@@ -2848,68 +2848,68 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "233"
   }, {
-    "range" : "54",
+    "range" : "53",
     "domain" : "107",
     "attributes" : [ "object", "anonymous" ],
     "id" : "234"
   }, {
-    "range" : "54",
-    "domain" : "53",
+    "range" : "76",
+    "domain" : "110",
     "attributes" : [ "object", "anonymous" ],
     "id" : "235"
   }, {
-    "range" : "54",
-    "domain" : "83",
+    "range" : "53",
+    "domain" : "108",
     "attributes" : [ "object", "anonymous" ],
     "id" : "236"
   }, {
-    "range" : "54",
-    "domain" : "104",
+    "range" : "53",
+    "domain" : "82",
     "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
-    "range" : "54",
-    "domain" : "103",
+    "range" : "53",
+    "domain" : "105",
     "attributes" : [ "object", "anonymous" ],
     "id" : "238"
   }, {
-    "range" : "54",
+    "range" : "53",
     "domain" : "106",
     "attributes" : [ "object", "anonymous" ],
     "id" : "239"
   }, {
-    "range" : "54",
-    "domain" : "105",
+    "range" : "53",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
     "id" : "240"
   }, {
-    "range" : "76",
-    "domain" : "89",
+    "range" : "53",
+    "domain" : "102",
     "attributes" : [ "object", "anonymous" ],
     "id" : "241"
   }, {
-    "range" : "76",
-    "domain" : "75",
+    "range" : "53",
+    "domain" : "101",
     "attributes" : [ "object", "anonymous" ],
     "id" : "242"
   }, {
-    "range" : "54",
-    "domain" : "102",
+    "range" : "53",
+    "domain" : "104",
     "attributes" : [ "object", "anonymous" ],
     "id" : "243"
   }, {
-    "range" : "76",
-    "domain" : "88",
+    "range" : "53",
+    "domain" : "103",
     "attributes" : [ "object", "anonymous" ],
     "id" : "244"
   }, {
-    "range" : "76",
-    "domain" : "101",
+    "range" : "53",
+    "domain" : "100",
     "attributes" : [ "object", "anonymous" ],
     "id" : "245"
   }, {
     "range" : "36",
-    "domain" : "85",
+    "domain" : "84",
     "attributes" : [ "object", "anonymous" ],
     "id" : "246"
   }, {
@@ -2938,7 +2938,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
-    "range" : "95",
+    "range" : "96",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "255"
@@ -2959,7 +2959,7 @@
     "id" : "258"
   }, {
     "range" : "78",
-    "domain" : "54",
+    "domain" : "53",
     "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
@@ -3048,13 +3048,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "276"
   }, {
-    "range" : "54",
-    "domain" : "109",
+    "range" : "76",
+    "domain" : "89",
     "attributes" : [ "object", "anonymous" ],
     "id" : "277"
   }, {
-    "range" : "54",
-    "domain" : "108",
+    "range" : "76",
+    "domain" : "75",
     "attributes" : [ "object", "anonymous" ],
     "id" : "278"
   }, {
@@ -3063,8 +3063,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "279"
   }, {
-    "range" : "54",
-    "domain" : "110",
+    "range" : "76",
+    "domain" : "88",
     "attributes" : [ "object", "anonymous" ],
     "id" : "280"
   }, {
@@ -3074,12 +3074,12 @@
     "id" : "281"
   }, {
     "range" : "16",
-    "domain" : "90",
+    "domain" : "91",
     "attributes" : [ "object", "anonymous" ],
     "id" : "282"
   }, {
     "range" : "16",
-    "domain" : "95",
+    "domain" : "96",
     "attributes" : [ "object", "anonymous" ],
     "id" : "283"
   }, {
@@ -3133,13 +3133,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
-    "range" : "85",
-    "domain" : "84",
+    "range" : "109",
+    "domain" : "76",
     "attributes" : [ "object", "anonymous" ],
     "id" : "295"
   }, {
-    "range" : "100",
-    "domain" : "76",
+    "range" : "84",
+    "domain" : "83",
     "attributes" : [ "object", "anonymous" ],
     "id" : "296"
   }, {
@@ -3173,12 +3173,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "302"
   }, {
-    "range" : "82",
+    "range" : "81",
     "domain" : "78",
     "attributes" : [ "object", "anonymous" ],
     "id" : "303"
   }, {
-    "range" : "82",
+    "range" : "81",
     "domain" : "147",
     "attributes" : [ "object", "anonymous" ],
     "id" : "304"
@@ -3193,17 +3193,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "306"
   }, {
-    "range" : "82",
+    "range" : "81",
     "domain" : "87",
     "attributes" : [ "object", "anonymous" ],
     "id" : "307"
   }, {
-    "range" : "82",
-    "domain" : "81",
+    "range" : "81",
+    "domain" : "80",
     "attributes" : [ "object", "anonymous" ],
     "id" : "308"
   }, {
-    "range" : "82",
+    "range" : "81",
     "domain" : "111",
     "attributes" : [ "object", "anonymous" ],
     "id" : "309"
@@ -3218,7 +3218,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "311"
   }, {
-    "range" : "82",
+    "range" : "81",
     "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "312"
