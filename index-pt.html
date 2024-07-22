@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","name":"Machine Learning Test Ontology", "headline":"Machine Learning Test Ontology (MiLTO) aims to model machine learning test procedures and associated data. The main objective is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is the result of  doctoral research carried out at IME-USP.", "dateReleased":"Mon Jul 22 19:07:37 WEST 2024", "author":[{"@type":"Person","name":"https://www.ime.usp.br/acvm/"},{"@type":"Person","name":"https://alexandrelocci.wixsite.com/locci"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","name":"Machine Learning Test Ontology", "headline":"Machine Learning Test Ontology (MiLTO) aims to model machine learning test procedures and associated data. The main objective is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is the result of  doctoral research carried out at IME-USP.", "dateReleased":"Mon Jul 22 19:20:13 WEST 2024", "license":"https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt", "author":[{"@type":"Person","name":"Alexandre Locci Martins","url":"https://alexandrelocci.wixsite.com/locci"},{"@type":"Person","name":"Ana Cristina Vieira de Melo","url":"https://www.ime.usp.br/acvm/"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -61,7 +61,7 @@ function loadTOC(){
       $("#nstable").load("sections/ns-pt.html"); 
       $("#overview").load("sections/overview-pt.html"); 
       $("#description").load("sections/description-pt.html"); 
-      $("#references").load("C:\Users\alelo\alelocci.github.io\OntoRefeInternet\OntoRefeInternet.html"); 
+      $("#references").load("sections/references-pt.html"); 
       $("#crossref").load("sections/crossref-pt.html", null, loadHash); 
     });
     </script> 
@@ -72,6 +72,7 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-pt.html"><b>pt</b></a> <a href="index-en.html"><b>en</b></a> <a href="index-it.html"><b>it</b></a> </div>
 <h1>Machine Learning Test Ontology</h1>
+<img src="ime.png" width="50/">
 
 
 <dl>
@@ -82,10 +83,13 @@ function loadTOC(){
 <dt>Emitida em:</dt>
 <dd>Date issued</dd>
 <dt>Autores:</dt>
-<dd>https://www.ime.usp.br/acvm/</dd><dd>https://alexandrelocci.wixsite.com/locci</dd>
+<dd><a href="https://alexandrelocci.wixsite.com/locci">Alexandre Locci Martins</a></dd><dd><a href="https://www.ime.usp.br/acvm/">Ana Cristina Vieira de Melo</a></dd>
 
-<dt>Descargar serializacion:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licen&ccedil;a:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-nome%20de%20licen&ccedil;a%20vai%20aqui-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
-</dd><dt>Display:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Descargar serializacion:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licen&ccedil;a:</dt><dd><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt" target="_blank"><img src="https://img.shields.io/badge/License-cc%20by_nc_sa-blue.svg" alt="https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt" /></a>
+<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt" rel="license" target="_blank">
+<img src="by-nc-sa.png" style="border-width:0" alt="License" />
+</a>
+<br/></dd><dt>Display:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite como:</dt>
 <dd>https://www.ime.usp.br/acvm/, https://alexandrelocci.wixsite.com/locci. Machine Learning Test Ontology. Retrieved from: http://www.semanticweb.org/alelo/ontologies/2024/5/milto</dd>
 </dl>
