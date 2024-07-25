@@ -2,12 +2,12 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://www.semanticweb.org/alelo/ontologies/2024/5/milto> a prov:Entity;
+<http://www.purl.org/milto/onto;> a prov:Entity;
 	 dc:title "Machine Learning Test Ontology";
 	 prov:wasAttributedTo <https://alexandrelocci.wixsite.com/locci>;
 	 dc:creator <https://alexandrelocci.wixsite.com/locci>;
 	 prov:wasAttributedTo <https://www.ime.usp.br/acvm/>;
 	 dc:creator <https://www.ime.usp.br/acvm/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8>;
+	 prov:specializationOf <http://www.purl.org/milto/onto;>;
 .
