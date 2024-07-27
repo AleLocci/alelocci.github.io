@@ -4,6 +4,20 @@
     "@value" : "Project creation date."
   } ]
 }, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/milto/onto/c"
+    }, {
+      "@id" : "http://purl.org/milto/onto/cc"
+    }, {
+      "@id" : "http://purl.org/milto/onto/java"
+    }, {
+      "@id" : "http://purl.org/milto/onto/python"
+    } ]
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -66,20 +80,51 @@
 }, {
   "@id" : "http://purl.org/milto/onto/API",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "API Acronym for Application Programming Interface. API's . The API's function is to link between different applications serving the user. They enable integration between different systems and make user actions faster with the expected responses. The API always works in the background, so the average user does not even see the API in operation. TensorFlow provides APIs in many programming languages as C, C++, Java, and Python, which one are located in the python, c, cc and java directories."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Components"
-  } ]
-}, {
-  "@id" : "http://purl.org/milto/onto/API_Directory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/milto/onto/acro_API"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API_Libraries",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Library"
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/API_python",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/API"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Activation_Function",
@@ -98,6 +143,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/CPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes",
@@ -129,6 +180,9 @@
 }, {
   "@id" : "http://purl.org/milto/onto/Computation_Graph",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Components"
   } ]
@@ -184,7 +238,13 @@
   "@id" : "http://purl.org/milto/onto/Directory_API",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API_Libraries"
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/Diretory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/TensorFlow"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Documentation",
@@ -206,10 +266,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Failure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/TensorFlow"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/milto/onto/Fairness_Indicators",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -227,6 +284,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/GPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/GPU_Usage",
@@ -291,14 +354,12 @@
 }, {
   "@id" : "http://purl.org/milto/onto/Kernel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Implements the mains deep learning algorithms."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Components"
-  } ]
-}, {
-  "@id" : "http://purl.org/milto/onto/Kernel_Directory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Layer_Properties",
@@ -445,12 +506,6 @@
     "@id" : "http://purl.org/milto/onto/Components"
   } ]
 }, {
-  "@id" : "http://purl.org/milto/onto/Platform_Directory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Platform"
-  } ]
-}, {
   "@id" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -495,6 +550,10 @@
 }, {
   "@id" : "http://purl.org/milto/onto/Runtime",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Components"
   } ]
@@ -504,6 +563,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
   } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/System_Under_Test",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/milto/onto/TFX",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -751,12 +813,6 @@
     "@id" : "http://purl.org/milto/onto/Components"
   } ]
 }, {
-  "@id" : "http://purl.org/milto/onto/Tool_Directory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Tool"
-  } ]
-}, {
   "@id" : "http://purl.org/milto/onto/Tools",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -868,16 +924,39 @@
     "@id" : "http://purl.org/milto/onto/Tools"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto/acro_API",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "API - Application Programming Interface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
   "@id" : "http://purl.org/milto/onto/c",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The directory where the TensorFlow API C source code is located."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/cc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The directory where the TensorFlow API C++ source code is located."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/contrib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/contrib/seq2seq",
@@ -886,94 +965,94 @@
     "@id" : "http://purl.org/milto/onto/Contrib_Directory"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto/core",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
   "@id" : "http://purl.org/milto/onto/core/common_runtime",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/debug",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/distributed_runtime",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/example",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/framework",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/graph",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/grappler",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/kernels",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/ops",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
-  } ]
-}, {
-  "@id" : "http://purl.org/milto/onto/core/platform",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Platform_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/profile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core/protobuf",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Kernel_Directory"
-  } ]
-}, {
-  "@id" : "http://purl.org/milto/onto/core_lib",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Directory_API"
-  } ]
-}, {
-  "@id" : "http://purl.org/milto/onto/core_tpu",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Platform_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/core_util",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Directory_API"
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/debug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/examples",
@@ -982,42 +1061,138 @@
     "@id" : "http://purl.org/milto/onto/Documentation"
   } ]
 }, {
-  "@id" : "http://purl.org/milto/onto/java",
+  "@id" : "http://purl.org/milto/onto/exemples",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API_Directory"
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/git",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The directory where the TensorFlow API Java source code is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/kernels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/lib",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/logging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Framework"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/pip_package",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/tools"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/python",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The directory where the TensorFlow API Python source code is located."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/API_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/root",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Directory_API"
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/seq2seq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/contrib"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/stored_In",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Object is stored in another Object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/third-party",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Directory_API"
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/tools_git",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Tool_Directory"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/milto/onto/tools_pippackage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/milto/onto/tpu",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/milto/onto/Tool_Directory"
+    "@id" : "http://purl.org/milto/onto/core"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto/util",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/milto/onto/Diretory"
+  } ]
 } ]
