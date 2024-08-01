@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/milto/onto", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/milto/onto/core", "http://www.w3.org/2001/XMLSchema", "http://purl.org/milto/onto/contrib", "http://purl.org/milto/onto/Validation" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/milto/onto", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.co-ode.org/ontologies/ont.owl", "http://purl.org/milto/onto/core", "http://www.w3.org/2001/XMLSchema", "http://purl.org/milto/onto/contrib", "http://purl.org/milto/onto/Validation" ],
     "title" : {
       "en" : "Machine Learning Test Ontology"
     },
@@ -16,27 +16,27 @@
       "en" : "An ontology to describe the testing process in Machine Learning tools to describe how failures occur in these systems. Created by Alexandre Locci Martins and Ana Cristina Vierira de Melo."
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "en",
-        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-        "type" : "label"
-      } ],
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
         "value" : "4.0",
         "type" : "label"
       } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "type" : "label"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.ime.usp.br/acvm/",
+        "value" : "https://alexandrelocci.wixsite.com/locci",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://alexandrelocci.wixsite.com/locci",
+        "value" : "https://www.ime.usp.br/acvm/",
         "type" : "label"
       } ],
       "created" : [ {
@@ -67,37 +67,31 @@
   },
   "namespace" : [ ],
   "class" : [ {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "94",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "97",
     "type" : "owl:Class"
   }, {
     "id" : "98",
@@ -109,10 +103,7 @@
     "id" : "100",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "103",
@@ -121,73 +112,70 @@
     "id" : "104",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "111",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "106",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
-    "id" : "119",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "122",
+    "id" : "114",
     "type" : "owl:Class"
   }, {
-    "id" : "128",
+    "id" : "108",
     "type" : "owl:Class"
   }, {
-    "id" : "132",
+    "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "135",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "126",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
     "type" : "owl:Class"
   }, {
     "id" : "139",
     "type" : "owl:Class"
   }, {
-    "id" : "142",
+    "id" : "140",
     "type" : "owl:Class"
   }, {
-    "id" : "131",
+    "id" : "141",
     "type" : "owl:Class"
   }, {
-    "id" : "156",
+    "id" : "144",
     "type" : "owl:Class"
   }, {
-    "id" : "157",
+    "id" : "147",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "165",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "166",
     "type" : "owl:Class"
   }, {
-    "id" : "159",
-    "type" : "owl:Class"
-  }, {
-    "id" : "160",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
     "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "169",
@@ -196,31 +184,19 @@
     "id" : "170",
     "type" : "owl:Class"
   }, {
-    "id" : "172",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "188",
+    "id" : "183",
     "type" : "owl:Class"
   }, {
-    "id" : "189",
+    "id" : "184",
     "type" : "owl:Class"
   }, {
-    "id" : "113",
+    "id" : "185",
     "type" : "owl:Class"
   }, {
-    "id" : "197",
-    "type" : "owl:Class"
-  }, {
-    "id" : "123",
-    "type" : "owl:Class"
-  }, {
-    "id" : "200",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "201",
+    "id" : "187",
     "type" : "owl:Class"
   }, {
     "id" : "202",
@@ -229,619 +205,649 @@
     "id" : "203",
     "type" : "owl:Class"
   }, {
-    "id" : "193",
-    "type" : "owl:Class"
-  }, {
-    "id" : "204",
-    "type" : "owl:Class"
-  }, {
-    "id" : "164",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "owl:Class"
-  }, {
-    "id" : "177",
-    "type" : "owl:Class"
-  }, {
-    "id" : "144",
-    "type" : "owl:Class"
-  }, {
-    "id" : "146",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "240",
-    "type" : "owl:Class"
-  }, {
-    "id" : "209",
-    "type" : "owl:Class"
-  }, {
-    "id" : "241",
-    "type" : "owl:Class"
-  }, {
-    "id" : "242",
-    "type" : "owl:Class"
-  }, {
-    "id" : "243",
-    "type" : "owl:Class"
-  }, {
-    "id" : "108",
-    "type" : "owl:Class"
-  }, {
-    "id" : "251",
-    "type" : "owl:Class"
-  }, {
-    "id" : "258",
-    "type" : "owl:Class"
-  }, {
-    "id" : "85",
-    "type" : "owl:Class"
-  }, {
-    "id" : "183",
-    "type" : "owl:Class"
-  }, {
-    "id" : "277",
-    "type" : "owl:Class"
-  }, {
-    "id" : "171",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "278",
-    "type" : "owl:Class"
-  }, {
-    "id" : "237",
-    "type" : "owl:Class"
-  }, {
-    "id" : "279",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "owl:Class"
-  }, {
-    "id" : "290",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "291",
-    "type" : "owl:Class"
-  }, {
-    "id" : "87",
-    "type" : "owl:Class"
-  }, {
-    "id" : "261",
-    "type" : "owl:Class"
-  }, {
-    "id" : "216",
-    "type" : "owl:Class"
-  }, {
-    "id" : "250",
-    "type" : "owl:Class"
-  }, {
-    "id" : "293",
-    "type" : "owl:Class"
-  }, {
-    "id" : "175",
-    "type" : "owl:Class"
-  }, {
-    "id" : "211",
-    "type" : "owl:Class"
-  }, {
-    "id" : "198",
-    "type" : "owl:Class"
-  }, {
-    "id" : "220",
-    "type" : "owl:Class"
-  }, {
-    "id" : "207",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "121",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "308",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "295",
-    "type" : "owl:Class"
-  }, {
-    "id" : "181",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "332",
-    "type" : "owl:Class"
-  }, {
-    "id" : "333",
-    "type" : "owl:Class"
-  }, {
-    "id" : "334",
-    "type" : "owl:Class"
-  }, {
-    "id" : "339",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "336",
-    "type" : "owl:Class"
-  }, {
-    "id" : "349",
-    "type" : "owl:Class"
-  }, {
-    "id" : "205",
-    "type" : "owl:Class"
-  }, {
-    "id" : "327",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "356",
-    "type" : "owl:Class"
-  }, {
-    "id" : "357",
-    "type" : "owl:Class"
-  }, {
-    "id" : "382",
-    "type" : "owl:Class"
-  }, {
-    "id" : "383",
-    "type" : "owl:Class"
-  }, {
-    "id" : "314",
-    "type" : "owl:Class"
-  }, {
-    "id" : "191",
-    "type" : "owl:Class"
-  }, {
-    "id" : "397",
-    "type" : "owl:Class"
-  }, {
-    "id" : "187",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "214",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "owl:Class"
-  }, {
-    "id" : "134",
-    "type" : "owl:Class"
-  }, {
-    "id" : "363",
-    "type" : "owl:Class"
-  }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
-    "id" : "359",
-    "type" : "owl:Class"
-  }, {
-    "id" : "422",
-    "type" : "owl:Class"
-  }, {
-    "id" : "199",
-    "type" : "owl:Class"
-  }, {
-    "id" : "196",
-    "type" : "owl:Class"
-  }, {
-    "id" : "283",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "307",
-    "type" : "owl:Class"
-  }, {
-    "id" : "107",
-    "type" : "owl:Class"
-  }, {
-    "id" : "423",
-    "type" : "owl:Class"
-  }, {
-    "id" : "345",
-    "type" : "owl:Class"
-  }, {
-    "id" : "331",
-    "type" : "owl:Class"
-  }, {
-    "id" : "329",
-    "type" : "owl:Class"
-  }, {
-    "id" : "208",
-    "type" : "owl:Class"
-  }, {
-    "id" : "162",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "254",
-    "type" : "owl:Class"
-  }, {
-    "id" : "425",
-    "type" : "owl:Class"
-  }, {
-    "id" : "413",
-    "type" : "owl:Class"
-  }, {
-    "id" : "447",
-    "type" : "owl:Class"
-  }, {
-    "id" : "303",
-    "type" : "owl:Class"
-  }, {
-    "id" : "448",
-    "type" : "owl:Class"
-  }, {
-    "id" : "206",
-    "type" : "owl:Class"
-  }, {
-    "id" : "449",
-    "type" : "owl:Class"
-  }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "149",
-    "type" : "owl:Class"
-  }, {
-    "id" : "455",
-    "type" : "owl:Class"
-  }, {
-    "id" : "166",
-    "type" : "owl:Class"
-  }, {
-    "id" : "361",
-    "type" : "owl:Class"
-  }, {
-    "id" : "353",
-    "type" : "owl:Class"
-  }, {
-    "id" : "288",
-    "type" : "owl:Class"
-  }, {
-    "id" : "428",
-    "type" : "owl:Class"
-  }, {
-    "id" : "127",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "348",
-    "type" : "owl:Class"
-  }, {
-    "id" : "415",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
-    "id" : "340",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "125",
-    "type" : "owl:Class"
-  }, {
-    "id" : "228",
-    "type" : "owl:Class"
-  }, {
-    "id" : "457",
-    "type" : "owl:Class"
-  }, {
-    "id" : "230",
-    "type" : "owl:Class"
-  }, {
-    "id" : "321",
-    "type" : "owl:Class"
-  }, {
-    "id" : "432",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "458",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "421",
-    "type" : "owl:Class"
-  }, {
-    "id" : "270",
-    "type" : "owl:Class"
-  }, {
-    "id" : "417",
-    "type" : "owl:Class"
-  }, {
-    "id" : "310",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "459",
-    "type" : "owl:Class"
-  }, {
-    "id" : "185",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "460",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "442",
-    "type" : "owl:Class"
-  }, {
-    "id" : "373",
-    "type" : "owl:Class"
-  }, {
-    "id" : "371",
-    "type" : "owl:Class"
-  }, {
-    "id" : "445",
-    "type" : "owl:Class"
-  }, {
-    "id" : "365",
-    "type" : "owl:Class"
-  }, {
-    "id" : "351",
-    "type" : "owl:Class"
-  }, {
-    "id" : "461",
-    "type" : "owl:Class"
-  }, {
-    "id" : "257",
-    "type" : "owl:Class"
-  }, {
-    "id" : "338",
-    "type" : "owl:Class"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "454",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "210",
-    "type" : "owl:Class"
-  }, {
-    "id" : "404",
-    "type" : "owl:Class"
-  }, {
-    "id" : "462",
-    "type" : "owl:Class"
-  }, {
-    "id" : "399",
-    "type" : "owl:Class"
-  }, {
-    "id" : "393",
-    "type" : "owl:Class"
-  }, {
-    "id" : "173",
-    "type" : "owl:Class"
-  }, {
-    "id" : "380",
-    "type" : "owl:Class"
-  }, {
-    "id" : "151",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "316",
-    "type" : "owl:Class"
-  }, {
-    "id" : "463",
-    "type" : "owl:Class"
-  }, {
-    "id" : "312",
-    "type" : "owl:Class"
-  }, {
-    "id" : "411",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "376",
-    "type" : "owl:Class"
-  }, {
-    "id" : "247",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "479",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "267",
-    "type" : "owl:Class"
-  }, {
-    "id" : "369",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "owl:Class"
-  }, {
-    "id" : "474",
-    "type" : "owl:Class"
-  }, {
-    "id" : "477",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "437",
-    "type" : "owl:Class"
-  }, {
-    "id" : "475",
-    "type" : "owl:Class"
-  }, {
-    "id" : "218",
-    "type" : "owl:Class"
-  }, {
-    "id" : "406",
-    "type" : "owl:Class"
-  }, {
-    "id" : "378",
-    "type" : "owl:Class"
-  }, {
-    "id" : "481",
+    "id" : "79",
     "type" : "owl:Class"
   }, {
     "id" : "212",
     "type" : "owl:Class"
   }, {
-    "id" : "408",
+    "id" : "127",
     "type" : "owl:Class"
   }, {
-    "id" : "401",
+    "id" : "215",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
+    "id" : "216",
     "type" : "owl:Class"
   }, {
-    "id" : "395",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "95",
+    "id" : "217",
     "type" : "owl:Class"
   }, {
-    "id" : "232",
+    "id" : "218",
     "type" : "owl:Class"
   }, {
-    "id" : "450",
+    "id" : "196",
     "type" : "owl:Class"
   }, {
-    "id" : "440",
+    "id" : "153",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "219",
     "type" : "owl:Class"
   }, {
-    "id" : "323",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "325",
+    "id" : "175",
     "type" : "owl:Class"
   }, {
-    "id" : "480",
+    "id" : "161",
     "type" : "owl:Class"
   }, {
-    "id" : "430",
+    "id" : "163",
     "type" : "owl:Class"
   }, {
-    "id" : "264",
+    "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "69",
+    "id" : "260",
     "type" : "owl:Class"
   }, {
-    "id" : "306",
+    "id" : "224",
     "type" : "owl:Class"
   }, {
-    "id" : "234",
+    "id" : "261",
     "type" : "owl:Class"
   }, {
-    "id" : "179",
+    "id" : "262",
     "type" : "owl:Class"
   }, {
-    "id" : "299",
+    "id" : "263",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "110",
     "type" : "owl:Class"
   }, {
-    "id" : "141",
+    "id" : "272",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "278",
     "type" : "owl:Class"
   }, {
-    "id" : "355",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "239",
+    "id" : "295",
     "type" : "owl:Class"
   }, {
-    "id" : "91",
+    "id" : "186",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "296",
     "type" : "owl:Class"
   }, {
-    "id" : "275",
+    "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "343",
+    "id" : "297",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "244",
+    "type" : "owl:Class"
+  }, {
+    "id" : "298",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "309",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "310",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "265",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "312",
+    "type" : "owl:Class"
+  }, {
+    "id" : "255",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
     "type" : "owl:Class"
   }, {
     "id" : "222",
     "type" : "owl:Class"
   }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "349",
+    "type" : "owl:Class"
+  }, {
+    "id" : "350",
+    "type" : "owl:Class"
+  }, {
+    "id" : "351",
+    "type" : "owl:Class"
+  }, {
+    "id" : "355",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "346",
+    "type" : "owl:Class"
+  }, {
     "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "367",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "372",
+    "type" : "owl:Class"
+  }, {
+    "id" : "373",
+    "type" : "owl:Class"
+  }, {
+    "id" : "392",
+    "type" : "owl:Class"
+  }, {
+    "id" : "393",
+    "type" : "owl:Class"
+  }, {
+    "id" : "317",
+    "type" : "owl:Class"
+  }, {
+    "id" : "301",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "410",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "371",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "366",
+    "type" : "owl:Class"
+  }, {
+    "id" : "434",
+    "type" : "owl:Class"
+  }, {
+    "id" : "214",
+    "type" : "owl:Class"
+  }, {
+    "id" : "199",
+    "type" : "owl:Class"
+  }, {
+    "id" : "288",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "327",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "435",
+    "type" : "owl:Class"
+  }, {
+    "id" : "359",
+    "type" : "owl:Class"
+  }, {
+    "id" : "421",
+    "type" : "owl:Class"
+  }, {
+    "id" : "414",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "owl:Class"
+  }, {
+    "id" : "451",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "258",
+    "type" : "owl:Class"
+  }, {
+    "id" : "432",
+    "type" : "owl:Class"
+  }, {
+    "id" : "460",
+    "type" : "owl:Class"
+  }, {
+    "id" : "461",
+    "type" : "owl:Class"
+  }, {
+    "id" : "315",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "221",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "466",
+    "type" : "owl:Class"
+  }, {
+    "id" : "369",
+    "type" : "owl:Class"
+  }, {
+    "id" : "467",
+    "type" : "owl:Class"
+  }, {
+    "id" : "354",
+    "type" : "owl:Class"
+  }, {
+    "id" : "293",
+    "type" : "owl:Class"
+  }, {
+    "id" : "424",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "344",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "302",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "owl:Class"
+  }, {
+    "id" : "469",
+    "type" : "owl:Class"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "341",
+    "type" : "owl:Class"
+  }, {
+    "id" : "441",
+    "type" : "owl:Class"
+  }, {
+    "id" : "281",
     "type" : "owl:Class"
   }, {
     "id" : "470",
     "type" : "owl:Class"
   }, {
-    "id" : "391",
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "428",
+    "type" : "owl:Class"
+  }, {
+    "id" : "275",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "324",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "471",
+    "type" : "owl:Class"
+  }, {
+    "id" : "472",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "449",
+    "type" : "owl:Class"
+  }, {
+    "id" : "380",
+    "type" : "owl:Class"
+  }, {
+    "id" : "375",
+    "type" : "owl:Class"
+  }, {
+    "id" : "443",
+    "type" : "owl:Class"
+  }, {
+    "id" : "361",
+    "type" : "owl:Class"
+  }, {
+    "id" : "357",
+    "type" : "owl:Class"
+  }, {
+    "id" : "473",
+    "type" : "owl:Class"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "348",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "416",
+    "type" : "owl:Class"
+  }, {
+    "id" : "474",
+    "type" : "owl:Class"
+  }, {
+    "id" : "407",
+    "type" : "owl:Class"
+  }, {
+    "id" : "398",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "458",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "334",
+    "type" : "owl:Class"
+  }, {
+    "id" : "475",
+    "type" : "owl:Class"
+  }, {
+    "id" : "326",
+    "type" : "owl:Class"
+  }, {
+    "id" : "465",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "455",
+    "type" : "owl:Class"
+  }, {
+    "id" : "252",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "479",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "271",
+    "type" : "owl:Class"
+  }, {
+    "id" : "377",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "438",
+    "type" : "owl:Class"
+  }, {
+    "id" : "487",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "453",
+    "type" : "owl:Class"
+  }, {
+    "id" : "412",
+    "type" : "owl:Class"
+  }, {
+    "id" : "482",
+    "type" : "owl:Class"
+  }, {
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "404",
+    "type" : "owl:Class"
+  }, {
+    "id" : "409",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "396",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "owl:Class"
+  }, {
+    "id" : "336",
+    "type" : "owl:Class"
+  }, {
+    "id" : "447",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "339",
+    "type" : "owl:Class"
+  }, {
+    "id" : "332",
+    "type" : "owl:Class"
+  }, {
+    "id" : "490",
+    "type" : "owl:Class"
+  }, {
+    "id" : "426",
+    "type" : "owl:Class"
+  }, {
+    "id" : "268",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "383",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "364",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "247",
+    "type" : "owl:Class"
+  }, {
+    "id" : "419",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "402",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -852,8 +858,8 @@
       "IRI-based" : "example"
     },
     "attributes" : [ "external" ],
-    "id" : "35",
-    "superClasses" : [ "32" ]
+    "id" : "33",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/FP16",
     "baseIri" : "http://purl.org/milto/onto",
@@ -862,8 +868,8 @@
       "IRI-based" : "FP16"
     },
     "attributes" : [ "external" ],
-    "id" : "36",
-    "superClasses" : [ "37" ]
+    "id" : "35",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Addons",
     "baseIri" : "http://purl.org/milto/onto",
@@ -872,7 +878,7 @@
       "IRI-based" : "TensorFlow_Addons"
     },
     "attributes" : [ "external" ],
-    "id" : "38",
+    "id" : "37",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Transform",
@@ -882,7 +888,7 @@
       "IRI-based" : "TensorFlow_Transform"
     },
     "attributes" : [ "external" ],
-    "id" : "39",
+    "id" : "38",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Contribution",
@@ -891,10 +897,10 @@
     "label" : {
       "IRI-based" : "Contribution"
     },
-    "subClasses" : [ "45" ],
+    "subClasses" : [ "44" ],
     "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "44" ]
+    "id" : "42",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Preprocessing",
     "baseIri" : "http://purl.org/milto/onto",
@@ -903,17 +909,8 @@
       "IRI-based" : "Wrong_Preprocessing"
     },
     "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "16" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto#lite",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "lite"
-    },
-    "id" : "23",
-    "superClasses" : [ "19" ]
+    "id" : "65",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://purl.org/milto/onto/clang_toolchain",
     "baseIri" : "http://purl.org/milto/onto",
@@ -922,8 +919,17 @@
       "IRI-based" : "clang_toolchain"
     },
     "attributes" : [ "external" ],
-    "id" : "70",
-    "superClasses" : [ "37" ]
+    "id" : "71",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto#lite",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "lite"
+    },
+    "id" : "72",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Documentation",
     "baseIri" : "http://purl.org/milto/onto",
@@ -931,10 +937,10 @@
     "label" : {
       "IRI-based" : "Documentation"
     },
-    "subClasses" : [ "95" ],
+    "subClasses" : [ "97" ],
     "attributes" : [ "external" ],
-    "id" : "94",
-    "superClasses" : [ "44" ]
+    "id" : "96",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/compiler",
     "baseIri" : "http://purl.org/milto/onto",
@@ -943,8 +949,8 @@
       "IRI-based" : "compiler"
     },
     "attributes" : [ "external" ],
-    "id" : "96",
-    "superClasses" : [ "19" ]
+    "id" : "98",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/sobol_data",
     "baseIri" : "http://purl.org/milto/onto",
@@ -953,8 +959,8 @@
       "IRI-based" : "sobol_data"
     },
     "attributes" : [ "external" ],
-    "id" : "97",
-    "superClasses" : [ "37" ]
+    "id" : "99",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/pasta",
     "baseIri" : "http://purl.org/milto/onto",
@@ -963,8 +969,8 @@
       "IRI-based" : "pasta"
     },
     "attributes" : [ "external" ],
-    "id" : "98",
-    "superClasses" : [ "37" ]
+    "id" : "100",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Computation_Graph",
     "baseIri" : "http://purl.org/milto/onto",
@@ -976,8 +982,8 @@
       "undefined" : "TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations."
     },
     "attributes" : [ "external" ],
-    "id" : "99",
-    "superClasses" : [ "44" ]
+    "id" : "64",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/c",
     "baseIri" : "http://purl.org/milto/onto",
@@ -989,8 +995,8 @@
       "undefined" : "The directory where the TensorFlow API C source code is located."
     },
     "attributes" : [ "external" ],
-    "id" : "100",
-    "superClasses" : [ "19" ]
+    "id" : "103",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ci",
     "baseIri" : "http://purl.org/milto/onto",
@@ -999,8 +1005,8 @@
       "IRI-based" : "ci"
     },
     "attributes" : [ "external" ],
-    "id" : "101",
-    "superClasses" : [ "42" ]
+    "id" : "104",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/milto/onto/cc",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1012,8 +1018,31 @@
       "en" : "The directory where the TensorFlow API C++ source code is located."
     },
     "attributes" : [ "external" ],
-    "id" : "102",
-    "superClasses" : [ "19" ]
+    "id" : "105",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/TensorFlow",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensorFlow"
+    },
+    "subClasses" : [ "41", "107", "108", "109", "43", "110" ],
+    "comment" : {
+      "undefined" : "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\""
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/milto/onto/ducc",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ducc"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Runtime",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1025,31 +1054,8 @@
       "en" : "The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones."
     },
     "attributes" : [ "external" ],
-    "id" : "103",
-    "superClasses" : [ "44" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/TensorFlow",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensorFlow"
-    },
-    "subClasses" : [ "42", "105", "106", "107", "44", "108" ],
-    "comment" : {
-      "undefined" : "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\""
-    },
-    "attributes" : [ "external" ],
-    "id" : "104"
-  }, {
-    "iri" : "http://purl.org/milto/onto/ducc",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ducc"
-    },
-    "attributes" : [ "external" ],
-    "id" : "109",
-    "superClasses" : [ "37" ]
+    "id" : "84",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/user_ops",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1058,8 +1064,8 @@
       "IRI-based" : "user_ops"
     },
     "attributes" : [ "external" ],
-    "id" : "111",
-    "superClasses" : [ "32" ]
+    "id" : "114",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Version",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1068,17 +1074,8 @@
       "IRI-based" : "Version"
     },
     "attributes" : [ "external" ],
-    "id" : "106",
-    "superClasses" : [ "104" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto#dtensor",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "dtensor"
-    },
-    "id" : "18",
-    "superClasses" : [ "19" ]
+    "id" : "108",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TFX-Addons",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1087,8 +1084,17 @@
       "IRI-based" : "TFX-Addons"
     },
     "attributes" : [ "external" ],
-    "id" : "119",
+    "id" : "123",
     "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto#dtensor",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "dtensor"
+    },
+    "id" : "124",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Input_Format",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1097,8 +1103,8 @@
       "IRI-based" : "Wrong_Input_Format"
     },
     "attributes" : [ "external" ],
-    "id" : "122",
-    "superClasses" : [ "123" ]
+    "id" : "126",
+    "superClasses" : [ "127" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Quantum",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1107,7 +1113,7 @@
       "IRI-based" : "TensorFlow_Quantum"
     },
     "attributes" : [ "external" ],
-    "id" : "128",
+    "id" : "130",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Trainning_Process",
@@ -1117,8 +1123,8 @@
       "IRI-based" : "Trainning_Process"
     },
     "attributes" : [ "external" ],
-    "id" : "132",
-    "superClasses" : [ "13" ]
+    "id" : "133",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/profile",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1127,18 +1133,8 @@
       "IRI-based" : "profile"
     },
     "attributes" : [ "external" ],
-    "id" : "135",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Memory",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Memory"
-    },
-    "attributes" : [ "external" ],
-    "id" : "136",
-    "superClasses" : [ "55" ]
+    "id" : "139",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Model_Type_&_Propertes",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1147,8 +1143,18 @@
       "IRI-based" : "Model_Type_&_Propertes"
     },
     "attributes" : [ "external" ],
-    "id" : "137",
-    "superClasses" : [ "51" ]
+    "id" : "140",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Memory",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Memory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/root",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1157,8 +1163,8 @@
       "IRI-based" : "root"
     },
     "attributes" : [ "external" ],
-    "id" : "139",
-    "superClasses" : [ "32" ]
+    "id" : "144",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/public",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1167,8 +1173,8 @@
       "IRI-based" : "public"
     },
     "attributes" : [ "external" ],
-    "id" : "142",
-    "superClasses" : [ "32" ]
+    "id" : "147",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/exemples",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1177,8 +1183,8 @@
       "IRI-based" : "exemples"
     },
     "attributes" : [ "external" ],
-    "id" : "131",
-    "superClasses" : [ "44" ]
+    "id" : "70",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/platform",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1187,8 +1193,8 @@
       "IRI-based" : "platform"
     },
     "attributes" : [ "external" ],
-    "id" : "156",
-    "superClasses" : [ "32" ]
+    "id" : "165",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/nccl",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1197,8 +1203,19 @@
       "IRI-based" : "nccl"
     },
     "attributes" : [ "external" ],
-    "id" : "157",
-    "superClasses" : [ "32" ]
+    "id" : "166",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Preprocessing_of_Trainning_Data"
+    },
+    "subClasses" : [ "65", "167" ],
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Trainning_Data",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1207,19 +1224,8 @@
       "IRI-based" : "Trainning_Data"
     },
     "attributes" : [ "external" ],
-    "id" : "158",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Preprocessing_of_Trainning_Data"
-    },
-    "subClasses" : [ "15", "21" ],
-    "attributes" : [ "external" ],
-    "id" : "16",
-    "superClasses" : [ "13" ]
+    "id" : "168",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TFX",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1228,7 +1234,7 @@
       "IRI-based" : "TFX"
     },
     "attributes" : [ "external" ],
-    "id" : "7",
+    "id" : "28",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/pybind11_abseil",
@@ -1238,8 +1244,8 @@
       "IRI-based" : "pybind11_abseil"
     },
     "attributes" : [ "external" ],
-    "id" : "159",
-    "superClasses" : [ "37" ]
+    "id" : "169",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Tensor_Shape",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1248,8 +1254,8 @@
       "IRI-based" : "Wrong_Tensor_Shape"
     },
     "attributes" : [ "external" ],
-    "id" : "160",
-    "superClasses" : [ "47" ]
+    "id" : "170",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Model_Tensorflow",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1257,10 +1263,10 @@
     "label" : {
       "IRI-based" : "Model_Tensorflow"
     },
-    "subClasses" : [ "25", "30", "34" ],
+    "subClasses" : [ "180", "181", "182" ],
     "attributes" : [ "external" ],
-    "id" : "26",
-    "superClasses" : [ "69" ]
+    "id" : "51",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Decision_Forests",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1269,7 +1275,7 @@
       "IRI-based" : "TensorFlow_Decision_Forests"
     },
     "attributes" : [ "external" ],
-    "id" : "168",
+    "id" : "183",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/util",
@@ -1279,8 +1285,8 @@
       "IRI-based" : "util"
     },
     "attributes" : [ "external" ],
-    "id" : "169",
-    "superClasses" : [ "32" ]
+    "id" : "184",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TPU_Research_Cloud",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1289,8 +1295,8 @@
       "IRI-based" : "TPU_Research_Cloud"
     },
     "attributes" : [ "external" ],
-    "id" : "170",
-    "superClasses" : [ "171" ]
+    "id" : "185",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Activation_Function",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1299,8 +1305,8 @@
       "IRI-based" : "Activation_Function"
     },
     "attributes" : [ "external" ],
-    "id" : "172",
-    "superClasses" : [ "173" ]
+    "id" : "187",
+    "superClasses" : [ "188" ]
   }, {
     "iri" : "http://purl.org/milto/onto/grpc",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1309,8 +1315,8 @@
       "IRI-based" : "grpc"
     },
     "attributes" : [ "external" ],
-    "id" : "188",
-    "superClasses" : [ "37" ]
+    "id" : "202",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Inconsistency",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1319,8 +1325,8 @@
       "IRI-based" : "Inconsistency"
     },
     "attributes" : [ "external" ],
-    "id" : "189",
-    "superClasses" : [ "55" ]
+    "id" : "203",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ML_Metadata",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1329,7 +1335,7 @@
       "IRI-based" : "ML_Metadata"
     },
     "attributes" : [ "external" ],
-    "id" : "113",
+    "id" : "79",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/libprotobuf_mutator",
@@ -1339,8 +1345,8 @@
       "IRI-based" : "libprotobuf_mutator"
     },
     "attributes" : [ "external" ],
-    "id" : "197",
-    "superClasses" : [ "37" ]
+    "id" : "212",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Input",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1348,10 +1354,10 @@
     "label" : {
       "IRI-based" : "Wrong_Input"
     },
-    "subClasses" : [ "122", "198", "199" ],
+    "subClasses" : [ "126", "213", "214" ],
     "attributes" : [ "external" ],
-    "id" : "123",
-    "superClasses" : [ "47" ]
+    "id" : "127",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://purl.org/milto/onto/nanobind",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1360,18 +1366,8 @@
       "IRI-based" : "nanobind"
     },
     "attributes" : [ "external" ],
-    "id" : "200",
-    "superClasses" : [ "37" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/TensorFlow_Agents",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensorFlow_Agents"
-    },
-    "attributes" : [ "external" ],
-    "id" : "89",
-    "superClasses" : [ "2" ]
+    "id" : "215",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ortools",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1380,8 +1376,18 @@
       "IRI-based" : "ortools"
     },
     "attributes" : [ "external" ],
-    "id" : "201",
-    "superClasses" : [ "37" ]
+    "id" : "216",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/TensorFlow_Agents",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensorFlow_Agents"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Conﬁguration_error",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1390,8 +1396,8 @@
       "IRI-based" : "Conﬁguration_error"
     },
     "attributes" : [ "external" ],
-    "id" : "202",
-    "superClasses" : [ "55" ]
+    "id" : "217",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto#go",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1399,8 +1405,8 @@
     "label" : {
       "IRI-based" : "go"
     },
-    "id" : "203",
-    "superClasses" : [ "19" ]
+    "id" : "218",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1409,8 +1415,8 @@
       "IRI-based" : "Missing_Redundant_Wrong_Layer"
     },
     "attributes" : [ "external" ],
-    "id" : "193",
-    "superClasses" : [ "173" ]
+    "id" : "196",
+    "superClasses" : [ "188" ]
   }, {
     "iri" : "http://purl.org/milto/onto/tfrt",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1419,8 +1425,8 @@
       "IRI-based" : "tfrt"
     },
     "attributes" : [ "external" ],
-    "id" : "204",
-    "superClasses" : [ "32" ]
+    "id" : "153",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Optimizer",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1429,8 +1435,8 @@
       "IRI-based" : "Optimizer"
     },
     "attributes" : [ "external" ],
-    "id" : "164",
-    "superClasses" : [ "13" ]
+    "id" : "219",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Categories_of_Root_Causes",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1438,10 +1444,10 @@
     "label" : {
       "IRI-based" : "Categories_of_Root_Causes"
     },
-    "subClasses" : [ "205", "206", "189", "207", "208", "209", "136", "210", "211", "212", "202" ],
+    "subClasses" : [ "220", "221", "203", "222", "223", "224", "141", "225", "226", "227", "217" ],
     "attributes" : [ "external" ],
-    "id" : "55",
-    "superClasses" : [ "5" ]
+    "id" : "26",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Performance_degradation",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1450,8 +1456,8 @@
       "IRI-based" : "Performance_degradation"
     },
     "attributes" : [ "external" ],
-    "id" : "177",
-    "superClasses" : [ "9" ]
+    "id" : "175",
+    "superClasses" : [ "173" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/debug",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -1460,8 +1466,8 @@
       "IRI-based" : "debug"
     },
     "attributes" : [ "external" ],
-    "id" : "144",
-    "superClasses" : [ "32" ]
+    "id" : "161",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/kernels",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1470,8 +1476,8 @@
       "IRI-based" : "kernels"
     },
     "attributes" : [ "external" ],
-    "id" : "146",
-    "superClasses" : [ "32" ]
+    "id" : "163",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/GPU",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1480,8 +1486,8 @@
       "IRI-based" : "GPU"
     },
     "attributes" : [ "external" ],
-    "id" : "59",
-    "superClasses" : [ "60" ]
+    "id" : "88",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Test",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1490,7 +1496,7 @@
       "IRI-based" : "Test"
     },
     "attributes" : [ "external" ],
-    "id" : "240"
+    "id" : "260"
   }, {
     "iri" : "http://purl.org/milto/onto/Concurrency",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1499,8 +1505,8 @@
       "IRI-based" : "Concurrency"
     },
     "attributes" : [ "external" ],
-    "id" : "209",
-    "superClasses" : [ "55" ]
+    "id" : "224",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/llvm",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1509,8 +1515,8 @@
       "IRI-based" : "llvm"
     },
     "attributes" : [ "external" ],
-    "id" : "241",
-    "superClasses" : [ "37" ]
+    "id" : "261",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/api_def",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1519,8 +1525,8 @@
       "IRI-based" : "api_def"
     },
     "attributes" : [ "external" ],
-    "id" : "242",
-    "superClasses" : [ "32" ]
+    "id" : "262",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Fairness_Indicators",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1529,7 +1535,7 @@
       "IRI-based" : "Fairness_Indicators"
     },
     "attributes" : [ "external" ],
-    "id" : "243",
+    "id" : "263",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Keras",
@@ -1538,10 +1544,10 @@
     "label" : {
       "IRI-based" : "Keras"
     },
-    "subClasses" : [ "228" ],
+    "subClasses" : [ "235" ],
     "attributes" : [ "external" ],
-    "id" : "108",
-    "superClasses" : [ "104" ]
+    "id" : "110",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/config",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1550,8 +1556,8 @@
       "IRI-based" : "config"
     },
     "attributes" : [ "external" ],
-    "id" : "251",
-    "superClasses" : [ "32" ]
+    "id" : "272",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/mpitrampoline",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1560,8 +1566,8 @@
       "IRI-based" : "mpitrampoline"
     },
     "attributes" : [ "external" ],
-    "id" : "258",
-    "superClasses" : [ "37" ]
+    "id" : "278",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Compression",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1570,7 +1576,7 @@
       "IRI-based" : "TensorFlow_Compression"
     },
     "attributes" : [ "external" ],
-    "id" : "85",
+    "id" : "1",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Hang",
@@ -1580,8 +1586,22 @@
       "IRI-based" : "Hang"
     },
     "attributes" : [ "external" ],
-    "id" : "183",
-    "superClasses" : [ "9" ]
+    "id" : "295",
+    "superClasses" : [ "173" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Tools",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tools"
+    },
+    "subClasses" : [ "239", "185", "201", "205", "207", "209", "211", "190", "192" ],
+    "comment" : {
+      "undefined" : "Applications that support and accelerate TensorFlow workflows."
+    },
+    "attributes" : [ "external" ],
+    "id" : "186",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://purl.org/milto/onto/mkl_dnn",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1590,22 +1610,8 @@
       "IRI-based" : "mkl_dnn"
     },
     "attributes" : [ "external" ],
-    "id" : "277",
-    "superClasses" : [ "37" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Tools",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Tools"
-    },
-    "subClasses" : [ "232", "170", "239", "214", "216", "218", "220", "222", "187" ],
-    "comment" : {
-      "undefined" : "Applications that support and accelerate TensorFlow workflows."
-    },
-    "attributes" : [ "external" ],
-    "id" : "171",
-    "superClasses" : [ "105" ]
+    "id" : "296",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Contrib_Directory",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1613,10 +1619,10 @@
     "label" : {
       "IRI-based" : "Contrib_Directory"
     },
-    "subClasses" : [ "191" ],
+    "subClasses" : [ "194" ],
     "attributes" : [ "external" ],
-    "id" : "45",
-    "superClasses" : [ "43" ]
+    "id" : "44",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://purl.org/milto/onto/jpeg",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1625,8 +1631,8 @@
       "IRI-based" : "jpeg"
     },
     "attributes" : [ "external" ],
-    "id" : "278",
-    "superClasses" : [ "37" ]
+    "id" : "297",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Google_Cloud_Public_Datasets",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1635,8 +1641,8 @@
       "IRI-based" : "Google_Cloud_Public_Datasets"
     },
     "attributes" : [ "external" ],
-    "id" : "237",
-    "superClasses" : [ "68" ]
+    "id" : "244",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://purl.org/milto/onto/kissfft",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1645,8 +1651,8 @@
       "IRI-based" : "kissfft"
     },
     "attributes" : [ "external" ],
-    "id" : "279",
-    "superClasses" : [ "37" ]
+    "id" : "298",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/file",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1655,8 +1661,8 @@
       "IRI-based" : "file"
     },
     "attributes" : [ "external" ],
-    "id" : "82",
-    "superClasses" : [ "83" ]
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/milto/onto/API_Libraries",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1665,8 +1671,8 @@
       "IRI-based" : "API_Libraries"
     },
     "attributes" : [ "external" ],
-    "id" : "290",
-    "superClasses" : [ "127" ]
+    "id" : "309",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.org/milto/onto/GPU_Usage",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1675,8 +1681,8 @@
       "IRI-based" : "GPU_Usage"
     },
     "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "30",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/gloo",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1685,8 +1691,8 @@
       "IRI-based" : "gloo"
     },
     "attributes" : [ "external" ],
-    "id" : "291",
-    "superClasses" : [ "37" ]
+    "id" : "310",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/memory",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1695,8 +1701,8 @@
       "IRI-based" : "memory"
     },
     "attributes" : [ "external" ],
-    "id" : "87",
-    "superClasses" : [ "83" ]
+    "id" : "9",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/milto/onto#js",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1704,8 +1710,8 @@
     "label" : {
       "IRI-based" : "js"
     },
-    "id" : "261",
-    "superClasses" : [ "19" ]
+    "id" : "265",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ML_Perf",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1714,18 +1720,8 @@
       "IRI-based" : "ML_Perf"
     },
     "attributes" : [ "external" ],
-    "id" : "216",
-    "superClasses" : [ "171" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Recommender_System",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Recommender_System"
-    },
-    "attributes" : [ "external" ],
-    "id" : "250",
-    "superClasses" : [ "107" ]
+    "id" : "207",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/llvm_openmp",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1734,8 +1730,18 @@
       "IRI-based" : "llvm_openmp"
     },
     "attributes" : [ "external" ],
-    "id" : "293",
-    "superClasses" : [ "37" ]
+    "id" : "312",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Recommender_System",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommender_System"
+    },
+    "attributes" : [ "external" ],
+    "id" : "255",
+    "superClasses" : [ "109" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Warning-style_error",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1744,8 +1750,8 @@
       "IRI-based" : "Warning-style_error"
     },
     "attributes" : [ "external" ],
-    "id" : "175",
-    "superClasses" : [ "9" ]
+    "id" : "172",
+    "superClasses" : [ "173" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Corner_Case",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1754,8 +1760,8 @@
       "IRI-based" : "Corner_Case"
     },
     "attributes" : [ "external" ],
-    "id" : "211",
-    "superClasses" : [ "55" ]
+    "id" : "226",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Shape_of_Input",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1764,8 +1770,8 @@
       "IRI-based" : "Wrong_Shape_of_Input"
     },
     "attributes" : [ "external" ],
-    "id" : "198",
-    "superClasses" : [ "123" ]
+    "id" : "213",
+    "superClasses" : [ "127" ]
   }, {
     "iri" : "http://purl.org/milto/onto/What_If",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1774,8 +1780,8 @@
       "IRI-based" : "What_If"
     },
     "attributes" : [ "external" ],
-    "id" : "220",
-    "superClasses" : [ "171" ]
+    "id" : "211",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Type_Confusion",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1784,8 +1790,8 @@
       "IRI-based" : "Type_Confusion"
     },
     "attributes" : [ "external" ],
-    "id" : "207",
-    "superClasses" : [ "55" ]
+    "id" : "222",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Ecosystem",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1793,13 +1799,13 @@
     "label" : {
       "IRI-based" : "Ecosystem"
     },
-    "subClasses" : [ "307", "2", "308", "69", "171" ],
+    "subClasses" : [ "327", "2", "328", "47", "186" ],
     "attributes" : [ "external" ],
-    "id" : "105",
-    "superClasses" : [ "104" ]
+    "id" : "107",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/acro_API",
-    "equivalent" : [ "127" ],
+    "equivalent" : [ "60" ],
     "baseIri" : "http://purl.org/milto/onto",
     "instances" : 0,
     "label" : {
@@ -1809,8 +1815,8 @@
       "en" : "API - Application Programming Interface."
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "121",
-    "superClasses" : [ "44" ]
+    "id" : "113",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Responsible_AI",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1819,8 +1825,8 @@
       "IRI-based" : "Responsible_AI"
     },
     "attributes" : [ "external" ],
-    "id" : "308",
-    "superClasses" : [ "105" ]
+    "id" : "328",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Tensorflow.js_Models",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1829,8 +1835,8 @@
       "IRI-based" : "Tensorflow.js_Models"
     },
     "attributes" : [ "external" ],
-    "id" : "30",
-    "superClasses" : [ "26" ]
+    "id" : "181",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "http://purl.org/milto/onto/benchmark",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1839,8 +1845,8 @@
       "IRI-based" : "benchmark"
     },
     "attributes" : [ "external" ],
-    "id" : "295",
-    "superClasses" : [ "37" ]
+    "id" : "329",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Build_failure",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1849,8 +1855,22 @@
       "IRI-based" : "Build_failure"
     },
     "attributes" : [ "external" ],
-    "id" : "181",
-    "superClasses" : [ "9" ]
+    "id" : "179",
+    "superClasses" : [ "173" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "102",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "40",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://purl.org/milto/onto/Diretory",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1858,10 +1878,10 @@
     "label" : {
       "IRI-based" : "Diretory"
     },
-    "subClasses" : [ "151", "101", "19", "37", "78" ],
+    "subClasses" : [ "120", "104", "73", "36", "56" ],
     "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "104" ]
+    "id" : "41",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/function",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1870,8 +1890,8 @@
       "IRI-based" : "function"
     },
     "attributes" : [ "external" ],
-    "id" : "332",
-    "superClasses" : [ "32" ]
+    "id" : "349",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/runtime_fallback",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1880,8 +1900,8 @@
       "IRI-based" : "runtime_fallback"
     },
     "attributes" : [ "external" ],
-    "id" : "333",
-    "superClasses" : [ "32" ]
+    "id" : "350",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/gemmlowp",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1890,11 +1910,11 @@
       "IRI-based" : "gemmlowp"
     },
     "attributes" : [ "external" ],
-    "id" : "334",
-    "superClasses" : [ "37" ]
+    "id" : "351",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/acro_SUT",
-    "equivalent" : [ "340" ],
+    "equivalent" : [ "302" ],
     "baseIri" : "http://purl.org/milto/onto",
     "instances" : 0,
     "label" : {
@@ -1904,7 +1924,7 @@
       "en" : "SUT - System  Under Test"
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "339"
+    "id" : "355"
   }, {
     "iri" : "http://purl.org/milto/onto/flatbuffers",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1913,8 +1933,8 @@
       "IRI-based" : "flatbuffers"
     },
     "attributes" : [ "external" ],
-    "id" : "336",
-    "superClasses" : [ "37" ]
+    "id" : "346",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Probability",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1923,7 +1943,7 @@
       "IRI-based" : "TensorFlow_Probability"
     },
     "attributes" : [ "external" ],
-    "id" : "349",
+    "id" : "68",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Algorithm",
@@ -1933,8 +1953,8 @@
       "IRI-based" : "Algorithm"
     },
     "attributes" : [ "external" ],
-    "id" : "205",
-    "superClasses" : [ "55" ]
+    "id" : "220",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/highwayhash",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1943,8 +1963,8 @@
       "IRI-based" : "highwayhash"
     },
     "attributes" : [ "external" ],
-    "id" : "327",
-    "superClasses" : [ "37" ]
+    "id" : "367",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Recommenders",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1953,7 +1973,7 @@
       "IRI-based" : "TensorFlow_Recommenders"
     },
     "attributes" : [ "external" ],
-    "id" : "75",
+    "id" : "49",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ir",
@@ -1963,8 +1983,8 @@
       "IRI-based" : "ir"
     },
     "attributes" : [ "external" ],
-    "id" : "356",
-    "superClasses" : [ "32" ]
+    "id" : "372",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core_util",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1973,8 +1993,8 @@
       "IRI-based" : "core_util"
     },
     "attributes" : [ "external" ],
-    "id" : "357",
-    "superClasses" : [ "32" ]
+    "id" : "373",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Model_Card_Toolkit",
     "baseIri" : "http://purl.org/milto/onto",
@@ -1983,7 +2003,7 @@
       "IRI-based" : "Model_Card_Toolkit"
     },
     "attributes" : [ "external" ],
-    "id" : "382",
+    "id" : "392",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Model_Analysis",
@@ -1996,7 +2016,7 @@
       "undefined" : "The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook."
     },
     "attributes" : [ "external" ],
-    "id" : "383",
+    "id" : "393",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/hwloc",
@@ -2006,8 +2026,18 @@
       "IRI-based" : "hwloc"
     },
     "attributes" : [ "external" ],
-    "id" : "314",
-    "superClasses" : [ "37" ]
+    "id" : "317",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl/layers",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "layers"
+    },
+    "attributes" : [ "external" ],
+    "id" : "301",
+    "superClasses" : [ "302" ]
   }, {
     "iri" : "http://purl.org/milto/onto/contrib/seq2seq",
     "baseIri" : "http://purl.org/milto/onto/contrib",
@@ -2016,8 +2046,8 @@
       "IRI-based" : "seq2seq"
     },
     "attributes" : [ "external" ],
-    "id" : "191",
-    "superClasses" : [ "45" ]
+    "id" : "194",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/protobuf",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -2026,8 +2056,8 @@
       "IRI-based" : "protobuf"
     },
     "attributes" : [ "external" ],
-    "id" : "397",
-    "superClasses" : [ "32" ]
+    "id" : "410",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Visual_Block",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2036,8 +2066,8 @@
       "IRI-based" : "Visual_Block"
     },
     "attributes" : [ "external" ],
-    "id" : "187",
-    "superClasses" : [ "171" ]
+    "id" : "192",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/contrib",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2045,10 +2075,10 @@
     "label" : {
       "IRI-based" : "contrib"
     },
-    "subClasses" : [ "77" ],
+    "subClasses" : [ "55" ],
     "attributes" : [ "external" ],
-    "id" : "78",
-    "superClasses" : [ "42" ]
+    "id" : "56",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Framework",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2056,10 +2086,10 @@
     "label" : {
       "IRI-based" : "Framework"
     },
-    "subClasses" : [ "82", "87", "91" ],
+    "subClasses" : [ "4", "9", "13" ],
     "attributes" : [ "external" ],
-    "id" : "83",
-    "superClasses" : [ "44" ]
+    "id" : "5",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Colab",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2071,8 +2101,8 @@
       "undefined" : "Jupyter Notebook environment that is not necessary be setting and runs in the cloud."
     },
     "attributes" : [ "external" ],
-    "id" : "214",
-    "superClasses" : [ "171" ]
+    "id" : "205",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/seq2seq",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2081,8 +2111,8 @@
       "IRI-based" : "seq2seq"
     },
     "attributes" : [ "external" ],
-    "id" : "77",
-    "superClasses" : [ "78" ]
+    "id" : "55",
+    "superClasses" : [ "56" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Tool",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2091,8 +2121,8 @@
       "IRI-based" : "Tool"
     },
     "attributes" : [ "external" ],
-    "id" : "134",
-    "superClasses" : [ "44" ]
+    "id" : "77",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/protobuf_tp",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2101,8 +2131,8 @@
       "IRI-based" : "protobuf_tp"
     },
     "attributes" : [ "external" ],
-    "id" : "363",
-    "superClasses" : [ "37" ]
+    "id" : "371",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/CPU",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2111,8 +2141,8 @@
       "IRI-based" : "CPU"
     },
     "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "60" ]
+    "id" : "93",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "http://purl.org/milto/onto/pybind11_protobuf",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2121,8 +2151,8 @@
       "IRI-based" : "pybind11_protobuf"
     },
     "attributes" : [ "external" ],
-    "id" : "359",
-    "superClasses" : [ "37" ]
+    "id" : "366",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/API_python",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2131,8 +2161,8 @@
       "IRI-based" : "API_python"
     },
     "attributes" : [ "external" ],
-    "id" : "422",
-    "superClasses" : [ "127" ]
+    "id" : "434",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Wrong_Type_of_Input_Data",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2141,8 +2171,8 @@
       "IRI-based" : "Wrong_Type_of_Input_Data"
     },
     "attributes" : [ "external" ],
-    "id" : "199",
-    "superClasses" : [ "123" ]
+    "id" : "214",
+    "superClasses" : [ "127" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Layer_Properties",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2151,8 +2181,8 @@
       "IRI-based" : "Layer_Properties"
     },
     "attributes" : [ "external" ],
-    "id" : "196",
-    "superClasses" : [ "173" ]
+    "id" : "199",
+    "superClasses" : [ "188" ]
   }, {
     "iri" : "http://purl.org/milto/onto#distribute",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2160,8 +2190,8 @@
     "label" : {
       "IRI-based" : "distribute"
     },
-    "id" : "283",
-    "superClasses" : [ "19" ]
+    "id" : "288",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Library",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2170,8 +2200,8 @@
       "IRI-based" : "Library"
     },
     "attributes" : [ "external" ],
-    "id" : "118",
-    "superClasses" : [ "44" ]
+    "id" : "136",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Recommendation_systems",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2180,8 +2210,8 @@
       "IRI-based" : "Recommendation_systems"
     },
     "attributes" : [ "external" ],
-    "id" : "307",
-    "superClasses" : [ "105" ]
+    "id" : "327",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Task",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2189,10 +2219,10 @@
     "label" : {
       "IRI-based" : "Task"
     },
-    "subClasses" : [ "247", "250", "254", "257" ],
+    "subClasses" : [ "252", "255", "258", "229" ],
     "attributes" : [ "external" ],
-    "id" : "107",
-    "superClasses" : [ "104" ]
+    "id" : "109",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/tpu",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2201,8 +2231,8 @@
       "IRI-based" : "tpu"
     },
     "attributes" : [ "external" ],
-    "id" : "423",
-    "superClasses" : [ "32" ]
+    "id" : "435",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/gpus",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2211,8 +2241,8 @@
       "IRI-based" : "gpus"
     },
     "attributes" : [ "external" ],
-    "id" : "345",
-    "superClasses" : [ "37" ]
+    "id" : "359",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/remote_config",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2221,8 +2251,8 @@
       "IRI-based" : "remote_config"
     },
     "attributes" : [ "external" ],
-    "id" : "331",
-    "superClasses" : [ "37" ]
+    "id" : "421",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/boringssl",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2231,8 +2261,8 @@
       "IRI-based" : "boringssl"
     },
     "attributes" : [ "external" ],
-    "id" : "329",
-    "superClasses" : [ "37" ]
+    "id" : "414",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Dimension_Mismatch",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2241,8 +2271,8 @@
       "IRI-based" : "Dimension_Mismatch"
     },
     "attributes" : [ "external" ],
-    "id" : "208",
-    "superClasses" : [ "55" ]
+    "id" : "223",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Loss_Function",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2251,8 +2281,8 @@
       "IRI-based" : "Loss_Function"
     },
     "attributes" : [ "external" ],
-    "id" : "162",
-    "superClasses" : [ "13" ]
+    "id" : "451",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Model_Optimization_Toolkit",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2261,7 +2291,7 @@
       "IRI-based" : "Model_Optimization_Toolkit"
     },
     "attributes" : [ "external" ],
-    "id" : "1",
+    "id" : "24",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Natural_Language_Processing",
@@ -2271,8 +2301,8 @@
       "IRI-based" : "Natural_Language_Processing"
     },
     "attributes" : [ "external" ],
-    "id" : "254",
-    "superClasses" : [ "107" ]
+    "id" : "258",
+    "superClasses" : [ "109" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Recommenders_Addons",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2281,7 +2311,7 @@
       "IRI-based" : "TensorFlow_Recommenders_Addons"
     },
     "attributes" : [ "external" ],
-    "id" : "425",
+    "id" : "432",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_IO",
@@ -2291,7 +2321,7 @@
       "IRI-based" : "TensorFlow_IO"
     },
     "attributes" : [ "external" ],
-    "id" : "413",
+    "id" : "460",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/distributed_runtime",
@@ -2301,8 +2331,8 @@
       "IRI-based" : "distributed_runtime"
     },
     "attributes" : [ "external" ],
-    "id" : "447",
-    "superClasses" : [ "32" ]
+    "id" : "461",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/shardy",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2311,8 +2341,8 @@
       "IRI-based" : "shardy"
     },
     "attributes" : [ "external" ],
-    "id" : "303",
-    "superClasses" : [ "37" ]
+    "id" : "315",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Lattice",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2321,7 +2351,7 @@
       "IRI-based" : "TensorFlow_Lattice"
     },
     "attributes" : [ "external" ],
-    "id" : "448",
+    "id" : "62",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Logic_error",
@@ -2331,8 +2361,8 @@
       "IRI-based" : "Logic_error"
     },
     "attributes" : [ "external" ],
-    "id" : "206",
-    "superClasses" : [ "55" ]
+    "id" : "221",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/summary",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2341,8 +2371,8 @@
       "IRI-based" : "summary"
     },
     "attributes" : [ "external" ],
-    "id" : "449",
-    "superClasses" : [ "32" ]
+    "id" : "146",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/third-party",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2350,10 +2380,10 @@
     "label" : {
       "IRI-based" : "third-party"
     },
-    "subClasses" : [ "450", "321", "325", "323", "291", "316", "36", "293", "312", "310", "314", "303", "188", "306", "70", "197", "200", "201", "299", "295", "97", "98", "369", "109", "373", "371", "363", "361", "241", "365", "359", "355", "353", "334", "345", "351", "348", "338", "336", "343", "258", "327", "331", "329", "406", "404", "277", "408", "401", "399", "278", "393", "391", "279", "395", "159" ],
+    "subClasses" : [ "336", "341", "339", "332", "310", "334", "35", "312", "326", "324", "317", "315", "202", "319", "71", "212", "215", "216", "383", "329", "99", "100", "377", "111", "380", "375", "371", "369", "261", "361", "366", "364", "354", "351", "359", "357", "344", "348", "346", "419", "278", "367", "421", "414", "412", "416", "296", "404", "409", "407", "297", "398", "402", "298", "396", "169" ],
     "attributes" : [ "external" ],
-    "id" : "37",
-    "superClasses" : [ "42" ]
+    "id" : "36",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/grappler",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -2362,8 +2392,8 @@
       "IRI-based" : "grappler"
     },
     "attributes" : [ "external" ],
-    "id" : "149",
-    "superClasses" : [ "32" ]
+    "id" : "143",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/graph",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -2372,18 +2402,8 @@
       "IRI-based" : "graph"
     },
     "attributes" : [ "external" ],
-    "id" : "455",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Hyperparameters",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Hyperparameters"
-    },
-    "attributes" : [ "external" ],
-    "id" : "166",
-    "superClasses" : [ "13" ]
+    "id" : "466",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/py",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2392,8 +2412,18 @@
       "IRI-based" : "py"
     },
     "attributes" : [ "external" ],
-    "id" : "361",
-    "superClasses" : [ "37" ]
+    "id" : "369",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Hyperparameters",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hyperparameters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "467",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/farmhash",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2402,8 +2432,8 @@
       "IRI-based" : "farmhash"
     },
     "attributes" : [ "external" ],
-    "id" : "353",
-    "superClasses" : [ "37" ]
+    "id" : "354",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto#docs_src",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2411,8 +2441,8 @@
     "label" : {
       "IRI-based" : "docs_src"
     },
-    "id" : "288",
-    "superClasses" : [ "19" ]
+    "id" : "293",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Neural_Structured_Learning",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2421,23 +2451,23 @@
       "IRI-based" : "Neural_Structured_Learning"
     },
     "attributes" : [ "external" ],
-    "id" : "428",
+    "id" : "424",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/API",
-    "equivalent" : [ "121" ],
+    "equivalent" : [ "113" ],
     "baseIri" : "http://purl.org/milto/onto",
     "instances" : 0,
     "label" : {
       "IRI-based" : "API"
     },
-    "subClasses" : [ "376", "290", "380", "378", "422" ],
+    "subClasses" : [ "455", "309", "458", "453", "434" ],
     "comment" : {
       "en" : "API's . The API's function is to link between different applications serving the user. They enable integration between different systems and make user actions faster with the expected responses. The API always works in the background, so the average user does not even see the API in operation. TensorFlow provides APIs in many programming languages as C, C++, Java, and Python, which one are located in the python, c, cc and java directories."
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "127",
-    "superClasses" : [ "44" ]
+    "id" : "60",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/vulkan_headers",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2446,8 +2476,8 @@
       "IRI-based" : "vulkan_headers"
     },
     "attributes" : [ "external" ],
-    "id" : "348",
-    "superClasses" : [ "37" ]
+    "id" : "344",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_GNN",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2456,7 +2486,7 @@
       "IRI-based" : "TensorFlow_GNN"
     },
     "attributes" : [ "external" ],
-    "id" : "415",
+    "id" : "58",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Libraries_&_Extensions",
@@ -2465,10 +2495,10 @@
     "label" : {
       "IRI-based" : "Libraries_&_Extensions"
     },
-    "subClasses" : [ "442", "119", "445", "440", "128", "437", "168", "432", "243", "382", "38", "425", "430", "428", "39", "421", "383", "413", "411", "417", "415", "448", "349", "454", "113", "57", "62", "66", "72", "75", "80", "85", "89", "93", "49", "53", "1", "7", "11" ],
+    "subClasses" : [ "449", "123", "443", "447", "130", "438", "183", "441", "263", "392", "37", "432", "426", "424", "38", "428", "393", "460", "465", "116", "58", "62", "68", "75", "79", "82", "86", "91", "95", "49", "53", "1", "7", "11", "15", "20", "24", "28", "32" ],
     "attributes" : [ "external" ],
     "id" : "2",
-    "superClasses" : [ "105" ]
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow.js",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2477,21 +2507,22 @@
       "IRI-based" : "TensorFlow.js"
     },
     "attributes" : [ "external" ],
-    "id" : "80",
+    "id" : "53",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/SUT",
-    "equivalent" : [ "339" ],
+    "equivalent" : [ "355" ],
     "baseIri" : "http://purl.org/milto/onto",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SUT"
     },
+    "subClasses" : [ "301" ],
     "comment" : {
       "en" : "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."
     },
     "attributes" : [ "external", "equivalent" ],
-    "id" : "340"
+    "id" : "302"
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Data_Validation",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2500,7 +2531,7 @@
       "IRI-based" : "TensorFlow_Data_Validation"
     },
     "attributes" : [ "external" ],
-    "id" : "93",
+    "id" : "11",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Kernel",
@@ -2513,8 +2544,8 @@
       "en" : "Implements the mains deep learning algorithms."
     },
     "attributes" : [ "external" ],
-    "id" : "125",
-    "superClasses" : [ "44" ]
+    "id" : "118",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Version_Keras",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2523,8 +2554,8 @@
       "IRI-based" : "Version_Keras"
     },
     "attributes" : [ "external" ],
-    "id" : "228",
-    "superClasses" : [ "108" ]
+    "id" : "235",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/common_runtime",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -2533,8 +2564,8 @@
       "IRI-based" : "common_runtime"
     },
     "attributes" : [ "external" ],
-    "id" : "457",
-    "superClasses" : [ "32" ]
+    "id" : "469",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Official_Datasets",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2543,8 +2574,8 @@
       "IRI-based" : "TensorFlow_Official_Datasets"
     },
     "attributes" : [ "external" ],
-    "id" : "230",
-    "superClasses" : [ "68" ]
+    "id" : "237",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://purl.org/milto/onto/android",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2553,8 +2584,8 @@
       "IRI-based" : "android"
     },
     "attributes" : [ "external" ],
-    "id" : "321",
-    "superClasses" : [ "37" ]
+    "id" : "341",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Text",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2563,7 +2594,7 @@
       "IRI-based" : "TensorFlow_Text"
     },
     "attributes" : [ "external" ],
-    "id" : "432",
+    "id" : "441",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto#python",
@@ -2572,8 +2603,8 @@
     "label" : {
       "IRI-based" : "python"
     },
-    "id" : "28",
-    "superClasses" : [ "19" ]
+    "id" : "281",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Directory_API",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2582,8 +2613,8 @@
       "IRI-based" : "Directory_API"
     },
     "attributes" : [ "external" ],
-    "id" : "458",
-    "superClasses" : [ "32" ]
+    "id" : "470",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Model_Garden",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2592,8 +2623,8 @@
       "IRI-based" : "Model_Garden"
     },
     "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "26" ]
+    "id" : "180",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_JVM",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2602,7 +2633,7 @@
       "IRI-based" : "TensorFlow_JVM"
     },
     "attributes" : [ "external" ],
-    "id" : "421",
+    "id" : "428",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto#java",
@@ -2611,8 +2642,15 @@
     "label" : {
       "IRI-based" : "java"
     },
-    "id" : "270",
-    "superClasses" : [ "19" ]
+    "individuals" : [ {
+      "iri" : "http://www.co-ode.org/ontologies/ont.owl/java",
+      "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+      "labels" : {
+        "IRI-based" : "java"
+      }
+    } ],
+    "id" : "275",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Dopamine",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2621,7 +2659,7 @@
       "IRI-based" : "Dopamine"
     },
     "attributes" : [ "external" ],
-    "id" : "417",
+    "id" : "116",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/compute_library",
@@ -2631,8 +2669,8 @@
       "IRI-based" : "compute_library"
     },
     "attributes" : [ "external" ],
-    "id" : "310",
-    "superClasses" : [ "37" ]
+    "id" : "324",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Tensors_&_Inputs",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2640,10 +2678,10 @@
     "label" : {
       "IRI-based" : "Tensors_&_Inputs"
     },
-    "subClasses" : [ "123", "160" ],
+    "subClasses" : [ "127", "170" ],
     "attributes" : [ "external" ],
-    "id" : "47",
-    "superClasses" : [ "5" ]
+    "id" : "17",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/java",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2655,8 +2693,8 @@
       "undefined" : "The directory where the TensorFlow API Java source code is located."
     },
     "attributes" : [ "external" ],
-    "id" : "459",
-    "superClasses" : [ "32" ]
+    "id" : "471",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Functional_error",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2665,8 +2703,8 @@
       "IRI-based" : "Functional_error"
     },
     "attributes" : [ "external" ],
-    "id" : "185",
-    "superClasses" : [ "9" ]
+    "id" : "472",
+    "superClasses" : [ "173" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Sonnet",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2675,7 +2713,7 @@
       "IRI-based" : "Sonnet"
     },
     "attributes" : [ "external" ],
-    "id" : "49",
+    "id" : "15",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/python",
@@ -2688,8 +2726,8 @@
       "undefined" : "The directory where the TensorFlow API Python source code is located."
     },
     "attributes" : [ "external" ],
-    "id" : "460",
-    "superClasses" : [ "32" ]
+    "id" : "151",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Lite_Support",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2698,7 +2736,7 @@
       "IRI-based" : "TensorFlow_Lite_Support"
     },
     "attributes" : [ "external" ],
-    "id" : "11",
+    "id" : "32",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Privacy",
@@ -2708,7 +2746,7 @@
       "IRI-based" : "TensorFlow_Privacy"
     },
     "attributes" : [ "external" ],
-    "id" : "442",
+    "id" : "449",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/absl",
@@ -2718,8 +2756,8 @@
       "IRI-based" : "absl"
     },
     "attributes" : [ "external" ],
-    "id" : "373",
-    "superClasses" : [ "37" ]
+    "id" : "380",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/mkl",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2728,8 +2766,8 @@
       "IRI-based" : "mkl"
     },
     "attributes" : [ "external" ],
-    "id" : "371",
-    "superClasses" : [ "37" ]
+    "id" : "375",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/NdArray",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2738,7 +2776,7 @@
       "IRI-based" : "NdArray"
     },
     "attributes" : [ "external" ],
-    "id" : "445",
+    "id" : "443",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ruy",
@@ -2748,8 +2786,8 @@
       "IRI-based" : "ruy"
     },
     "attributes" : [ "external" ],
-    "id" : "365",
-    "superClasses" : [ "37" ]
+    "id" : "361",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/hexagon",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2758,8 +2796,8 @@
       "IRI-based" : "hexagon"
     },
     "attributes" : [ "external" ],
-    "id" : "351",
-    "superClasses" : [ "37" ]
+    "id" : "357",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/lib",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2768,8 +2806,8 @@
       "IRI-based" : "lib"
     },
     "attributes" : [ "external" ],
-    "id" : "461",
-    "superClasses" : [ "32" ]
+    "id" : "473",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Time_Series_Forecasting",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2778,8 +2816,8 @@
       "IRI-based" : "Time_Series_Forecasting"
     },
     "attributes" : [ "external" ],
-    "id" : "257",
-    "superClasses" : [ "107" ]
+    "id" : "229",
+    "superClasses" : [ "109" ]
   }, {
     "iri" : "http://purl.org/milto/onto/nvtx",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2788,8 +2826,8 @@
       "IRI-based" : "nvtx"
     },
     "attributes" : [ "external" ],
-    "id" : "338",
-    "superClasses" : [ "37" ]
+    "id" : "348",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Kaggle_Model",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2798,8 +2836,8 @@
       "IRI-based" : "Kaggle_Model"
     },
     "attributes" : [ "external" ],
-    "id" : "34",
-    "superClasses" : [ "26" ]
+    "id" : "182",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Hub",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2808,7 +2846,7 @@
       "IRI-based" : "TensorFlow_Hub"
     },
     "attributes" : [ "external" ],
-    "id" : "454",
+    "id" : "75",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Ranking",
@@ -2818,7 +2856,7 @@
       "IRI-based" : "TensorFlow_Ranking"
     },
     "attributes" : [ "external" ],
-    "id" : "57",
+    "id" : "82",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Referenced_types_error",
@@ -2828,8 +2866,8 @@
       "IRI-based" : "Referenced_types_error"
     },
     "attributes" : [ "external" ],
-    "id" : "210",
-    "superClasses" : [ "55" ]
+    "id" : "225",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/opencl_headers",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2838,8 +2876,8 @@
       "IRI-based" : "opencl_headers"
     },
     "attributes" : [ "external" ],
-    "id" : "404",
-    "superClasses" : [ "37" ]
+    "id" : "416",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/ops",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2848,8 +2886,8 @@
       "IRI-based" : "ops"
     },
     "attributes" : [ "external" ],
-    "id" : "462",
-    "superClasses" : [ "32" ]
+    "id" : "474",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/icu",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2858,8 +2896,8 @@
       "IRI-based" : "icu"
     },
     "attributes" : [ "external" ],
-    "id" : "399",
-    "superClasses" : [ "37" ]
+    "id" : "407",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/tf_runtime",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2868,8 +2906,8 @@
       "IRI-based" : "tf_runtime"
     },
     "attributes" : [ "external" ],
-    "id" : "393",
-    "superClasses" : [ "37" ]
+    "id" : "398",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Layers",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2877,10 +2915,10 @@
     "label" : {
       "IRI-based" : "Layers"
     },
-    "subClasses" : [ "193", "172", "196" ],
+    "subClasses" : [ "196", "187", "199" ],
     "attributes" : [ "external" ],
-    "id" : "173",
-    "superClasses" : [ "51" ]
+    "id" : "188",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "http://purl.org/milto/onto/API_cc",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2888,9 +2926,16 @@
     "label" : {
       "IRI-based" : "API_cc"
     },
+    "individuals" : [ {
+      "iri" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIcc",
+      "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+      "labels" : {
+        "IRI-based" : "codeAPIcc"
+      }
+    } ],
     "attributes" : [ "external" ],
-    "id" : "380",
-    "superClasses" : [ "127" ]
+    "id" : "458",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.org/milto/onto/tools",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2899,8 +2944,8 @@
       "IRI-based" : "tools"
     },
     "attributes" : [ "external" ],
-    "id" : "151",
-    "superClasses" : [ "42" ]
+    "id" : "120",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Categories_of_Symptoms",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2908,10 +2953,10 @@
     "label" : {
       "IRI-based" : "Categories_of_Symptoms"
     },
-    "subClasses" : [ "175", "177", "179", "181", "183", "185" ],
+    "subClasses" : [ "172", "175", "177", "179", "295", "472" ],
     "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "5" ]
+    "id" : "173",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/fft2d",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2920,8 +2965,8 @@
       "IRI-based" : "fft2d"
     },
     "attributes" : [ "external" ],
-    "id" : "316",
-    "superClasses" : [ "37" ]
+    "id" : "334",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/profile",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -2930,8 +2975,8 @@
       "IRI-based" : "profile"
     },
     "attributes" : [ "external" ],
-    "id" : "463",
-    "superClasses" : [ "32" ]
+    "id" : "475",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/tensorrt",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2940,8 +2985,8 @@
       "IRI-based" : "tensorrt"
     },
     "attributes" : [ "external" ],
-    "id" : "312",
-    "superClasses" : [ "37" ]
+    "id" : "326",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Model_Remediation",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2950,7 +2995,7 @@
       "IRI-based" : "TensorFlow_Model_Remediation"
     },
     "attributes" : [ "external" ],
-    "id" : "411",
+    "id" : "465",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Trainning",
@@ -2959,10 +3004,10 @@
     "label" : {
       "IRI-based" : "Trainning"
     },
-    "subClasses" : [ "162", "164", "166", "16", "158", "132", "475" ],
+    "subClasses" : [ "451", "219", "467", "66", "168", "133", "487" ],
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "5" ]
+    "id" : "134",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/API_java",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2970,9 +3015,16 @@
     "label" : {
       "IRI-based" : "API_java"
     },
+    "individuals" : [ {
+      "iri" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIjava",
+      "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+      "labels" : {
+        "IRI-based" : "codeAPIjava"
+      }
+    } ],
     "attributes" : [ "external" ],
-    "id" : "376",
-    "superClasses" : [ "127" ]
+    "id" : "455",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Image_Classification",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2981,8 +3033,8 @@
       "IRI-based" : "Image_Classification"
     },
     "attributes" : [ "external" ],
-    "id" : "247",
-    "superClasses" : [ "107" ]
+    "id" : "252",
+    "superClasses" : [ "109" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Graphics",
     "baseIri" : "http://purl.org/milto/onto",
@@ -2991,7 +3043,7 @@
       "IRI-based" : "TensorFlow_Graphics"
     },
     "attributes" : [ "external" ],
-    "id" : "62",
+    "id" : "86",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Lite_Micro",
@@ -3001,7 +3053,7 @@
       "IRI-based" : "TensorFlow_Lite_Micro"
     },
     "attributes" : [ "external" ],
-    "id" : "72",
+    "id" : "95",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/example",
@@ -3012,7 +3064,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "479",
-    "superClasses" : [ "32" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3020,10 +3072,10 @@
     "label" : {
       "IRI-based" : "core"
     },
-    "subClasses" : [ "457", "455", "332", "169", "35", "333", "480", "242", "463", "458", "423", "135", "461", "447", "251", "139", "142", "356", "479", "397", "481", "357", "459", "462", "157", "156", "449", "470", "460", "204", "474", "477", "141", "144", "146", "111", "149" ],
+    "subClasses" : [ "469", "466", "349", "184", "33", "350", "490", "262", "475", "470", "435", "139", "473", "461", "272", "144", "147", "372", "479", "410", "482", "373", "471", "474", "166", "165", "146", "149", "151", "153", "155", "157", "159", "161", "163", "114", "143" ],
     "attributes" : [ "external" ],
-    "id" : "32",
-    "superClasses" : [ "19" ]
+    "id" : "34",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto#tools",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3031,8 +3083,8 @@
     "label" : {
       "IRI-based" : "tools"
     },
-    "id" : "267",
-    "superClasses" : [ "19" ]
+    "id" : "271",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/eigen3",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3041,8 +3093,8 @@
       "IRI-based" : "eigen3"
     },
     "attributes" : [ "external" ],
-    "id" : "369",
-    "superClasses" : [ "37" ]
+    "id" : "377",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Lite_Model_Maker",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3051,7 +3103,7 @@
       "IRI-based" : "TensorFlow_Lite_Model_Maker"
     },
     "attributes" : [ "external" ],
-    "id" : "53",
+    "id" : "20",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/data",
@@ -3061,8 +3113,8 @@
       "IRI-based" : "data"
     },
     "attributes" : [ "external" ],
-    "id" : "474",
-    "superClasses" : [ "32" ]
+    "id" : "155",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/activity_watcher",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3071,8 +3123,8 @@
       "IRI-based" : "activity_watcher"
     },
     "attributes" : [ "external" ],
-    "id" : "477",
-    "superClasses" : [ "32" ]
+    "id" : "157",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Components",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3080,10 +3132,10 @@
     "label" : {
       "IRI-based" : "Components"
     },
-    "subClasses" : [ "94", "60", "83", "118", "121", "125", "127", "99", "131", "134", "43", "103" ],
+    "subClasses" : [ "96", "89", "5", "136", "113", "118", "60", "64", "70", "77", "42", "84" ],
     "attributes" : [ "external" ],
-    "id" : "44",
-    "superClasses" : [ "104" ]
+    "id" : "43",
+    "superClasses" : [ "106" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Serving",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3092,7 +3144,7 @@
       "IRI-based" : "TensorFlow_Serving"
     },
     "attributes" : [ "external" ],
-    "id" : "437",
+    "id" : "438",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Validation/Testing",
@@ -3102,8 +3154,8 @@
       "IRI-based" : "Testing"
     },
     "attributes" : [ "external" ],
-    "id" : "475",
-    "superClasses" : [ "13" ]
+    "id" : "487",
+    "superClasses" : [ "134" ]
   }, {
     "iri" : "http://purl.org/milto/onto/MLIR",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3112,8 +3164,28 @@
       "IRI-based" : "MLIR"
     },
     "attributes" : [ "external" ],
-    "id" : "218",
-    "superClasses" : [ "171" ]
+    "id" : "209",
+    "superClasses" : [ "186" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/API_c",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "API_c"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/milto/onto#codeAPIc",
+      "baseIri" : "http://purl.org/milto/onto",
+      "comment" : {
+        "en" : "Source code implemented for the c API functionality and stored in the directory c."
+      },
+      "labels" : {
+        "IRI-based" : "codeAPIc"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "453",
+    "superClasses" : [ "60" ]
   }, {
     "iri" : "http://purl.org/milto/onto/implib_so",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3122,18 +3194,8 @@
       "IRI-based" : "implib_so"
     },
     "attributes" : [ "external" ],
-    "id" : "406",
-    "superClasses" : [ "37" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/API_c",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "API_c"
-    },
-    "attributes" : [ "external" ],
-    "id" : "378",
-    "superClasses" : [ "127" ]
+    "id" : "412",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/profiler",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3142,8 +3204,8 @@
       "IRI-based" : "profiler"
     },
     "attributes" : [ "external" ],
-    "id" : "481",
-    "superClasses" : [ "32" ]
+    "id" : "482",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Processing",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3152,8 +3214,8 @@
       "IRI-based" : "Processing"
     },
     "attributes" : [ "external" ],
-    "id" : "212",
-    "superClasses" : [ "55" ]
+    "id" : "227",
+    "superClasses" : [ "26" ]
   }, {
     "iri" : "http://purl.org/milto/onto/stablehlo",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3162,8 +3224,8 @@
       "IRI-based" : "stablehlo"
     },
     "attributes" : [ "external" ],
-    "id" : "408",
-    "superClasses" : [ "37" ]
+    "id" : "404",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/triton",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3172,8 +3234,8 @@
       "IRI-based" : "triton"
     },
     "attributes" : [ "external" ],
-    "id" : "401",
-    "superClasses" : [ "37" ]
+    "id" : "409",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Platform",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3181,10 +3243,10 @@
     "label" : {
       "IRI-based" : "Platform"
     },
-    "subClasses" : [ "59", "64" ],
+    "subClasses" : [ "88", "93" ],
     "attributes" : [ "external" ],
-    "id" : "60",
-    "superClasses" : [ "44" ]
+    "id" : "89",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://purl.org/milto/onto/mpi",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3193,8 +3255,8 @@
       "IRI-based" : "mpi"
     },
     "attributes" : [ "external" ],
-    "id" : "395",
-    "superClasses" : [ "37" ]
+    "id" : "396",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/examples",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3203,8 +3265,8 @@
       "IRI-based" : "examples"
     },
     "attributes" : [ "external" ],
-    "id" : "95",
-    "superClasses" : [ "94" ]
+    "id" : "97",
+    "superClasses" : [ "96" ]
   }, {
     "iri" : "http://purl.org/milto/onto/XLA",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3213,8 +3275,8 @@
       "IRI-based" : "XLA"
     },
     "attributes" : [ "external" ],
-    "id" : "232",
-    "superClasses" : [ "171" ]
+    "id" : "239",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/googleapis",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3223,8 +3285,8 @@
       "IRI-based" : "googleapis"
     },
     "attributes" : [ "external" ],
-    "id" : "450",
-    "superClasses" : [ "37" ]
+    "id" : "336",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/KerasNLP",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3233,7 +3295,7 @@
       "IRI-based" : "KerasNLP"
     },
     "attributes" : [ "external" ],
-    "id" : "440",
+    "id" : "447",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Missing_Preprocessing",
@@ -3243,18 +3305,8 @@
       "IRI-based" : "Missing_Preprocessing"
     },
     "attributes" : [ "external" ],
-    "id" : "21",
-    "superClasses" : [ "16" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/python_runtime",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "python_runtime"
-    },
-    "attributes" : [ "external" ],
-    "id" : "323",
-    "superClasses" : [ "37" ]
+    "id" : "167",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://purl.org/milto/onto/dlpack",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3263,8 +3315,18 @@
       "IRI-based" : "dlpack"
     },
     "attributes" : [ "external" ],
-    "id" : "325",
-    "superClasses" : [ "37" ]
+    "id" : "339",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/python_runtime",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "python_runtime"
+    },
+    "attributes" : [ "external" ],
+    "id" : "332",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/ops",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -3273,8 +3335,8 @@
       "IRI-based" : "ops"
     },
     "attributes" : [ "external" ],
-    "id" : "480",
-    "superClasses" : [ "32" ]
+    "id" : "490",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Federated",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3283,7 +3345,7 @@
       "IRI-based" : "TensorFlow_Federated"
     },
     "attributes" : [ "external" ],
-    "id" : "430",
+    "id" : "426",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto#examples",
@@ -3292,8 +3354,8 @@
     "label" : {
       "IRI-based" : "examples"
     },
-    "id" : "264",
-    "superClasses" : [ "19" ]
+    "id" : "268",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Resources",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3301,10 +3363,10 @@
     "label" : {
       "IRI-based" : "Resources"
     },
-    "subClasses" : [ "68", "26" ],
+    "subClasses" : [ "46", "51" ],
     "attributes" : [ "external" ],
-    "id" : "69",
-    "superClasses" : [ "105" ]
+    "id" : "47",
+    "superClasses" : [ "107" ]
   }, {
     "iri" : "http://purl.org/milto/onto/xla",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3313,8 +3375,8 @@
       "IRI-based" : "xla"
     },
     "attributes" : [ "external" ],
-    "id" : "306",
-    "superClasses" : [ "37" ]
+    "id" : "319",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Kaagle_Datasets",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3323,8 +3385,8 @@
       "IRI-based" : "Kaagle_Datasets"
     },
     "attributes" : [ "external" ],
-    "id" : "234",
-    "superClasses" : [ "68" ]
+    "id" : "241",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Crash",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3333,8 +3395,8 @@
       "IRI-based" : "Crash"
     },
     "attributes" : [ "external" ],
-    "id" : "179",
-    "superClasses" : [ "9" ]
+    "id" : "177",
+    "superClasses" : [ "173" ]
   }, {
     "iri" : "http://purl.org/milto/onto/robin_map",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3343,8 +3405,8 @@
       "IRI-based" : "robin_map"
     },
     "attributes" : [ "external" ],
-    "id" : "299",
-    "superClasses" : [ "37" ]
+    "id" : "383",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Failure",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3352,9 +3414,20 @@
     "label" : {
       "IRI-based" : "Failure"
     },
-    "subClasses" : [ "47", "51", "55", "4", "9", "13" ],
+    "subClasses" : [ "17", "22", "26", "30", "173", "134" ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/milto/onto/tensorflow",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "tensorflow"
+    },
+    "subClasses" : [ "124", "72", "281", "34", "218", "288", "98", "293", "265", "268", "271", "275", "103", "247", "105" ],
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://purl.org/milto/onto/core/framework",
     "baseIri" : "http://purl.org/milto/onto/core",
@@ -3363,19 +3436,8 @@
       "IRI-based" : "framework"
     },
     "attributes" : [ "external" ],
-    "id" : "141",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/tensorflow",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "tensorflow"
-    },
-    "subClasses" : [ "18", "23", "28", "32", "203", "283", "96", "288", "261", "264", "267", "270", "100", "275", "102" ],
-    "attributes" : [ "external" ],
-    "id" : "19",
-    "superClasses" : [ "42" ]
+    "id" : "159",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/pybind11_bazel",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3384,15 +3446,8 @@
       "IRI-based" : "pybind11_bazel"
     },
     "attributes" : [ "external" ],
-    "id" : "355",
-    "superClasses" : [ "37" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "41",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "364",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Tensorflow_Playground",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3401,8 +3456,19 @@
       "IRI-based" : "Tensorflow_Playground"
     },
     "attributes" : [ "external" ],
-    "id" : "239",
-    "superClasses" : [ "171" ]
+    "id" : "201",
+    "superClasses" : [ "186" ]
+  }, {
+    "iri" : "http://purl.org/milto/onto/Model",
+    "baseIri" : "http://purl.org/milto/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "subClasses" : [ "140", "188" ],
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "http://purl.org/milto/onto/logging",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3411,18 +3477,7 @@
       "IRI-based" : "logging"
     },
     "attributes" : [ "external" ],
-    "id" : "91",
-    "superClasses" : [ "83" ]
-  }, {
-    "iri" : "http://purl.org/milto/onto/Model",
-    "baseIri" : "http://purl.org/milto/onto",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Model"
-    },
-    "subClasses" : [ "137", "173" ],
-    "attributes" : [ "external" ],
-    "id" : "51",
+    "id" : "13",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/milto/onto#security",
@@ -3431,8 +3486,8 @@
     "label" : {
       "IRI-based" : "security"
     },
-    "id" : "275",
-    "superClasses" : [ "19" ]
+    "id" : "247",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/milto/onto/nasm",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3441,8 +3496,8 @@
       "IRI-based" : "nasm"
     },
     "attributes" : [ "external" ],
-    "id" : "343",
-    "superClasses" : [ "37" ]
+    "id" : "419",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorFlow_Metadata",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3451,7 +3506,7 @@
       "IRI-based" : "TensorFlow_Metadata"
     },
     "attributes" : [ "external" ],
-    "id" : "66",
+    "id" : "91",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://purl.org/milto/onto/TensorBoard",
@@ -3461,8 +3516,8 @@
       "IRI-based" : "TensorBoard"
     },
     "attributes" : [ "external" ],
-    "id" : "222",
-    "superClasses" : [ "171" ]
+    "id" : "190",
+    "superClasses" : [ "186" ]
   }, {
     "iri" : "http://purl.org/milto/onto/Dataset_Tensorflow",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3470,10 +3525,10 @@
     "label" : {
       "IRI-based" : "Dataset_Tensorflow"
     },
-    "subClasses" : [ "230", "234", "237" ],
+    "subClasses" : [ "237", "241", "244" ],
     "attributes" : [ "external" ],
-    "id" : "68",
-    "superClasses" : [ "69" ]
+    "id" : "46",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://purl.org/milto/onto/transforms",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3482,8 +3537,8 @@
       "IRI-based" : "transforms"
     },
     "attributes" : [ "external" ],
-    "id" : "470",
-    "superClasses" : [ "32" ]
+    "id" : "149",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://purl.org/milto/onto/systemlibs",
     "baseIri" : "http://purl.org/milto/onto",
@@ -3492,8 +3547,8 @@
       "IRI-based" : "systemlibs"
     },
     "attributes" : [ "external" ],
-    "id" : "391",
-    "superClasses" : [ "37" ]
+    "id" : "402",
+    "superClasses" : [ "36" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -3517,16 +3572,19 @@
     "id" : "14",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "24",
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "27",
@@ -3538,13 +3596,10 @@
     "id" : "31",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "33",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "48",
@@ -3559,10 +3614,10 @@
     "id" : "54",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
@@ -3571,16 +3626,10 @@
     "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "67",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "71",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "73",
+    "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "74",
@@ -3589,19 +3638,22 @@
     "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "79",
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "84",
+    "id" : "83",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "86",
+    "id" : "85",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "88",
+    "id" : "87",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "90",
@@ -3610,55 +3662,55 @@
     "id" : "92",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "110",
+    "id" : "94",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "112",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "116",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "117",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "120",
+    "id" : "119",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "124",
+    "id" : "121",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "126",
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "129",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "130",
+    "id" : "131",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "133",
+    "id" : "132",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "138",
+    "id" : "135",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "140",
-    "type" : "rdfs:SubClassOf"
+    "id" : "137",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "143",
+    "id" : "142",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "145",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "147",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "148",
@@ -3670,25 +3722,25 @@
     "id" : "152",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "153",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "154",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "155",
+    "id" : "156",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "161",
+    "id" : "158",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "163",
+    "id" : "160",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "165",
+    "id" : "162",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "167",
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "174",
@@ -3700,70 +3752,58 @@
     "id" : "178",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "180",
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "182",
+    "id" : "191",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "184",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "186",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "190",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "192",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "194",
+    "id" : "193",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "195",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "213",
+    "id" : "197",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "215",
+    "id" : "198",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "217",
+    "id" : "200",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "219",
+    "id" : "204",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "221",
+    "id" : "206",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "223",
+    "id" : "208",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "224",
+    "id" : "210",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "225",
+    "id" : "228",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "226",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "227",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "229",
+    "id" : "230",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "231",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "233",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "235",
+    "id" : "234",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "236",
@@ -3772,7 +3812,13 @@
     "id" : "238",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "244",
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "245",
@@ -3787,46 +3833,40 @@
     "id" : "249",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "252",
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "253",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "255",
+    "id" : "254",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "256",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "259",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "260",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "262",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "263",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "265",
+    "id" : "264",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "266",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "268",
+    "id" : "267",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "269",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "271",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "272",
+    "id" : "270",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "273",
@@ -3838,13 +3878,19 @@
     "id" : "276",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "280",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "281",
+    "id" : "282",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "282",
+    "id" : "283",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "284",
@@ -3862,28 +3908,25 @@
     "id" : "289",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "292",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "294",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "296",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "297",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "298",
+    "id" : "299",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "300",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "301",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "302",
+    "id" : "303",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "304",
@@ -3892,7 +3935,13 @@
     "id" : "305",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "309",
+    "id" : "306",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "307",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "308",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "311",
@@ -3901,34 +3950,37 @@
     "id" : "313",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "315",
+    "id" : "314",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "317",
+    "id" : "316",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "318",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "319",
+    "id" : "320",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "320",
+    "id" : "321",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "322",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "324",
+    "id" : "323",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "326",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "328",
+    "id" : "325",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "333",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "335",
@@ -3937,28 +3989,31 @@
     "id" : "337",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "341",
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "342",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "344",
+    "id" : "343",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "346",
+    "id" : "345",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "347",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "350",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "352",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "354",
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "358",
@@ -3970,13 +4025,10 @@
     "id" : "362",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "364",
+    "id" : "363",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "366",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "367",
+    "id" : "365",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "368",
@@ -3985,22 +4037,22 @@
     "id" : "370",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "372",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "374",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "375",
+    "id" : "376",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "377",
+    "id" : "378",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "379",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "381",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "382",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "384",
@@ -4024,22 +4076,25 @@
     "id" : "390",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "392",
+    "id" : "391",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "394",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "396",
+    "id" : "395",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "398",
+    "id" : "397",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "399",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "400",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "402",
+    "id" : "401",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "403",
@@ -4048,37 +4103,37 @@
     "id" : "405",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "407",
+    "id" : "406",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "409",
+    "id" : "408",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "410",
+    "id" : "411",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "412",
+    "id" : "413",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "414",
+    "id" : "415",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "416",
+    "id" : "417",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "418",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "419",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "420",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "424",
+    "id" : "422",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "426",
+    "id" : "423",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "425",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "427",
@@ -4087,85 +4142,85 @@
     "id" : "429",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "430",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "431",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "433",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "434",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "435",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "436",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "438",
+    "id" : "437",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "439",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "441",
+    "id" : "440",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "443",
+    "id" : "442",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "444",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "445",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "446",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "451",
+    "id" : "448",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "450",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "452",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "453",
+    "id" : "454",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "456",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "457",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "459",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "462",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "463",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "464",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "465",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "466",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "467",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "468",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "469",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "471",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "472",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "473",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "476",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "477",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "478",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "482",
+    "id" : "480",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "481",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "483",
@@ -4180,16 +4235,10 @@
     "id" : "486",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "487",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "488",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "489",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "490",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "491",
@@ -4253,16 +4302,16 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "511",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "512",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "513",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "514",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "515",
     "type" : "rdfs:SubClassOf"
@@ -4274,1328 +4323,1446 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "518",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "519",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "520",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "521",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "522",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "523",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "524",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "525",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "526",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "527",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "528",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "529",
+    "type" : "owl:allValuesFrom"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "range" : "2",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "range" : "5",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "2",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "10"
   }, {
     "range" : "5",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
-    "range" : "16",
+    "range" : "2",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
-    "range" : "19",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
   }, {
-    "range" : "16",
-    "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
   }, {
-    "range" : "19",
-    "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
   }, {
-    "range" : "26",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
+    "range" : "2",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
   }, {
-    "range" : "19",
+    "range" : "18",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "2",
     "domain" : "28",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
-    "range" : "26",
+    "range" : "18",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
-    "range" : "19",
+    "range" : "2",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "31"
-  }, {
-    "range" : "26",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "33"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "42",
+    "range" : "41",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "41",
-    "attributes" : [ "object", "external" ],
-    "id" : "40"
+    "domain" : "40",
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
   }, {
-    "range" : "5",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "46"
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
   }, {
     "range" : "2",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
-    "range" : "5",
+    "range" : "47",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
     "range" : "2",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
-    "range" : "5",
+    "range" : "56",
     "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
     "range" : "2",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "56"
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
   }, {
-    "range" : "60",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
+    "range" : "43",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
   }, {
     "range" : "2",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
-    "range" : "60",
+    "range" : "43",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "2",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
-  }, {
-    "range" : "69",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
-    "range" : "2",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "71"
-  }, {
-    "range" : "69",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "73"
+    "range" : "43",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
   }, {
     "range" : "2",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
-    "range" : "78",
+    "range" : "43",
     "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "2",
-    "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "79"
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
   }, {
-    "range" : "83",
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "2",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
-    "range" : "2",
-    "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
-  }, {
-    "range" : "83",
-    "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "86"
+    "range" : "43",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
   }, {
     "range" : "2",
-    "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "88"
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
   }, {
-    "range" : "83",
+    "range" : "89",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "2",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
-    "range" : "2",
+    "range" : "89",
     "domain" : "93",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
-    "range" : "44",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "110"
-  }, {
     "range" : "2",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "number_Of_Layers_Has"
+    },
+    "domain" : "102",
+    "attributes" : [ "external", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "43",
     "domain" : "113",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "112"
   }, {
-    "range" : "44",
-    "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "114"
-  }, {
-    "range" : "44",
-    "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "2",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "115"
   }, {
-    "range" : "44",
-    "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "116"
-  }, {
-    "range" : "44",
+    "range" : "43",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
-    "range" : "44",
-    "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
+    "range" : "41",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
   }, {
-    "range" : "44",
-    "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "124"
+    "range" : "41",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
   }, {
-    "range" : "44",
-    "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "126"
+    "range" : "41",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
   }, {
-    "range" : "44",
-    "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "41",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "41",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "43",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "129"
   }, {
-    "range" : "44",
-    "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "130"
+    "range" : "43",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
   }, {
-    "range" : "44",
-    "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "133"
+    "range" : "43",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
   }, {
-    "range" : "44",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "138"
+    "range" : "43",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
   }, {
-    "range" : "32",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "140"
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl/active_Is",
+    "inverse" : "138",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "active_Is"
+    },
+    "domain" : "102",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "137"
   }, {
-    "range" : "32",
-    "domain" : "144",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "143"
+    "range" : "34",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
   }, {
-    "range" : "32",
+    "range" : "34",
     "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
-    "range" : "32",
-    "domain" : "111",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "147"
-  }, {
-    "range" : "32",
+    "range" : "34",
     "domain" : "149",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "148"
   }, {
-    "range" : "42",
+    "range" : "34",
     "domain" : "151",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "150"
   }, {
-    "range" : "42",
-    "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
-    "range" : "42",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "153"
-  }, {
-    "range" : "42",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "154"
   }, {
-    "range" : "42",
-    "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "155"
+    "range" : "34",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
   }, {
-    "range" : "13",
-    "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "161"
+    "range" : "34",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
   }, {
-    "range" : "13",
-    "domain" : "164",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "163"
+    "range" : "34",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
   }, {
-    "range" : "13",
-    "domain" : "166",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "165"
+    "range" : "34",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
   }, {
-    "range" : "13",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "167"
-  }, {
-    "range" : "9",
-    "domain" : "175",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "174"
-  }, {
-    "range" : "9",
-    "domain" : "177",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "176"
-  }, {
-    "range" : "9",
-    "domain" : "179",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "178"
-  }, {
-    "range" : "9",
-    "domain" : "181",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "180"
-  }, {
-    "range" : "9",
-    "domain" : "183",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "182"
-  }, {
-    "range" : "9",
-    "domain" : "185",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "184"
-  }, {
-    "range" : "171",
-    "domain" : "187",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "186"
-  }, {
-    "range" : "45",
-    "domain" : "191",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "190"
-  }, {
-    "range" : "173",
-    "domain" : "193",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "192"
+    "range" : "34",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
   }, {
     "range" : "173",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "194"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
   }, {
     "range" : "173",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "173",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "173",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "deprecated_Is"
+    },
+    "domain" : "102",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "138"
+  }, {
+    "range" : "186",
+    "domain" : "190",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "186",
+    "domain" : "192",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "44",
+    "domain" : "194",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "188",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "195"
   }, {
-    "range" : "171",
-    "domain" : "214",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "213"
+    "range" : "188",
+    "domain" : "187",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
   }, {
-    "range" : "171",
-    "domain" : "216",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "215"
+    "range" : "188",
+    "domain" : "199",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
   }, {
-    "range" : "171",
-    "domain" : "218",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "217"
+    "range" : "186",
+    "domain" : "201",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
   }, {
-    "range" : "171",
-    "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "219"
+    "range" : "186",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
   }, {
-    "range" : "171",
-    "domain" : "222",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "221"
+    "range" : "186",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
   }, {
-    "range" : "55",
-    "domain" : "212",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "223"
+    "range" : "186",
+    "domain" : "209",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
   }, {
-    "range" : "51",
-    "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "224"
+    "range" : "186",
+    "domain" : "211",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
   }, {
-    "range" : "55",
-    "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "225"
+    "range" : "109",
+    "domain" : "229",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
   }, {
-    "range" : "51",
-    "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "226"
+    "range" : "26",
+    "domain" : "227",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
   }, {
-    "range" : "108",
-    "domain" : "228",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "227"
-  }, {
-    "range" : "68",
-    "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "229"
-  }, {
-    "range" : "171",
-    "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "22",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "231"
   }, {
-    "range" : "68",
-    "domain" : "234",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "217",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "22",
+    "domain" : "188",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
-    "range" : "171",
-    "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "235"
+    "range" : "110",
+    "domain" : "235",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
   }, {
-    "range" : "68",
+    "range" : "46",
     "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
   }, {
-    "range" : "171",
+    "range" : "186",
     "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "238"
   }, {
-    "range" : "19",
-    "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "244"
+    "range" : "46",
+    "domain" : "241",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
   }, {
-    "range" : "55",
-    "domain" : "209",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "186",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "46",
+    "domain" : "244",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "26",
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
-    "range" : "107",
+    "range" : "73",
     "domain" : "247",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "246"
   }, {
-    "range" : "55",
-    "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "223",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "248"
   }, {
-    "range" : "107",
-    "domain" : "250",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "249"
   }, {
-    "range" : "55",
-    "domain" : "210",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "252"
+    "range" : "26",
+    "domain" : "224",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
   }, {
-    "range" : "107",
-    "domain" : "254",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "109",
+    "domain" : "252",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "26",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "253"
   }, {
-    "range" : "55",
-    "domain" : "211",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "255"
+    "range" : "109",
+    "domain" : "255",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
   }, {
-    "range" : "107",
-    "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "225",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
-    "range" : "123",
-    "domain" : "198",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "109",
+    "domain" : "258",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "26",
+    "domain" : "226",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "259"
   }, {
-    "range" : "19",
-    "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "260"
+    "range" : "73",
+    "domain" : "265",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
   }, {
-    "range" : "123",
-    "domain" : "199",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "262"
-  }, {
-    "range" : "19",
-    "domain" : "264",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "263"
-  }, {
-    "range" : "55",
-    "domain" : "205",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "265"
-  }, {
-    "range" : "19",
-    "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "127",
+    "domain" : "214",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "266"
   }, {
-    "range" : "55",
-    "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "268"
+    "range" : "73",
+    "domain" : "268",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
   }, {
-    "range" : "19",
-    "domain" : "270",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "220",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "269"
   }, {
-    "range" : "55",
-    "domain" : "189",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "271"
+    "range" : "73",
+    "domain" : "271",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
   }, {
-    "range" : "19",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "272"
-  }, {
-    "range" : "55",
-    "domain" : "207",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "221",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "273"
   }, {
-    "range" : "19",
+    "range" : "73",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "274"
   }, {
-    "range" : "55",
-    "domain" : "208",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "203",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
-    "range" : "19",
-    "domain" : "203",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "51",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "73",
+    "domain" : "281",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "280"
   }, {
-    "range" : "47",
-    "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "281"
-  }, {
-    "range" : "19",
-    "domain" : "283",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "181",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "282"
   }, {
-    "range" : "47",
-    "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "51",
+    "domain" : "182",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "284"
   }, {
-    "range" : "19",
-    "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "218",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "285"
   }, {
-    "range" : "123",
-    "domain" : "122",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "17",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "286"
   }, {
-    "range" : "19",
+    "range" : "73",
     "domain" : "288",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
-    "range" : "37",
-    "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "17",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "289"
   }, {
-    "range" : "37",
-    "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "127",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "73",
+    "domain" : "293",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
-    "range" : "37",
-    "domain" : "295",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "127",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "294"
   }, {
-    "range" : "37",
-    "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "296"
+    "range" : "18",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
   }, {
-    "range" : "37",
-    "domain" : "197",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "297"
-  }, {
-    "range" : "37",
-    "domain" : "299",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "298"
-  }, {
-    "range" : "37",
-    "domain" : "201",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "302",
+    "domain" : "301",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "300"
   }, {
-    "range" : "37",
-    "domain" : "188",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "301"
+    "range" : "18",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
   }, {
-    "range" : "37",
-    "domain" : "303",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "302"
-  }, {
-    "range" : "37",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
-    "range" : "37",
-    "domain" : "306",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "305"
   }, {
-    "range" : "37",
-    "domain" : "310",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "309"
+    "range" : "66",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
   }, {
-    "range" : "37",
-    "domain" : "312",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "range" : "36",
+    "domain" : "215",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "308"
+  }, {
+    "range" : "36",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "311"
   }, {
-    "range" : "37",
-    "domain" : "314",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "313"
   }, {
-    "range" : "37",
-    "domain" : "316",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "315"
+    "range" : "36",
+    "domain" : "315",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
   }, {
-    "range" : "37",
-    "domain" : "291",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "317"
+    "range" : "36",
+    "domain" : "317",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
   }, {
-    "range" : "37",
-    "domain" : "293",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "319",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
-    "range" : "37",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "319"
-  }, {
-    "range" : "37",
-    "domain" : "321",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "202",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "320"
   }, {
-    "range" : "37",
-    "domain" : "323",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "312",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "322"
   }, {
-    "range" : "37",
-    "domain" : "325",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "324"
+    "range" : "36",
+    "domain" : "324",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "323"
   }, {
-    "range" : "37",
-    "domain" : "327",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "326"
+    "range" : "36",
+    "domain" : "326",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "325"
   }, {
-    "range" : "37",
-    "domain" : "329",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "328"
-  }, {
-    "range" : "37",
-    "domain" : "331",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "310",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "330"
   }, {
-    "range" : "37",
+    "range" : "36",
+    "domain" : "332",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "331"
+  }, {
+    "range" : "36",
+    "domain" : "334",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "333"
+  }, {
+    "range" : "36",
     "domain" : "336",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
-    "range" : "37",
-    "domain" : "338",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "96",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
-    "range" : "37",
-    "domain" : "258",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "341"
+    "range" : "36",
+    "domain" : "339",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
   }, {
-    "range" : "37",
-    "domain" : "343",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "341",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "42",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "342"
   }, {
-    "range" : "37",
-    "domain" : "345",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "344"
+    "range" : "36",
+    "domain" : "344",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
   }, {
-    "range" : "37",
-    "domain" : "334",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "346"
+    "range" : "36",
+    "domain" : "346",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
   }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "348",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "351",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "350"
-  }, {
-    "range" : "37",
-    "domain" : "353",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "352"
   }, {
-    "range" : "37",
-    "domain" : "355",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "354"
+    "range" : "36",
+    "domain" : "354",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
   }, {
-    "range" : "37",
+    "range" : "36",
+    "domain" : "357",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "range" : "36",
     "domain" : "359",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "358"
   }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "361",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
-    "range" : "37",
-    "domain" : "363",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "261",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "362"
   }, {
-    "range" : "37",
-    "domain" : "365",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "364"
+    "range" : "36",
+    "domain" : "364",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
   }, {
-    "range" : "37",
-    "domain" : "241",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "366"
+    "range" : "36",
+    "domain" : "366",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "365"
   }, {
-    "range" : "37",
-    "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "367"
-  }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "369",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "368"
   }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "371",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "370"
   }, {
-    "range" : "37",
-    "domain" : "373",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "372"
-  }, {
-    "range" : "127",
-    "domain" : "290",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "375",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "374"
   }, {
-    "range" : "127",
-    "domain" : "376",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "375"
+    "range" : "36",
+    "domain" : "377",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "376"
   }, {
-    "range" : "127",
-    "domain" : "378",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "377"
+    "range" : "36",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "378"
   }, {
-    "range" : "127",
+    "range" : "36",
     "domain" : "380",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "379"
   }, {
-    "range" : "104",
-    "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "381"
   }, {
-    "range" : "104",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "383",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "382"
+  }, {
+    "range" : "36",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "384"
   }, {
-    "range" : "104",
-    "domain" : "107",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "385"
   }, {
-    "range" : "104",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "329",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "386"
   }, {
-    "range" : "37",
-    "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "106",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "387"
   }, {
-    "range" : "104",
-    "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "106",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
-    "range" : "104",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "106",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
-    "range" : "37",
-    "domain" : "391",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "106",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "390"
   }, {
-    "range" : "37",
-    "domain" : "393",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "392"
+    "range" : "106",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "391"
   }, {
-    "range" : "37",
-    "domain" : "395",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "394"
   }, {
-    "range" : "37",
-    "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "396"
+    "range" : "36",
+    "domain" : "396",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "395"
   }, {
-    "range" : "37",
-    "domain" : "399",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "398"
+    "range" : "36",
+    "domain" : "398",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "397"
   }, {
-    "range" : "37",
-    "domain" : "401",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "297",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "399"
+  }, {
+    "range" : "36",
+    "domain" : "298",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "400"
   }, {
-    "range" : "37",
-    "domain" : "278",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "402"
+    "range" : "36",
+    "domain" : "402",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "401"
   }, {
-    "range" : "37",
+    "range" : "36",
     "domain" : "404",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "403"
   }, {
-    "range" : "37",
-    "domain" : "406",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "296",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
-    "range" : "37",
-    "domain" : "408",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "407"
+    "range" : "36",
+    "domain" : "407",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "406"
   }, {
-    "range" : "37",
-    "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "409"
+    "range" : "36",
+    "domain" : "409",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "408"
   }, {
-    "range" : "2",
-    "domain" : "411",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "410"
+    "range" : "36",
+    "domain" : "412",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "411"
   }, {
-    "range" : "2",
-    "domain" : "413",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "412"
+    "range" : "36",
+    "domain" : "414",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "413"
   }, {
-    "range" : "2",
-    "domain" : "415",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "414"
+    "range" : "36",
+    "domain" : "416",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "415"
   }, {
-    "range" : "2",
-    "domain" : "417",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "416"
+    "range" : "36",
+    "domain" : "278",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "417"
   }, {
-    "range" : "2",
-    "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "36",
+    "domain" : "419",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "418"
   }, {
-    "range" : "2",
-    "domain" : "383",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "419"
-  }, {
-    "range" : "2",
+    "range" : "36",
     "domain" : "421",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "420"
   }, {
-    "range" : "2",
-    "domain" : "425",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "424"
+    "range" : "36",
+    "domain" : "367",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "422"
   }, {
     "range" : "2",
-    "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "426"
+    "domain" : "424",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "423"
+  }, {
+    "range" : "2",
+    "domain" : "426",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "425"
   }, {
     "range" : "2",
     "domain" : "428",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "427"
   }, {
     "range" : "2",
-    "domain" : "430",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "429"
   }, {
     "range" : "2",
+    "domain" : "392",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "430"
+  }, {
+    "range" : "2",
     "domain" : "432",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "431"
   }, {
     "range" : "2",
-    "domain" : "168",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "433"
   }, {
     "range" : "2",
-    "domain" : "382",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "434"
-  }, {
-    "range" : "2",
-    "domain" : "243",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "435"
-  }, {
-    "range" : "2",
-    "domain" : "437",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "183",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "436"
   }, {
     "range" : "2",
-    "domain" : "128",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "438"
+    "domain" : "438",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "437"
   }, {
     "range" : "2",
-    "domain" : "440",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "263",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "439"
   }, {
     "range" : "2",
-    "domain" : "442",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "441"
-  }, {
-    "range" : "127",
-    "domain" : "422",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "443"
+    "domain" : "441",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "440"
   }, {
     "range" : "2",
-    "domain" : "445",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "443",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "442"
+  }, {
+    "range" : "2",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "444"
   }, {
     "range" : "2",
-    "domain" : "119",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "445"
+  }, {
+    "range" : "2",
+    "domain" : "447",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "446"
   }, {
     "range" : "2",
-    "domain" : "349",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "451"
+    "domain" : "449",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "448"
   }, {
-    "range" : "2",
-    "domain" : "448",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "60",
+    "domain" : "434",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "450"
+  }, {
+    "range" : "60",
+    "domain" : "453",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "452"
   }, {
+    "range" : "60",
+    "domain" : "455",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "454"
+  }, {
+    "range" : "106",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "456"
+  }, {
+    "range" : "60",
+    "domain" : "458",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "457"
+  }, {
+    "range" : "60",
+    "domain" : "309",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "459"
+  }, {
     "range" : "2",
-    "domain" : "454",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "453"
+    "domain" : "460",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "462"
+  }, {
+    "range" : "2",
+    "domain" : "393",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "463"
+  }, {
+    "range" : "2",
+    "domain" : "465",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "464"
   }, {
     "iri" : "http://purl.org/milto/onto/stored_In",
     "baseIri" : "http://purl.org/milto/onto",
-    "range" : "42",
+    "range" : "41",
     "label" : {
       "IRI-based" : "stored_In"
     },
-    "domain" : "44",
+    "domain" : "43",
     "comment" : {
       "en" : "Object is stored in another Object."
     },
-    "attributes" : [ "object", "external", "transitive" ],
-    "id" : "456"
-  }, {
-    "range" : "32",
-    "domain" : "459",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "464"
-  }, {
-    "range" : "32",
-    "domain" : "462",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "465"
-  }, {
-    "range" : "32",
-    "domain" : "157",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "466"
-  }, {
-    "range" : "32",
-    "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "467"
-  }, {
-    "range" : "32",
-    "domain" : "449",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "transitive", "external", "object" ],
     "id" : "468"
   }, {
-    "range" : "32",
-    "domain" : "470",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "469"
-  }, {
-    "range" : "32",
-    "domain" : "460",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "471"
-  }, {
-    "range" : "32",
-    "domain" : "204",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "472"
-  }, {
-    "range" : "32",
-    "domain" : "474",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "473"
-  }, {
-    "range" : "32",
-    "domain" : "477",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "476"
   }, {
-    "range" : "32",
-    "domain" : "357",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "372",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "477"
+  }, {
+    "range" : "34",
+    "domain" : "479",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "478"
   }, {
-    "range" : "32",
-    "domain" : "461",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "482"
+    "range" : "34",
+    "domain" : "410",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "480"
   }, {
-    "range" : "32",
-    "domain" : "447",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "482",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "481"
+  }, {
+    "range" : "34",
+    "domain" : "373",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "483"
   }, {
-    "range" : "32",
-    "domain" : "251",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "471",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "484"
   }, {
-    "range" : "32",
-    "domain" : "139",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "474",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "485"
   }, {
-    "range" : "32",
-    "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "486"
   }, {
-    "range" : "32",
-    "domain" : "356",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "487"
-  }, {
-    "range" : "32",
-    "domain" : "479",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "165",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "488"
   }, {
-    "range" : "32",
-    "domain" : "397",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "489"
   }, {
-    "range" : "32",
-    "domain" : "481",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "490"
-  }, {
-    "range" : "32",
-    "domain" : "423",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "490",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "491"
   }, {
-    "range" : "32",
-    "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "262",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "492"
   }, {
-    "range" : "32",
-    "domain" : "332",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "475",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "493"
   }, {
-    "range" : "32",
-    "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "470",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "494"
   }, {
-    "range" : "32",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "435",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "495"
   }, {
-    "range" : "32",
-    "domain" : "333",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "496"
   }, {
-    "range" : "32",
-    "domain" : "480",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "473",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "497"
   }, {
-    "range" : "32",
-    "domain" : "242",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "461",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "498"
   }, {
-    "range" : "32",
-    "domain" : "463",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "272",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "499"
   }, {
-    "range" : "32",
-    "domain" : "458",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "500"
   }, {
-    "range" : "105",
-    "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "350",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "501"
   }, {
-    "range" : "32",
-    "domain" : "457",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "107",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "502"
   }, {
-    "range" : "32",
-    "domain" : "455",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "107",
+    "domain" : "328",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "503"
   }, {
-    "range" : "13",
-    "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "107",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "504"
   }, {
-    "range" : "13",
-    "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "107",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "505"
   }, {
-    "range" : "13",
-    "domain" : "475",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "469",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "506"
   }, {
-    "range" : "105",
-    "domain" : "307",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "466",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "507"
   }, {
-    "range" : "105",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "349",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "508"
   }, {
-    "range" : "105",
-    "domain" : "308",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "34",
+    "domain" : "184",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "509"
   }, {
-    "range" : "105",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
-    "range" : "460",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "487",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "511"
   }, {
-    "range" : "459",
-    "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "107",
+    "domain" : "327",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "512"
   }, {
-    "range" : "460",
-    "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "173",
+    "domain" : "295",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "513"
   }, {
-    "range" : "460",
-    "domain" : "459",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "173",
+    "domain" : "472",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "514"
   }, {
-    "range" : "43",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "451",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "515"
   }, {
-    "range" : "94",
-    "domain" : "95",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "516"
   }, {
-    "range" : "37",
-    "domain" : "450",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "467",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "517"
   }, {
-    "range" : "102",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "518"
   }, {
-    "range" : "459",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "134",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "519"
+  }, {
+    "iri" : "http://purl.org/milto/onto/stored_In",
+    "baseIri" : "http://purl.org/milto/onto",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "stored_In"
+    },
+    "domain" : "434",
+    "comment" : {
+      "en" : "Object is stored in another Object."
+    },
+    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "id" : "520"
+  }, {
+    "iri" : "http://purl.org/milto/onto/stored_In",
+    "baseIri" : "http://purl.org/milto/onto",
+    "range" : "471",
+    "label" : {
+      "IRI-based" : "stored_In"
+    },
+    "domain" : "88",
+    "comment" : {
+      "en" : "Object is stored in another Object."
+    },
+    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "id" : "521"
+  }, {
+    "range" : "105",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "522"
+  }, {
+    "range" : "471",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "523"
+  }, {
+    "range" : "151",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "524"
+  }, {
+    "range" : "471",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "525"
+  }, {
+    "range" : "151",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "526"
+  }, {
+    "range" : "151",
+    "domain" : "471",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "527"
+  }, {
+    "iri" : "http://purl.org/milto/onto/stored_In",
+    "baseIri" : "http://purl.org/milto/onto",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "stored_In"
+    },
+    "domain" : "453",
+    "comment" : {
+      "en" : "Object is stored in another Object."
+    },
+    "attributes" : [ "transitive", "external", "object", "allValues" ],
+    "id" : "528"
+  }, {
+    "iri" : "http://purl.org/milto/onto/stored_In",
+    "baseIri" : "http://purl.org/milto/onto",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "stored_In"
+    },
+    "domain" : "458",
+    "comment" : {
+      "en" : "Object is stored in another Object."
+    },
+    "attributes" : [ "transitive", "external", "object", "allValues" ],
+    "id" : "529"
   } ]
 }

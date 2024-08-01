@@ -1,10 +1,68 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/Components"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/layers"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/c"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/cc"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/python"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/milto/onto/java"
+  } ]
+}, {
+  "@id" : "_:genid7",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Project creation date."
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -79,6 +137,19 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "6.0"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#codeAPIc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/c"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_c"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Source code implemented for the c API functionality and stored in the directory c."
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto#distribute",
@@ -170,12 +241,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API_cc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API_java",
@@ -188,6 +263,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/API"
+  }, {
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Activation_Function",
@@ -359,6 +436,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Platform"
+  }, {
+    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/GPU_Usage",
@@ -1683,6 +1762,60 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/third-party"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/active_Is",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/cc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIcc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/cc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_cc"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/codeAPIjava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto/API_java"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto/stored_In" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl/java"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/milto/onto#java"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/layers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/SUT"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix",

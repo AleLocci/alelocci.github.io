@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:onto="http://purl.org/milto/onto/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:"
      xmlns:terms="http://purl.org/dc/terms/">
@@ -106,6 +107,46 @@
         <rdfs:domain rdf:resource="http://purl.org/milto/onto/Components"/>
         <rdfs:range rdf:resource="http://purl.org/milto/onto/Diretory"/>
         <rdfs:comment xml:lang="en">Object is stored in another Object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/active_Is -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/active_Is">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/deprecated_Is -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Components"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.co-ode.org/ontologies/ont.owl/layers"/>
+            </owl:Restriction>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -255,6 +296,12 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_c">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -264,6 +311,12 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_cc">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/cc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -282,6 +335,12 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_python">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/python"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -534,6 +593,12 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/GPU">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Platform"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/java"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2460,6 +2525,81 @@
     <owl:Class rdf:about="http://purl.org/milto/onto/core/protobuf">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/core"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/layers -->
+
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl/layers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/SUT"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/milto/onto#codeAPIc -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#codeAPIc">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_c"/>
+        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/c"/>
+        <rdfs:comment xml:lang="en">Source code implemented for the c API functionality and stored in the directory c.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/c -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/c"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/cc -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/cc"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/codeAPIcc -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_cc"/>
+        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/cc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/codeAPIjava -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/API_java"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl/java -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/java">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#java"/>
+        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/java"/>
+    </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>Project creation date.</rdfs:comment>
     </rdf:Description>

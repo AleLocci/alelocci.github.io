@@ -56,6 +56,27 @@
 <http://purl.org/milto/onto/stored_In> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/milto/onto/Diretory> .
 <http://purl.org/milto/onto/stored_In> <http://www.w3.org/2000/01/rdf-schema#comment> "Object is stored in another Object."@en .
 # 
+# http://www.co-ode.org/ontologies/ont.owl/active_Is
+<http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> .
+<http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/deprecated_Is
+<http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/Components> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has
+<http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl/layers> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
 # http://www.w3.org/2002/07/owl#topObjectProperty
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/milto/onto/Diretory> .
 # 
@@ -125,10 +146,18 @@
 # http://purl.org/milto/onto/API_c
 <http://purl.org/milto/onto/API_c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+<http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/c> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/API_cc
 <http://purl.org/milto/onto/API_cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+<http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/cc> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/API_java
 <http://purl.org/milto/onto/API_java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -137,6 +166,10 @@
 # http://purl.org/milto/onto/API_python
 <http://purl.org/milto/onto/API_python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+<http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/python> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/Activation_Function
 <http://purl.org/milto/onto/Activation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -250,6 +283,10 @@
 # http://purl.org/milto/onto/GPU
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Platform> .
+<http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/java> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/GPU_Usage
 <http://purl.org/milto/onto/GPU_Usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1112,7 +1149,46 @@
 <http://purl.org/milto/onto/core/protobuf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/core/protobuf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/core> .
 # 
-_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
+# http://www.co-ode.org/ontologies/ont.owl/layers
+<http://www.co-ode.org/ontologies/ont.owl/layers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/ont.owl/layers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/SUT> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/milto/onto#codeAPIc
+<http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_c> .
+<http://purl.org/milto/onto#codeAPIc> <http://purl.org/milto/onto/stored_In> <http://www.co-ode.org/ontologies/ont.owl/c> .
+<http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/2000/01/rdf-schema#comment> "Source code implemented for the c API functionality and stored in the directory c."@en .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/c
+<http://www.co-ode.org/ontologies/ont.owl/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/cc
+<http://www.co-ode.org/ontologies/ont.owl/cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/codeAPIcc
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_cc> .
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> <http://purl.org/milto/onto/stored_In> <http://www.co-ode.org/ontologies/ont.owl/cc> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/codeAPIjava
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_java> .
+# 
+# http://www.co-ode.org/ontologies/ont.owl/java
+<http://www.co-ode.org/ontologies/ont.owl/java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.co-ode.org/ontologies/ont.owl/java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto#java> .
+<http://www.co-ode.org/ontologies/ont.owl/java> <http://purl.org/milto/onto/stored_In> <http://www.co-ode.org/ontologies/ont.owl/java> .
+# 
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
 # 
 # 
 # #################################################################
@@ -1122,19 +1198,19 @@ _:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date."
 # #################################################################
 # 
 # 
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
