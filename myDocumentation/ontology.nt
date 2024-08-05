@@ -58,27 +58,100 @@
 # 
 # http://www.co-ode.org/ontologies/ont.owl/active_Is
 <http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> .
 <http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.co-ode.org/ontologies/ont.owl/active_Is> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl/deprecated_Is
 <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/Components> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl/deprecated_Is> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has
 <http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.co-ode.org/ontologies/ont.owl/layers> .
-_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://www.w3.org/2002/07/owl#topObjectProperty
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/milto/onto/Diretory> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/milto/onto/abbreviation
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/abbreviation> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/2000/01/rdf-schema#label> ""@en .
+<http://purl.org/milto/onto/abbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "A short form for an longer title or name." .
+# 
+# http://purl.org/milto/onto/gpuTypes
+<http://purl.org/milto/onto/gpuTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/gpuTypes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/milto/onto/setting> .
+<http://purl.org/milto/onto/gpuTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/milto/onto/gpuTypes> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/gpuTypes> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/gpuTypes> <http://purl.org/dc/elements/1.1/description> "GPUs can be classified as onboard or offboard." .
+# 
+# http://purl.org/milto/onto/hardwareType
+<http://purl.org/milto/onto/hardwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/hardwareType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://purl.org/milto/onto/neuronsNumberPerLayer
+<http://purl.org/milto/onto/neuronsNumberPerLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/neuronsNumberPerLayer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/milto/onto/setting> .
+<http://purl.org/milto/onto/neuronsNumberPerLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/milto/onto/neuronsNumberPerLayer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/neuronsNumberPerLayer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/neuronsNumberPerLayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://purl.org/milto/onto/numberOfDevice
+<http://purl.org/milto/onto/numberOfDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/numberOfDevice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/numberOfDevice> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/numberOfDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://purl.org/milto/onto/numberOfDevice> <http://purl.org/dc/elements/1.1/description> "Number of devices running tensorflow."@en .
+<http://purl.org/milto/onto/numberOfDevice> <http://purl.org/dc/elements/1.1/description> ""^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://purl.org/milto/onto/numberOfLayers
+<http://purl.org/milto/onto/numberOfLayers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/numberOfLayers> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/milto/onto/setting> .
+<http://purl.org/milto/onto/numberOfLayers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/milto/onto/numberOfLayers> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/numberOfLayers> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/numberOfLayers> <http://purl.org/dc/elements/1.1/description> "Number of layers defined in configuration." .
+# 
+# http://purl.org/milto/onto/setting
+<http://purl.org/milto/onto/setting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/milto/onto/taskPerformed
+<http://purl.org/milto/onto/taskPerformed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/milto/onto/taskPerformed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/milto/onto/gpuTypes> .
+<http://purl.org/milto/onto/taskPerformed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/milto/onto/taskPerformed> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/taskPerformed> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/taskPerformed> <http://purl.org/dc/elements/1.1/description> "Tasks for which TendorFlow is used."@en .
 # 
 # 
 # 
@@ -135,9 +208,17 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/milto/onto/API
 <http://purl.org/milto/onto/API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/milto/onto/acro_API> .
+<http://purl.org/milto/onto/API> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/abbreviation> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
-<http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#comment> "API's . The API's function is to link between different applications serving the user. They enable integration between different systems and make user actions faster with the expected responses. The API always works in the background, so the average user does not even see the API in operation. TensorFlow provides APIs in many programming languages as C, C++, Java, and Python, which one are located in the python, c, cc and java directories."@en .
+<http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#comment> "API's. The API's function is to link between different applications serving the user. They enable the integration of different systems and accelerate user actions with expected responses. The API always works in the background, so the average user does not even see it in operation. TensorFlow offers APIs in various programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories."@en .
+# 
+# http://purl.org/milto/onto/API_Deep_Learning
+<http://purl.org/milto/onto/API_Deep_Learning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/API_Deep_Learning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
 # 
 # http://purl.org/milto/onto/API_Libraries
 <http://purl.org/milto/onto/API_Libraries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -146,30 +227,34 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/API_c
 <http://purl.org/milto/onto/API_c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-<http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/c> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/c> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/API_cc
 <http://purl.org/milto/onto/API_cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-<http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/cc> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/cc> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/API_java
 <http://purl.org/milto/onto/API_java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_java> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+<http://purl.org/milto/onto/API_java> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto#java> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/API_python
 <http://purl.org/milto/onto/API_python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-<http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/python> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/milto/onto/python> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/Activation_Function
 <http://purl.org/milto/onto/Activation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -248,6 +333,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/Diretory
 <http://purl.org/milto/onto/Diretory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Diretory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/TensorFlow> .
+<http://purl.org/milto/onto/Diretory> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers."@en .
 # 
 # http://purl.org/milto/onto/Documentation
 <http://purl.org/milto/onto/Documentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -283,10 +369,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/GPU
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Platform> .
-<http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/java> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/milto/onto/java> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/stored_In> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://purl.org/milto/onto/GPU_Usage
 <http://purl.org/milto/onto/GPU_Usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -456,7 +542,11 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/milto/onto/SUT
 <http://purl.org/milto/onto/SUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/SUT> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/milto/onto/acro_SUT> .
+<http://purl.org/milto/onto/SUT> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/abbreviation> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/milto/onto/SUT> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."@en .
 # 
 # http://purl.org/milto/onto/Sonnet
@@ -485,6 +575,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/milto/onto/TensorFlow
 <http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/neuronsNumberPerLayer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/numberOfLayers> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#comment> "\"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.\"" .
 # 
 # http://purl.org/milto/onto/TensorFlow.js
@@ -696,15 +796,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/absl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/absl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
 # 
-# http://purl.org/milto/onto/acro_API
-<http://purl.org/milto/onto/acro_API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/acro_API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
-<http://purl.org/milto/onto/acro_API> <http://www.w3.org/2000/01/rdf-schema#comment> "API - Application Programming Interface."@en .
-# 
-# http://purl.org/milto/onto/acro_SUT
-<http://purl.org/milto/onto/acro_SUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/acro_SUT> <http://www.w3.org/2000/01/rdf-schema#comment> "SUT - System  Under Test"@en .
-# 
 # http://purl.org/milto/onto/activity_watcher
 <http://purl.org/milto/onto/activity_watcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/activity_watcher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/core> .
@@ -728,12 +819,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/c
 <http://purl.org/milto/onto/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/tensorflow> .
-<http://purl.org/milto/onto/c> <http://www.w3.org/2000/01/rdf-schema#comment> "The directory where the TensorFlow API C source code is located." .
+<http://purl.org/milto/onto/c> <http://www.w3.org/2000/01/rdf-schema#comment> "The directory in which the TensorFlow API C source code is situated."@en .
 # 
 # http://purl.org/milto/onto/cc
 <http://purl.org/milto/onto/cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/tensorflow> .
-<http://purl.org/milto/onto/cc> <http://www.w3.org/2000/01/rdf-schema#comment> "The directory where the TensorFlow API C++ source code is located."@en .
+<http://purl.org/milto/onto/cc> <http://www.w3.org/2000/01/rdf-schema#comment> "The directory in which the TensorFlow API C++ source code is situated."@en .
 # 
 # http://purl.org/milto/onto/ci
 <http://purl.org/milto/onto/ci> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1045,6 +1136,30 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/tensorrt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/tensorrt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
 # 
+# http://purl.org/milto/onto/tf.data
+<http://purl.org/milto/onto/tf.data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
+# 
+# http://purl.org/milto/onto/tf.estimador
+<http://purl.org/milto/onto/tf.estimador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.estimador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
+# 
+# http://purl.org/milto/onto/tf.feuture_column
+<http://purl.org/milto/onto/tf.feuture_column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.feuture_column> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
+# 
+# http://purl.org/milto/onto/tf.io
+<http://purl.org/milto/onto/tf.io> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.io> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
+# 
+# http://purl.org/milto/onto/tf.keras
+<http://purl.org/milto/onto/tf.keras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.keras> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
+# 
+# http://purl.org/milto/onto/tf.queue
+<http://purl.org/milto/onto/tf.queue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/tf.queue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
+# 
 # http://purl.org/milto/onto/tf_runtime
 <http://purl.org/milto/onto/tf_runtime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/tf_runtime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
@@ -1088,6 +1203,10 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/xla
 <http://purl.org/milto/onto/xla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/xla> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
+# 
+# http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing
+<http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
 # 
 # http://purl.org/milto/onto/Libraries_&_Extensions
 <http://purl.org/milto/onto/Libraries_&_Extensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1149,10 +1268,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/core/protobuf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/core/protobuf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/core> .
 # 
-# http://www.co-ode.org/ontologies/ont.owl/layers
-<http://www.co-ode.org/ontologies/ont.owl/layers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.co-ode.org/ontologies/ont.owl/layers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/SUT> .
-# 
 # 
 # 
 # #################################################################
@@ -1188,7 +1303,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.co-ode.org/ontologies/ont.owl/java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto#java> .
 <http://www.co-ode.org/ontologies/ont.owl/java> <http://purl.org/milto/onto/stored_In> <http://www.co-ode.org/ontologies/ont.owl/java> .
 # 
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
 # 
 # 
 # #################################################################
@@ -1198,19 +1313,19 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date."
 # #################################################################
 # 
 # 
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
