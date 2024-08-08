@@ -1,0 +1,41 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.co-ode.org/ontologies/ont.owl/layers" "onto:c" "onto:Diretory" "onto:java" "onto:python" "onto:cc" "onto:Components" ; /*classes style*/
+	"onto:gpuTypes" -> "onto:settings" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = "onto:stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = "onto:stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"http://www.co-ode.org/ontologies/ont.owl/active_Is" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:propertyDisjointWith" ];
+	"http://www.co-ode.org/ontologies/ont.owl/java" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = "onto:stored_In" ];
+	"NULL" -> "onto:c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:java" [ label = "rdf:first" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "3aa44c77:191328deca1:-7fee" [ label = "owl:members" ];
+	"NULL" -> "onto:taskPerformed" [ label = "owl:onProperty" ];
+	"NULL" -> "3aa44c77:191328deca1:-7fec" [ label = "rdf:rest" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/layers" [ label = "owl:onClass" ];
+	"NULL" -> "onto:numberOfDevice" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:python" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:numberOfLayers" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:python" [ label = "rdf:first" ];
+	"NULL" -> "onto:cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "3aa44c77:191328deca1:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "onto:abbreviation" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:int" [ label = "owl:onDataRange" ];
+	"NULL" -> "onto:c" [ label = "rdf:first" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:cc" [ label = "rdf:first" ];
+	"NULL" -> "onto:gpuTypes" [ label = "owl:onProperty" ];
+	"NULL" -> "3aa44c77:191328deca1:-7fed" [ label = "rdf:rest" ];
+	"onto:numberOfLayers" -> "onto:settings" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:int" [ label = "onto:numberOfDevice" ];
+	"owl:Thing" -> "xsd:string" [ label = "onto:abbreviation" ];
+	"onto:Components" -> "onto:Diretory" [ label = "onto:stored_In" ];
+	"owl:Thing" -> "onto:Diretory" [ label = "owl:topObjectProperty" ];
+
+}
