@@ -172,13 +172,6 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/abbreviation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label>A short form for an longer title or name.</rdfs:label>
@@ -191,13 +184,6 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/gpuTypes">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/gpuTypes"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <dc:description>GPUs can be classified as onboard or offboard.</dc:description>
     </owl:DatatypeProperty>
     
@@ -205,9 +191,7 @@
 
     <!-- http://purl.org/milto/onto/hardwareType -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType"/>
     
 
 
@@ -216,13 +200,6 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/neuronsNumberPerLayer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/neuronsNumberPerLayer"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -231,13 +208,6 @@
     <!-- http://purl.org/milto/onto/numberOfDevice -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfDevice">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfDevice"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <dc:description xml:lang="en">Number of devices running tensorflow.</dc:description>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></dc:description>
@@ -248,7 +218,6 @@
     <!-- http://purl.org/milto/onto/numberOfLayers -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfLayers">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -271,14 +240,7 @@
     <!-- http://purl.org/milto/onto/taskPerformed -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/taskPerformed">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/taskPerformed"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <dc:description xml:lang="en">Tasks for which TendorFlow is used.</dc:description>
     </owl:DatatypeProperty>
     
@@ -2519,6 +2481,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava">
         <rdf:type rdf:resource="http://purl.org/milto/onto/API_java"/>
+        <milto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/java"/>
     </owl:NamedIndividual>
     
 
@@ -2527,7 +2490,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/java">
         <rdf:type rdf:resource="http://purl.org/milto/onto#java"/>
-        <milto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/java"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>Project creation date.</rdfs:comment>
