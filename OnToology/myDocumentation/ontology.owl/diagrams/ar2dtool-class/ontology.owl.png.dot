@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "onto:c" "onto:Diretory" "onto:java" "base:java" "onto:python" "onto:cc" "onto:Components" ; /*classes style*/
+	"onto:gpuTypes" -> "onto:setting" [ label = "rdfs:subPropertyOf" ];
+	"onto:neuronsNumberPerLayer" -> "onto:setting" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = "onto:stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = "onto:stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"onto:hardwareType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/active_Is" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:propertyDisjointWith" ];
+	"http://www.co-ode.org/ontologies/ont.owl/java" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = "onto:stored_In" ];
+	"NULL" -> "onto:c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:java" [ label = "rdf:first" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:java" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:taskPerformed" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:numberOfDevice" [ label = "owl:onProperty" ];
+	"NULL" -> "-27f7955b:19137f1bf09:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> "onto:java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:numberOfLayers" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:neuronsNumberPerLayer" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:python" [ label = "rdf:first" ];
+	"NULL" -> "onto:python" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "-27f7955b:19137f1bf09:-7feb" [ label = "owl:members" ];
+	"NULL" -> "-27f7955b:19137f1bf09:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> "onto:abbreviation" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:int" [ label = "owl:onDataRange" ];
+	"NULL" -> "onto:c" [ label = "rdf:first" ];
+	"NULL" -> "onto:stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:cc" [ label = "rdf:first" ];
+	"NULL" -> "-27f7955b:19137f1bf09:-7fe8" [ label = "rdf:rest" ];
+	"NULL" -> "onto:gpuTypes" [ label = "owl:onProperty" ];
+	"onto:taskPerformed" -> "onto:gpuTypes" [ label = "rdfs:subPropertyOf" ];
+	"onto:numberOfLayers" -> "onto:setting" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:int" [ label = "onto:neuronsNumberPerLayer" ];
+	"owl:Thing" -> "xsd:int" [ label = "onto:numberOfDevice" ];
+	"owl:Thing" -> "xsd:string" [ label = "onto:abbreviation" ];
+	"onto:Components" -> "onto:Diretory" [ label = "onto:stored_In" ];
+	"owl:Thing" -> "onto:Diretory" [ label = "owl:topObjectProperty" ];
+
+}
