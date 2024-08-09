@@ -113,13 +113,18 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 
 ###  http://purl.org/milto/onto/gpuTypes
 <http://purl.org/milto/onto/gpuTypes> rdf:type owl:DatatypeProperty ;
+<<<<<<< HEAD
                                       rdfs:subPropertyOf <http://purl.org/milto/onto/setting> ;
+=======
+                                      rdfs:subPropertyOf <http://purl.org/milto/onto/settings> ;
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
                                       rdf:type owl:FunctionalProperty ;
                                       rdfs:domain [ rdf:type owl:Restriction ;
                                                     owl:onProperty <http://purl.org/milto/onto/gpuTypes> ;
                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                     owl:onDataRange xsd:string
                                                   ] ;
+<<<<<<< HEAD
                                       <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "GPUs can be classified as onboard or offboard." .
 
 
@@ -138,6 +143,13 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                                  owl:onDataRange xsd:int
                                                                ] ;
                                                    rdfs:range xsd:int .
+=======
+                                      <http://purl.org/dc/elements/1.1/description> "GPUs can be classified as onboard or offboard." .
+
+
+###  http://purl.org/milto/onto/hardwareType
+<http://purl.org/milto/onto/hardwareType> rdf:type owl:DatatypeProperty .
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 
 
 ###  http://purl.org/milto/onto/numberOfDevice
@@ -148,19 +160,29 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                           owl:onDataRange xsd:int
                                                         ] ;
                                             rdfs:range xsd:int ;
+<<<<<<< HEAD
                                             <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "Number of devices running tensorflow."@en ,
                                                                                                                             .
+=======
+                                            <http://purl.org/dc/elements/1.1/description> "Number of devices running tensorflow."@en ,
+                                                                                           .
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 
 
 ###  http://purl.org/milto/onto/numberOfLayers
 <http://purl.org/milto/onto/numberOfLayers> rdf:type owl:DatatypeProperty ;
+<<<<<<< HEAD
                                             rdfs:subPropertyOf <http://purl.org/milto/onto/setting> ;
+=======
+                                            rdfs:subPropertyOf <http://purl.org/milto/onto/settings> ;
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
                                             rdf:type owl:FunctionalProperty ;
                                             rdfs:domain [ rdf:type owl:Restriction ;
                                                           owl:onProperty <http://purl.org/milto/onto/numberOfLayers> ;
                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                           owl:onDataRange xsd:int
                                                         ] ;
+<<<<<<< HEAD
                                             <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "Number of layers defined in configuration." .
 
 
@@ -172,11 +194,28 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 <http://purl.org/milto/onto/taskPerformed> rdf:type owl:DatatypeProperty ;
                                            rdfs:subPropertyOf <http://purl.org/milto/onto/gpuTypes> ;
                                            rdf:type owl:FunctionalProperty ;
+=======
+                                            <http://purl.org/dc/elements/1.1/description> "Number of layers defined in configuration." .
+
+
+###  http://purl.org/milto/onto/settings
+<http://purl.org/milto/onto/settings> rdf:type owl:DatatypeProperty ;
+                                      rdfs:comment "Configuration in which tensorflow was implemented.."@en .
+
+
+###  http://purl.org/milto/onto/taskPerformed
+<http://purl.org/milto/onto/taskPerformed> rdf:type owl:DatatypeProperty ,
+                                                    owl:FunctionalProperty ;
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
                                            rdfs:domain [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.org/milto/onto/taskPerformed> ;
                                                          owl:someValuesFrom xsd:string
                                                        ] ;
+<<<<<<< HEAD
                                            <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description> "Tasks for which TendorFlow is used."@en .
+=======
+                                           <http://purl.org/dc/elements/1.1/description> "Tasks for which TendorFlow is used."@en .
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 
 
 #################################################################

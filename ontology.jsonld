@@ -1,6 +1,7 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+<<<<<<< HEAD
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -8,12 +9,16 @@
     "@id" : "http://purl.org/milto/onto/abbreviation"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+=======
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+<<<<<<< HEAD
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/milto/onto#java"
   } ],
@@ -24,13 +29,23 @@
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+=======
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto/stored_In"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     "@id" : "http://purl.org/milto/onto/python"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/milto/onto/stored_In"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "_:genid12",
+=======
+  "@id" : "_:genid11",
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/milto/onto/stored_In"
@@ -39,7 +54,11 @@
     "@id" : "http://purl.org/milto/onto/java"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "_:genid13",
+=======
+  "@id" : "_:genid12",
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -52,6 +71,7 @@
     "@value" : "1"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
@@ -79,11 +99,18 @@
   } ]
 }, {
   "@id" : "_:genid16",
+=======
+  "@id" : "_:genid13",
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Project creation date."
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "_:genid17",
+=======
+  "@id" : "_:genid14",
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -103,6 +130,22 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+<<<<<<< HEAD
+=======
+    "@id" : "http://purl.org/milto/onto/abbreviation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     "@id" : "http://purl.org/milto/onto/gpuTypes"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
@@ -110,6 +153,7 @@
     "@value" : "1"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
@@ -123,6 +167,8 @@
     "@id" : "http://purl.org/milto/onto/neuronsNumberPerLayer"
   } ]
 }, {
+=======
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
@@ -342,6 +388,7 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid7"
+<<<<<<< HEAD
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API_Deep_Learning",
@@ -354,6 +401,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/API"
+=======
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API_Libraries",
@@ -391,7 +440,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/API"
   }, {
+<<<<<<< HEAD
     "@id" : "_:genid11"
+=======
+    "@id" : "_:genid10"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Activation_Function",
@@ -568,7 +621,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto/Platform"
   }, {
+<<<<<<< HEAD
     "@id" : "_:genid12"
+=======
+    "@id" : "_:genid11"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/GPU_Usage",
@@ -844,7 +901,11 @@
     "@value" : "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+<<<<<<< HEAD
     "@id" : "_:genid13"
+=======
+    "@id" : "_:genid12"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/Sonnet",
@@ -1218,7 +1279,11 @@
   "@id" : "http://purl.org/milto/onto/abbreviation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+<<<<<<< HEAD
     "@id" : "_:genid1"
+=======
+    "@id" : "_:genid2"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1492,6 +1557,7 @@
 }, {
   "@id" : "http://purl.org/milto/onto/gpuTypes",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+<<<<<<< HEAD
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid2"
   } ],
@@ -1500,6 +1566,16 @@
   } ],
   "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
     "@value" : "GPUs can be classified as onboard or offboard."
+=======
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "GPUs can be classified as onboard or offboard."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto/settings"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/gpus",
@@ -1515,10 +1591,14 @@
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/hardwareType",
+<<<<<<< HEAD
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
+=======
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 }, {
   "@id" : "http://purl.org/milto/onto/hexagon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1661,6 +1741,7 @@
     "@id" : "http://purl.org/milto/onto/core"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "http://purl.org/milto/onto/neuronsNumberPerLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1682,23 +1763,47 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ],
   "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
+=======
+  "@id" : "http://purl.org/milto/onto/numberOfDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     "@language" : "en",
     "@value" : "Number of devices running tensorflow."
   }, {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : ""
+<<<<<<< HEAD
+=======
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/numberOfLayers",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+<<<<<<< HEAD
+=======
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Number of layers defined in configuration."
+  } ],
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+<<<<<<< HEAD
     "@id" : "http://purl.org/milto/onto/setting"
   } ],
   "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
     "@value" : "Number of layers defined in configuration."
+=======
+    "@id" : "http://purl.org/milto/onto/settings"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/nvtx",
@@ -1836,8 +1941,17 @@
     "@id" : "http://purl.org/milto/onto/contrib"
   } ]
 }, {
+<<<<<<< HEAD
   "@id" : "http://purl.org/milto/onto/setting",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+=======
+  "@id" : "http://purl.org/milto/onto/settings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Configuration in which tensorflow was implemented.."
+  } ]
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 }, {
   "@id" : "http://purl.org/milto/onto/shardy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1884,6 +1998,7 @@
 }, {
   "@id" : "http://purl.org/milto/onto/taskPerformed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+<<<<<<< HEAD
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid6"
   } ],
@@ -1893,6 +2008,14 @@
   "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" : [ {
     "@language" : "en",
     "@value" : "Tasks for which TendorFlow is used."
+=======
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Tasks for which TendorFlow is used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid6"
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/tensorflow",
@@ -2049,7 +2172,14 @@
   } ]
 }, {
   "@id" : "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has",
+<<<<<<< HEAD
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+=======
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ]
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
 }, {
   "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

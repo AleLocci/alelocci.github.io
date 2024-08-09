@@ -203,7 +203,11 @@
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/gpuTypes">
+<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+=======
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/settings"/>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -212,7 +216,11 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:domain>
+<<<<<<< HEAD
         <dcmi-terms:description>GPUs can be classified as onboard or offboard.</dcmi-terms:description>
+=======
+        <dc:description>GPUs can be classified as onboard or offboard.</dc:description>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     </owl:DatatypeProperty>
     
 
@@ -220,6 +228,7 @@
     <!-- http://purl.org/milto/onto/hardwareType -->
 
 
+<<<<<<< HEAD
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
@@ -241,6 +250,9 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
+=======
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType"/>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     
 
 
@@ -256,8 +268,13 @@
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+<<<<<<< HEAD
         <dcmi-terms:description xml:lang="en">Number of devices running tensorflow.</dcmi-terms:description>
         <dcmi-terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></dcmi-terms:description>
+=======
+        <dc:description xml:lang="en">Number of devices running tensorflow.</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></dc:description>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     </owl:DatatypeProperty>
     
 
@@ -266,7 +283,11 @@
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfLayers">
+<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+=======
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/settings"/>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -275,15 +296,28 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:domain>
+<<<<<<< HEAD
         <dcmi-terms:description>Number of layers defined in configuration.</dcmi-terms:description>
+=======
+        <dc:description>Number of layers defined in configuration.</dc:description>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     </owl:DatatypeProperty>
     
 
 
+<<<<<<< HEAD
     <!-- http://purl.org/milto/onto/setting -->
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/setting"/>
+=======
+    <!-- http://purl.org/milto/onto/settings -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/settings">
+        <rdfs:comment xml:lang="en">Configuration in which tensorflow was implemented..</rdfs:comment>
+    </owl:DatatypeProperty>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     
 
 
@@ -291,7 +325,10 @@
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/taskPerformed">
+<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/gpuTypes"/>
+=======
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Restriction>
@@ -299,7 +336,11 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:domain>
+<<<<<<< HEAD
         <dcmi-terms:description xml:lang="en">Tasks for which TendorFlow is used.</dcmi-terms:description>
+=======
+        <dc:description xml:lang="en">Tasks for which TendorFlow is used.</dc:description>
+>>>>>>> 919ea72ff6d14a5d515ea41d9dc0a2531c343df7
     </owl:DatatypeProperty>
     
 

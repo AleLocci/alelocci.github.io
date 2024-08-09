@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://www.semanticweb.org/alelo/ontologies/2024/5/milto" -> "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8" [ label = "prov:specializationOf" ];
+	"http://www.semanticweb.org/alelo/ontologies/2024/5/milto" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
+	"http://www.semanticweb.org/alelo/ontologies/2024/5/milto" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
+	"http://www.semanticweb.org/alelo/ontologies/2024/5/milto" -> "base:agent1" [ label = "prov:wasAttributedTo" ];
+	"http://www.semanticweb.org/alelo/ontologies/2024/5/milto" -> "base:agent0" [ label = "prov:wasAttributedTo" ];
+
+}
