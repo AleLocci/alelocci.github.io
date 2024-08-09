@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "onto:c" "onto:Diretory" "onto:java" "base:java" "onto:python" "onto:cc" "onto:Components" ; /*classes style*/
+	"onto:gpuTypes" -> "onto:setting" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIjava" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = "onto:stored_In" ];
+	"onto:neuronsNumberPerLayer" -> "onto:setting" [ label = "rdfs:subPropertyOf" ];
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = "onto:stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = "onto:stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"http://www.co-ode.org/ontologies/ont.owl/active_Is" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:propertyDisjointWith" ];
+	"NULL" -> "onto:c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:java" [ label = "rdf:first" ];
+	"NULL" -> "base:java" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "235713c0:191381afaee:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "235713c0:191381afaee:-7ff0" [ label = "owl:members" ];
+	"NULL" -> "onto:java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:numberOfLayers" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:neuronsNumberPerLayer" [ label = "owl:onProperty" ];
+	"NULL" -> "235713c0:191381afaee:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "onto:python" [ label = "rdf:first" ];
+	"NULL" -> "onto:python" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "onto:abbreviation" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:int" [ label = "owl:onDataRange" ];
+	"NULL" -> "onto:c" [ label = "rdf:first" ];
+	"NULL" -> "onto:stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "235713c0:191381afaee:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "onto:cc" [ label = "rdf:first" ];
+	"owl:Thing" -> "xsd:int" [ label = "onto:neuronsNumberPerLayer" ];
+	"owl:Thing" -> "xsd:int" [ label = "onto:numberOfDevice" ];
+	"owl:Thing" -> "xsd:string" [ label = "onto:abbreviation" ];
+	"onto:Components" -> "onto:Diretory" [ label = "onto:stored_In" ];
+	"owl:Thing" -> "onto:Diretory" [ label = "owl:topObjectProperty" ];
+
+}
