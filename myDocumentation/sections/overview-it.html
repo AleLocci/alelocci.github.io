@@ -1,4 +1,4 @@
-<h2 id="overv" class="list">Machine Learning Test Ontology: Overview <span class="backlink"> torna alla <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">[Ontology Name]: Overview <span class="backlink"> torna alla <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
 <h4>Classi</h4>
@@ -21,6 +21,17 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
       </a>
    </li>
    <li>
+      <a href="#/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">
+         <span>A P I Deep Learning</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/API_I/API_I/API_IO_and_Preprocessing"
+         title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">
+         <span>A P I I O and Preprocessing</span>
+      </a>
+   </li>
+   <li>
       <a href="#/API_java" title="http://purl.org/milto/onto/API_java">
          <span>A P I java</span>
       </a>
@@ -38,16 +49,6 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
    <li>
       <a href="#/absl" title="http://purl.org/milto/onto/absl">
          <span>absl</span>
-      </a>
-   </li>
-   <li>
-      <a href="#/acro_API" title="http://purl.org/milto/onto/acro_API">
-         <span>acro A P I</span>
-      </a>
-   </li>
-   <li>
-      <a href="#/acro_SUT" title="http://purl.org/milto/onto/acro_SUT">
-         <span>acro S U T</span>
       </a>
    </li>
    <li>
@@ -532,11 +533,6 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
    <li>
       <a href="#/Layers" title="http://purl.org/milto/onto/Layers">
          <span>Layers</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.co-ode.org/ontologies/ont.owl/layers" title="http://www.co-ode.org/ontologies/ont.owl/layers">
-         <span>layers</span>
       </a>
    </li>
    <li>
@@ -1038,7 +1034,8 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
       </a>
    </li>
    <li>
-      <a href="#/TensorFlow_Lite_Micro" title="http://purl.org/milto/onto/TensorFlow_Lite_Micro">
+      <a href="#/TensorFlow_Lite_Micro"
+         title="http://purl.org/milto/onto/TensorFlow_Lite_Micro">
          <span>Tensor Flow Lite Micro</span>
       </a>
    </li>
@@ -1164,6 +1161,36 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
    <li>
       <a href="#/tf_runtime" title="http://purl.org/milto/onto/tf_runtime">
          <span>tf runtime</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.data" title="http://purl.org/milto/onto/tf.data">
+         <span>tf.data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.estimador" title="http://purl.org/milto/onto/tf.estimador">
+         <span>tf.estimador</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.feuture_column" title="http://purl.org/milto/onto/tf.feuture_column">
+         <span>tf.feuture column</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.io" title="http://purl.org/milto/onto/tf.io">
+         <span>tf.io</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.keras" title="http://purl.org/milto/onto/tf.keras">
+         <span>tf.keras</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/tf.queue" title="http://purl.org/milto/onto/tf.queue">
+         <span>tf.queue</span>
       </a>
    </li>
    <li>
@@ -1322,26 +1349,49 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#http://www.co-ode.org/ontologies/ont.owl/active_Is"
-         title="http://www.co-ode.org/ontologies/ont.owl/active_Is">
-         <span>active Is</span>
+      <a href="#/isActive" title="http://purl.org/milto/onto/isActive">
+         <span>is Active</span>
       </a>
    </li>
    <li>
-      <a href="#http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"
-         title="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">
-         <span>deprecated Is</span>
+      <a href="#/isDeprecated" title="http://purl.org/milto/onto/isDeprecated">
+         <span>is Deprecated</span>
       </a>
    </li>
    <li>
-      <a href="#http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"
-         title="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">
-         <span>number Of Layers Has</span>
+      <a href="#/isStoredIn" title="http://purl.org/milto/onto/isStoredIn">
+         <span>is Stored In</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#/abbreviation" title="http://purl.org/milto/onto/abbreviation"/>
+   </li>
+   <li>
+      <a href="#/gpuTypes" title="http://purl.org/milto/onto/gpuTypes">
+         <span>gpu Types</span>
       </a>
    </li>
    <li>
-      <a href="#/stored_In" title="http://purl.org/milto/onto/stored_In">
-         <span>stored In</span>
+      <a href="#/neuronsNumberPerLayer" title="http://purl.org/milto/onto/neuronsNumberPerLayer">
+         <span>neurons Number Per Layer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/numberOfDevice" title="http://purl.org/milto/onto/numberOfDevice">
+         <span>number Of Device</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/numberOfLayers" title="http://purl.org/milto/onto/numberOfLayers">
+         <span>number Of Layers</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/taskPerformed" title="http://purl.org/milto/onto/taskPerformed">
+         <span>task Performed</span>
       </a>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"

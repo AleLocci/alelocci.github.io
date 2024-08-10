@@ -6,22 +6,23 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:onto="http://purl.org/milto/onto/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">
     <owl:Ontology rdf:about="http://purl.org/milto/onto">
         <owl:versionIRI rdf:resource="http://purl.org/milto/onto/6.0.0"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://alexandrelocci.wixsite.com/locci</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ime.usp.br/acvm/</dc:creator>
-        <dc:description xml:lang="en">The Machine Learning Test Ontology was built to characterize failures that have been identified during the use of machine learning tools, in particular the TensorFlow tool.</dc:description>
-        <dc:title xml:lang="en">Machine Learning Test Ontology</dc:title>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-04-05T08:00:00Z</terms:created>
+        <terms:created>2024-04</terms:created>
         <terms:license xml:lang="en">https://creativecommons.org/licenses/by-nc-sa/4.0/</terms:license>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/milto/onto</vann:preferredNamespacePrefix>
-        <rdfs:comment xml:lang="en">An ontology to describe the testing process in Machine Learning tools to describe how failures occur in these systems. Created by Alexandre Locci Martins and Ana Cristina Vierira de Melo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology to describe the testing process in machine learning tools and describe how failures occur in these systems. The work was done by Alexandre Locci Martins and Ana Cristina Vierira de Melo.</rdfs:comment>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:priorVersion>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</owl:versionInfo>
+        <dcmi-terms:creator xml:lang="en">Alexandre Locci Martins; https://alexandrelocci.wixsite.com/locci</dcmi-terms:creator>
+        <dcmi-terms:creator xml:lang="en">Ana Cristina Vieira de Melo; https://www.ime.usp.br/acvm/</dcmi-terms:creator>
+        <dcmi-terms:description xml:lang="en">The objective of the Machine Learning Test Ontology (MiLTO) is to model machine learning test procedures and their associated data. The main objective of this study is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is based on doctoral research carried out at IME-USP.</dcmi-terms:description>
+        <dcmi-terms:subject>Characterization of faults.;Testing on systems based on machine learning;</dcmi-terms:subject>
+        <dcmi-terms:title xml:lang="en">Machine Learning Test Ontology</dcmi-terms:title>
     </owl:Ontology>
     
 
@@ -59,6 +60,13 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/title -->
 
 
@@ -87,6 +95,34 @@
     
 
 
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -99,54 +135,29 @@
     
 
 
-    <!-- http://purl.org/milto/onto/stored_In -->
+    <!-- http://purl.org/milto/onto/isActive -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/stored_In">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/milto/onto/Components"/>
-        <rdfs:range rdf:resource="http://purl.org/milto/onto/Diretory"/>
-        <rdfs:comment xml:lang="en">Object is stored in another Object.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isActive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl/active_Is -->
+    <!-- http://purl.org/milto/onto/isDeprecated -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/active_Is">
-        <owl:inverseOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isDeprecated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl/deprecated_Is -->
+    <!-- http://purl.org/milto/onto/isStoredIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Components"/>
-            </owl:Restriction>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.co-ode.org/ontologies/ont.owl/layers"/>
-            </owl:Restriction>
-        </rdfs:domain>
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isStoredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -157,6 +168,104 @@
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
         <rdfs:range rdf:resource="http://purl.org/milto/onto/Diretory"/>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/milto/onto/abbreviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/abbreviation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label>A short form for an longer title or name.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/gpuTypes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/gpuTypes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dcmi-terms:description>GPUs can be classified as onboard or offboard.</dcmi-terms:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/hardwareType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType"/>
+    
+
+
+    <!-- http://purl.org/milto/onto/neuronsNumberPerLayer -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/neuronsNumberPerLayer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto/setting"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/numberOfDevice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfDevice">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcmi-terms:description xml:lang="en">Number of devices running tensorflow.</dcmi-terms:description>
+        <dcmi-terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></dcmi-terms:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/numberOfLayers -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/numberOfLayers">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfLayers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <dcmi-terms:description>Number of layers defined in configuration.</dcmi-terms:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto/setting -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/setting"/>
+    
+
+
+    <!-- http://purl.org/milto/onto/taskPerformed -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/taskPerformed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dcmi-terms:description xml:lang="en">Tasks for which TendorFlow is used.</dcmi-terms:description>
+    </owl:DatatypeProperty>
     
 
 
@@ -275,9 +384,24 @@
 
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API">
-        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto/acro_API"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
-        <rdfs:comment xml:lang="en">API&apos;s . The API&apos;s function is to link between different applications serving the user. They enable integration between different systems and make user actions faster with the expected responses. The API always works in the background, so the average user does not even see the API in operation. TensorFlow provides APIs in many programming languages as C, C++, Java, and Python, which one are located in the python, c, cc and java directories.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_Deep_Learning -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_Deep_Learning">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
     </owl:Class>
     
 
@@ -296,12 +420,6 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_c">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/c"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -311,12 +429,6 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_cc">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto/cc"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -335,12 +447,6 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/API_python">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/python"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -514,6 +620,7 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Diretory">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+        <rdfs:comment xml:lang="en">It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers.</rdfs:comment>
     </owl:Class>
     
 
@@ -593,12 +700,6 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/GPU">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Platform"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/stored_In"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/java"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -978,7 +1079,13 @@
 
 
     <owl:Class rdf:about="http://purl.org/milto/onto/SUT">
-        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto/acro_SUT"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/abbreviation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:comment xml:lang="en">Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks.</rdfs:comment>
     </owl:Class>
     
@@ -1042,7 +1149,21 @@
 
 
     <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow">
-        <rdfs:comment>&quot;TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models.&quot;</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/neuronsNumberPerLayer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberOfLayers"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models.</rdfs:comment>
     </owl:Class>
     
 
@@ -1515,25 +1636,6 @@
     
 
 
-    <!-- http://purl.org/milto/onto/acro_API -->
-
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/acro_API">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Components"/>
-        <rdfs:comment xml:lang="en">API - Application Programming Interface.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/acro_SUT -->
-
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/acro_SUT">
-        <rdfs:comment xml:lang="en">SUT - System  Under Test</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/activity_watcher -->
 
 
@@ -1584,7 +1686,7 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/c">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
-        <rdfs:comment>The directory where the TensorFlow API C source code is located.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The directory in which the TensorFlow API C source code is situated.</rdfs:comment>
     </owl:Class>
     
 
@@ -1594,7 +1696,7 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/cc">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/tensorflow"/>
-        <rdfs:comment xml:lang="en">The directory where the TensorFlow API C++ source code is located.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The directory in which the TensorFlow API C++ source code is situated.</rdfs:comment>
     </owl:Class>
     
 
@@ -2294,6 +2396,60 @@
     
 
 
+    <!-- http://purl.org/milto/onto/tf.data -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.data">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.estimador -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.estimador">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.feuture_column -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.feuture_column">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.io -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.io">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.keras -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.keras">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_Deep_Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/tf.queue -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/tf.queue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto/tf_runtime -->
 
 
@@ -2389,6 +2545,15 @@
 
     <owl:Class rdf:about="http://purl.org/milto/onto/xla">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/third-party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/API"/>
     </owl:Class>
     
 
@@ -2528,15 +2693,6 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl/layers -->
-
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl/layers">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/SUT"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2554,7 +2710,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#codeAPIc">
         <rdf:type rdf:resource="http://purl.org/milto/onto/API_c"/>
-        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/c"/>
         <rdfs:comment xml:lang="en">Source code implemented for the c API functionality and stored in the directory c.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2579,7 +2734,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc">
         <rdf:type rdf:resource="http://purl.org/milto/onto/API_cc"/>
-        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/cc"/>
     </owl:NamedIndividual>
     
 
@@ -2598,7 +2752,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl/java">
         <rdf:type rdf:resource="http://purl.org/milto/onto#java"/>
-        <onto:stored_In rdf:resource="http://www.co-ode.org/ontologies/ont.owl/java"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>Project creation date.</rdfs:comment>
