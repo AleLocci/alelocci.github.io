@@ -2,22 +2,13 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="resources/primer.css" media="screen"/>
-<link rel="stylesheet" href="resources/rec.css" media="screen"/>
-<link rel="stylesheet" href="resources/extra.css" media="screen"/>
-<link rel="stylesheet" href="resources/owl.css" media="screen"/>
-<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
-<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
-<link rel="stylesheet" href="resources/slider.css" media="screen"/>
-<meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
-	<dark-mode-toggle class="slider"></dark-mode-toggle>
-</div>
+<link rel="stylesheet" href="resources/yeti.css" media="screen"/>
+<link rel="stylesheet" href="resources/site.css" media="screen"/>
  <title>Machine Learning Test Ontology</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","name":"Machine Learning Test Ontology", "headline":"Machine Learning Test Ontology (MiLTO) aims to model machine learning test procedures and associated data. The main objective is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is the result of  doctoral research carried out at IME-USP.", "dateReleased":"Fri Aug 09 18:02:47 WEST 2024", "license":"https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt", "author":[{"@type":"Person","name":"Alexandre Locci Martins","url":"https://alexandrelocci.wixsite.com/locci"},{"@type":"Person","name":"Ana Cristina Vieira de Melo","url":"https://www.ime.usp.br/acvm/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8","name":"Machine Learning Test Ontology", "headline":"Machine Learning Test Ontology (MiLTO) aims to model machine learning test procedures and associated data. The main objective is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is the result of  doctoral research carried out at IME-USP.", "dateReleased":"Sat Aug 10 21:05:55 WEST 2024", "license":"https://creativecommons.org/licenses/by-nc-sa/3.0/pt/deed.pt", "author":[{"@type":"Person","name":"Alexandre Locci Martins","url":"https://alexandrelocci.wixsite.com/locci"},{"@type":"Person","name":"Ana Cristina Vieira de Melo","url":"https://www.ime.usp.br/acvm/"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -130,17 +121,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">
-         <span>A P I Deep Learning</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"
-         title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">
-         <span>A P I I O and Preprocessing</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/milto/onto/API_java" title="http://purl.org/milto/onto/API_java">
          <span>A P I java</span>
       </a>
@@ -158,6 +138,16 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/milto/onto/absl" title="http://purl.org/milto/onto/absl">
          <span>absl</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/milto/onto/acro_API" title="http://purl.org/milto/onto/acro_API">
+         <span>acro A P I</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/milto/onto/acro_SUT" title="http://purl.org/milto/onto/acro_SUT">
+         <span>acro S U T</span>
       </a>
    </li>
    <li>
@@ -642,6 +632,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/milto/onto/Layers" title="http://purl.org/milto/onto/Layers">
          <span>Layers</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.co-ode.org/ontologies/ont.owl/layers" title="http://www.co-ode.org/ontologies/ont.owl/layers">
+         <span>layers</span>
       </a>
    </li>
    <li>
@@ -1143,8 +1138,7 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/milto/onto/TensorFlow_Lite_Micro"
-         title="http://purl.org/milto/onto/TensorFlow_Lite_Micro">
+      <a href="#http://purl.org/milto/onto/TensorFlow_Lite_Micro" title="http://purl.org/milto/onto/TensorFlow_Lite_Micro">
          <span>Tensor Flow Lite Micro</span>
       </a>
    </li>
@@ -1270,36 +1264,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/milto/onto/tf_runtime" title="http://purl.org/milto/onto/tf_runtime">
          <span>tf runtime</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.data" title="http://purl.org/milto/onto/tf.data">
-         <span>tf.data</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.estimador" title="http://purl.org/milto/onto/tf.estimador">
-         <span>tf.estimador</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.feuture_column" title="http://purl.org/milto/onto/tf.feuture_column">
-         <span>tf.feuture column</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.io" title="http://purl.org/milto/onto/tf.io">
-         <span>tf.io</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.keras" title="http://purl.org/milto/onto/tf.keras">
-         <span>tf.keras</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/tf.queue" title="http://purl.org/milto/onto/tf.queue">
-         <span>tf.queue</span>
       </a>
    </li>
    <li>
@@ -1470,39 +1434,14 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"
+         title="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">
+         <span>number Of Layers Has</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://purl.org/milto/onto/stored_In" title="http://purl.org/milto/onto/stored_In">
          <span>stored In</span>
-      </a>
-   </li>
-</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    class="hlist">
-   <li>
-      <a href="#http://purl.org/milto/onto/abbreviation" title="http://purl.org/milto/onto/abbreviation"/>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/gpuTypes" title="http://purl.org/milto/onto/gpuTypes">
-         <span>gpu Types</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/neuronsNumberPerLayer" title="http://purl.org/milto/onto/neuronsNumberPerLayer">
-         <span>neurons Number Per Layer</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/numberOfDevice" title="http://purl.org/milto/onto/numberOfDevice">
-         <span>number Of Device</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/numberOfLayers" title="http://purl.org/milto/onto/numberOfLayers">
-         <span>number Of Layers</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.org/milto/onto/taskPerformed" title="http://purl.org/milto/onto/taskPerformed">
-         <span>task Performed</span>
       </a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -1519,12 +1458,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator"
-         title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator">
-         <span>creator</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date">
          <span>date</span>
       </a>
@@ -1535,35 +1468,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description"
-         title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description">
-         <span>description</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
          <span>license</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/dc/elements/1.1/subject" title="http://purl.org/dc/elements/1.1/subject">
-         <span>subject</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject"
-         title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject">
-         <span>subject</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
-         <span>title</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title"
-         title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title">
          <span>title</span>
       </a>
    </li>
@@ -1617,12 +1527,12 @@ This section provides details for each class and property defined by Machine Lea
   <li><a href="#http://purl.org/milto/onto/API" title="http://purl.org/milto/onto/API"> <span>A P I</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/API_c" title="http://purl.org/milto/onto/API_c"> <span>A P I c</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/API_cc" title="http://purl.org/milto/onto/API_cc"> <span>A P I cc</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning"> <span>A P I Deep Learning</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing" title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing"> <span>A P I I O and Preprocessing</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/API_java" title="http://purl.org/milto/onto/API_java"> <span>A P I java</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/API_Libraries" title="http://purl.org/milto/onto/API_Libraries"> <span>A P I Libraries</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/API_python" title="http://purl.org/milto/onto/API_python"> <span>A P I python</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/absl" title="http://purl.org/milto/onto/absl"> <span>absl</span> </a></li>
+  <li><a href="#http://purl.org/milto/onto/acro_API" title="http://purl.org/milto/onto/acro_API"> <span>acro A P I</span> </a></li>
+  <li><a href="#http://purl.org/milto/onto/acro_SUT" title="http://purl.org/milto/onto/acro_SUT"> <span>acro S U T</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Activation_Function" title="http://purl.org/milto/onto/Activation_Function"> <span>Activation Function</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/activity_watcher" title="http://purl.org/milto/onto/activity_watcher"> <span>activity watcher</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Algorithm" title="http://purl.org/milto/onto/Algorithm"> <span>Algorithm</span> </a></li>
@@ -1719,6 +1629,7 @@ This section provides details for each class and property defined by Machine Lea
   <li><a href="#http://purl.org/milto/onto/kissfft" title="http://purl.org/milto/onto/kissfft"> <span>kissfft</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Layer_Properties" title="http://purl.org/milto/onto/Layer_Properties"> <span>Layer Properties</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Layers" title="http://purl.org/milto/onto/Layers"> <span>Layers</span> </a></li>
+  <li><a href="#http://www.co-ode.org/ontologies/ont.owl/layers" title="http://www.co-ode.org/ontologies/ont.owl/layers"> <span>layers</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/lib" title="http://purl.org/milto/onto/lib"> <span>lib</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/libprotobuf_mutator" title="http://purl.org/milto/onto/libprotobuf_mutator"> <span>libprotobuf mutator</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Libraries_&_Extensions" title="http://purl.org/milto/onto/Libraries_&amp;_Extensions"> <span>Libraries &amp; Extensions</span> </a></li>
@@ -1840,12 +1751,6 @@ This section provides details for each class and property defined by Machine Lea
   <li><a href="#http://purl.org/milto/onto/Tensors_&_Inputs" title="http://purl.org/milto/onto/Tensors_&amp;_Inputs"> <span>Tensors &amp; Inputs</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Validation/Testing" title="http://purl.org/milto/onto/Validation/Testing"> <span>Testing</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/tf_runtime" title="http://purl.org/milto/onto/tf_runtime"> <span>tf runtime</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.data" title="http://purl.org/milto/onto/tf.data"> <span>tf.data</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.estimador" title="http://purl.org/milto/onto/tf.estimador"> <span>tf.estimador</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.feuture_column" title="http://purl.org/milto/onto/tf.feuture_column"> <span>tf.feuture column</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.io" title="http://purl.org/milto/onto/tf.io"> <span>tf.io</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.keras" title="http://purl.org/milto/onto/tf.keras"> <span>tf.keras</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/tf.queue" title="http://purl.org/milto/onto/tf.queue"> <span>tf.queue</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/tfrt" title="http://purl.org/milto/onto/tfrt"> <span>tfrt</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/third-party" title="http://purl.org/milto/onto/third-party"> <span>third party</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/Time_Series_Forecasting" title="http://purl.org/milto/onto/Time_Series_Forecasting"> <span>Time Series Forecasting</span> </a></li>
@@ -1881,14 +1786,14 @@ This section provides details for each class and property defined by Machine Lea
   <h3>A P I<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/API</p>
   <div class="comment">
-   <span class="markdown">The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively.</span>
+   <span class="markdown">API's . The API's function is to link between different applications serving the user. They enable integration between different systems and make user actions faster with the expected responses. The API always works in the background, so the average user does not even see the API in operation. TensorFlow provides APIs in many programming languages as C, C++, Java, and Python, which one are located in the python, c, cc and java directories.</span>
   </div>
   <dl class="description">
    <dt>
     is equivalent to
    </dt>
    <dd>
-    <a href="#http://purl.org/milto/onto/abbreviation" title="http://purl.org/milto/onto/abbreviation">abbreviation</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">exactly</span> 1
+    <a href="#http://purl.org/milto/onto/acro_API" title="http://purl.org/milto/onto/acro_API">acro A P I</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has super-classes
@@ -1900,7 +1805,7 @@ This section provides details for each class and property defined by Machine Lea
     has sub-classes
    </dt>
    <dd>
-    <a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">A P I Deep Learning</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing" title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">A P I I O and Preprocessing</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_Libraries" title="http://purl.org/milto/onto/API_Libraries">A P I Libraries</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_c" title="http://purl.org/milto/onto/API_c">A P I c</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_cc" title="http://purl.org/milto/onto/API_cc">A P I cc</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_java" title="http://purl.org/milto/onto/API_java">A P I java</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_python" title="http://purl.org/milto/onto/API_python">A P I python</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/milto/onto/API_Libraries" title="http://purl.org/milto/onto/API_Libraries">A P I Libraries</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_c" title="http://purl.org/milto/onto/API_c">A P I c</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_cc" title="http://purl.org/milto/onto/API_cc">A P I cc</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_java" title="http://purl.org/milto/onto/API_java">A P I java</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/API_python" title="http://purl.org/milto/onto/API_python">A P I python</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1937,42 +1842,6 @@ This section provides details for each class and property defined by Machine Lea
    </dt>
    <dd>
     <a href="#http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" title="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc">code A P Icc</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/API_Deep_Learning">
-  <h3>A P I Deep Learning<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/API_Deep_Learning</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API" title="http://purl.org/milto/onto/API">A P I</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/tf.estimador" title="http://purl.org/milto/onto/tf.estimador">tf.estimador</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/tf.feuture_column" title="http://purl.org/milto/onto/tf.feuture_column">tf.feuture column</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/tf.keras" title="http://purl.org/milto/onto/tf.keras">tf.keras</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">
-  <h3>A P I I O and Preprocessing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API" title="http://purl.org/milto/onto/API">A P I</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/tf.data" title="http://purl.org/milto/onto/tf.data">tf.data</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/tf.io" title="http://purl.org/milto/onto/tf.io">tf.io</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/tf.queue" title="http://purl.org/milto/onto/tf.queue">tf.queue</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -2029,6 +1898,29 @@ This section provides details for each class and property defined by Machine Lea
     <a href="#http://purl.org/milto/onto/third-party" title="http://purl.org/milto/onto/third-party">third party</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="http://purl.org/milto/onto/acro_API">
+  <h3>acro A P I<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto/acro_API</p>
+  <div class="comment">
+   <span class="markdown">API - Application Programming Interface.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/milto/onto/Components" title="http://purl.org/milto/onto/Components">Components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/milto/onto/acro_SUT">
+  <h3>acro S U T<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto/acro_SUT</p>
+  <div class="comment">
+   <span class="markdown">SUT - System Under Test</span>
+  </div>
+  <dl class="description"></dl>
  </div>
  <div class="entity" id="http://purl.org/milto/onto/Activation_Function">
   <h3>Activation Function<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -2130,7 +2022,7 @@ This section provides details for each class and property defined by Machine Lea
   <h3>c<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/c</p>
   <div class="comment">
-   <span class="markdown">The directory in which the TensorFlow API C source code is situated.</span>
+   <span class="markdown">The directory where the TensorFlow API C source code is located.</span>
   </div>
   <dl class="description">
    <dt>
@@ -2199,7 +2091,7 @@ This section provides details for each class and property defined by Machine Lea
   <h3>cc<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/cc</p>
   <div class="comment">
-   <span class="markdown">The directory in which the TensorFlow API C++ source code is situated.</span>
+   <span class="markdown">The directory where the TensorFlow API C++ source code is located.</span>
   </div>
   <dl class="description">
    <dt>
@@ -2293,7 +2185,7 @@ This section provides details for each class and property defined by Machine Lea
     has sub-classes
    </dt>
    <dd>
-    <a href="#http://purl.org/milto/onto/API" title="http://purl.org/milto/onto/API">A P I</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Computation_Graph" title="http://purl.org/milto/onto/Computation_Graph">Computation Graph</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Contribution" title="http://purl.org/milto/onto/Contribution">Contribution</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Documentation" title="http://purl.org/milto/onto/Documentation">Documentation</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Framework" title="http://purl.org/milto/onto/Framework">Framework</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Kernel" title="http://purl.org/milto/onto/Kernel">Kernel</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Library" title="http://purl.org/milto/onto/Library">Library</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Platform" title="http://purl.org/milto/onto/Platform">Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Runtime" title="http://purl.org/milto/onto/Runtime">Runtime</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Tool" title="http://purl.org/milto/onto/Tool">Tool</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/exemples" title="http://purl.org/milto/onto/exemples">exemples</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/milto/onto/API" title="http://purl.org/milto/onto/API">A P I</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Computation_Graph" title="http://purl.org/milto/onto/Computation_Graph">Computation Graph</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Contribution" title="http://purl.org/milto/onto/Contribution">Contribution</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Documentation" title="http://purl.org/milto/onto/Documentation">Documentation</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Framework" title="http://purl.org/milto/onto/Framework">Framework</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Kernel" title="http://purl.org/milto/onto/Kernel">Kernel</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Library" title="http://purl.org/milto/onto/Library">Library</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Platform" title="http://purl.org/milto/onto/Platform">Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Runtime" title="http://purl.org/milto/onto/Runtime">Runtime</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Tool" title="http://purl.org/milto/onto/Tool">Tool</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/acro_API" title="http://purl.org/milto/onto/acro_API">acro A P I</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/exemples" title="http://purl.org/milto/onto/exemples">exemples</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -2543,9 +2435,6 @@ This section provides details for each class and property defined by Machine Lea
  <div class="entity" id="http://purl.org/milto/onto/Diretory">
   <h3>Diretory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Diretory</p>
-  <div class="comment">
-   <span class="markdown">It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers.</span>
-  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -3320,6 +3209,18 @@ This section provides details for each class and property defined by Machine Lea
    </dt>
    <dd>
     <a href="#http://purl.org/milto/onto/Activation_Function" title="http://purl.org/milto/onto/Activation_Function">Activation Function</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Layer_Properties" title="http://purl.org/milto/onto/Layer_Properties">Layer Properties</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer" title="http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer">Missing Redundant Wrong Layer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.co-ode.org/ontologies/ont.owl/layers">
+  <h3>layers<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.co-ode.org/ontologies/ont.owl/layers</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/milto/onto/SUT" title="http://purl.org/milto/onto/SUT">S U T</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -4210,7 +4111,13 @@ This section provides details for each class and property defined by Machine Lea
     is equivalent to
    </dt>
    <dd>
-    <a href="#http://purl.org/milto/onto/abbreviation" title="http://purl.org/milto/onto/abbreviation">abbreviation</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">exactly</span> 1
+    <a href="#http://purl.org/milto/onto/acro_SUT" title="http://purl.org/milto/onto/acro_SUT">acro S U T</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://www.co-ode.org/ontologies/ont.owl/layers" title="http://www.co-ode.org/ontologies/ont.owl/layers">layers</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -4392,13 +4299,9 @@ This section provides details for each class and property defined by Machine Lea
   <h3>Tensor Flow<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/TensorFlow</p>
   <div class="comment">
-   <span class="markdown">TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models.</span>
+   <span class="markdown">"TensorFlow is an open-source platform developed by Google for the purpose of machine learning and deep learning. It is widely used to develop and train machine learning models."</span>
   </div>
   <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd></dd>
    <dt>
     has sub-classes
    </dt>
@@ -4854,78 +4757,6 @@ This section provides details for each class and property defined by Machine Lea
    </dd>
   </dl>
  </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.data">
-  <h3>tf.data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.data</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing" title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">A P I I O and Preprocessing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.estimador">
-  <h3>tf.estimador<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.estimador</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">A P I Deep Learning</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.feuture_column">
-  <h3>tf.feuture column<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.feuture_column</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">A P I Deep Learning</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.io">
-  <h3>tf.io<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.io</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing" title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">A P I I O and Preprocessing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.keras">
-  <h3>tf.keras<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.keras</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_Deep_Learning" title="http://purl.org/milto/onto/API_Deep_Learning">A P I Deep Learning</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/tf.queue">
-  <h3>tf.queue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/tf.queue</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing" title="http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing">A P I I O and Preprocessing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="http://purl.org/milto/onto/tfrt">
   <h3>tfrt<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/tfrt</p>
@@ -5318,15 +5149,58 @@ This section provides details for each class and property defined by Machine Lea
  <ul class="hlist">
   <li><a href="#http://www.co-ode.org/ontologies/ont.owl/active_Is" title="http://www.co-ode.org/ontologies/ont.owl/active_Is"> <span>active Is</span> </a></li>
   <li><a href="#http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" title="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"> <span>deprecated Is</span> </a></li>
+  <li><a href="#http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has" title="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has"> <span>number Of Layers Has</span> </a></li>
   <li><a href="#http://purl.org/milto/onto/stored_In" title="http://purl.org/milto/onto/stored_In"> <span>stored In</span> </a></li>
  </ul>
  <div class="entity" id="http://www.co-ode.org/ontologies/ont.owl/active_Is">
   <h3>active Is<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.co-ode.org/ontologies/ont.owl/active_Is</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" title="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">deprecated Is</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
  </div>
  <div class="entity" id="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">
   <h3>deprecated Is<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.co-ode.org/ontologies/ont.owl/deprecated_Is</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" title="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is">deprecated Is</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#http://purl.org/milto/onto/Components" title="http://purl.org/milto/onto/Components">Components</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.co-ode.org/ontologies/ont.owl/active_Is" title="http://www.co-ode.org/ontologies/ont.owl/active_Is">active Is</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">
+  <h3>number Of Layers Has<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has" title="http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has">number Of Layers Has</a> <sup class="type-op" title="object property">op</sup> <span class="logic">min</span> 1 <a href="#http://www.co-ode.org/ontologies/ont.owl/layers" title="http://www.co-ode.org/ontologies/ont.owl/layers">layers</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
  </div>
  <div class="entity" id="http://purl.org/milto/onto/stored_In">
   <h3>stored In<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -5352,114 +5226,15 @@ This section provides details for each class and property defined by Machine Lea
    </dl>
   </div>
  </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
- <h3 id="dataproperties-headline" class="list">Data Properties</h3>
- <ul class="hlist">
-  <li><a href="#http://purl.org/milto/onto/abbreviation" title="http://purl.org/milto/onto/abbreviation"></a></li>
-  <li><a href="#http://purl.org/milto/onto/gpuTypes" title="http://purl.org/milto/onto/gpuTypes"> <span>gpu Types</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/neuronsNumberPerLayer" title="http://purl.org/milto/onto/neuronsNumberPerLayer"> <span>neurons Number Per Layer</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/numberOfDevice" title="http://purl.org/milto/onto/numberOfDevice"> <span>number Of Device</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/numberOfLayers" title="http://purl.org/milto/onto/numberOfLayers"> <span>number Of Layers</span> </a></li>
-  <li><a href="#http://purl.org/milto/onto/taskPerformed" title="http://purl.org/milto/onto/taskPerformed"> <span>task Performed</span> </a></li>
- </ul>
- <div class="entity" id="http://purl.org/milto/onto/abbreviation">
-  <h3><sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/abbreviation</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/gpuTypes">
-  <h3>gpu Types<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/gpuTypes</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/milto/onto/setting" target="_blank" title="http://purl.org/milto/onto/setting">setting</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/neuronsNumberPerLayer">
-  <h3>neurons Number Per Layer<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/neuronsNumberPerLayer</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/milto/onto/setting" target="_blank" title="http://purl.org/milto/onto/setting">setting</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/numberOfDevice">
-  <h3>number Of Device<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/numberOfDevice</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/numberOfLayers">
-  <h3>number Of Layers<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/numberOfLayers</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#http://purl.org/milto/onto/numberOfLayers" title="http://purl.org/milto/onto/numberOfLayers">number Of Layers</a> <sup class="type-dp" title="data property">dp</sup> <span class="logic">min</span> 1
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/milto/onto/taskPerformed">
-  <h3>task Performed<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/milto/onto/taskPerformed</p>
- </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
   <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator"> <span>creator</span> </a></li>
-  <li><a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator" title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator"> <span>creator</span> </a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date"> <span>date</span> </a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description"> <span>description</span> </a></li>
-  <li><a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description" title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description"> <span>description</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
-  <li><a href="#http://purl.org/dc/elements/1.1/subject" title="http://purl.org/dc/elements/1.1/subject"> <span>subject</span> </a></li>
-  <li><a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject" title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject"> <span>subject</span> </a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
-  <li><a href="#https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title" title="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title"> <span>title</span> </a></li>
   <li><a href="#vann:preferredNamespacePrefix" title="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix"> <span>vann:preferred Namespace Prefix</span> </a></li>
  </ul>
  <div class="entity" id="http://purl.org/dc/terms/created">
@@ -5470,10 +5245,6 @@ This section provides details for each class and property defined by Machine Lea
   <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
  </div>
- <div class="entity" id="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator">
-  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://www.dublincore.org/specifications/dublin-core/dcmi-terms/creator</p>
- </div>
  <div class="entity" id="http://purl.org/dc/elements/1.1/date">
   <h3>date<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/date</p>
@@ -5482,29 +5253,13 @@ This section provides details for each class and property defined by Machine Lea
   <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
  </div>
- <div class="entity" id="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description">
-  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://www.dublincore.org/specifications/dublin-core/dcmi-terms/description</p>
- </div>
  <div class="entity" id="http://purl.org/dc/terms/license">
   <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
  </div>
- <div class="entity" id="http://purl.org/dc/elements/1.1/subject">
-  <h3>subject<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/subject</p>
- </div>
- <div class="entity" id="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject">
-  <h3>subject<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://www.dublincore.org/specifications/dublin-core/dcmi-terms/subject</p>
- </div>
  <div class="entity" id="http://purl.org/dc/elements/1.1/title">
   <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
- </div>
- <div class="entity" id="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title">
-  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://www.dublincore.org/specifications/dublin-core/dcmi-terms/title</p>
  </div>
  <div class="entity" id="vann:preferredNamespacePrefix">
   <h3>vann:preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -5567,12 +5322,6 @@ This section provides details for each class and property defined by Machine Lea
    <dd>
     <a href="#http://purl.org/milto/onto/API_java" title="http://purl.org/milto/onto/API_java">A P I java</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="#http://purl.org/milto/onto/stored_In" title="http://purl.org/milto/onto/stored_In">stored In</a> <sup class="type-op" title="object property">op</sup> <a href="#http://www.co-ode.org/ontologies/ont.owl/java" title="http://www.co-ode.org/ontologies/ont.owl/java">java</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="http://www.co-ode.org/ontologies/ont.owl/java">
@@ -5585,6 +5334,12 @@ This section provides details for each class and property defined by Machine Lea
    <dd>
     <a href="#http://purl.org/milto/onto#java" title="http://purl.org/milto/onto#java">java</a> <sup class="type-c" title="class">c</sup>
    </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://purl.org/milto/onto/stored_In" title="http://purl.org/milto/onto/stored_In">stored In</a> <sup class="type-op" title="object property">op</sup> <a href="#http://www.co-ode.org/ontologies/ont.owl/java" title="http://www.co-ode.org/ontologies/ont.owl/java">java</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
   </dl>
  </div>
 </div><div id="legend">
@@ -5592,7 +5347,6 @@ This section provides details for each class and property defined by Machine Lea
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
-<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>

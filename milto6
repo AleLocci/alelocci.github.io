@@ -134,6 +134,9 @@
         <Class IRI="/Categories_of_Symptoms"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Ci"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Colab"/>
     </Declaration>
     <Declaration>
@@ -144,6 +147,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Concurrency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Contrib"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Contrib_Directory"/>
@@ -434,6 +440,9 @@
         <Class IRI="/TensorFlow_Transform"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Tensorflow"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Tensorflow.js_Models"/>
     </Declaration>
     <Declaration>
@@ -441,6 +450,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Third-party"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Time_Series_Forecasting"/>
@@ -524,9 +536,6 @@
         <Class IRI="/cc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ci"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/clang_toolchain"/>
     </Declaration>
     <Declaration>
@@ -537,9 +546,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/config"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/contrib"/>
     </Declaration>
     <Declaration>
         <Class IRI="/core"/>
@@ -749,9 +755,6 @@
         <Class IRI="/systemlibs"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/tensorflow"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/tensorrt"/>
     </Declaration>
     <Declaration>
@@ -777,12 +780,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/tfrt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/third-party"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tools"/>
     </Declaration>
     <Declaration>
         <Class IRI="/tpu"/>
@@ -854,13 +851,13 @@
         <Class IRI="/core/protobuf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/stored_In"/>
+        <ObjectProperty IRI="/isActive"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/active_Is"/>
+        <ObjectProperty IRI="/isDeprecated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
+        <ObjectProperty IRI="/isStoredIn"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/abbreviation"/>
@@ -956,47 +953,47 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#distribute"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#docs_src"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#dtensor"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#examples"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#go"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#java"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#js"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#lite"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#python"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#security"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#tools"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/API"/>
@@ -1015,44 +1012,16 @@
         <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/API_c"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/stored_In"/>
-            <Class IRI="/c"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/API_cc"/>
         <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_cc"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/stored_In"/>
-            <Class IRI="/cc"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/API_java"/>
         <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/API_java"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/stored_In"/>
-            <Class IRI="#java"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/API_python"/>
         <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_python"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/stored_In"/>
-            <Class IRI="/python"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activation_Function"/>
@@ -1079,6 +1048,10 @@
         <Class IRI="/Failure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Ci"/>
+        <Class IRI="/Diretory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Colab"/>
         <Class IRI="/Tools"/>
     </SubClassOf>
@@ -1093,6 +1066,10 @@
     <SubClassOf>
         <Class IRI="/Concurrency"/>
         <Class IRI="/Categories_of_Root_Causes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Contrib"/>
+        <Class IRI="/Diretory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Contrib_Directory"/>
@@ -1144,7 +1121,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/FP16"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Fairness_Indicators"/>
@@ -1161,13 +1138,6 @@
     <SubClassOf>
         <Class IRI="/GPU"/>
         <Class IRI="/Platform"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/GPU"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/stored_In"/>
-            <Class IRI="/java"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/GPU_Usage"/>
@@ -1488,6 +1458,10 @@
         <Class IRI="/Libraries_&amp;_Extensions"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Tensorflow"/>
+        <Class IRI="/Diretory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Tensorflow.js_Models"/>
         <Class IRI="/Model_Tensorflow"/>
     </SubClassOf>
@@ -1496,12 +1470,20 @@
         <Class IRI="/Tools"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Third-party"/>
+        <Class IRI="/Diretory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Time_Series_Forecasting"/>
         <Class IRI="/Task"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Tool"/>
         <Class IRI="/Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tools"/>
+        <Class IRI="/Diretory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Tools"/>
@@ -1573,7 +1555,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/absl"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/activity_watcher"/>
@@ -1581,7 +1563,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/android"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/api_def"/>
@@ -1589,47 +1571,39 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/benchmark"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/boringssl"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/c"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/cc"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ci"/>
-        <Class IRI="/Diretory"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/clang_toolchain"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/compiler"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/compute_library"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/config"/>
         <Class IRI="/core"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/contrib"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/core"/>
-        <Class IRI="/tensorflow"/>
+        <Class IRI="/Tensorflow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/core_util"/>
@@ -1641,15 +1615,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/dlpack"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ducc"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/eigen3"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/example"/>
@@ -1665,11 +1639,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/farmhash"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/fft2d"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/file"/>
@@ -1677,7 +1651,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/flatbuffers"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/function"/>
@@ -1685,43 +1659,43 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/gemmlowp"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/gloo"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/googleapis"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/gpus"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/grpc"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/hexagon"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/highwayhash"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/hwloc"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/icu"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/implib_so"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ir"/>
@@ -1733,7 +1707,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/jpeg"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/kernels"/>
@@ -1741,7 +1715,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/kissfft"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/lib"/>
@@ -1749,15 +1723,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/libprotobuf_mutator"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/llvm"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/llvm_openmp"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/logging"/>
@@ -1769,27 +1743,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/mkl"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/mkl_dnn"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/mpi"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/mpitrampoline"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/nanobind"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/nasm"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/nccl"/>
@@ -1797,11 +1771,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/nvtx"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/opencl_headers"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ops"/>
@@ -1809,11 +1783,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ortools"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/pasta"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/platform"/>
@@ -1829,7 +1803,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/protobuf_tp"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/public"/>
@@ -1837,19 +1811,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/py"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/pybind11_abseil"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/pybind11_bazel"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/pybind11_protobuf"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/python"/>
@@ -1857,15 +1831,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/python_runtime"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/remote_config"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/robin_map"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/root"/>
@@ -1877,23 +1851,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ruy"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/seq2seq"/>
-        <Class IRI="/contrib"/>
+        <Class IRI="/Contrib"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/shardy"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/sobol_data"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/stablehlo"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/summary"/>
@@ -1901,15 +1875,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/systemlibs"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tensorflow"/>
-        <Class IRI="/Diretory"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/tensorrt"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/tf.data"/>
@@ -1937,19 +1907,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/tf_runtime"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/tfrt"/>
         <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/third-party"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tools"/>
-        <Class IRI="/Diretory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/tpu"/>
@@ -1961,7 +1923,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/triton"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/user_ops"/>
@@ -1973,11 +1935,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/vulkan_headers"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/xla"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Third-party"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
@@ -2065,52 +2027,33 @@
         <Class IRI="#java"/>
         <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/java"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/stored_In"/>
-        <NamedIndividual IRI="#codeAPIc"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/c"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/stored_In"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/cc"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/stored_In"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/java"/>
-    </ObjectPropertyAssertion>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/active_Is"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
-    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/isActive"/>
+    </InverseFunctionalObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="/stored_In"/>
+        <ObjectProperty IRI="/isStoredIn"/>
     </TransitiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/stored_In"/>
-        <Class IRI="/Components"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/stored_In"/>
-        <Class IRI="/Diretory"/>
+        <ObjectProperty IRI="/isStoredIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isStoredIn"/>
+            <Class IRI="/Diretory"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
         <Class IRI="/Diretory"/>
     </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/active_Is"/>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl/deprecated_Is"/>
-    </DisjointObjectProperties>
     <SubDataPropertyOf>
         <DataProperty IRI="/gpuTypes"/>
         <DataProperty IRI="/setting"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/neuronsNumberPerLayer"/>
+        <DataProperty IRI="/setting"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/numberOfLayers"/>
         <DataProperty IRI="/setting"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
@@ -2124,9 +2067,6 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="/numberOfLayers"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="/taskPerformed"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="/numberOfLayers"/>
@@ -2147,6 +2087,11 @@
         <DataProperty IRI="/numberOfDevice"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="/gpuTypes"/>
+        <DataProperty IRI="/neuronsNumberPerLayer"/>
+        <DataProperty IRI="/numberOfLayers"/>
+    </DisjointDataProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#codeAPIc</IRI>
@@ -2253,18 +2198,13 @@
         <Literal>The directory where the TensorFlow API Python source code is located.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/stored_In</IRI>
-        <Literal xml:lang="en">Object is stored in another Object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/taskPerformed</IRI>
         <Literal xml:lang="en">Tasks for which TendorFlow is used.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>Project creation date.</Literal>
     </AnnotationAssertion>
 </Ontology>
