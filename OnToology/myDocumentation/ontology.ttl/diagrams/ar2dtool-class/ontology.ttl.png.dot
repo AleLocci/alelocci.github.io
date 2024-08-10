@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.co-ode.org/ontologies/ont.owl/layers" ":c" ":Diretory" ":java" ":python" ":SUT" ":acro_SUT" ":acro_API" ":API" ":cc" ":Components" ; /*classes style*/
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = ":stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = ":stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	":SUT" -> ":acro_SUT" [ label = "owl:equivalentClass" ];
+	":API" -> ":acro_API" [ label = "owl:equivalentClass" ];
+	"http://www.co-ode.org/ontologies/ont.owl/java" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = ":stored_In" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:onProperty" ];
+	"NULL" -> "39ff9ea1:1913de992f8:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> ":c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":java" [ label = "rdf:first" ];
+	"NULL" -> "39ff9ea1:1913de992f8:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/layers" [ label = "owl:onClass" ];
+	"NULL" -> ":java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":python" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":python" [ label = "rdf:first" ];
+	"NULL" -> ":cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "39ff9ea1:1913de992f8:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> ":Components" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":c" [ label = "rdf:first" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has" [ label = "owl:onProperty" ];
+	"NULL" -> ":stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "39ff9ea1:1913de992f8:-7ffc" [ label = "owl:members" ];
+	"NULL" -> ":cc" [ label = "rdf:first" ];
+	":Components" -> ":Diretory" [ label = ":stored_In" ];
+	"owl:Thing" -> ":Diretory" [ label = "owl:topObjectProperty" ];
+
+}
