@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.co-ode.org/ontologies/ont.owl/layers" "onto:c" "onto:Diretory" "onto:java" "onto:python" "onto:SUT" "onto:acro_SUT" "onto:acro_API" "onto:API" "onto:cc" "onto:Components" ; /*classes style*/
+	"http://www.co-ode.org/ontologies/ont.owl/codeAPIcc" -> "http://www.co-ode.org/ontologies/ont.owl/cc" [ label = "onto:stored_In" ];
+	"base:codeAPIc" -> "http://www.co-ode.org/ontologies/ont.owl/c" [ label = "onto:stored_In" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"onto:SUT" -> "onto:acro_SUT" [ label = "owl:equivalentClass" ];
+	"onto:API" -> "onto:acro_API" [ label = "owl:equivalentClass" ];
+	"http://www.co-ode.org/ontologies/ont.owl/java" -> "http://www.co-ode.org/ontologies/ont.owl/java" [ label = "onto:stored_In" ];
+	"NULL" -> "28cfcfc3:1913de9cd32:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:c" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "onto:java" [ label = "rdf:first" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/layers" [ label = "owl:onClass" ];
+	"NULL" -> "28cfcfc3:1913de9cd32:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "onto:java" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:python" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:python" [ label = "rdf:first" ];
+	"NULL" -> "onto:cc" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "28cfcfc3:1913de9cd32:-7ff2" [ label = "rdf:rest" ];
+	"NULL" -> "onto:Components" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "onto:c" [ label = "rdf:first" ];
+	"NULL" -> "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has" [ label = "owl:onProperty" ];
+	"NULL" -> "onto:stored_In" [ label = "owl:onProperty" ];
+	"NULL" -> "28cfcfc3:1913de9cd32:-7ff4" [ label = "owl:members" ];
+	"NULL" -> "onto:cc" [ label = "rdf:first" ];
+	"onto:Components" -> "onto:Diretory" [ label = "onto:stored_In" ];
+	"owl:Thing" -> "onto:Diretory" [ label = "owl:topObjectProperty" ];
+
+}

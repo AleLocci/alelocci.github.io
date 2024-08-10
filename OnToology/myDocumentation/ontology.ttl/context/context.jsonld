@@ -1,0 +1,807 @@
+{
+  "@context" : {
+    "TensorFlow_Quantum" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Quantum"
+    },
+    "Image_Classification" : {
+      "@id" : "http://purl.org/milto/onto/Image_Classification"
+    },
+    "TFX-Addons" : {
+      "@id" : "http://purl.org/milto/onto/TFX-Addons"
+    },
+    "logging" : {
+      "@id" : "http://purl.org/milto/onto/logging"
+    },
+    "TensorFlow_JVM" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_JVM"
+    },
+    "Wrong_Input" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Input"
+    },
+    "Colab" : {
+      "@id" : "http://purl.org/milto/onto/Colab"
+    },
+    "pasta" : {
+      "@id" : "http://purl.org/milto/onto/pasta"
+    },
+    "user_ops" : {
+      "@id" : "http://purl.org/milto/onto/user_ops"
+    },
+    "TensorFlow_Agents" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Agents"
+    },
+    "contrib" : {
+      "@id" : "http://purl.org/milto/onto/contrib"
+    },
+    "Crash" : {
+      "@id" : "http://purl.org/milto/onto/Crash"
+    },
+    "Natural_Language_Processing" : {
+      "@id" : "http://purl.org/milto/onto/Natural_Language_Processing"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "core_util" : {
+      "@id" : "http://purl.org/milto/onto/core_util"
+    },
+    "compiler" : {
+      "@id" : "http://purl.org/milto/onto/compiler"
+    },
+    "example" : {
+      "@id" : "http://purl.org/milto/onto/example"
+    },
+    "js" : {
+      "@id" : "http://purl.org/milto/onto#js"
+    },
+    "TensorFlow_Recommenders" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Recommenders"
+    },
+    "triton" : {
+      "@id" : "http://purl.org/milto/onto/triton"
+    },
+    "Platform" : {
+      "@id" : "http://purl.org/milto/onto/Platform"
+    },
+    "gpus" : {
+      "@id" : "http://purl.org/milto/onto/gpus"
+    },
+    "SUT" : {
+      "@id" : "http://purl.org/milto/onto/SUT"
+    },
+    "common_runtime" : {
+      "@id" : "http://purl.org/milto/onto/core/common_runtime"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Documentation" : {
+      "@id" : "http://purl.org/milto/onto/Documentation"
+    },
+    "Model_Card_Toolkit" : {
+      "@id" : "http://purl.org/milto/onto/Model_Card_Toolkit"
+    },
+    "What_If" : {
+      "@id" : "http://purl.org/milto/onto/What_If"
+    },
+    "Recommendation_systems" : {
+      "@id" : "http://purl.org/milto/onto/Recommendation_systems"
+    },
+    "googleapis" : {
+      "@id" : "http://purl.org/milto/onto/googleapis"
+    },
+    "Preprocessing_of_Trainning_Data" : {
+      "@id" : "http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"
+    },
+    "protobuf_tp" : {
+      "@id" : "http://purl.org/milto/onto/protobuf_tp"
+    },
+    "tools" : {
+      "@id" : "http://purl.org/milto/onto/tools"
+    },
+    "config" : {
+      "@id" : "http://purl.org/milto/onto/config"
+    },
+    "security" : {
+      "@id" : "http://purl.org/milto/onto#security"
+    },
+    "Tool" : {
+      "@id" : "http://purl.org/milto/onto/Tool"
+    },
+    "tpu" : {
+      "@id" : "http://purl.org/milto/onto/tpu"
+    },
+    "highwayhash" : {
+      "@id" : "http://purl.org/milto/onto/highwayhash"
+    },
+    "Layers" : {
+      "@id" : "http://purl.org/milto/onto/Layers"
+    },
+    "Computation_Graph" : {
+      "@id" : "http://purl.org/milto/onto/Computation_Graph"
+    },
+    "api_def" : {
+      "@id" : "http://purl.org/milto/onto/api_def"
+    },
+    "lite" : {
+      "@id" : "http://purl.org/milto/onto#lite"
+    },
+    "hexagon" : {
+      "@id" : "http://purl.org/milto/onto/hexagon"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "FP16" : {
+      "@id" : "http://purl.org/milto/onto/FP16"
+    },
+    "opencl_headers" : {
+      "@id" : "http://purl.org/milto/onto/opencl_headers"
+    },
+    "Trainning_Process" : {
+      "@id" : "http://purl.org/milto/onto/Trainning_Process"
+    },
+    "Test" : {
+      "@id" : "http://purl.org/milto/onto/Test"
+    },
+    "TensorFlow_Lite_Micro" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Micro"
+    },
+    "Ecosystem" : {
+      "@id" : "http://purl.org/milto/onto/Ecosystem"
+    },
+    "boringssl" : {
+      "@id" : "http://purl.org/milto/onto/boringssl"
+    },
+    "ci" : {
+      "@id" : "http://purl.org/milto/onto/ci"
+    },
+    "llvm_openmp" : {
+      "@id" : "http://purl.org/milto/onto/llvm_openmp"
+    },
+    "_Propertes" : {
+      "@id" : "http://purl.org/milto/onto/Model_Type_&_Propertes"
+    },
+    "Tensorflow_Playground" : {
+      "@id" : "http://purl.org/milto/onto/Tensorflow_Playground"
+    },
+    "graph" : {
+      "@id" : "http://purl.org/milto/onto/core/graph"
+    },
+    "Activation_Function" : {
+      "@id" : "http://purl.org/milto/onto/Activation_Function"
+    },
+    "TensorFlow_Graphics" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Graphics"
+    },
+    "API_c" : {
+      "@id" : "http://purl.org/milto/onto/API_c"
+    },
+    "profiler" : {
+      "@id" : "http://purl.org/milto/onto/profiler"
+    },
+    "libprotobuf_mutator" : {
+      "@id" : "http://purl.org/milto/onto/libprotobuf_mutator"
+    },
+    "API_python" : {
+      "@id" : "http://purl.org/milto/onto/API_python"
+    },
+    "util" : {
+      "@id" : "http://purl.org/milto/onto/util"
+    },
+    "Diretory" : {
+      "@id" : "http://purl.org/milto/onto/Diretory"
+    },
+    "TensorBoard" : {
+      "@id" : "http://purl.org/milto/onto/TensorBoard"
+    },
+    "Version_Keras" : {
+      "@id" : "http://purl.org/milto/onto/Version_Keras"
+    },
+    "nanobind" : {
+      "@id" : "http://purl.org/milto/onto/nanobind"
+    },
+    "Tensorflow.js_Models" : {
+      "@id" : "http://purl.org/milto/onto/Tensorflow.js_Models"
+    },
+    "py" : {
+      "@id" : "http://purl.org/milto/onto/py"
+    },
+    "Runtime" : {
+      "@id" : "http://purl.org/milto/onto/Runtime"
+    },
+    "Hyperparameters" : {
+      "@id" : "http://purl.org/milto/onto/Hyperparameters"
+    },
+    "ops" : {
+      "@id" : "http://purl.org/milto/onto/ops"
+    },
+    "remote_config" : {
+      "@id" : "http://purl.org/milto/onto/remote_config"
+    },
+    "mkl" : {
+      "@id" : "http://purl.org/milto/onto/mkl"
+    },
+    "framework" : {
+      "@id" : "http://purl.org/milto/onto/core/framework"
+    },
+    "TensorFlow_Metadata" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Metadata"
+    },
+    "GPU_Usage" : {
+      "@id" : "http://purl.org/milto/onto/GPU_Usage"
+    },
+    "API_java" : {
+      "@id" : "http://purl.org/milto/onto/API_java"
+    },
+    "TPU_Research_Cloud" : {
+      "@id" : "http://purl.org/milto/onto/TPU_Research_Cloud"
+    },
+    "compute_library" : {
+      "@id" : "http://purl.org/milto/onto/compute_library"
+    },
+    "deprecated_Is" : {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl/deprecated_Is",
+      "@type" : "@id"
+    },
+    "clang_toolchain" : {
+      "@id" : "http://purl.org/milto/onto/clang_toolchain"
+    },
+    "API" : {
+      "@id" : "http://purl.org/milto/onto/API"
+    },
+    "tensorflow" : {
+      "@id" : "http://purl.org/milto/onto/tensorflow"
+    },
+    "runtime_fallback" : {
+      "@id" : "http://purl.org/milto/onto/runtime_fallback"
+    },
+    "TensorFlow_IO" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_IO"
+    },
+    "Visual_Block" : {
+      "@id" : "http://purl.org/milto/onto/Visual_Block"
+    },
+    "TensorFlow_Ranking" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Ranking"
+    },
+    "fft2d" : {
+      "@id" : "http://purl.org/milto/onto/fft2d"
+    },
+    "TensorFlow_Official_Datasets" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Official_Datasets"
+    },
+    "profile" : {
+      "@id" : "http://purl.org/milto/onto/profile"
+    },
+    "Layer_Properties" : {
+      "@id" : "http://purl.org/milto/onto/Layer_Properties"
+    },
+    "TensorFlow_Addons" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Addons"
+    },
+    "jpeg" : {
+      "@id" : "http://purl.org/milto/onto/jpeg"
+    },
+    "distributed_runtime" : {
+      "@id" : "http://purl.org/milto/onto/core/distributed_runtime"
+    },
+    "Warning-style_error" : {
+      "@id" : "http://purl.org/milto/onto/Warning-style_error"
+    },
+    "java" : {
+      "@id" : "http://purl.org/milto/onto/java"
+    },
+    "activity_watcher" : {
+      "@id" : "http://purl.org/milto/onto/activity_watcher"
+    },
+    "CPU" : {
+      "@id" : "http://purl.org/milto/onto/CPU"
+    },
+    "stablehlo" : {
+      "@id" : "http://purl.org/milto/onto/stablehlo"
+    },
+    "Directory_API" : {
+      "@id" : "http://purl.org/milto/onto/Directory_API"
+    },
+    "Google_Cloud_Public_Datasets" : {
+      "@id" : "http://purl.org/milto/onto/Google_Cloud_Public_Datasets"
+    },
+    "TFX" : {
+      "@id" : "http://purl.org/milto/onto/TFX"
+    },
+    "root" : {
+      "@id" : "http://purl.org/milto/onto/root"
+    },
+    "TensorFlow_Text" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Text"
+    },
+    "Inconsistency" : {
+      "@id" : "http://purl.org/milto/onto/Inconsistency"
+    },
+    "ortools" : {
+      "@id" : "http://purl.org/milto/onto/ortools"
+    },
+    "tensorrt" : {
+      "@id" : "http://purl.org/milto/onto/tensorrt"
+    },
+    "TensorFlow_Probability" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Probability"
+    },
+    "gloo" : {
+      "@id" : "http://purl.org/milto/onto/gloo"
+    },
+    "kernels" : {
+      "@id" : "http://purl.org/milto/onto/kernels"
+    },
+    "Keras" : {
+      "@id" : "http://purl.org/milto/onto/Keras"
+    },
+    "API_cc" : {
+      "@id" : "http://purl.org/milto/onto/API_cc"
+    },
+    "Missing_Redundant_Wrong_Layer" : {
+      "@id" : "http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer"
+    },
+    "GPU" : {
+      "@id" : "http://purl.org/milto/onto/GPU"
+    },
+    "XLA" : {
+      "@id" : "http://purl.org/milto/onto/XLA"
+    },
+    "Time_Series_Forecasting" : {
+      "@id" : "http://purl.org/milto/onto/Time_Series_Forecasting"
+    },
+    "summary" : {
+      "@id" : "http://purl.org/milto/onto/summary"
+    },
+    "Sonnet" : {
+      "@id" : "http://purl.org/milto/onto/Sonnet"
+    },
+    "TensorFlow_Compression" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Compression"
+    },
+    "xla" : {
+      "@id" : "http://purl.org/milto/onto/xla"
+    },
+    "mkl_dnn" : {
+      "@id" : "http://purl.org/milto/onto/mkl_dnn"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "pybind11_abseil" : {
+      "@id" : "http://purl.org/milto/onto/pybind11_abseil"
+    },
+    "seq2seq" : {
+      "@id" : "http://purl.org/milto/onto/seq2seq"
+    },
+    "number_Of_Layers_Has" : {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl/number_Of_Layers_Has",
+      "@type" : "@id"
+    },
+    "active_Is" : {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl/active_Is",
+      "@type" : "@id"
+    },
+    "ir" : {
+      "@id" : "http://purl.org/milto/onto/ir"
+    },
+    "ducc" : {
+      "@id" : "http://purl.org/milto/onto/ducc"
+    },
+    "TensorFlow_Transform" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Transform"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "TensorFlow_Serving" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Serving"
+    },
+    "Logic_error" : {
+      "@id" : "http://purl.org/milto/onto/Logic_error"
+    },
+    "shardy" : {
+      "@id" : "http://purl.org/milto/onto/shardy"
+    },
+    "distribute" : {
+      "@id" : "http://purl.org/milto/onto#distribute"
+    },
+    "Dataset_Tensorflow" : {
+      "@id" : "http://purl.org/milto/onto/Dataset_Tensorflow"
+    },
+    "ML_Metadata" : {
+      "@id" : "http://purl.org/milto/onto/ML_Metadata"
+    },
+    "Components" : {
+      "@id" : "http://purl.org/milto/onto/Components"
+    },
+    "Concurrency" : {
+      "@id" : "http://purl.org/milto/onto/Concurrency"
+    },
+    "Model" : {
+      "@id" : "http://purl.org/milto/onto/Model"
+    },
+    "TensorFlow_Lite_Support" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Support"
+    },
+    "Performance_degradation" : {
+      "@id" : "http://purl.org/milto/onto/Performance_degradation"
+    },
+    "Model_Optimization_Toolkit" : {
+      "@id" : "http://purl.org/milto/onto/Model_Optimization_Toolkit"
+    },
+    "Algorithm" : {
+      "@id" : "http://purl.org/milto/onto/Algorithm"
+    },
+    "Categories_of_Root_Causes" : {
+      "@id" : "http://purl.org/milto/onto/Categories_of_Root_Causes"
+    },
+    "Library" : {
+      "@id" : "http://purl.org/milto/onto/Library"
+    },
+    "go" : {
+      "@id" : "http://purl.org/milto/onto#go"
+    },
+    "nccl" : {
+      "@id" : "http://purl.org/milto/onto/nccl"
+    },
+    "vulkan_headers" : {
+      "@id" : "http://purl.org/milto/onto/vulkan_headers"
+    },
+    "Neural_Structured_Learning" : {
+      "@id" : "http://purl.org/milto/onto/Neural_Structured_Learning"
+    },
+    "tf_runtime" : {
+      "@id" : "http://purl.org/milto/onto/tf_runtime"
+    },
+    "mpi" : {
+      "@id" : "http://purl.org/milto/onto/mpi"
+    },
+    "_Inputs" : {
+      "@id" : "http://purl.org/milto/onto/Tensors_&_Inputs"
+    },
+    "Failure" : {
+      "@id" : "http://purl.org/milto/onto/Failure"
+    },
+    "debug" : {
+      "@id" : "http://purl.org/milto/onto/core/debug"
+    },
+    "nvtx" : {
+      "@id" : "http://purl.org/milto/onto/nvtx"
+    },
+    "TensorFlow.js" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow.js"
+    },
+    "Optimizer" : {
+      "@id" : "http://purl.org/milto/onto/Optimizer"
+    },
+    "Resources" : {
+      "@id" : "http://purl.org/milto/onto/Resources"
+    },
+    "TensorFlow_Recommenders_Addons" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Recommenders_Addons"
+    },
+    "KerasNLP" : {
+      "@id" : "http://purl.org/milto/onto/KerasNLP"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8#vann:preferredNamespacePrefix"
+    },
+    "implib_so" : {
+      "@id" : "http://purl.org/milto/onto/implib_so"
+    },
+    "memory" : {
+      "@id" : "http://purl.org/milto/onto/memory"
+    },
+    "Kaggle_Model" : {
+      "@id" : "http://purl.org/milto/onto/Kaggle_Model"
+    },
+    "Testing" : {
+      "@id" : "http://purl.org/milto/onto/Validation/Testing"
+    },
+    "pybind11_bazel" : {
+      "@id" : "http://purl.org/milto/onto/pybind11_bazel"
+    },
+    "Contrib_Directory" : {
+      "@id" : "http://purl.org/milto/onto/Contrib_Directory"
+    },
+    "ruy" : {
+      "@id" : "http://purl.org/milto/onto/ruy"
+    },
+    "tfrt" : {
+      "@id" : "http://purl.org/milto/onto/tfrt"
+    },
+    "Framework" : {
+      "@id" : "http://purl.org/milto/onto/Framework"
+    },
+    "Type_Confusion" : {
+      "@id" : "http://purl.org/milto/onto/Type_Confusion"
+    },
+    "grpc" : {
+      "@id" : "http://purl.org/milto/onto/grpc"
+    },
+    "Dopamine" : {
+      "@id" : "http://purl.org/milto/onto/Dopamine"
+    },
+    "Kaagle_Datasets" : {
+      "@id" : "http://purl.org/milto/onto/Kaagle_Datasets"
+    },
+    "icu" : {
+      "@id" : "http://purl.org/milto/onto/icu"
+    },
+    "python_runtime" : {
+      "@id" : "http://purl.org/milto/onto/python_runtime"
+    },
+    "Wrong_Tensor_Shape" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Tensor_Shape"
+    },
+    "Corner_Case" : {
+      "@id" : "http://purl.org/milto/onto/Corner_Case"
+    },
+    "absl" : {
+      "@id" : "http://purl.org/milto/onto/absl"
+    },
+    "function" : {
+      "@id" : "http://purl.org/milto/onto/function"
+    },
+    "kissfft" : {
+      "@id" : "http://purl.org/milto/onto/kissfft"
+    },
+    "ML_Perf" : {
+      "@id" : "http://purl.org/milto/onto/ML_Perf"
+    },
+    "Functional_error" : {
+      "@id" : "http://purl.org/milto/onto/Functional_error"
+    },
+    "grappler" : {
+      "@id" : "http://purl.org/milto/onto/core/grappler"
+    },
+    "Fairness_Indicators" : {
+      "@id" : "http://purl.org/milto/onto/Fairness_Indicators"
+    },
+    "Loss_Function" : {
+      "@id" : "http://purl.org/milto/onto/Loss_Function"
+    },
+    "_Extensions" : {
+      "@id" : "http://purl.org/milto/onto/Libraries_&_Extensions"
+    },
+    "stored_In" : {
+      "@id" : "http://purl.org/milto/onto/stored_In",
+      "@type" : "@id"
+    },
+    "dtensor" : {
+      "@id" : "http://purl.org/milto/onto#dtensor"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "NdArray" : {
+      "@id" : "http://purl.org/milto/onto/NdArray"
+    },
+    "Processing" : {
+      "@id" : "http://purl.org/milto/onto/Processing"
+    },
+    "lib" : {
+      "@id" : "http://purl.org/milto/onto/lib"
+    },
+    "acro_SUT" : {
+      "@id" : "http://purl.org/milto/onto/acro_SUT"
+    },
+    "Trainning_Data" : {
+      "@id" : "http://purl.org/milto/onto/Trainning_Data"
+    },
+    "llvm" : {
+      "@id" : "http://purl.org/milto/onto/llvm"
+    },
+    "protobuf" : {
+      "@id" : "http://purl.org/milto/onto/core/protobuf"
+    },
+    "layers" : {
+      "@id" : "http://www.co-ode.org/ontologies/ont.owl/layers"
+    },
+    "Memory" : {
+      "@id" : "http://purl.org/milto/onto/Memory"
+    },
+    "Hang" : {
+      "@id" : "http://purl.org/milto/onto/Hang"
+    },
+    "Wrong_Type_of_Input_Data" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Type_of_Input_Data"
+    },
+    "TensorFlow_Model_Remediation" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Model_Remediation"
+    },
+    "Tools" : {
+      "@id" : "http://purl.org/milto/onto/Tools"
+    },
+    "TensorFlow" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow"
+    },
+    "TensorFlow_Federated" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Federated"
+    },
+    "transforms" : {
+      "@id" : "http://purl.org/milto/onto/transforms"
+    },
+    "TensorFlow_Privacy" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Privacy"
+    },
+    "TensorFlow_Model_Analysis" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Model_Analysis"
+    },
+    "Build_failure" : {
+      "@id" : "http://purl.org/milto/onto/Build_failure"
+    },
+    "public" : {
+      "@id" : "http://purl.org/milto/onto/public"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Contribution" : {
+      "@id" : "http://purl.org/milto/onto/Contribution"
+    },
+    "Trainning" : {
+      "@id" : "http://purl.org/milto/onto/Trainning"
+    },
+    "Model_Garden" : {
+      "@id" : "http://purl.org/milto/onto/Model_Garden"
+    },
+    "file" : {
+      "@id" : "http://purl.org/milto/onto/file"
+    },
+    "flatbuffers" : {
+      "@id" : "http://purl.org/milto/onto/flatbuffers"
+    },
+    "Wrong_Preprocessing" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Preprocessing"
+    },
+    "TensorFlow_Decision_Forests" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Decision_Forests"
+    },
+    "systemlibs" : {
+      "@id" : "http://purl.org/milto/onto/systemlibs"
+    },
+    "pybind11_protobuf" : {
+      "@id" : "http://purl.org/milto/onto/pybind11_protobuf"
+    },
+    "Version" : {
+      "@id" : "http://purl.org/milto/onto/Version"
+    },
+    "Categories_of_Symptoms" : {
+      "@id" : "http://purl.org/milto/onto/Categories_of_Symptoms"
+    },
+    "API_Libraries" : {
+      "@id" : "http://purl.org/milto/onto/API_Libraries"
+    },
+    "benchmark" : {
+      "@id" : "http://purl.org/milto/onto/benchmark"
+    },
+    "Kernel" : {
+      "@id" : "http://purl.org/milto/onto/Kernel"
+    },
+    "mpitrampoline" : {
+      "@id" : "http://purl.org/milto/onto/mpitrampoline"
+    },
+    "farmhash" : {
+      "@id" : "http://purl.org/milto/onto/farmhash"
+    },
+    "eigen3" : {
+      "@id" : "http://purl.org/milto/onto/eigen3"
+    },
+    "python" : {
+      "@id" : "http://purl.org/milto/onto#python"
+    },
+    "hwloc" : {
+      "@id" : "http://purl.org/milto/onto/hwloc"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Missing_Preprocessing" : {
+      "@id" : "http://purl.org/milto/onto/Missing_Preprocessing"
+    },
+    "Dimension_Mismatch" : {
+      "@id" : "http://purl.org/milto/onto/Dimension_Mismatch"
+    },
+    "Recommender_System" : {
+      "@id" : "http://purl.org/milto/onto/Recommender_System"
+    },
+    "examples" : {
+      "@id" : "http://purl.org/milto/onto#examples"
+    },
+    "dlpack" : {
+      "@id" : "http://purl.org/milto/onto/dlpack"
+    },
+    "TensorFlow_Lite_Model_Maker" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Lite_Model_Maker"
+    },
+    "Responsible_AI" : {
+      "@id" : "http://purl.org/milto/onto/Responsible_AI"
+    },
+    "Wrong_Input_Format" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Input_Format"
+    },
+    "Referenced_types_error" : {
+      "@id" : "http://purl.org/milto/onto/Referenced_types_error"
+    },
+    "Conﬁguration_error" : {
+      "@id" : "http://purl.org/milto/onto/Conﬁguration_error"
+    },
+    "sobol_data" : {
+      "@id" : "http://purl.org/milto/onto/sobol_data"
+    },
+    "data" : {
+      "@id" : "http://purl.org/milto/onto/data"
+    },
+    "platform" : {
+      "@id" : "http://purl.org/milto/onto/platform"
+    },
+    "MLIR" : {
+      "@id" : "http://purl.org/milto/onto/MLIR"
+    },
+    "Wrong_Shape_of_Input" : {
+      "@id" : "http://purl.org/milto/onto/Wrong_Shape_of_Input"
+    },
+    "Task" : {
+      "@id" : "http://purl.org/milto/onto/Task"
+    },
+    "core" : {
+      "@id" : "http://purl.org/milto/onto/core"
+    },
+    "third-party" : {
+      "@id" : "http://purl.org/milto/onto/third-party"
+    },
+    "TensorFlow_Hub" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Hub"
+    },
+    "TensorFlow_Lattice" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Lattice"
+    },
+    "c" : {
+      "@id" : "http://purl.org/milto/onto/c"
+    },
+    "android" : {
+      "@id" : "http://purl.org/milto/onto/android"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "cc" : {
+      "@id" : "http://purl.org/milto/onto/cc"
+    },
+    "TensorFlow_GNN" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_GNN"
+    },
+    "Model_Tensorflow" : {
+      "@id" : "http://purl.org/milto/onto/Model_Tensorflow"
+    },
+    "nasm" : {
+      "@id" : "http://purl.org/milto/onto/nasm"
+    },
+    "exemples" : {
+      "@id" : "http://purl.org/milto/onto/exemples"
+    },
+    "gemmlowp" : {
+      "@id" : "http://purl.org/milto/onto/gemmlowp"
+    },
+    "acro_API" : {
+      "@id" : "http://purl.org/milto/onto/acro_API"
+    },
+    "docs_src" : {
+      "@id" : "http://purl.org/milto/onto#docs_src"
+    },
+    "TensorFlow_Data_Validation" : {
+      "@id" : "http://purl.org/milto/onto/TensorFlow_Data_Validation"
+    },
+    "robin_map" : {
+      "@id" : "http://purl.org/milto/onto/robin_map"
+    }
+  }
+}
