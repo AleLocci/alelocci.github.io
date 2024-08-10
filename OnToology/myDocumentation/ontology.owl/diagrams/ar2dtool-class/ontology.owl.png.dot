@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":c" ":Diretory" ":java" ":python" ":cc" ; /*classes style*/
+	":isActive" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	":gpuTypes" -> ":setting" [ label = "rdfs:subPropertyOf" ];
+	":neuronsNumberPerLayer" -> ":setting" [ label = "rdfs:subPropertyOf" ];
+	":isStoredIn" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/milto/onto" -> "http://purl.org/milto/onto/6.0.0" [ label = "owl:versionIRI" ];
+	"NULL" -> ":java" [ label = "rdf:first" ];
+	"NULL" -> "e82cb0a:1913dfcd066:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> ":numberOfLayers" [ label = "owl:onProperty" ];
+	"NULL" -> ":neuronsNumberPerLayer" [ label = "owl:onProperty" ];
+	"NULL" -> ":python" [ label = "rdf:first" ];
+	"NULL" -> "e82cb0a:1913dfcd066:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "e82cb0a:1913dfcd066:-7ff5" [ label = "owl:members" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> ":abbreviation" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:int" [ label = "owl:onDataRange" ];
+	"NULL" -> ":c" [ label = "rdf:first" ];
+	"NULL" -> "e82cb0a:1913dfcd066:-7ff2" [ label = "rdf:rest" ];
+	"NULL" -> ":cc" [ label = "rdf:first" ];
+	":isDeprecated" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:int" [ label = ":neuronsNumberPerLayer" ];
+	"owl:Thing" -> "xsd:int" [ label = ":numberOfDevice" ];
+	"owl:Thing" -> "xsd:string" [ label = ":abbreviation" ];
+	"owl:Thing" -> ":Diretory" [ label = "owl:topObjectProperty" ];
+
+}
