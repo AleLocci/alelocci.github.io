@@ -302,6 +302,9 @@
         <Class IRI="/Preprocessing_of_Trainning_Data"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/ProbeClass"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Processing"/>
     </Declaration>
     <Declaration>
@@ -1271,6 +1274,14 @@
         <Class IRI="/Trainning"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/ProbeClass"/>
+        <Class IRI="/c"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ProbeClass"/>
+        <Class IRI="/cc"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Processing"/>
         <Class IRI="/Categories_of_Root_Causes"/>
     </SubClassOf>
@@ -2120,6 +2131,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ProbeClass</IRI>
+        <Literal xml:lang="en">When the ontology is sorted, the ontology will mark this class as inconsistent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/Runtime</IRI>
         <Literal xml:lang="en">The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones.</Literal>
     </AnnotationAssertion>
@@ -2200,7 +2216,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>Project creation date.</Literal>
     </AnnotationAssertion>
 </Ontology>

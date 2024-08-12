@@ -1011,6 +1011,17 @@
     
 
 
+    <!-- http://purl.org/milto/onto/ProbeClass -->
+
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/ProbeClass">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/c"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/cc"/>
+        <rdfs:comment xml:lang="en">When the ontology is sorted, the ontology will mark this class as inconsistent.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto/Processing -->
 
 

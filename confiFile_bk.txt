@@ -1,9 +1,9 @@
 
 abstract=Machine Learning Test Ontology (MiLTO) aims to model machine learning test procedures and associated data. The main objective is to characterize failures in machine learning tools, especially TensorFlow information about systems and users. This ontology is the result of  doctoral research carried out at IME-USP.
-ontologyTitle=Machine Learning Test Ontology
+ontologyTitle=Machine Learning Test Ontology - MiLTO
 ontologyPrefix=[Ontology NS Prefix]
 ontologyNamespaceURI=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8
-ontologyName=Machine Learning Test Ontology
+ontologyName=Machine Learning Test Ontology (MiLTO)
 thisVersionURI=purl.org/milto/onto
 latestVersionURI=http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8
 previousVersionURI=

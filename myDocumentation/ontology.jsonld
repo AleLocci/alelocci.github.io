@@ -677,6 +677,18 @@
     "@id" : "http://purl.org/milto/onto/Trainning"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto/ProbeClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "When the ontology is sorted, the ontology will mark this class as inconsistent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/milto/onto/c"
+  }, {
+    "@id" : "http://purl.org/milto/onto/cc"
+  } ]
+}, {
   "@id" : "http://purl.org/milto/onto/Processing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {

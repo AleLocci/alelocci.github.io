@@ -473,6 +473,12 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Preprocessing_of_Trainning_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Preprocessing_of_Trainning_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
 # 
+# http://purl.org/milto/onto/ProbeClass
+<http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/c> .
+<http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/cc> .
+<http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/2000/01/rdf-schema#comment> "When the ontology is sorted, the ontology will mark this class as inconsistent."@en .
+# 
 # http://purl.org/milto/onto/Processing
 <http://purl.org/milto/onto/Processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .

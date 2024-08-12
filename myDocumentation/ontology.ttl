@@ -566,6 +566,13 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                              rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
 
 
+###  http://purl.org/milto/onto/ProbeClass
+<http://purl.org/milto/onto/ProbeClass> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/milto/onto/c> ,
+                                                        <http://purl.org/milto/onto/cc> ;
+                                        rdfs:comment "When the ontology is sorted, the ontology will mark this class as inconsistent."@en .
+
+
 ###  http://purl.org/milto/onto/Processing
 <http://purl.org/milto/onto/Processing> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
