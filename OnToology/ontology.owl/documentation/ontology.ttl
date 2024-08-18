@@ -216,41 +216,10 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 <http://purl.org/milto/onto/API> rdf:type owl:Class ;
                                  owl:equivalentClass [ rdf:type owl:Restriction ;
                                                        owl:onProperty <http://purl.org/milto/onto/abbreviation> ;
-                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onDataRange xsd:string
+                                                       owl:someValuesFrom xsd:string
                                                      ] ;
-                                 rdfs:subClassOf <http://purl.org/milto/onto/Components> ;
+                                 rdfs:subClassOf <http://purl.org/milto/onto/Failure> ;
                                  rdfs:comment "The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively."@en .
-
-
-###  http://purl.org/milto/onto/API_Deep_Learning
-<http://purl.org/milto/onto/API_Deep_Learning> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/milto/onto/API> .
-
-
-###  http://purl.org/milto/onto/API_Libraries
-<http://purl.org/milto/onto/API_Libraries> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/milto/onto/API> .
-
-
-###  http://purl.org/milto/onto/API_c
-<http://purl.org/milto/onto/API_c> rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.org/milto/onto/API> .
-
-
-###  http://purl.org/milto/onto/API_cc
-<http://purl.org/milto/onto/API_cc> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/milto/onto/API> .
-
-
-###  http://purl.org/milto/onto/API_java
-<http://purl.org/milto/onto/API_java> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://purl.org/milto/onto/API> .
-
-
-###  http://purl.org/milto/onto/API_python
-<http://purl.org/milto/onto/API_python> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/milto/onto/API> .
 
 
 ###  http://purl.org/milto/onto/Activation_Function
@@ -258,14 +227,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                  rdfs:subClassOf <http://purl.org/milto/onto/Layers> .
 
 
-###  http://purl.org/milto/onto/Algorithm
-<http://purl.org/milto/onto/Algorithm> rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
-###  http://purl.org/milto/onto/Build_failure
-<http://purl.org/milto/onto/Build_failure> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
+###  http://purl.org/milto/onto/Bias_Need_In_a_Layer
+<http://purl.org/milto/onto/Bias_Need_In_a_Layer> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
 
 
 ###  http://purl.org/milto/onto/CPU
@@ -273,14 +237,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                  rdfs:subClassOf <http://purl.org/milto/onto/Platform> .
 
 
-###  http://purl.org/milto/onto/Categories_of_Root_Causes
-<http://purl.org/milto/onto/Categories_of_Root_Causes> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://purl.org/milto/onto/Failure> .
-
-
-###  http://purl.org/milto/onto/Categories_of_Symptoms
-<http://purl.org/milto/onto/Categories_of_Symptoms> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/milto/onto/Failure> .
+###  http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors
+<http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
 
 
 ###  http://purl.org/milto/onto/Colab
@@ -300,11 +259,6 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                rdfs:comment "TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations." .
 
 
-###  http://purl.org/milto/onto/Concurrency
-<http://purl.org/milto/onto/Concurrency> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
 ###  http://purl.org/milto/onto/Contrib_Directory
 <http://purl.org/milto/onto/Contrib_Directory> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.org/milto/onto/Contribution> .
@@ -315,19 +269,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                           rdfs:subClassOf <http://purl.org/milto/onto/Components> .
 
 
-###  http://purl.org/milto/onto/Conﬁguration_error
-<http://purl.org/milto/onto/Conﬁguration_error> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
-###  http://purl.org/milto/onto/Corner_Case
-<http://purl.org/milto/onto/Corner_Case> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
-###  http://purl.org/milto/onto/Crash
-<http://purl.org/milto/onto/Crash> rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
+###  http://purl.org/milto/onto/Data_Batching_Required
+<http://purl.org/milto/onto/Data_Batching_Required> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
 
 
 ###  http://purl.org/milto/onto/Dataset_Tensorflow
@@ -335,9 +279,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                 rdfs:subClassOf <http://purl.org/milto/onto/Resources> .
 
 
-###  http://purl.org/milto/onto/Dimension_Mismatch
-<http://purl.org/milto/onto/Dimension_Mismatch> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+###  http://purl.org/milto/onto/Deprecated_API
+<http://purl.org/milto/onto/Deprecated_API> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/milto/onto/API> .
 
 
 ###  http://purl.org/milto/onto/Directory_API
@@ -349,6 +293,11 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 <http://purl.org/milto/onto/Diretory> rdf:type owl:Class ;
                                       rdfs:subClassOf <http://purl.org/milto/onto/TensorFlow> ;
                                       rdfs:comment "It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers."@en .
+
+
+###  http://purl.org/milto/onto/Discarding_Import_Features
+<http://purl.org/milto/onto/Discarding_Import_Features> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Documentation
@@ -364,6 +313,12 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 ###  http://purl.org/milto/onto/Ecosystem
 <http://purl.org/milto/onto/Ecosystem> rdf:type owl:Class ;
                                        rdfs:subClassOf <http://purl.org/milto/onto/TensorFlow> .
+
+
+###  http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low
+<http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/milto/onto/Optimizer> ;
+                                                           owl:disjointWith <http://purl.org/milto/onto/Wrong_Optimisation_Function> .
 
 
 ###  http://purl.org/milto/onto/FP16
@@ -385,11 +340,6 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                        rdfs:subClassOf <http://purl.org/milto/onto/Components> .
 
 
-###  http://purl.org/milto/onto/Functional_error
-<http://purl.org/milto/onto/Functional_error> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
-
-
 ###  http://purl.org/milto/onto/GPU
 <http://purl.org/milto/onto/GPU> rdf:type owl:Class ;
                                  rdfs:subClassOf <http://purl.org/milto/onto/Platform> .
@@ -405,11 +355,6 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                           rdfs:subClassOf <http://purl.org/milto/onto/Dataset_Tensorflow> .
 
 
-###  http://purl.org/milto/onto/Hang
-<http://purl.org/milto/onto/Hang> rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
-
-
 ###  http://purl.org/milto/onto/Hyperparameters
 <http://purl.org/milto/onto/Hyperparameters> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
@@ -420,9 +365,14 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                   rdfs:subClassOf <http://purl.org/milto/onto/Task> .
 
 
-###  http://purl.org/milto/onto/Inconsistency
-<http://purl.org/milto/onto/Inconsistency> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+###  http://purl.org/milto/onto/Incompatible_Tensor_Type
+<http://purl.org/milto/onto/Incompatible_Tensor_Type> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input_Format> .
+
+
+###  http://purl.org/milto/onto/Incorrect_State_Sharing
+<http://purl.org/milto/onto/Incorrect_State_Sharing> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
 
 
 ###  http://purl.org/milto/onto/Kaagle_Datasets
@@ -461,19 +411,24 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                     rdfs:subClassOf <http://purl.org/milto/onto/Model> .
 
 
+###  http://purl.org/milto/onto/Layers_Dimensions_Mismatch
+<http://purl.org/milto/onto/Layers_Dimensions_Mismatch> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
 ###  http://purl.org/milto/onto/Library
 <http://purl.org/milto/onto/Library> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://purl.org/milto/onto/Components> .
 
 
-###  http://purl.org/milto/onto/Logic_error
-<http://purl.org/milto/onto/Logic_error> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
 ###  http://purl.org/milto/onto/Loss_Function
 <http://purl.org/milto/onto/Loss_Function> rdf:type owl:Class ;
                                            rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
+
+
+###  http://purl.org/milto/onto/Low_Quallity_Training_Data
+<http://purl.org/milto/onto/Low_Quallity_Training_Data> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/MLIR
@@ -491,9 +446,59 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                      rdfs:subClassOf <http://purl.org/milto/onto/Tools> .
 
 
-###  http://purl.org/milto/onto/Memory
-<http://purl.org/milto/onto/Memory> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+###  http://purl.org/milto/onto/Missing_API_Call
+<http://purl.org/milto/onto/Missing_API_Call> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Missing_Argument_Scoping
+<http://purl.org/milto/onto/Missing_Argument_Scoping> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Missing_Average_Pooling_Layer
+<http://purl.org/milto/onto/Missing_Average_Pooling_Layer> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Missing_Data_Augmetation
+<http://purl.org/milto/onto/Missing_Data_Augmetation> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Process> .
+
+
+###  http://purl.org/milto/onto/Missing_Dense_Layer
+<http://purl.org/milto/onto/Missing_Dense_Layer> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Missing_Dropout_Layer
+<http://purl.org/milto/onto/Missing_Dropout_Layer> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Missing_Flatten_Layer
+<http://purl.org/milto/onto/Missing_Flatten_Layer> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Missing_Global_Variables_Initialisation
+<http://purl.org/milto/onto/Missing_Global_Variables_Initialisation> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Missing_Loss_Function
+<http://purl.org/milto/onto/Missing_Loss_Function> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Loss_Function> .
+
+
+###  http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero
+<http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://purl.org/milto/onto/Loss_Function> .
+
+
+###  http://purl.org/milto/onto/Missing_Normalization_Layer
+<http://purl.org/milto/onto/Missing_Normalization_Layer> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
 
 
 ###  http://purl.org/milto/onto/Missing_Preprocessing
@@ -504,6 +509,31 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 ###  http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer
 <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> rdf:type owl:Class ;
                                                            rdfs:subClassOf <http://purl.org/milto/onto/Layers> .
+
+
+###  http://purl.org/milto/onto/Missing_Reluactivation_Function
+<http://purl.org/milto/onto/Missing_Reluactivation_Function> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.org/milto/onto/Activation_Function> .
+
+
+###  http://purl.org/milto/onto/Missing_Softmax_Activation_Function
+<http://purl.org/milto/onto/Missing_Softmax_Activation_Function> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://purl.org/milto/onto/Activation_Function> .
+
+
+###  http://purl.org/milto/onto/Missing_Softmax_Layer
+<http://purl.org/milto/onto/Missing_Softmax_Layer> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Missing_Transfer_to_GPU
+<http://purl.org/milto/onto/Missing_Transfer_to_GPU> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
+
+
+###  http://purl.org/milto/onto/Missing_nDestination_GPU_Devise
+<http://purl.org/milto/onto/Missing_nDestination_GPU_Devise> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
 
 
 ###  http://purl.org/milto/onto/Model
@@ -531,6 +561,16 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                               rdfs:subClassOf <http://purl.org/milto/onto/Resources> .
 
 
+###  http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory
+<http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Process> .
+
+
+###  http://purl.org/milto/onto/Multiple_Initialization_of_CNN
+<http://purl.org/milto/onto/Multiple_Initialization_of_CNN> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
 ###  http://purl.org/milto/onto/Natural_Language_Processing
 <http://purl.org/milto/onto/Natural_Language_Processing> rdf:type owl:Class ;
                                                          rdfs:subClassOf <http://purl.org/milto/onto/Task> .
@@ -546,14 +586,19 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                         rdfs:subClassOf <http://purl.org/milto/onto/Libraries_&_Extensions> .
 
 
+###  http://purl.org/milto/onto/Not_Enough_Training_Data
+<http://purl.org/milto/onto/Not_Enough_Training_Data> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
+
+
 ###  http://purl.org/milto/onto/Optimizer
 <http://purl.org/milto/onto/Optimizer> rdf:type owl:Class ;
                                        rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
 
 
-###  http://purl.org/milto/onto/Performance_degradation
-<http://purl.org/milto/onto/Performance_degradation> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
+###  http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data
+<http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Platform
@@ -573,11 +618,6 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                         rdfs:comment "When the ontology is sorted, the ontology will mark this class as inconsistent."@en .
 
 
-###  http://purl.org/milto/onto/Processing
-<http://purl.org/milto/onto/Processing> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-
-
 ###  http://purl.org/milto/onto/Recommendation_systems
 <http://purl.org/milto/onto/Recommendation_systems> rdf:type owl:Class ;
                                                     rdfs:subClassOf <http://purl.org/milto/onto/Ecosystem> .
@@ -588,9 +628,19 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                 rdfs:subClassOf <http://purl.org/milto/onto/Task> .
 
 
-###  http://purl.org/milto/onto/Referenced_types_error
-<http://purl.org/milto/onto/Referenced_types_error> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+###  http://purl.org/milto/onto/Redundant_Data_Augmentation
+<http://purl.org/milto/onto/Redundant_Data_Augmentation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Process> .
+
+
+###  http://purl.org/milto/onto/Redundant_Softmax_Layer
+<http://purl.org/milto/onto/Redundant_Softmax_Layer> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint
+<http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Process> .
 
 
 ###  http://purl.org/milto/onto/Resources
@@ -609,19 +659,44 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                      rdfs:comment "The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones."@en .
 
 
-###  http://purl.org/milto/onto/SUT
-<http://purl.org/milto/onto/SUT> rdf:type owl:Class ;
-                                 owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                       owl:onProperty <http://purl.org/milto/onto/abbreviation> ;
-                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onDataRange xsd:string
-                                                     ] ;
-                                 rdfs:comment "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."@en .
+###  http://purl.org/milto/onto/Small_Range_For_a_Feature
+<http://purl.org/milto/onto/Small_Range_For_a_Feature> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Sonnet
 <http://purl.org/milto/onto/Sonnet> rdf:type owl:Class ;
                                     rdfs:subClassOf <http://purl.org/milto/onto/Libraries_&_Extensions> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Batch_Size
+<http://purl.org/milto/onto/Suboptimal_Batch_Size> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning
+<http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Learning_Rate
+<http://purl.org/milto/onto/Suboptimal_Learning_Rate> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Network_Structure
+<http://purl.org/milto/onto/Suboptimal_Network_Structure> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Number_of_Epochs
+<http://purl.org/milto/onto/Suboptimal_Number_of_Epochs> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
+
+
+###  http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer
+<http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
 
 
 ###  http://purl.org/milto/onto/TFX
@@ -810,6 +885,11 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                   rdfs:subClassOf <http://purl.org/milto/onto/Libraries_&_Extensions> .
 
 
+###  http://purl.org/milto/onto/Tensor_Shape_Mismatch
+<http://purl.org/milto/onto/Tensor_Shape_Mismatch> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+
+
 ###  http://purl.org/milto/onto/Tensorflow.js_Models
 <http://purl.org/milto/onto/Tensorflow.js_Models> rdf:type owl:Class ;
                                                   rdfs:subClassOf <http://purl.org/milto/onto/Model_Tensorflow> .
@@ -827,6 +907,11 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 ###  http://purl.org/milto/onto/Time_Series_Forecasting
 <http://purl.org/milto/onto/Time_Series_Forecasting> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://purl.org/milto/onto/Task> .
+
+
+###  http://purl.org/milto/onto/Too_Many_Output_Categories
+<http://purl.org/milto/onto/Too_Many_Output_Categories> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Tool
@@ -855,9 +940,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
 
 
-###  http://purl.org/milto/onto/Type_Confusion
-<http://purl.org/milto/onto/Type_Confusion> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+###  http://purl.org/milto/onto/Unbalanced_Training_Data
+<http://purl.org/milto/onto/Unbalanced_Training_Data> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Version
@@ -875,14 +960,34 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                           rdfs:subClassOf <http://purl.org/milto/onto/Tools> .
 
 
-###  http://purl.org/milto/onto/Warning-style_error
-<http://purl.org/milto/onto/Warning-style_error> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://purl.org/milto/onto/Categories_of_Symptoms> .
-
-
 ###  http://purl.org/milto/onto/What_If
 <http://purl.org/milto/onto/What_If> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://purl.org/milto/onto/Tools> .
+
+
+###  http://purl.org/milto/onto/Wrong_API_Usage
+<http://purl.org/milto/onto/Wrong_API_Usage> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs
+<http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
+
+
+###  http://purl.org/milto/onto/Wrong_Defined_Input_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Input_Shape> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Defined_Output_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Output_Shape> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer
+<http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
 
 
 ###  http://purl.org/milto/onto/Wrong_Input
@@ -895,14 +1000,94 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                 rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input> .
 
 
+###  http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer
+<http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Labels_for_Training_Data
+<http://purl.org/milto/onto/Wrong_Labels_for_Training_Data> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
+
+
+###  http://purl.org/milto/onto/Wrong_Layer_Type
+<http://purl.org/milto/onto/Wrong_Layer_Type> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Wrong_Loss_Function_Calculation
+<http://purl.org/milto/onto/Wrong_Loss_Function_Calculation> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.org/milto/onto/Loss_Function> .
+
+
+###  http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources
+<http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Process> .
+
+
+###  http://purl.org/milto/onto/Wrong_Model_Initialization
+<http://purl.org/milto/onto/Wrong_Model_Initialization> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Network_Architecture
+<http://purl.org/milto/onto/Wrong_Network_Architecture> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Optimisation_Function
+<http://purl.org/milto/onto/Wrong_Optimisation_Function> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/Optimizer> .
+
+
+###  http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation
+<http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
 ###  http://purl.org/milto/onto/Wrong_Preprocessing
 <http://purl.org/milto/onto/Wrong_Preprocessing> rdf:type owl:Class ;
                                                  rdfs:subClassOf <http://purl.org/milto/onto/Preprocessing_of_Trainning_Data> .
 
 
-###  http://purl.org/milto/onto/Wrong_Shape_of_Input
-<http://purl.org/milto/onto/Wrong_Shape_of_Input> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input> .
+###  http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device
+<http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
+
+
+###  http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph
+<http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Wrong_Selection_Of_Model
+<http://purl.org/milto/onto/Wrong_Selection_Of_Model> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function
+<http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.org/milto/onto/Loss_Function> .
+
+
+###  http://purl.org/milto/onto/Wrong_Shape_of_Input_Data
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input> .
+
+
+###  http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Layer
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Layer> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> .
+
+
+###  http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Method
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Method> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> .
+
+
+###  http://purl.org/milto/onto/Wrong_Slection_of_Feature
+<http://purl.org/milto/onto/Wrong_Slection_of_Feature> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/milto/onto/Trainning_Data> .
 
 
 ###  http://purl.org/milto/onto/Wrong_Tensor_Shape
@@ -910,9 +1095,69 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                 rdfs:subClassOf <http://purl.org/milto/onto/Tensors_&_Inputs> .
 
 
+###  http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU
+<http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
+
+
+###  http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function
+<http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.org/milto/onto/Activation_Function> .
+
+
 ###  http://purl.org/milto/onto/Wrong_Type_of_Input_Data
 <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> rdf:type owl:Class ;
                                                       rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input> .
+
+
+###  http://purl.org/milto/onto/Wrong_Type_of_Input_Data_For_a_Method
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_For_a_Method> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> .
+
+
+###  http://purl.org/milto/onto/Wrong_Type_of_Input_Data_for_a_Layer
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_for_a_Layer> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> .
+
+
+###  http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer
+<http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+
+
+###  http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API
+<http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API
+<http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://purl.org/milto/onto/API> .
+
+
+###  http://purl.org/milto/onto/Wrong_Weights_Initialization
+<http://purl.org/milto/onto/Wrong_Weights_Initialization> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.org/milto/onto/Model_Type_&_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_format_of_Passed_Weights
+<http://purl.org/milto/onto/Wrong_format_of_Passed_Weights> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input_Format> .
+
+
+###  http://purl.org/milto/onto/Wrong_input_Format_for_RNN
+<http://purl.org/milto/onto/Wrong_input_Format_for_RNN> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Input_Format> .
+
+
+###  http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU
+<http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
+
+
+###  http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching
+<http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
 
 
 ###  http://purl.org/milto/onto/XLA
@@ -1349,36 +1594,6 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                       rdfs:subClassOf <http://purl.org/milto/onto/third-party> .
 
 
-###  http://purl.org/milto/onto/tf.data
-<http://purl.org/milto/onto/tf.data> rdf:type owl:Class ;
-                                     rdfs:subClassOf <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-
-
-###  http://purl.org/milto/onto/tf.estimador
-<http://purl.org/milto/onto/tf.estimador> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/milto/onto/API_Deep_Learning> .
-
-
-###  http://purl.org/milto/onto/tf.feuture_column
-<http://purl.org/milto/onto/tf.feuture_column> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/milto/onto/API_Deep_Learning> .
-
-
-###  http://purl.org/milto/onto/tf.io
-<http://purl.org/milto/onto/tf.io> rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-
-
-###  http://purl.org/milto/onto/tf.keras
-<http://purl.org/milto/onto/tf.keras> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://purl.org/milto/onto/API_Deep_Learning> .
-
-
-###  http://purl.org/milto/onto/tf.queue
-<http://purl.org/milto/onto/tf.queue> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-
-
 ###  http://purl.org/milto/onto/tf_runtime
 <http://purl.org/milto/onto/tf_runtime> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://purl.org/milto/onto/third-party> .
@@ -1434,9 +1649,9 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                  rdfs:subClassOf <http://purl.org/milto/onto/third-party> .
 
 
-###  http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing
-<http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://purl.org/milto/onto/API> .
+###  http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop
+<http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
 
 
 ###  http://purl.org/milto/onto/Libraries_&_Extensions
@@ -1444,9 +1659,14 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
                                                     rdfs:subClassOf <http://purl.org/milto/onto/Ecosystem> .
 
 
-###  http://purl.org/milto/onto/Model_Type_&_Propertes
-<http://purl.org/milto/onto/Model_Type_&_Propertes> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/milto/onto/Model> .
+###  http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight
+<http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/Hyperparameters> .
+
+
+###  http://purl.org/milto/onto/Model_Type_&_Properties
+<http://purl.org/milto/onto/Model_Type_&_Properties> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/milto/onto/Model> .
 
 
 ###  http://purl.org/milto/onto/Tensors_&_Inputs
@@ -1457,6 +1677,36 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 ###  http://purl.org/milto/onto/Validation/Testing
 <http://purl.org/milto/onto/Validation/Testing> rdf:type owl:Class ;
                                                 rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
+
+
+###  http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer
+<http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.org/milto/onto/Layer_Properties> .
+
+
+###  http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+
+
+###  http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+
+
+###  http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+
+
+###  http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
 
 
 ###  http://purl.org/milto/onto/contrib/seq2seq
@@ -1519,8 +1769,7 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 #################################################################
 
 ###  http://purl.org/milto/onto#codeAPIc
-:codeAPIc rdf:type owl:NamedIndividual ,
-                   <http://purl.org/milto/onto/API_c> ;
+:codeAPIc rdf:type owl:NamedIndividual ;
           rdfs:comment "Source code implemented for the c API functionality and stored in the directory c."@en .
 
 
@@ -1533,13 +1782,11 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl/codeAPIcc
-<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> rdf:type owl:NamedIndividual ,
-                                                              <http://purl.org/milto/onto/API_cc> .
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl/codeAPIjava
-<http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> rdf:type owl:NamedIndividual ,
-                                                                <http://purl.org/milto/onto/API_java> .
+<http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.co-ode.org/ontologies/ont.owl/java
@@ -1555,12 +1802,150 @@ owl:topObjectProperty rdfs:range <http://purl.org/milto/onto/Diretory> .
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( <http://purl.org/milto/onto/c>
-                 <http://purl.org/milto/onto/cc>
-                 <http://purl.org/milto/onto/java>
-                 <http://purl.org/milto/onto/python>
+   owl:members ( <http://purl.org/milto/onto/Bias_Need_In_a_Layer>
+                 <http://purl.org/milto/onto/Layers_Dimensions_Mismatch>
+                 <http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer>
+                 <http://purl.org/milto/onto/Wrong_Defined_Input_Shape>
+                 <http://purl.org/milto/onto/Wrong_Defined_Output_Shape>
+                 <http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer>
+                 <http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer>
+                 <http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer>
+                 <http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape>
                )
  ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors>
+                <http://purl.org/milto/onto/Incorrect_State_Sharing>
+                <http://purl.org/milto/onto/Missing_Transfer_to_GPU>
+                <http://purl.org/milto/onto/Missing_nDestination_GPU_Devise>
+                <http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs>
+                <http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device>
+                <http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU>
+                <http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU>
+                <http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Data_Batching_Required>
+                <http://purl.org/milto/onto/Suboptimal_Batch_Size>
+                <http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning>
+                <http://purl.org/milto/onto/Suboptimal_Learning_Rate>
+                <http://purl.org/milto/onto/Suboptimal_Number_of_Epochs>
+                <http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching>
+                <http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Deprecated_API>
+                <http://purl.org/milto/onto/Missing_API_Call>
+                <http://purl.org/milto/onto/Missing_Argument_Scoping>
+                <http://purl.org/milto/onto/Missing_Global_Variables_Initialisation>
+                <http://purl.org/milto/onto/Wrong_API_Usage>
+                <http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation>
+                <http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph>
+                <http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API>
+                <http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Discarding_Import_Features>
+                <http://purl.org/milto/onto/Low_Quallity_Training_Data>
+                <http://purl.org/milto/onto/Not_Enough_Training_Data>
+                <http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data>
+                <http://purl.org/milto/onto/Small_Range_For_a_Feature>
+                <http://purl.org/milto/onto/Too_Many_Output_Categories>
+                <http://purl.org/milto/onto/Unbalanced_Training_Data>
+                <http://purl.org/milto/onto/Wrong_Labels_for_Training_Data>
+                <http://purl.org/milto/onto/Wrong_Slection_of_Feature>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Incompatible_Tensor_Type>
+                <http://purl.org/milto/onto/Wrong_format_of_Passed_Weights>
+                <http://purl.org/milto/onto/Wrong_input_Format_for_RNN>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Missing_Average_Pooling_Layer>
+                <http://purl.org/milto/onto/Missing_Dense_Layer>
+                <http://purl.org/milto/onto/Missing_Dropout_Layer>
+                <http://purl.org/milto/onto/Missing_Flatten_Layer>
+                <http://purl.org/milto/onto/Missing_Normalization_Layer>
+                <http://purl.org/milto/onto/Missing_Softmax_Layer>
+                <http://purl.org/milto/onto/Redundant_Softmax_Layer>
+                <http://purl.org/milto/onto/Wrong_Layer_Type>
+                <http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Missing_Data_Augmetation>
+                <http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory>
+                <http://purl.org/milto/onto/Redundant_Data_Augmentation>
+                <http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint>
+                <http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Missing_Loss_Function>
+                <http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero>
+                <http://purl.org/milto/onto/Wrong_Loss_Function_Calculation>
+                <http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Missing_Reluactivation_Function>
+                <http://purl.org/milto/onto/Missing_Softmax_Activation_Function>
+                <http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Multiple_Initialization_of_CNN>
+                <http://purl.org/milto/onto/Suboptimal_Network_Structure>
+                <http://purl.org/milto/onto/Wrong_Model_Initialization>
+                <http://purl.org/milto/onto/Wrong_Network_Architecture>
+                <http://purl.org/milto/onto/Wrong_Selection_Of_Model>
+                <http://purl.org/milto/onto/Wrong_Weights_Initialization>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/Tensor_Shape_Mismatch>
+                <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)>
+                <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)>
+                <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)>
+                <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/milto/onto/c>
+                <http://purl.org/milto/onto/cc>
+                <http://purl.org/milto/onto/java>
+                <http://purl.org/milto/onto/python>
+              )
+] .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
