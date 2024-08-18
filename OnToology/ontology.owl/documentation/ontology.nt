@@ -191,60 +191,27 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/API
 <http://purl.org/milto/onto/API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/API> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/abbreviation> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
+<http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Failure> .
 <http://purl.org/milto/onto/API> <http://www.w3.org/2000/01/rdf-schema#comment> "The purpose of the API (Application Programming Interface) is to establish connections between various applications catering to the user. They facilitate the integration of diverse systems and expedite user actions with anticipated responses. The API works in the background, so the average user will not even notice it in operation. TensorFlow offers APIs for programming languages, including C, C++, Java, and Python. These APIs are located in the Python, C, CCC, and Java directories, respectively."@en .
-# 
-# http://purl.org/milto/onto/API_Deep_Learning
-<http://purl.org/milto/onto/API_Deep_Learning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_Deep_Learning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-# 
-# http://purl.org/milto/onto/API_Libraries
-<http://purl.org/milto/onto/API_Libraries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_Libraries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-# 
-# http://purl.org/milto/onto/API_c
-<http://purl.org/milto/onto/API_c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_c> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-# 
-# http://purl.org/milto/onto/API_cc
-<http://purl.org/milto/onto/API_cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_cc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-# 
-# http://purl.org/milto/onto/API_java
-<http://purl.org/milto/onto/API_java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_java> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
-# 
-# http://purl.org/milto/onto/API_python
-<http://purl.org/milto/onto/API_python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_python> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
 # 
 # http://purl.org/milto/onto/Activation_Function
 <http://purl.org/milto/onto/Activation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Activation_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layers> .
 # 
-# http://purl.org/milto/onto/Algorithm
-<http://purl.org/milto/onto/Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
-# http://purl.org/milto/onto/Build_failure
-<http://purl.org/milto/onto/Build_failure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Build_failure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
+# http://purl.org/milto/onto/Bias_Need_In_a_Layer
+<http://purl.org/milto/onto/Bias_Need_In_a_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Bias_Need_In_a_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
 # 
 # http://purl.org/milto/onto/CPU
 <http://purl.org/milto/onto/CPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Platform> .
 # 
-# http://purl.org/milto/onto/Categories_of_Root_Causes
-<http://purl.org/milto/onto/Categories_of_Root_Causes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Categories_of_Root_Causes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Failure> .
-# 
-# http://purl.org/milto/onto/Categories_of_Symptoms
-<http://purl.org/milto/onto/Categories_of_Symptoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Categories_of_Symptoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Failure> .
+# http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors
+<http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
 # 
 # http://purl.org/milto/onto/Colab
 <http://purl.org/milto/onto/Colab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -260,10 +227,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Computation_Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
 <http://purl.org/milto/onto/Computation_Graph> <http://www.w3.org/2000/01/rdf-schema#comment> "TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations." .
 # 
-# http://purl.org/milto/onto/Concurrency
-<http://purl.org/milto/onto/Concurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Concurrency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
 # http://purl.org/milto/onto/Contrib_Directory
 <http://purl.org/milto/onto/Contrib_Directory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Contrib_Directory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Contribution> .
@@ -272,25 +235,17 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Contribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Contribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
 # 
-# http://purl.org/milto/onto/Conﬁguration_error
-<http://purl.org/milto/onto/Conﬁguration_error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Conﬁguration_error> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
-# http://purl.org/milto/onto/Corner_Case
-<http://purl.org/milto/onto/Corner_Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Corner_Case> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
-# http://purl.org/milto/onto/Crash
-<http://purl.org/milto/onto/Crash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Crash> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
+# http://purl.org/milto/onto/Data_Batching_Required
+<http://purl.org/milto/onto/Data_Batching_Required> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Data_Batching_Required> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
 # 
 # http://purl.org/milto/onto/Dataset_Tensorflow
 <http://purl.org/milto/onto/Dataset_Tensorflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Dataset_Tensorflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Resources> .
 # 
-# http://purl.org/milto/onto/Dimension_Mismatch
-<http://purl.org/milto/onto/Dimension_Mismatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Dimension_Mismatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+# http://purl.org/milto/onto/Deprecated_API
+<http://purl.org/milto/onto/Deprecated_API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Deprecated_API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
 # 
 # http://purl.org/milto/onto/Directory_API
 <http://purl.org/milto/onto/Directory_API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -300,6 +255,10 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Diretory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Diretory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/TensorFlow> .
 <http://purl.org/milto/onto/Diretory> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers."@en .
+# 
+# http://purl.org/milto/onto/Discarding_Import_Features
+<http://purl.org/milto/onto/Discarding_Import_Features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Discarding_Import_Features> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Documentation
 <http://purl.org/milto/onto/Documentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -312,6 +271,11 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/Ecosystem
 <http://purl.org/milto/onto/Ecosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Ecosystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/TensorFlow> .
+# 
+# http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low
+<http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Optimizer> .
+<http://purl.org/milto/onto/Epsilon_Adam_Optmiser_Too_Low> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/milto/onto/Wrong_Optimisation_Function> .
 # 
 # http://purl.org/milto/onto/FP16
 <http://purl.org/milto/onto/FP16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -328,10 +292,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Framework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Framework> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
 # 
-# http://purl.org/milto/onto/Functional_error
-<http://purl.org/milto/onto/Functional_error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Functional_error> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
-# 
 # http://purl.org/milto/onto/GPU
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Platform> .
@@ -344,10 +304,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Google_Cloud_Public_Datasets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Google_Cloud_Public_Datasets> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Dataset_Tensorflow> .
 # 
-# http://purl.org/milto/onto/Hang
-<http://purl.org/milto/onto/Hang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Hang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
-# 
 # http://purl.org/milto/onto/Hyperparameters
 <http://purl.org/milto/onto/Hyperparameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Hyperparameters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
@@ -356,9 +312,13 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Image_Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Image_Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Task> .
 # 
-# http://purl.org/milto/onto/Inconsistency
-<http://purl.org/milto/onto/Inconsistency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Inconsistency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+# http://purl.org/milto/onto/Incompatible_Tensor_Type
+<http://purl.org/milto/onto/Incompatible_Tensor_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Incompatible_Tensor_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input_Format> .
+# 
+# http://purl.org/milto/onto/Incorrect_State_Sharing
+<http://purl.org/milto/onto/Incorrect_State_Sharing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Incorrect_State_Sharing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
 # 
 # http://purl.org/milto/onto/Kaagle_Datasets
 <http://purl.org/milto/onto/Kaagle_Datasets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -389,17 +349,21 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Layers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Layers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model> .
 # 
+# http://purl.org/milto/onto/Layers_Dimensions_Mismatch
+<http://purl.org/milto/onto/Layers_Dimensions_Mismatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Layers_Dimensions_Mismatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
 # http://purl.org/milto/onto/Library
 <http://purl.org/milto/onto/Library> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Library> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
 # 
-# http://purl.org/milto/onto/Logic_error
-<http://purl.org/milto/onto/Logic_error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Logic_error> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
 # http://purl.org/milto/onto/Loss_Function
 <http://purl.org/milto/onto/Loss_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Loss_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
+# 
+# http://purl.org/milto/onto/Low_Quallity_Training_Data
+<http://purl.org/milto/onto/Low_Quallity_Training_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Low_Quallity_Training_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/MLIR
 <http://purl.org/milto/onto/MLIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -413,9 +377,49 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/ML_Perf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/ML_Perf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Tools> .
 # 
-# http://purl.org/milto/onto/Memory
-<http://purl.org/milto/onto/Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+# http://purl.org/milto/onto/Missing_API_Call
+<http://purl.org/milto/onto/Missing_API_Call> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_API_Call> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Missing_Argument_Scoping
+<http://purl.org/milto/onto/Missing_Argument_Scoping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Argument_Scoping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Missing_Average_Pooling_Layer
+<http://purl.org/milto/onto/Missing_Average_Pooling_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Average_Pooling_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Missing_Data_Augmetation
+<http://purl.org/milto/onto/Missing_Data_Augmetation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Data_Augmetation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Process> .
+# 
+# http://purl.org/milto/onto/Missing_Dense_Layer
+<http://purl.org/milto/onto/Missing_Dense_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Dense_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Missing_Dropout_Layer
+<http://purl.org/milto/onto/Missing_Dropout_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Dropout_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Missing_Flatten_Layer
+<http://purl.org/milto/onto/Missing_Flatten_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Flatten_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Missing_Global_Variables_Initialisation
+<http://purl.org/milto/onto/Missing_Global_Variables_Initialisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Global_Variables_Initialisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Missing_Loss_Function
+<http://purl.org/milto/onto/Missing_Loss_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Loss_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Loss_Function> .
+# 
+# http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero
+<http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Loss_Function> .
+# 
+# http://purl.org/milto/onto/Missing_Normalization_Layer
+<http://purl.org/milto/onto/Missing_Normalization_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Normalization_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
 # 
 # http://purl.org/milto/onto/Missing_Preprocessing
 <http://purl.org/milto/onto/Missing_Preprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -424,6 +428,26 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer
 <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layers> .
+# 
+# http://purl.org/milto/onto/Missing_Reluactivation_Function
+<http://purl.org/milto/onto/Missing_Reluactivation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Reluactivation_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Activation_Function> .
+# 
+# http://purl.org/milto/onto/Missing_Softmax_Activation_Function
+<http://purl.org/milto/onto/Missing_Softmax_Activation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Softmax_Activation_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Activation_Function> .
+# 
+# http://purl.org/milto/onto/Missing_Softmax_Layer
+<http://purl.org/milto/onto/Missing_Softmax_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Softmax_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Missing_Transfer_to_GPU
+<http://purl.org/milto/onto/Missing_Transfer_to_GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Transfer_to_GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
+# 
+# http://purl.org/milto/onto/Missing_nDestination_GPU_Devise
+<http://purl.org/milto/onto/Missing_nDestination_GPU_Devise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_nDestination_GPU_Devise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
 # 
 # http://purl.org/milto/onto/Model
 <http://purl.org/milto/onto/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -445,6 +469,14 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Model_Tensorflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Model_Tensorflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Resources> .
 # 
+# http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory
+<http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Process> .
+# 
+# http://purl.org/milto/onto/Multiple_Initialization_of_CNN
+<http://purl.org/milto/onto/Multiple_Initialization_of_CNN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Multiple_Initialization_of_CNN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
 # http://purl.org/milto/onto/Natural_Language_Processing
 <http://purl.org/milto/onto/Natural_Language_Processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Natural_Language_Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Task> .
@@ -457,13 +489,17 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Neural_Structured_Learning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Neural_Structured_Learning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Libraries_&_Extensions> .
 # 
+# http://purl.org/milto/onto/Not_Enough_Training_Data
+<http://purl.org/milto/onto/Not_Enough_Training_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Not_Enough_Training_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
+# 
 # http://purl.org/milto/onto/Optimizer
 <http://purl.org/milto/onto/Optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Optimizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
 # 
-# http://purl.org/milto/onto/Performance_degradation
-<http://purl.org/milto/onto/Performance_degradation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Performance_degradation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
+# http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data
+<http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Platform
 <http://purl.org/milto/onto/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -479,10 +515,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/cc> .
 <http://purl.org/milto/onto/ProbeClass> <http://www.w3.org/2000/01/rdf-schema#comment> "When the ontology is sorted, the ontology will mark this class as inconsistent."@en .
 # 
-# http://purl.org/milto/onto/Processing
-<http://purl.org/milto/onto/Processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Processing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
-# 
 # http://purl.org/milto/onto/Recommendation_systems
 <http://purl.org/milto/onto/Recommendation_systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Recommendation_systems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Ecosystem> .
@@ -491,9 +523,17 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Recommender_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Recommender_System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Task> .
 # 
-# http://purl.org/milto/onto/Referenced_types_error
-<http://purl.org/milto/onto/Referenced_types_error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Referenced_types_error> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+# http://purl.org/milto/onto/Redundant_Data_Augmentation
+<http://purl.org/milto/onto/Redundant_Data_Augmentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Redundant_Data_Augmentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Process> .
+# 
+# http://purl.org/milto/onto/Redundant_Softmax_Layer
+<http://purl.org/milto/onto/Redundant_Softmax_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Redundant_Softmax_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint
+<http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Process> .
 # 
 # http://purl.org/milto/onto/Resources
 <http://purl.org/milto/onto/Resources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -508,18 +548,37 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Runtime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Components> .
 <http://purl.org/milto/onto/Runtime> <http://www.w3.org/2000/01/rdf-schema#comment> "The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones."@en .
 # 
-# http://purl.org/milto/onto/SUT
-<http://purl.org/milto/onto/SUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/SUT> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/abbreviation> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/milto/onto/SUT> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to a system that is being tested for correct operation. According to ISTQB it is the test object. From a unit testing perspective, the system under test represents all of the classes in a test that are not predefined pieces of code like stubs or even mocks."@en .
+# http://purl.org/milto/onto/Small_Range_For_a_Feature
+<http://purl.org/milto/onto/Small_Range_For_a_Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Small_Range_For_a_Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Sonnet
 <http://purl.org/milto/onto/Sonnet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Sonnet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Libraries_&_Extensions> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Batch_Size
+<http://purl.org/milto/onto/Suboptimal_Batch_Size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Batch_Size> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning
+<http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Learning_Rate
+<http://purl.org/milto/onto/Suboptimal_Learning_Rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Learning_Rate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Network_Structure
+<http://purl.org/milto/onto/Suboptimal_Network_Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Network_Structure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Number_of_Epochs
+<http://purl.org/milto/onto/Suboptimal_Number_of_Epochs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Number_of_Epochs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
+# 
+# http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer
+<http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
 # 
 # http://purl.org/milto/onto/TFX
 <http://purl.org/milto/onto/TFX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -543,16 +602,16 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/milto/onto/TensorFlow
 <http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/neuronsNumberPerLayer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
 _:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/neuronsNumberPerLayer> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/numberOfLayers> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
-_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/milto/onto/numberOfLayers> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/milto/onto/TensorFlow> <http://www.w3.org/2000/01/rdf-schema#comment> "TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models."@en .
 # 
 # http://purl.org/milto/onto/TensorFlow.js
@@ -672,6 +731,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/TensorFlow_Transform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/TensorFlow_Transform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Libraries_&_Extensions> .
 # 
+# http://purl.org/milto/onto/Tensor_Shape_Mismatch
+<http://purl.org/milto/onto/Tensor_Shape_Mismatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Tensor_Shape_Mismatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+# 
 # http://purl.org/milto/onto/Tensorflow.js_Models
 <http://purl.org/milto/onto/Tensorflow.js_Models> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Tensorflow.js_Models> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Tensorflow> .
@@ -686,6 +749,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/Time_Series_Forecasting
 <http://purl.org/milto/onto/Time_Series_Forecasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Time_Series_Forecasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Task> .
+# 
+# http://purl.org/milto/onto/Too_Many_Output_Categories
+<http://purl.org/milto/onto/Too_Many_Output_Categories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Too_Many_Output_Categories> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Tool
 <http://purl.org/milto/onto/Tool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -708,9 +775,9 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Trainning_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Trainning_Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
 # 
-# http://purl.org/milto/onto/Type_Confusion
-<http://purl.org/milto/onto/Type_Confusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Type_Confusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Root_Causes> .
+# http://purl.org/milto/onto/Unbalanced_Training_Data
+<http://purl.org/milto/onto/Unbalanced_Training_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Unbalanced_Training_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Version
 <http://purl.org/milto/onto/Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -724,13 +791,29 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Visual_Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Visual_Block> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Tools> .
 # 
-# http://purl.org/milto/onto/Warning-style_error
-<http://purl.org/milto/onto/Warning-style_error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Warning-style_error> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Categories_of_Symptoms> .
-# 
 # http://purl.org/milto/onto/What_If
 <http://purl.org/milto/onto/What_If> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/What_If> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Tools> .
+# 
+# http://purl.org/milto/onto/Wrong_API_Usage
+<http://purl.org/milto/onto/Wrong_API_Usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_API_Usage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs
+<http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
+# 
+# http://purl.org/milto/onto/Wrong_Defined_Input_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Input_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Defined_Input_Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Defined_Output_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Output_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Defined_Output_Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer
+<http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
 # 
 # http://purl.org/milto/onto/Wrong_Input
 <http://purl.org/milto/onto/Wrong_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -740,21 +823,133 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/Wrong_Input_Format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Wrong_Input_Format> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input> .
 # 
+# http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer
+<http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Labels_for_Training_Data
+<http://purl.org/milto/onto/Wrong_Labels_for_Training_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Labels_for_Training_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
+# 
+# http://purl.org/milto/onto/Wrong_Layer_Type
+<http://purl.org/milto/onto/Wrong_Layer_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Layer_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Wrong_Loss_Function_Calculation
+<http://purl.org/milto/onto/Wrong_Loss_Function_Calculation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Loss_Function_Calculation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Loss_Function> .
+# 
+# http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources
+<http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Process> .
+# 
+# http://purl.org/milto/onto/Wrong_Model_Initialization
+<http://purl.org/milto/onto/Wrong_Model_Initialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Model_Initialization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Network_Architecture
+<http://purl.org/milto/onto/Wrong_Network_Architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Network_Architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Optimisation_Function
+<http://purl.org/milto/onto/Wrong_Optimisation_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Optimisation_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Optimizer> .
+# 
+# http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation
+<http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
 # http://purl.org/milto/onto/Wrong_Preprocessing
 <http://purl.org/milto/onto/Wrong_Preprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Wrong_Preprocessing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Preprocessing_of_Trainning_Data> .
 # 
-# http://purl.org/milto/onto/Wrong_Shape_of_Input
-<http://purl.org/milto/onto/Wrong_Shape_of_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Wrong_Shape_of_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input> .
+# http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device
+<http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
+# 
+# http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph
+<http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Wrong_Selection_Of_Model
+<http://purl.org/milto/onto/Wrong_Selection_Of_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Selection_Of_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function
+<http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Loss_Function> .
+# 
+# http://purl.org/milto/onto/Wrong_Shape_of_Input_Data
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input> .
+# 
+# http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Layer
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> .
+# 
+# http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Method
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Shape_of_Input_Data_for_a_Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Shape_of_Input_Data> .
+# 
+# http://purl.org/milto/onto/Wrong_Slection_of_Feature
+<http://purl.org/milto/onto/Wrong_Slection_of_Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Slection_of_Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning_Data> .
 # 
 # http://purl.org/milto/onto/Wrong_Tensor_Shape
 <http://purl.org/milto/onto/Wrong_Tensor_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Wrong_Tensor_Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Tensors_&_Inputs> .
 # 
+# http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU
+<http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
+# 
+# http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function
+<http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Activation_Function> .
+# 
 # http://purl.org/milto/onto/Wrong_Type_of_Input_Data
 <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input> .
+# 
+# http://purl.org/milto/onto/Wrong_Type_of_Input_Data_For_a_Method
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_For_a_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_For_a_Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> .
+# 
+# http://purl.org/milto/onto/Wrong_Type_of_Input_Data_for_a_Layer
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_for_a_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Type_of_Input_Data_for_a_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Type_of_Input_Data> .
+# 
+# http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer
+<http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Missing_Redundant_Wrong_Layer> .
+# 
+# http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API
+<http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API
+<http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# 
+# http://purl.org/milto/onto/Wrong_Weights_Initialization
+<http://purl.org/milto/onto/Wrong_Weights_Initialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Weights_Initialization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model_Type_&_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_format_of_Passed_Weights
+<http://purl.org/milto/onto/Wrong_format_of_Passed_Weights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_format_of_Passed_Weights> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input_Format> .
+# 
+# http://purl.org/milto/onto/Wrong_input_Format_for_RNN
+<http://purl.org/milto/onto/Wrong_input_Format_for_RNN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_input_Format_for_RNN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Input_Format> .
+# 
+# http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU
+<http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
+# 
+# http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching
+<http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
 # 
 # http://purl.org/milto/onto/XLA
 <http://purl.org/milto/onto/XLA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1104,30 +1299,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/tensorrt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/tensorrt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
 # 
-# http://purl.org/milto/onto/tf.data
-<http://purl.org/milto/onto/tf.data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-# 
-# http://purl.org/milto/onto/tf.estimador
-<http://purl.org/milto/onto/tf.estimador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.estimador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
-# 
-# http://purl.org/milto/onto/tf.feuture_column
-<http://purl.org/milto/onto/tf.feuture_column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.feuture_column> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
-# 
-# http://purl.org/milto/onto/tf.io
-<http://purl.org/milto/onto/tf.io> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.io> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-# 
-# http://purl.org/milto/onto/tf.keras
-<http://purl.org/milto/onto/tf.keras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.keras> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_Deep_Learning> .
-# 
-# http://purl.org/milto/onto/tf.queue
-<http://purl.org/milto/onto/tf.queue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/tf.queue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> .
-# 
 # http://purl.org/milto/onto/tf_runtime
 <http://purl.org/milto/onto/tf_runtime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/tf_runtime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
@@ -1172,17 +1343,21 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/milto/onto/xla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/xla> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/third-party> .
 # 
-# http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing
-<http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/API_I/API_I/API_IO_and_Preprocessing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/API> .
+# http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop
+<http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/GPU_Usage> .
 # 
 # http://purl.org/milto/onto/Libraries_&_Extensions
 <http://purl.org/milto/onto/Libraries_&_Extensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Libraries_&_Extensions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Ecosystem> .
 # 
-# http://purl.org/milto/onto/Model_Type_&_Propertes
-<http://purl.org/milto/onto/Model_Type_&_Propertes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/milto/onto/Model_Type_&_Propertes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model> .
+# http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight
+<http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Hyperparameters> .
+# 
+# http://purl.org/milto/onto/Model_Type_&_Properties
+<http://purl.org/milto/onto/Model_Type_&_Properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Model_Type_&_Properties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Model> .
 # 
 # http://purl.org/milto/onto/Tensors_&_Inputs
 <http://purl.org/milto/onto/Tensors_&_Inputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1191,6 +1366,30 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://purl.org/milto/onto/Validation/Testing
 <http://purl.org/milto/onto/Validation/Testing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/milto/onto/Validation/Testing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Trainning> .
+# 
+# http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer
+<http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape
+<http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Layer_Properties> .
+# 
+# http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+# 
+# http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+# 
+# http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
+# 
+# http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
 # 
 # http://purl.org/milto/onto/contrib/seq2seq
 <http://purl.org/milto/onto/contrib/seq2seq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1247,7 +1446,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://purl.org/milto/onto#codeAPIc
 <http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_c> .
 <http://purl.org/milto/onto#codeAPIc> <http://www.w3.org/2000/01/rdf-schema#comment> "Source code implemented for the c API functionality and stored in the directory c."@en .
 # 
 # http://www.co-ode.org/ontologies/ont.owl/c
@@ -1258,17 +1456,15 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.co-ode.org/ontologies/ont.owl/codeAPIcc
 <http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.co-ode.org/ontologies/ont.owl/codeAPIcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_cc> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl/codeAPIjava
 <http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.co-ode.org/ontologies/ont.owl/codeAPIjava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto/API_java> .
 # 
 # http://www.co-ode.org/ontologies/ont.owl/java
 <http://www.co-ode.org/ontologies/ont.owl/java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.co-ode.org/ontologies/ont.owl/java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/milto/onto#java> .
 # 
-_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date." .
 # 
 # 
 # #################################################################
@@ -1278,19 +1474,289 @@ _:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "Project creation date."
 # #################################################################
 # 
 # 
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid6 <http://www.w3.org/2002/07/owl#members> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Input_Sample_Size_For_Linear_Layer> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Filter_Size_for_a_Convolutional_Layer> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Defined_Output_Shape> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Defined_Input_Shape> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Number_of_Neurons_in_The_Layer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Layers_Dimensions_Mismatch> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Bias_Need_In_a_Layer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid16 <http://www.w3.org/2002/07/owl#members> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrongly_Implemented_DAta_Transfer_Function_CPU-GPU> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_nDestination_GPU_Devise> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Transfer_to_GPU> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Incorrect_State_Sharing> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid26 <http://www.w3.org/2002/07/owl#members> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Regularisation_Loss_&_Weight> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrongly_Implemented_Data_Batching> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Number_of_Epochs> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Learning_Rate> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Hyperparameters_Tuning> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Batch_Size> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Data_Batching_Required> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid34 <http://www.w3.org/2002/07/owl#members> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Usage_of_Placeholder_Restoration_API> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Usage_of_Image_Decoding_API> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Reference_to_Operational_Graph> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Position_of_Data_Shuffle_Operation> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_API_Usage> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Global_Variables_Initialisation> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Argument_Scoping> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_API_Call> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Deprecated_API> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid44 <http://www.w3.org/2002/07/owl#members> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Slection_of_Feature> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Labels_for_Training_Data> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Unbalanced_Training_Data> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Too_Many_Output_Categories> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Small_Range_For_a_Feature> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Not_Enough_Training_Data> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Low_Quallity_Training_Data> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Discarding_Import_Features> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid54 <http://www.w3.org/2002/07/owl#members> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_input_Format_for_RNN> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_format_of_Passed_Weights> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Incompatible_Tensor_Type> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid58 <http://www.w3.org/2002/07/owl#members> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Type_of_Pooling_Layer> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Layer_Type> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Redundant_Softmax_Layer> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Softmax_Layer> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Normalization_Layer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Flatten_Layer> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Dropout_Layer> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Dense_Layer> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Average_Pooling_Layer> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid68 <http://www.w3.org/2002/07/owl#members> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Manegement_of_Memory_Resources> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Reference_for_Non-Exiting_Checkpoint> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Redundant_Data_Augmentation> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Model_Too_to_Fit_Into_Avaliable_Memory> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Data_Augmetation> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid74 <http://www.w3.org/2002/07/owl#members> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Selection_of_Loss_Function> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Loss_Function_Calculation> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Masking_of_Invalid_Values_to_Zero> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Loss_Function> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid79 <http://www.w3.org/2002/07/owl#members> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Softmax_Activation_Function> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Missing_Reluactivation_Function> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid83 <http://www.w3.org/2002/07/owl#members> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Weights_Initialization> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Selection_Of_Model> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Network_Architecture> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Model_Initialization> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Suboptimal_Network_Structure> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Multiple_Initialization_of_CNN> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid90 <http://www.w3.org/2002/07/owl#members> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Output_Padding)> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Wrong_Index)> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Other)> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Wrong_Tensor_Shape_(Missing_Squeeze)> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/Tensor_Shape_Mismatch> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid96 <http://www.w3.org/2002/07/owl#members> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/python> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/java> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/cc> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/milto/onto/c> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
