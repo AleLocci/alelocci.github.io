@@ -62,154 +62,58 @@
         <Literal xml:lang="en">Machine Learning Test Ontology</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#distribute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#docs_src"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dtensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#examples"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#go"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#java"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#js"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#lite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#python"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#security"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#tools"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/API"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/API_Deep_Learning"/>
+        <Class IRI="/Accuracy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/API_Libraries"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/API_c"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/API_cc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/API_java"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/API_python"/>
+        <Class IRI="/Activation"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Activation_Function"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Algorithm"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Bias_Need_In_a_Layer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Build_failure"/>
     </Declaration>
     <Declaration>
         <Class IRI="/CPU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Calling_Unsupported_Operations_on_CUDA_Tensors"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Categories_of_Symptoms"/>
+        <Class IRI="/ClassTest"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Colab"/>
+        <Class IRI="/Confusion_Matrix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Components"/>
+        <Class IRI="/Data_Batching_Required"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Computation_Graph"/>
+        <Class IRI="/Deprecated_API"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Concurrency"/>
+        <Class IRI="/Discarding_Import_Features"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Contrib_Directory"/>
+        <Class IRI="/Epsilon_Adam_Optmiser_Too_Low"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Contribution"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Conﬁguration_error"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Corner_Case"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Crash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Dataset_Tensorflow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Dimension_Mismatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Directory_API"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Diretory"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Documentation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Dopamine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Ecosystem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/FP16"/>
+        <Class IRI="/F1-score"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Failure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Fairness_Indicators"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Framework"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Functional_error"/>
+        <Class IRI="/Functions"/>
     </Declaration>
     <Declaration>
         <Class IRI="/GPU"/>
     </Declaration>
     <Declaration>
         <Class IRI="/GPU_Usage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Google_Cloud_Public_Datasets"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Hang"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Hyperparameters"/>
@@ -221,19 +125,13 @@
         <Class IRI="/Incompatible_Tensor_Type"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Inconsistency"/>
+        <Class IRI="/Incorrect_State_Sharing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Kaagle_Datasets"/>
+        <Class IRI="/Initializer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Kaggle_Model"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Keras"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/KerasNLP"/>
+        <Class IRI="/Keras_Version"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Kernel"/>
@@ -248,37 +146,49 @@
         <Class IRI="/Layers_Dimensions_Mismatch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Library"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Logic_error"/>
+        <Class IRI="/Loss"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Loss_Function"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/MLIR"/>
+        <Class IRI="/Low_Quallity_Training_Data"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ML_Metadata"/>
+        <Class IRI="/Metric"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ML_Perf"/>
+        <Class IRI="/Missing_API_Call"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Memory"/>
+        <Class IRI="/Missing_Argument_Scoping"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Missing_Average_Pooling_Layer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Missing_Data_Augmetation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Missing_Dense_Layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Missing_Destination_GPU_Devise"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Missing_Dropout_Layer"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Missing_Flatten_Layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Missing_Global_Variables_Initialisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Missing_Loss_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Missing_Masking_of_Invalid_Values_to_Zero"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Missing_Normalization_Layer"/>
@@ -299,19 +209,16 @@
         <Class IRI="/Missing_Softmax_Layer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Missing_Transfer_to_GPU"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Model"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Model_Card_Toolkit"/>
+        <Class IRI="/Model_Tf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Model_Garden"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Model_Optimization_Toolkit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Model_Tensorflow"/>
+        <Class IRI="/Model_Too_to_Fit_Into_Avaliable_Memory"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Multiple_Initialization_of_CNN"/>
@@ -320,193 +227,91 @@
         <Class IRI="/Natural_Language_Processing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/NdArray"/>
+        <Class IRI="/Not_Enough_Training_Data"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Neural_Structured_Learning"/>
+        <Class IRI="/Operating_System_Version"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Optimizer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Performance_degradation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Platform"/>
+        <Class IRI="/Overlapping_Output_Classes_in_Training_Data"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Preprocessing_of_Trainning_Data"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ProbeClass"/>
+        <Class IRI="/Probe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Processing"/>
+        <Class IRI="/Purpose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Recommendation_systems"/>
+        <Class IRI="/Recall"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Recommender_System"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Redundant_Data_Augmentation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Redundant_Softmax_Layer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Referenced_types_error"/>
+        <Class IRI="/Reference_for_Non-Exiting_Checkpoint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Resources"/>
+        <Class IRI="/Restriction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Responsible_AI"/>
+        <Class IRI="/Sensitivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Runtime"/>
+        <Class IRI="/Small_Range_For_a_Feature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Sonnet"/>
+        <Class IRI="/Split-run_testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Suboptimal_Batch_Size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Suboptimal_Hyperparameters_Tuning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Suboptimal_Learning_Rate"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Suboptimal_Network_Structure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Suboptimal_Number_of_Epochs"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Suboptimal_Number_of_Neurons_in_The_Layer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/TFX"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TFX-Addons"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TPU_Research_Cloud"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Task"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorBoard"/>
+        <Class IRI="/TCU"/>
     </Declaration>
     <Declaration>
         <Class IRI="/TensorFlow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/TensorFlow.js"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Addons"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Agents"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Compression"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Data_Validation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Decision_Forests"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Federated"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_GNN"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Graphics"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Hub"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_IO"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_JVM"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Lattice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Lite_Micro"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Lite_Model_Maker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Lite_Support"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Metadata"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Model_Analysis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Model_Remediation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Official_Datasets"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Privacy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Probability"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Quantum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Ranking"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Recommenders"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Recommenders_Addons"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Serving"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Text"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TensorFlow_Transform"/>
+        <Class IRI="/TensorFlow_Version"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Tensor_Shape_Mismatch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Tensorflow.js_Models"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tensorflow_Playground"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Test"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tf.estimador"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tf.feuture_column"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tf.keras"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Time_Series_Forecasting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Tool"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Too_Many_Output_Categories"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Trainning"/>
@@ -518,22 +323,25 @@
         <Class IRI="/Trainning_Process"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Type_Confusion"/>
+        <Class IRI="/Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TypeA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TypeB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Unbalanced_Training_Data"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Version"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Version_Keras"/>
+        <Class IRI="/Wrong_API_Usage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Visual_Block"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Warning-style_error"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/What_If"/>
+        <Class IRI="/Wrong_Data_Parallelism_On_GPUs"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Wrong_Defined_Input_Shape"/>
@@ -554,7 +362,16 @@
         <Class IRI="/Wrong_Input_Sample_Size_For_Linear_Layer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Wrong_Labels_for_Training_Data"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Wrong_Layer_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Loss_Function_Calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Manegement_of_Memory_Resources"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Wrong_Model_Initialization"/>
@@ -563,16 +380,43 @@
         <Class IRI="/Wrong_Network_Architecture"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Wrong_Optimisation_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Position_of_Data_Shuffle_Operation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Wrong_Preprocessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Reference_to_GPU_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Reference_to_Operational_Graph"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Wrong_Selection_Of_Model"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Wrong_Selection_of_Loss_Function"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Wrong_Shape_of_Input_Data"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Wrong_Shape_of_Input_Data_for_a_Layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Shape_of_Input_Data_for_a_Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Slection_of_Feature"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Wrong_Tensor_Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Tensor_Tranfer_to_GPU"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Wrong_Type_of_Activetion_Function"/>
@@ -590,6 +434,12 @@
         <Class IRI="/Wrong_Type_of_Pooling_Layer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Wrong_Usage_of_Image_Decoding_API"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wrong_Usage_of_Placeholder_Restoration_API"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Wrong_Weights_Initialization"/>
     </Declaration>
     <Declaration>
@@ -599,310 +449,19 @@
         <Class IRI="/Wrong_input_Format_for_RNN"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/XLA"/>
+        <Class IRI="/Wrongly_Implemented_Data_Batching"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/absl"/>
+        <Class IRI="/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/activity_watcher"/>
+        <Class IRI="/A/A-B_testing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/android"/>
+        <Class IRI="/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/api_def"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/benchmark"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/boringssl"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/c"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/cc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ci"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/clang_toolchain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/compiler"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/compute_library"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/config"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/contrib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core_util"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/data"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/dlpack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ducc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/eigen3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/example"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/examples"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/exemples"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/farmhash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/fft2d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/file"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/flatbuffers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/function"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/gemmlowp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/gloo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/googleapis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/gpus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/grpc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/hexagon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/highwayhash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/hwloc"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/icu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/implib_so"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ir"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/java"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/jpeg"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/kernels"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/kissfft"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/lib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/libprotobuf_mutator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/llvm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/llvm_openmp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/logging"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/memory"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/mkl"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/mkl_dnn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/mpi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/mpitrampoline"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/nanobind"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/nasm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/nccl"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/nvtx"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/opencl_headers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ops"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ortools"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/pasta"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/platform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/profile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/profiler"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/protobuf_tp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/public"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/py"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/pybind11_abseil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/pybind11_bazel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/pybind11_protobuf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/python"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/python_runtime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/remote_config"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/robin_map"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/root"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/runtime_fallback"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/ruy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/seq2seq"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/shardy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/sobol_data"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/stablehlo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/summary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/systemlibs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tensorflow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tensorrt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tf.data"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tf.io"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tf.queue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tf_runtime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tfrt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/third-party"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tools"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/tpu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/transforms"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/triton"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/user_ops"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/util"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/vulkan_headers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/xla"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Missing_Regularisation_Loss_&amp;_Weight"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Model_Type_&amp;_Properties"/>
@@ -932,55 +491,28 @@
         <Class IRI="/Wrong_Tensor_Shape_(Wrong_Output_Padding)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/contrib/seq2seq"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/common_runtime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/debug"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/distributed_runtime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/example"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/framework"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/graph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/grappler"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/ops"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/profile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/core/protobuf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/isActive"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isDeprecated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isStoredIn"/>
+        <DataProperty IRI="/abbreviation"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/abbreviation"/>
+        <DataProperty IRI="/accuracyValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/activationValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/gpuTypes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/hardwareType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nameSO"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/neuronsNumberPerLayer"/>
@@ -992,28 +524,19 @@
         <DataProperty IRI="/numberOfLayers"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/numberVersion"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/setting"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/taskPerformed"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#codeAPIc"/>
+        <DataProperty IRI="/typeSO"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/c"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/cc"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/java"/>
+        <NamedIndividual IRI="/test"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -1053,206 +576,200 @@
     </Declaration>
     <EquivalentClasses>
         <Class IRI="/API"/>
+        <ObjectUnionOf>
+            <Class IRI="/Deprecated_API"/>
+            <Class IRI="/Missing_API_Call"/>
+            <Class IRI="/Missing_Argument_Scoping"/>
+            <Class IRI="/Missing_Global_Variables_Initialisation"/>
+            <Class IRI="/Wrong_API_Usage"/>
+            <Class IRI="/Wrong_Position_of_Data_Shuffle_Operation"/>
+            <Class IRI="/Wrong_Reference_to_Operational_Graph"/>
+            <Class IRI="/Wrong_Usage_of_Image_Decoding_API"/>
+            <Class IRI="/Wrong_Usage_of_Placeholder_Restoration_API"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Accuracy"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="/abbreviation"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
+            <DataProperty IRI="/accuracyValue"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
         </DataSomeValuesFrom>
     </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#distribute"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#docs_src"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#dtensor"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#examples"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#go"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#java"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#js"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#lite"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#python"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#security"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#tools"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
+    <EquivalentClasses>
+        <Class IRI="/Failure"/>
+        <ObjectUnionOf>
+            <Class IRI="/API"/>
+            <Class IRI="/GPU_Usage"/>
+            <Class IRI="/Model"/>
+            <Class IRI="/Trainning"/>
+            <Class IRI="/Tensors_&amp;_Inputs"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/GPU_Usage"/>
+        <ObjectUnionOf>
+            <Class IRI="/Calling_Unsupported_Operations_on_CUDA_Tensors"/>
+            <Class IRI="/Incorrect_State_Sharing"/>
+            <Class IRI="/Missing_Destination_GPU_Devise"/>
+            <Class IRI="/Missing_Transfer_to_GPU"/>
+            <Class IRI="/Wrong_Data_Parallelism_On_GPUs"/>
+            <Class IRI="/Wrong_Reference_to_GPU_Device"/>
+            <Class IRI="/Wrong_Tensor_Tranfer_to_GPU"/>
+            <Class IRI="/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"/>
+            <Class IRI="/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Keras_Version"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/numberVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Layers"/>
+        <ObjectUnionOf>
+            <Class IRI="/Activation_Function"/>
+            <Class IRI="/Layer_Properties"/>
+            <Class IRI="/Missing_Redundant_Wrong_Layer"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Model"/>
+        <ObjectUnionOf>
+            <Class IRI="/Layers"/>
+            <Class IRI="/Model_Type_&amp;_Properties"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Operating_System_Version"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/numberVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Probe"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/TypeA"/>
+            <Class IRI="/TypeB"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Recall"/>
+        <Class IRI="/Sensitivity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Split-run_testing"/>
+        <Class IRI="/A/A-B_testing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/TensorFlow_Version"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/numberVersion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Trainning"/>
+        <ObjectUnionOf>
+            <Class IRI="/Hyperparameters"/>
+            <Class IRI="/Loss_Function"/>
+            <Class IRI="/Optimizer"/>
+            <Class IRI="/Preprocessing_of_Trainning_Data"/>
+            <Class IRI="/Trainning_Data"/>
+            <Class IRI="/Trainning_Process"/>
+            <Class IRI="/Validation/Testing"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Type"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/nameSO"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Model_Type_&amp;_Properties"/>
+        <ObjectUnionOf>
+            <Class IRI="/Multiple_Initialization_of_CNN"/>
+            <Class IRI="/Suboptimal_Network_Structure"/>
+            <Class IRI="/Wrong_Model_Initialization"/>
+            <Class IRI="/Wrong_Network_Architecture"/>
+            <Class IRI="/Wrong_Selection_Of_Model"/>
+            <Class IRI="/Wrong_Weights_Initialization"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Tensors_&amp;_Inputs"/>
+        <ObjectUnionOf>
+            <Class IRI="/Wrong_Input"/>
+            <Class IRI="/Wrong_Tensor_Shape"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="/API"/>
-        <Class IRI="/Components"/>
+        <Class IRI="/Failure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/API_Deep_Learning"/>
-        <Class IRI="/API"/>
+        <Class IRI="/Accuracy"/>
+        <Class IRI="/Metric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/API_Libraries"/>
-        <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_c"/>
-        <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_cc"/>
-        <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_java"/>
-        <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_python"/>
-        <Class IRI="/API"/>
+        <Class IRI="/Activation"/>
+        <Class IRI="/Functions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activation_Function"/>
         <Class IRI="/Layers"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Algorithm"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Bias_Need_In_a_Layer"/>
         <Class IRI="/Layer_Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Build_failure"/>
-        <Class IRI="/Categories_of_Symptoms"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/CPU"/>
-        <Class IRI="/Platform"/>
+        <Class IRI="/Kernel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Categories_of_Root_Causes"/>
-        <Class IRI="/Failure"/>
+        <Class IRI="/Calling_Unsupported_Operations_on_CUDA_Tensors"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Categories_of_Symptoms"/>
-        <Class IRI="/Failure"/>
+        <Class IRI="/Confusion_Matrix"/>
+        <Class IRI="/Metric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Colab"/>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Data_Batching_Required"/>
+        <Class IRI="/Hyperparameters"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Components"/>
+        <Class IRI="/Deprecated_API"/>
+        <Class IRI="/API"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discarding_Import_Features"/>
+        <Class IRI="/Trainning_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Epsilon_Adam_Optmiser_Too_Low"/>
+        <Class IRI="/Optimizer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/F1-score"/>
+        <Class IRI="/Metric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Functions"/>
         <Class IRI="/TensorFlow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Computation_Graph"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Concurrency"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Contrib_Directory"/>
-        <Class IRI="/Contribution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Contribution"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Conﬁguration_error"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Corner_Case"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Crash"/>
-        <Class IRI="/Categories_of_Symptoms"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Dataset_Tensorflow"/>
-        <Class IRI="/Resources"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Dimension_Mismatch"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Directory_API"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Diretory"/>
-        <Class IRI="/TensorFlow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Documentation"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Dopamine"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Ecosystem"/>
-        <Class IRI="/TensorFlow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/FP16"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Fairness_Indicators"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Framework"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Functional_error"/>
-        <Class IRI="/Categories_of_Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/GPU"/>
-        <Class IRI="/Platform"/>
+        <Class IRI="/Kernel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/GPU_Usage"/>
         <Class IRI="/Failure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Google_Cloud_Public_Datasets"/>
-        <Class IRI="/Dataset_Tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Hang"/>
-        <Class IRI="/Categories_of_Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Hyperparameters"/>
@@ -1260,35 +777,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Image_Classification"/>
-        <Class IRI="/Task"/>
+        <Class IRI="/Purpose"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Incompatible_Tensor_Type"/>
         <Class IRI="/Wrong_Input_Format"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Inconsistency"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Incorrect_State_Sharing"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Kaagle_Datasets"/>
-        <Class IRI="/Dataset_Tensorflow"/>
+        <Class IRI="/Initializer"/>
+        <Class IRI="/Functions"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Kaggle_Model"/>
-        <Class IRI="/Model_Tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Keras"/>
-        <Class IRI="/TensorFlow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/KerasNLP"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Keras_Version"/>
+        <Class IRI="/Version"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Kernel"/>
-        <Class IRI="/Components"/>
+        <Class IRI="/TensorFlow"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Layer_Properties"/>
@@ -1303,40 +812,44 @@
         <Class IRI="/Layer_Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Library"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Logic_error"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Loss"/>
+        <Class IRI="/Functions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Loss_Function"/>
         <Class IRI="/Trainning"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/MLIR"/>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Low_Quallity_Training_Data"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ML_Metadata"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Metric"/>
+        <Class IRI="/Test"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ML_Perf"/>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Missing_API_Call"/>
+        <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Memory"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Missing_Argument_Scoping"/>
+        <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Missing_Average_Pooling_Layer"/>
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Missing_Data_Augmetation"/>
+        <Class IRI="/Trainning_Process"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Missing_Dense_Layer"/>
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Missing_Destination_GPU_Devise"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Missing_Dropout_Layer"/>
@@ -1345,6 +858,18 @@
     <SubClassOf>
         <Class IRI="/Missing_Flatten_Layer"/>
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Missing_Global_Variables_Initialisation"/>
+        <Class IRI="/API"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Missing_Loss_Function"/>
+        <Class IRI="/Loss_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Missing_Masking_of_Invalid_Values_to_Zero"/>
+        <Class IRI="/Loss_Function"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Missing_Normalization_Layer"/>
@@ -1371,24 +896,20 @@
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Missing_Transfer_to_GPU"/>
+        <Class IRI="/GPU_Usage"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Model"/>
         <Class IRI="/Failure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Model_Card_Toolkit"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Model_Tf"/>
+        <Class IRI="/TensorFlow"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Model_Garden"/>
-        <Class IRI="/Model_Tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Model_Optimization_Toolkit"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Model_Tensorflow"/>
-        <Class IRI="/Resources"/>
+        <Class IRI="/Model_Too_to_Fit_Into_Avaliable_Memory"/>
+        <Class IRI="/Trainning_Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Multiple_Initialization_of_CNN"/>
@@ -1396,269 +917,111 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Natural_Language_Processing"/>
-        <Class IRI="/Task"/>
+        <Class IRI="/Purpose"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/NdArray"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Not_Enough_Training_Data"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Neural_Structured_Learning"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Operating_System_Version"/>
+        <Class IRI="/Version"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Optimizer"/>
         <Class IRI="/Trainning"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Performance_degradation"/>
-        <Class IRI="/Categories_of_Symptoms"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Platform"/>
-        <Class IRI="/Components"/>
+        <Class IRI="/Overlapping_Output_Classes_in_Training_Data"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Preprocessing_of_Trainning_Data"/>
         <Class IRI="/Trainning"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ProbeClass"/>
-        <Class IRI="/c"/>
+        <Class IRI="/Purpose"/>
+        <Class IRI="/TensorFlow"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/ProbeClass"/>
-        <Class IRI="/cc"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Processing"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Recommendation_systems"/>
-        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Recall"/>
+        <Class IRI="/Metric"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Recommender_System"/>
-        <Class IRI="/Task"/>
+        <Class IRI="/Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Redundant_Data_Augmentation"/>
+        <Class IRI="/Trainning_Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Redundant_Softmax_Layer"/>
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Referenced_types_error"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Reference_for_Non-Exiting_Checkpoint"/>
+        <Class IRI="/Trainning_Process"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Resources"/>
-        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Restriction"/>
+        <Class IRI="/Functions"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Responsible_AI"/>
-        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Sensitivity"/>
+        <Class IRI="/Metric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Runtime"/>
-        <Class IRI="/Components"/>
+        <Class IRI="/Small_Range_For_a_Feature"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Sonnet"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/Split-run_testing"/>
+        <Class IRI="/Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Suboptimal_Batch_Size"/>
+        <Class IRI="/Hyperparameters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Suboptimal_Hyperparameters_Tuning"/>
+        <Class IRI="/Hyperparameters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Suboptimal_Learning_Rate"/>
+        <Class IRI="/Hyperparameters"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Suboptimal_Network_Structure"/>
         <Class IRI="/Model_Type_&amp;_Properties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Suboptimal_Number_of_Epochs"/>
+        <Class IRI="/Hyperparameters"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Suboptimal_Number_of_Neurons_in_The_Layer"/>
         <Class IRI="/Layer_Properties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/TFX"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/TCU"/>
+        <Class IRI="/Kernel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/TFX-Addons"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TPU_Research_Cloud"/>
-        <Class IRI="/Tools"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Task"/>
-        <Class IRI="/TensorFlow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorBoard"/>
-        <Class IRI="/Tools"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow"/>
-        <DataMinCardinality cardinality="1">
-            <DataProperty IRI="/neuronsNumberPerLayer"/>
-            <Datatype abbreviatedIRI="xsd:int"/>
-        </DataMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow"/>
-        <DataMinCardinality cardinality="1">
-            <DataProperty IRI="/numberOfLayers"/>
-            <Datatype abbreviatedIRI="xsd:int"/>
-        </DataMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow.js"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Addons"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Agents"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Compression"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Data_Validation"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Decision_Forests"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Federated"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_GNN"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Graphics"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Hub"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_IO"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_JVM"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Lattice"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Lite_Micro"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Lite_Model_Maker"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Lite_Support"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Metadata"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Model_Analysis"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Model_Remediation"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Official_Datasets"/>
-        <Class IRI="/Dataset_Tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Privacy"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Probability"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Quantum"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Ranking"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Recommenders"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Recommenders_Addons"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Serving"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Text"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TensorFlow_Transform"/>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
+        <Class IRI="/TensorFlow_Version"/>
+        <Class IRI="/Version"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Tensor_Shape_Mismatch"/>
         <Class IRI="/Wrong_Tensor_Shape"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Tensorflow.js_Models"/>
-        <Class IRI="/Model_Tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tensorflow_Playground"/>
-        <Class IRI="/Tools"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tf.estimador"/>
-        <Class IRI="/API_Deep_Learning"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tf.feuture_column"/>
-        <Class IRI="/API_Deep_Learning"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tf.keras"/>
-        <Class IRI="/API_Deep_Learning"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Time_Series_Forecasting"/>
-        <Class IRI="/Task"/>
+        <Class IRI="/Purpose"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Tool"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tools"/>
-        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Too_Many_Output_Categories"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Trainning"/>
@@ -1673,28 +1036,32 @@
         <Class IRI="/Trainning"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Type_Confusion"/>
-        <Class IRI="/Categories_of_Root_Causes"/>
+        <Class IRI="/Type"/>
+        <Class IRI="/Operating_System_Version"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TypeA"/>
+        <Class IRI="/ClassTest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TypeB"/>
+        <Class IRI="/ClassTest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Unbalanced_Training_Data"/>
+        <Class IRI="/Trainning_Data"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Version"/>
         <Class IRI="/TensorFlow"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Version_Keras"/>
-        <Class IRI="/Keras"/>
+        <Class IRI="/Wrong_API_Usage"/>
+        <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Visual_Block"/>
-        <Class IRI="/Tools"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Warning-style_error"/>
-        <Class IRI="/Categories_of_Symptoms"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/What_If"/>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Wrong_Data_Parallelism_On_GPUs"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Wrong_Defined_Input_Shape"/>
@@ -1721,8 +1088,20 @@
         <Class IRI="/Layer_Properties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Wrong_Labels_for_Training_Data"/>
+        <Class IRI="/Trainning_Data"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Wrong_Layer_Type"/>
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Loss_Function_Calculation"/>
+        <Class IRI="/Loss_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Manegement_of_Memory_Resources"/>
+        <Class IRI="/Trainning_Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Wrong_Model_Initialization"/>
@@ -1733,20 +1112,56 @@
         <Class IRI="/Model_Type_&amp;_Properties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Wrong_Optimisation_Function"/>
+        <Class IRI="/Optimizer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Position_of_Data_Shuffle_Operation"/>
+        <Class IRI="/API"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Wrong_Preprocessing"/>
         <Class IRI="/Preprocessing_of_Trainning_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Reference_to_GPU_Device"/>
+        <Class IRI="/GPU_Usage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Reference_to_Operational_Graph"/>
+        <Class IRI="/API"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Wrong_Selection_Of_Model"/>
         <Class IRI="/Model_Type_&amp;_Properties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Wrong_Selection_of_Loss_Function"/>
+        <Class IRI="/Loss_Function"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Wrong_Shape_of_Input_Data"/>
         <Class IRI="/Wrong_Input"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Wrong_Shape_of_Input_Data_for_a_Layer"/>
+        <Class IRI="/Wrong_Shape_of_Input_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Shape_of_Input_Data_for_a_Method"/>
+        <Class IRI="/Wrong_Shape_of_Input_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Slection_of_Feature"/>
+        <Class IRI="/Trainning_Data"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Wrong_Tensor_Shape"/>
         <Class IRI="/Tensors_&amp;_Inputs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Tensor_Tranfer_to_GPU"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Wrong_Type_of_Activetion_Function"/>
@@ -1769,6 +1184,14 @@
         <Class IRI="/Missing_Redundant_Wrong_Layer"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Wrong_Usage_of_Image_Decoding_API"/>
+        <Class IRI="/API"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wrong_Usage_of_Placeholder_Restoration_API"/>
+        <Class IRI="/API"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Wrong_Weights_Initialization"/>
         <Class IRI="/Model_Type_&amp;_Properties"/>
     </SubClassOf>
@@ -1781,412 +1204,24 @@
         <Class IRI="/Wrong_Input_Format"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/XLA"/>
-        <Class IRI="/Tools"/>
+        <Class IRI="/Wrongly_Implemented_Data_Batching"/>
+        <Class IRI="/Hyperparameters"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/absl"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/activity_watcher"/>
-        <Class IRI="/core"/>
+        <Class IRI="/A/A-B_testing"/>
+        <Class IRI="/Test"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/android"/>
-        <Class IRI="/third-party"/>
+        <Class IRI="/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop"/>
+        <Class IRI="/GPU_Usage"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/api_def"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/benchmark"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/boringssl"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/c"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/cc"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ci"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/clang_toolchain"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/compiler"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/compute_library"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/config"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/contrib"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core"/>
-        <Class IRI="/tensorflow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core_util"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/data"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/dlpack"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ducc"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/eigen3"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/example"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/examples"/>
-        <Class IRI="/Documentation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/exemples"/>
-        <Class IRI="/Components"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/farmhash"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/fft2d"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/file"/>
-        <Class IRI="/Framework"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/flatbuffers"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/function"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/gemmlowp"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/gloo"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/googleapis"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/gpus"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/grpc"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/hexagon"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/highwayhash"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/hwloc"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/icu"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/implib_so"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ir"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/java"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/jpeg"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/kernels"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/kissfft"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/lib"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/libprotobuf_mutator"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/llvm"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/llvm_openmp"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/logging"/>
-        <Class IRI="/Framework"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/memory"/>
-        <Class IRI="/Framework"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/mkl"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/mkl_dnn"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/mpi"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/mpitrampoline"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/nanobind"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/nasm"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/nccl"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/nvtx"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/opencl_headers"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ops"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ortools"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/pasta"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/platform"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/profile"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/profiler"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/protobuf_tp"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/public"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/py"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/pybind11_abseil"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/pybind11_bazel"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/pybind11_protobuf"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/python"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/python_runtime"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/remote_config"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/robin_map"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/root"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/runtime_fallback"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ruy"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/seq2seq"/>
-        <Class IRI="/contrib"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/shardy"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/sobol_data"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/stablehlo"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/summary"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/systemlibs"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tensorflow"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tensorrt"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tf.data"/>
-        <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tf.io"/>
-        <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tf.queue"/>
-        <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tf_runtime"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tfrt"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/third-party"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tools"/>
-        <Class IRI="/Diretory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/tpu"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/transforms"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/triton"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/user_ops"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/util"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/vulkan_headers"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/xla"/>
-        <Class IRI="/third-party"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/API_I/API_I/API_IO_and_Preprocessing"/>
-        <Class IRI="/API"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Libraries_&amp;_Extensions"/>
-        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Missing_Regularisation_Loss_&amp;_Weight"/>
+        <Class IRI="/Hyperparameters"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Model_Type_&amp;_Properties"/>
@@ -2224,50 +1259,13 @@
         <Class IRI="/Wrong_Tensor_Shape_(Wrong_Output_Padding)"/>
         <Class IRI="/Wrong_Tensor_Shape"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/contrib/seq2seq"/>
-        <Class IRI="/Contrib_Directory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/common_runtime"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/debug"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/distributed_runtime"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/example"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/framework"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/graph"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/grappler"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/ops"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/profile"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/core/protobuf"/>
-        <Class IRI="/core"/>
-    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/API"/>
+        <Class IRI="/GPU_Usage"/>
+        <Class IRI="/Model"/>
+        <Class IRI="/Trainning"/>
+        <Class IRI="/Tensors_&amp;_Inputs"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="/Bias_Need_In_a_Layer"/>
         <Class IRI="/Layers_Dimensions_Mismatch"/>
@@ -2278,6 +1276,52 @@
         <Class IRI="/Wrong_Input_Sample_Size_For_Linear_Layer"/>
         <Class IRI="/Wrong_Amount_&amp;_type_of_Pooling_in_Convolutional_Layer"/>
         <Class IRI="/Wrong_Defined_Input_&amp;_Output_Shape"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Calling_Unsupported_Operations_on_CUDA_Tensors"/>
+        <Class IRI="/Incorrect_State_Sharing"/>
+        <Class IRI="/Missing_Destination_GPU_Devise"/>
+        <Class IRI="/Missing_Transfer_to_GPU"/>
+        <Class IRI="/Wrong_Data_Parallelism_On_GPUs"/>
+        <Class IRI="/Wrong_Reference_to_GPU_Device"/>
+        <Class IRI="/Wrong_Tensor_Tranfer_to_GPU"/>
+        <Class IRI="/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"/>
+        <Class IRI="/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Data_Batching_Required"/>
+        <Class IRI="/Suboptimal_Batch_Size"/>
+        <Class IRI="/Suboptimal_Hyperparameters_Tuning"/>
+        <Class IRI="/Suboptimal_Learning_Rate"/>
+        <Class IRI="/Suboptimal_Number_of_Epochs"/>
+        <Class IRI="/Wrongly_Implemented_Data_Batching"/>
+        <Class IRI="/Missing_Regularisation_Loss_&amp;_Weight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Deprecated_API"/>
+        <Class IRI="/Missing_API_Call"/>
+        <Class IRI="/Missing_Argument_Scoping"/>
+        <Class IRI="/Missing_Global_Variables_Initialisation"/>
+        <Class IRI="/Wrong_API_Usage"/>
+        <Class IRI="/Wrong_Position_of_Data_Shuffle_Operation"/>
+        <Class IRI="/Wrong_Reference_to_Operational_Graph"/>
+        <Class IRI="/Wrong_Usage_of_Image_Decoding_API"/>
+        <Class IRI="/Wrong_Usage_of_Placeholder_Restoration_API"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Discarding_Import_Features"/>
+        <Class IRI="/Low_Quallity_Training_Data"/>
+        <Class IRI="/Not_Enough_Training_Data"/>
+        <Class IRI="/Overlapping_Output_Classes_in_Training_Data"/>
+        <Class IRI="/Small_Range_For_a_Feature"/>
+        <Class IRI="/Too_Many_Output_Categories"/>
+        <Class IRI="/Unbalanced_Training_Data"/>
+        <Class IRI="/Wrong_Labels_for_Training_Data"/>
+        <Class IRI="/Wrong_Slection_of_Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Epsilon_Adam_Optmiser_Too_Low"/>
+        <Class IRI="/Wrong_Optimisation_Function"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="/Incompatible_Tensor_Type"/>
@@ -2294,6 +1338,19 @@
         <Class IRI="/Redundant_Softmax_Layer"/>
         <Class IRI="/Wrong_Layer_Type"/>
         <Class IRI="/Wrong_Type_of_Pooling_Layer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Missing_Data_Augmetation"/>
+        <Class IRI="/Model_Too_to_Fit_Into_Avaliable_Memory"/>
+        <Class IRI="/Redundant_Data_Augmentation"/>
+        <Class IRI="/Reference_for_Non-Exiting_Checkpoint"/>
+        <Class IRI="/Wrong_Manegement_of_Memory_Resources"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Missing_Loss_Function"/>
+        <Class IRI="/Missing_Masking_of_Invalid_Values_to_Zero"/>
+        <Class IRI="/Wrong_Loss_Function_Calculation"/>
+        <Class IRI="/Wrong_Selection_of_Loss_Function"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="/Missing_Reluactivation_Function"/>
@@ -2316,26 +1373,12 @@
         <Class IRI="/Wrong_Tensor_Shape_(Wrong_Output_Padding)"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="/c"/>
-        <Class IRI="/cc"/>
-        <Class IRI="/java"/>
-        <Class IRI="/python"/>
+        <Class IRI="/TypeA"/>
+        <Class IRI="/TypeB"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="/API_c"/>
-        <NamedIndividual IRI="#codeAPIc"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/API_cc"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIcc"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/API_java"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/codeAPIjava"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#java"/>
-        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl/java"/>
+        <Class IRI="/Failure"/>
+        <NamedIndividual IRI="/test"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isActive"/>
@@ -2345,14 +1388,14 @@
         <ObjectProperty IRI="/isDeprecated"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/isStoredIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-        <Class IRI="/Diretory"/>
-    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/accuracyValue"/>
+        <DataProperty IRI="/setting"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/activationValue"/>
+        <DataProperty IRI="/setting"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/gpuTypes"/>
         <DataProperty IRI="/setting"/>
@@ -2388,6 +1431,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/nameSO"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/neuronsNumberPerLayer"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
@@ -2395,11 +1442,10 @@
         <DataProperty IRI="/numberOfDevice"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#codeAPIc</IRI>
-        <Literal xml:lang="en">Source code implemented for the c API functionality and stored in the directory c.</Literal>
-    </AnnotationAssertion>
+    <DataPropertyRange>
+        <DataProperty IRI="/numberVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/API</IRI>
@@ -2407,48 +1453,49 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Colab</IRI>
-        <Literal>Jupyter Notebook environment that is not necessary be setting and runs in the cloud.</Literal>
+        <IRI>/Accuracy</IRI>
+        <Literal xml:lang="en">Closeness of agreement between a test result or measurement result and the true value.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Computation_Graph</IRI>
-        <Literal>TensorFlow uses compute graphs to define and manage its tasks. The graph implements the definition, construction, partition, optimization, operation, and execution of calculations.</Literal>
+        <IRI>/Activation</IRI>
+        <Literal>Formula associated with a node in a neural network (3.50) that determines the output of the node (activation value (3.4)) from the inputs to the neuron.
+source:https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:3.3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Diretory</IRI>
-        <Literal xml:lang="en">It is a file system cataloging structure that contains references to other computer files and, possibly, other directories. On numerous computing devices, directories are commonly referred to as folders or drawers.</Literal>
+        <IRI>/Confusion_Matrix</IRI>
+        <Literal xml:lang="en">matrix used to record the number of correct and incorrect classifications of samples.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Kernel</IRI>
-        <Literal xml:lang="en">Implements the mains deep learning algorithms.</Literal>
+        <IRI>/F1-score</IRI>
+        <Literal xml:lang="en">Performance metric used to evaluate a classifier , which provides a balance (the harmonic average) between recall  and precision.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/ProbeClass</IRI>
-        <Literal xml:lang="en">When the ontology is sorted, the ontology will mark this class as inconsistent.</Literal>
+        <IRI>/Functions</IRI>
+        <Literal xml:lang="en">Smallest composition of an automated valet parking system (AVPS) described in this document which contributes to the system outputs.
+source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:3.3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Runtime</IRI>
-        <Literal xml:lang="en">The runtime implements the management of sessions, thread pools, and executors. TensorFlow has a common runtime (core/common runtime) and a distribution runtime (core/distributed runtime). Common runtime supports theexecutions on a local machine, and distribution runtime allows to deploy TensorFlow on distributed ones.</Literal>
+        <IRI>/Probe</IRI>
+        <Literal xml:lang="en">Test Class to check ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Recall</IRI>
+        <Literal xml:lang="en">Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/TensorFlow</IRI>
         <Literal xml:lang="en">TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/TensorFlow_Model_Analysis</IRI>
-        <Literal>The goal of TensorFlow Model Analysis is to provide a mechanism for model evaluation in TFX. TensorFlow Model Analysis allows to perform model evaluations in the TFX pipeline, and view resultant metrics and plots in a Jupyter notebook.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Tools</IRI>
-        <Literal>Applications that support and accelerate TensorFlow workflows.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2462,23 +1509,20 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/c</IRI>
-        <Literal xml:lang="en">The directory in which the TensorFlow API C source code is situated.</Literal>
+        <IRI>/accuracyValue</IRI>
+        <Literal xml:lang="en">Value that represents the relative overall accuracy of any point measurement within the optical data channel when the performance value is satisfied.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/cc</IRI>
-        <Literal xml:lang="en">The directory in which the TensorFlow API C++ source code is situated.</Literal>
+        <IRI>/activationValue</IRI>
+        <Literal xml:lang="en">Output of an activation function of a node in a neural network .
+source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:3.3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/gpuTypes</IRI>
         <Literal>GPUs can be classified as onboard or offboard.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/java</IRI>
-        <Literal>The directory where the TensorFlow API Java source code is located.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -2496,14 +1540,15 @@
         <Literal>Number of layers defined in configuration.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/python</IRI>
-        <Literal>The directory where the TensorFlow API Python source code is located.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/taskPerformed</IRI>
         <Literal xml:lang="en">Tasks for which TendorFlow is used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/A/A-B_testing</IRI>
+        <Literal xml:lang="en">Statistical testing (3.131) approach that allows testers to determine which of two systems or components performs better.
+source: https://www.iso.org/obp/ui#search</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
