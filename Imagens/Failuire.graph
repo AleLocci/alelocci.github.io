@@ -1,9 +1,0 @@
-Optional.of(http://purl.org/milto/onto)
-http://purl.org/milto/onto/Tensors_&_Inputs,16.0,136.0
-http://www.w3.org/2002/07/owl#Thing,456.0,16.0
-http://purl.org/milto/onto/Categories_of_Root_Causes,195.0,136.0
-http://purl.org/milto/onto/Failure,463.0,76.0
-http://purl.org/milto/onto/Categories_of_Symptoms,373.0,136.0
-http://purl.org/milto/onto/GPU_Usage,550.0,136.0
-http://purl.org/milto/onto/Trainning,705.0,136.0
-http://purl.org/milto/onto/Model,843.0,136.0
