@@ -121,6 +121,15 @@
     
 
 
+    <!-- http://purl.org/milto/onto#subsume -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#subsume">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://purl.org/milto/onto#Neuron"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/milto/onto/isActive -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isActive">
@@ -344,10 +353,60 @@ source: https://medium.com/@sthanikamsanthosh1994/understanding-bleu-and-rouge-s
     
 
 
+    <!-- http://purl.org/milto/onto#Eexploratory_Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Eexploratory_Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:comment xml:lang="en">Experience-based testing in which the tester spontaneously designs and executes tests based on the tester&apos;s existing relevant knowledge, prior exploration of the test item  (including the results of previous tests), and heuristic “rules of thumb” regarding common software behaviours and types of failure.
+
+Note 1 to entry: Exploratory testing hunts for hidden properties (including hidden behaviours) that, while quite possibly benign by themselves, can interfere with other properties of the software under test, and so constitute a risk that the software will fail.
+
+source: ISO/IEC/IEEE 29119-1:2022(en), 3.37</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Layer -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Layer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Coverage"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto#METEOR -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#METEOR">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Metric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Metamorfic_Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Metamorfic_Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:comment xml:lang="en">Specification-based test case design technique based on generating test cases based on existing test cases and metamorphic relations.
+
+source: ISO/IEC/IEEE 29119-1:2022(en), 3.49</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Neuron -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Neuron">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign-Sign"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign_Change"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Threshold"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Value_Change"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -366,6 +425,93 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/milto/onto#ROUGE">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Metric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Sign-Sign -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Sign-Sign">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Sign_Change"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Sign_Change -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Sign_Change">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Test_Coverage -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Test_Coverage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Testing_Strategy -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Testing_Strategy"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#Threshold -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Threshold">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Value_Change -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Value_Change">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#White-box_Testing_of_Neurla_Networks -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#White-box_Testing_of_Neurla_Networks">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#A/B_testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#A/B_testing">
+        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto/Split-run_testing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
     </owl:Class>
     
 
@@ -693,7 +839,6 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     <!-- http://purl.org/milto/onto/Metric -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Metric">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Test"/>
         <rdfs:comment xml:lang="en">Standard of measurement that defines the conditions and the rules for performing the measurement and for understanding the results of a measurement.
 ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
     </owl:Class>
@@ -939,22 +1084,6 @@ ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/Probe -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Probe">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/milto/onto/TypeA"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto/TypeB"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="en">Test Class to check ontology.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Purpose -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Purpose">
@@ -1035,8 +1164,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.6</rdfs:comment>
     <!-- http://purl.org/milto/onto/Split-run_testing -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Split-run_testing">
-        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto/A/A-B_testing"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Test"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
         <rdfs:comment xml:lang="en">Statistical testing approach that allows testers to determine which of two systems or components performs better
 source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     </owl:Class>
@@ -1127,12 +1255,6 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/milto/onto/Tensor_Shape_Mismatch">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Wrong_Tensor_Shape"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/Test -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Test"/>
     
 
 
@@ -1549,16 +1671,6 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/A/A-B_testing -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/A/A-B_testing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Test"/>
-        <rdfs:comment xml:lang="en">Statistical testing approach that allows testers to determine which of two systems or components performs better
-source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&amp;_Test_Loop">
@@ -1678,11 +1790,46 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/test -->
+    <!-- http://purl.org/milto/onto#testSignSign -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto/test">
-        <rdf:type rdf:resource="http://purl.org/milto/onto/Failure"/>
-        <bleuValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</bleuValue>
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testSignSign">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign-Sign"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#testSubsumesBy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testSubsumesBy">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Neuron"/>
+        <subsume rdf:resource="http://purl.org/milto/onto#testSignSign"/>
+        <subsume rdf:resource="http://purl.org/milto/onto#testeSignChange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#testeSignChange -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testeSignChange">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign_Change"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment xml:lang="en">Subsume function test. 
+Expected result: Individual must be an instance of Neuron.
+Observed Result: OK
+9/3/2028</rdfs:comment>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>Project creation date.</rdfs:comment>

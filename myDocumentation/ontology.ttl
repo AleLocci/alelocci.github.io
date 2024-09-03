@@ -76,6 +76,12 @@
 #    Object Properties
 #################################################################
 
+###  http://purl.org/milto/onto#subsume
+:subsume rdf:type owl:ObjectProperty ,
+                  owl:TransitiveProperty ;
+         rdfs:range :Neuron .
+
+
 ###  http://purl.org/milto/onto/isActive
 <http://purl.org/milto/onto/isActive> rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf owl:topObjectProperty .
@@ -90,6 +96,32 @@
 #    Data properties
 #################################################################
 
+###  http://purl.org/milto/onto#bleuValue
+:bleuValue rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :metric ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                                             [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:maxInclusive "1.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                                           )
+                      ] ;
+           rdfs:comment "Range: 0 to 1, with higher values indicating better translation quality."@en .
+
+
+###  http://purl.org/milto/onto#metric
+:metric rdf:type owl:DatatypeProperty .
+
+
 ###  http://purl.org/milto/onto/abbreviation
 <http://purl.org/milto/onto/abbreviation> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
@@ -100,7 +132,7 @@
 
 ###  http://purl.org/milto/onto/accuracyValue
 <http://purl.org/milto/onto/accuracyValue> rdf:type owl:DatatypeProperty ;
-                                           rdfs:subPropertyOf <http://purl.org/milto/onto/setting> ;
+                                           rdfs:subPropertyOf :metric ;
                                            rdfs:comment """Value that represents the relative overall accuracy of any point measurement within the optical data channel when the performance value is satisfied.
 source: https://www.iso.org/obp/ui#search"""@en .
 
@@ -176,6 +208,136 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
 #    Classes
 #################################################################
 
+###  http://purl.org/milto/onto#BLEU
+:BLEU rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :bleuValue ;
+                            owl:someValuesFrom xsd:double
+                          ] ;
+      rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
+      rdfs:comment """Bilingual Evaluation Understudy. The score is used to measure how well a machine can translate text from one language to another. It was suggested as a way to check if machine translations are good by comparing them to human translations. The method involves calculating the precision of n-grams in the machine-generated translation by comparing them to the reference translations. A brevity penalty is then applied to account for translations that are shorter than the reference translation.
+
+This is how you calculate the BLEU score:
+
+BLEU = BP * exp(∑ pn)
+
+Where
+
+BP = Brevity Penalty  and  pn = precision of n-grams
+
+Range: 0 to 1, with higher values indicating better translation quality. 
+
+source: https://medium.com/@sthanikamsanthosh1994/understanding-bleu-and-rouge-score-for-nlp-evaluation-1ab334ecadcb"""@en .
+
+
+###  http://purl.org/milto/onto#Eexploratory_Testing
+:Eexploratory_Testing rdf:type owl:Class ;
+                      rdfs:subClassOf :Testing_Strategy ;
+                      rdfs:comment """Experience-based testing in which the tester spontaneously designs and executes tests based on the tester's existing relevant knowledge, prior exploration of the test item  (including the results of previous tests), and heuristic “rules of thumb” regarding common software behaviours and types of failure.
+
+Note 1 to entry: Exploratory testing hunts for hidden properties (including hidden behaviours) that, while quite possibly benign by themselves, can interfere with other properties of the software under test, and so constitute a risk that the software will fail.
+
+source: ISO/IEC/IEEE 29119-1:2022(en), 3.37"""@en .
+
+
+###  http://purl.org/milto/onto#Layer
+:Layer rdf:type owl:Class ;
+       rdfs:subClassOf :Test_Coverage .
+
+
+###  http://purl.org/milto/onto#METEOR
+:METEOR rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/milto/onto/Metric> .
+
+
+###  http://purl.org/milto/onto#Metamorfic_Testing
+:Metamorfic_Testing rdf:type owl:Class ;
+                    rdfs:subClassOf :Testing_Strategy ;
+                    rdfs:comment """Specification-based test case design technique based on generating test cases based on existing test cases and metamorphic relations.
+
+source: ISO/IEC/IEEE 29119-1:2022(en), 3.49"""@en .
+
+
+###  http://purl.org/milto/onto#Neuron
+:Neuron rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Layer
+                                                   :Sign-Sign
+                                                   :Sign_Change
+                                                   :Threshold
+                                                   :Value_Change
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://purl.org/milto/onto#Precision
+:Precision rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
+           rdfs:comment """Performance metric used to evaluate a classifier, which measures the proportion of predicted positives that were correct.
+source: ISO/IEC TR 29119-11:2020(en), 3.1.55"""@en .
+
+
+###  http://purl.org/milto/onto#ROUGE
+:ROUGE rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/milto/onto/Metric> .
+
+
+###  http://purl.org/milto/onto#Sign-Sign
+:Sign-Sign rdf:type owl:Class ;
+           rdfs:subClassOf :Layer ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :subsume ;
+                             owl:allValuesFrom :Sign_Change
+                           ] .
+
+
+###  http://purl.org/milto/onto#Sign_Change
+:Sign_Change rdf:type owl:Class ;
+             rdfs:subClassOf :Layer ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :subsume ;
+                               owl:allValuesFrom :Neuron
+                             ] .
+
+
+###  http://purl.org/milto/onto#Test_Coverage
+:Test_Coverage rdf:type owl:Class ;
+               rdfs:subClassOf :Testing_Strategy .
+
+
+###  http://purl.org/milto/onto#Testing_Strategy
+:Testing_Strategy rdf:type owl:Class .
+
+
+###  http://purl.org/milto/onto#Threshold
+:Threshold rdf:type owl:Class ;
+           rdfs:subClassOf :Layer ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :subsume ;
+                             owl:allValuesFrom :Neuron
+                           ] .
+
+
+###  http://purl.org/milto/onto#Value_Change
+:Value_Change rdf:type owl:Class ;
+              rdfs:subClassOf :Layer ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :subsume ;
+                                owl:allValuesFrom :Neuron
+                              ] .
+
+
+###  http://purl.org/milto/onto#White-box_Testing_of_Neurla_Networks
+:White-box_Testing_of_Neurla_Networks rdf:type owl:Class ;
+                                      rdfs:subClassOf :Testing_Strategy .
+
+
+###  http://purl.org/milto/onto#A/B_testing
+<http://purl.org/milto/onto#A/B_testing> rdf:type owl:Class ;
+                                         owl:equivalentClass <http://purl.org/milto/onto/Split-run_testing> ;
+                                         rdfs:subClassOf :Testing_Strategy .
+
+
 ###  http://purl.org/milto/onto/API
 <http://purl.org/milto/onto/API> rdf:type owl:Class ;
                                  owl:equivalentClass [ rdf:type owl:Class ;
@@ -202,7 +364,7 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
                                                           ] ;
                                       rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
                                       rdfs:comment """Closeness of agreement between a test result or measurement result and the true value.
-source: https://www.iso.org/obp/ui#search"""@en .
+source: SO 3534-2:2006, 3.1.1"""@en .
 
 
 ###  http://purl.org/milto/onto/Activation
@@ -239,8 +401,8 @@ source:https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:
 ###  http://purl.org/milto/onto/Confusion_Matrix
 <http://purl.org/milto/onto/Confusion_Matrix> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
-                                              rdfs:comment """matrix used to record the number of correct and incorrect classifications of samples.
-source: https://www.iso.org/obp/ui#search"""@en .
+                                              rdfs:comment """Matrix used to record the number of correct and incorrect classifications (3.1.1) of samples.
+source: ISO/IEC TS 4213:2022(en), 3.2.7"""@en .
 
 
 ###  http://purl.org/milto/onto/Data_Batching_Required
@@ -268,7 +430,7 @@ source: https://www.iso.org/obp/ui#search"""@en .
 <http://purl.org/milto/onto/F1-score> rdf:type owl:Class ;
                                       rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
                                       rdfs:comment """Performance metric used to evaluate a classifier , which provides a balance (the harmonic average) between recall  and precision.
-source: https://www.iso.org/obp/ui#search"""@en .
+source: ISO/IEC TR 29119-11:2020(en), 3.1.33"""@en .
 
 
 ###  http://purl.org/milto/onto/Failure
@@ -390,7 +552,8 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
 
 ###  http://purl.org/milto/onto/Metric
 <http://purl.org/milto/onto/Metric> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/milto/onto/Test> .
+                                    rdfs:comment """Standard of measurement that defines the conditions and the rules for performing the measurement and for understanding the results of a measurement.
+ISO/IEC 22123-1:2023(en), 3.7.9"""@en .
 
 
 ###  http://purl.org/milto/onto/Missing_API_Call
@@ -543,16 +706,6 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
                                                              rdfs:subClassOf <http://purl.org/milto/onto/Trainning> .
 
 
-###  http://purl.org/milto/onto/Probe
-<http://purl.org/milto/onto/Probe> rdf:type owl:Class ;
-                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/milto/onto/TypeA>
-                                                                              <http://purl.org/milto/onto/TypeB>
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
-                                   rdfs:comment "Test Class to check ontology."@en .
-
-
 ###  http://purl.org/milto/onto/Purpose
 <http://purl.org/milto/onto/Purpose> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://purl.org/milto/onto/TensorFlow> .
@@ -563,7 +716,7 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
                                     owl:equivalentClass <http://purl.org/milto/onto/Sensitivity> ;
                                     rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
                                     rdfs:comment """Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly.
-source: https://www.iso.org/obp/ui#search"""@en .
+source: ISO/IEC TR 29119-11:2020(en), 3.1.6"""@en .
 
 
 ###  http://purl.org/milto/onto/Recommender_System
@@ -593,7 +746,9 @@ source: https://www.iso.org/obp/ui#search"""@en .
 
 ###  http://purl.org/milto/onto/Sensitivity
 <http://purl.org/milto/onto/Sensitivity> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/milto/onto/Metric> .
+                                         rdfs:subClassOf <http://purl.org/milto/onto/Metric> ;
+                                         rdfs:comment """Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly.
+source: ISO/IEC TR 29119-11:2020(en), 3.1.6""" .
 
 
 ###  http://purl.org/milto/onto/Small_Range_For_a_Feature
@@ -603,8 +758,9 @@ source: https://www.iso.org/obp/ui#search"""@en .
 
 ###  http://purl.org/milto/onto/Split-run_testing
 <http://purl.org/milto/onto/Split-run_testing> rdf:type owl:Class ;
-                                               owl:equivalentClass <http://purl.org/milto/onto/A/A-B_testing> ;
-                                               rdfs:subClassOf <http://purl.org/milto/onto/Test> .
+                                               rdfs:subClassOf :Testing_Strategy ;
+                                               rdfs:comment """Statistical testing approach that allows testers to determine which of two systems or components performs better
+source: ISO/IEC TR 29119-11:2020(en), 3.1.1"""@en .
 
 
 ###  http://purl.org/milto/onto/Suboptimal_Batch_Size
@@ -660,10 +816,6 @@ source: https://www.iso.org/obp/ui#search"""@en .
 ###  http://purl.org/milto/onto/Tensor_Shape_Mismatch
 <http://purl.org/milto/onto/Tensor_Shape_Mismatch> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://purl.org/milto/onto/Wrong_Tensor_Shape> .
-
-
-###  http://purl.org/milto/onto/Test
-<http://purl.org/milto/onto/Test> rdf:type owl:Class .
 
 
 ###  http://purl.org/milto/onto/Time_Series_Forecasting
@@ -927,13 +1079,6 @@ source: https://www.iso.org/obp/ui#search"""@en .
                                                                                 rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
 
 
-###  http://purl.org/milto/onto/A/A-B_testing
-<http://purl.org/milto/onto/A/A-B_testing> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/milto/onto/Test> ;
-                                           rdfs:comment """Statistical testing (3.131) approach that allows testers to determine which of two systems or components performs better.
-source: https://www.iso.org/obp/ui#search"""@en .
-
-
 ###  http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop
 <http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop> rdf:type owl:Class ;
                                                                                        rdfs:subClassOf <http://purl.org/milto/onto/GPU_Usage> .
@@ -1007,9 +1152,33 @@ source: https://www.iso.org/obp/ui#search"""@en .
 #    Individuals
 #################################################################
 
-###  http://purl.org/milto/onto/test
-<http://purl.org/milto/onto/test> rdf:type owl:NamedIndividual ,
-                                           <http://purl.org/milto/onto/Failure> .
+###  http://purl.org/milto/onto#testSignSign
+:testSignSign rdf:type owl:NamedIndividual ,
+                       [ owl:intersectionOf ( :Layer
+                                              :Sign-Sign
+                                            ) ;
+                         rdf:type owl:Class
+                       ] .
+
+
+###  http://purl.org/milto/onto#testSubsumesBy
+:testSubsumesBy rdf:type owl:NamedIndividual ,
+                         :Neuron ;
+                :subsume :testSignSign ,
+                         :testeSignChange .
+
+
+###  http://purl.org/milto/onto#testeSignChange
+:testeSignChange rdf:type owl:NamedIndividual ,
+                          [ owl:intersectionOf ( :Layer
+                                                 :Sign_Change
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+                 rdfs:comment """Subsume function test. 
+Expected result: Individual must be an instance of Neuron.
+Observed Result: OK
+9/3/2028"""@en .
 
 
 [ rdfs:comment "Project creation date."

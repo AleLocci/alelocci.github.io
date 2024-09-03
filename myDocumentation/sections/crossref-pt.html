@@ -8,6 +8,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <li><a href="#/Accuracy" title="http://purl.org/milto/onto/Accuracy"> <span>Accuracy</span> </a></li>
   <li><a href="#/Activation" title="http://purl.org/milto/onto/Activation"> <span>Activation</span> </a></li>
   <li><a href="#/Activation_Function" title="http://purl.org/milto/onto/Activation_Function"> <span>Activation Function</span> </a></li>
+  <li><a href="#BLEU" title="http://purl.org/milto/onto#BLEU"> <span>B L E U</span> </a></li>
   <li><a href="#/Bias_Need_In_a_Layer" title="http://purl.org/milto/onto/Bias_Need_In_a_Layer"> <span>Bias Need In a Layer</span> </a></li>
   <li><a href="#/CPU" title="http://purl.org/milto/onto/CPU"> <span>C P U</span> </a></li>
   <li><a href="#/Calling_Unsupported_Operations_on_CUDA_Tensors" title="http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors"> <span>Calling Unsupported Operations on C U D A Tensors</span> </a></li>
@@ -35,6 +36,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <li><a href="#/Loss" title="http://purl.org/milto/onto/Loss"> <span>Loss</span> </a></li>
   <li><a href="#/Loss_Function" title="http://purl.org/milto/onto/Loss_Function"> <span>Loss Function</span> </a></li>
   <li><a href="#/Low_Quallity_Training_Data" title="http://purl.org/milto/onto/Low_Quallity_Training_Data"> <span>Low Quallity Training Data</span> </a></li>
+  <li><a href="#METEOR" title="http://purl.org/milto/onto#METEOR"> <span>M E T E O R</span> </a></li>
   <li><a href="#/Metric" title="http://purl.org/milto/onto/Metric"> <span>Metric</span> </a></li>
   <li><a href="#/Missing_API_Call" title="http://purl.org/milto/onto/Missing_API_Call"> <span>Missing A P I Call</span> </a></li>
   <li><a href="#/Missing_Argument_Scoping" title="http://purl.org/milto/onto/Missing_Argument_Scoping"> <span>Missing Argument Scoping</span> </a></li>
@@ -65,9 +67,11 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <li><a href="#/Operating_System_Version" title="http://purl.org/milto/onto/Operating_System_Version"> <span>Operating System Version</span> </a></li>
   <li><a href="#/Optimizer" title="http://purl.org/milto/onto/Optimizer"> <span>Optimizer</span> </a></li>
   <li><a href="#/Overlapping_Output_Classes_in_Training_Data" title="http://purl.org/milto/onto/Overlapping_Output_Classes_in_Training_Data"> <span>Overlapping Output Classes in Training Data</span> </a></li>
+  <li><a href="#Precision" title="http://purl.org/milto/onto#Precision"> <span>Precision</span> </a></li>
   <li><a href="#/Preprocessing_of_Trainning_Data" title="http://purl.org/milto/onto/Preprocessing_of_Trainning_Data"> <span>Preprocessing of Trainning Data</span> </a></li>
   <li><a href="#/Probe" title="http://purl.org/milto/onto/Probe"> <span>Probe</span> </a></li>
   <li><a href="#/Purpose" title="http://purl.org/milto/onto/Purpose"> <span>Purpose</span> </a></li>
+  <li><a href="#ROUGE" title="http://purl.org/milto/onto#ROUGE"> <span>R O U G E</span> </a></li>
   <li><a href="#/Recall" title="http://purl.org/milto/onto/Recall"> <span>Recall</span> </a></li>
   <li><a href="#/Recommender_System" title="http://purl.org/milto/onto/Recommender_System"> <span>Recommender System</span> </a></li>
   <li><a href="#/Redundant_Data_Augmentation" title="http://purl.org/milto/onto/Redundant_Data_Augmentation"> <span>Redundant Data Augmentation</span> </a></li>
@@ -149,7 +153,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <h3>A B testing<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/A/A-B_testing</p>
   <div class="comment">
-   <span class="markdown">Statistical testing (3.131) approach that allows testers to determine which of two systems or components performs better. source: https://www.iso.org/obp/ui#search</span>
+   <span class="markdown">Statistical testing approach that allows testers to determine which of two systems or components performs better source: ISO/IEC TR 29119-11:2020(en), 3.1.1</span>
   </div>
   <dl class="description">
    <dt>
@@ -197,7 +201,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <h3>Accuracy<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Accuracy</p>
   <div class="comment">
-   <span class="markdown">Closeness of agreement between a test result or measurement result and the true value. source: https://www.iso.org/obp/ui#search</span>
+   <span class="markdown">Closeness of agreement between a test result or measurement result and the true value. source: SO 3534-2:2006, 3.1.1</span>
   </div>
   <dl class="description">
    <dt>
@@ -244,6 +248,27 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
    </dt>
    <dd>
     <a href="#/Missing_Reluactivation_Function" title="http://purl.org/milto/onto/Missing_Reluactivation_Function">Missing Reluactivation Function</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Missing_Softmax_Activation_Function" title="http://purl.org/milto/onto/Missing_Softmax_Activation_Function">Missing Softmax Activation Function</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Wrong_Type_of_Activetion_Function" title="http://purl.org/milto/onto/Wrong_Type_of_Activetion_Function">Wrong Type of Activetion Function</a> <sup class="type-c" title="classe">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="BLEU">
+  <h3>B L E U<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto#BLEU</p>
+  <div class="comment">
+   <span class="markdown">Bilingual Evaluation Understudy. The score is used to measure how well a machine can translate text from one language to another. It was suggested as a way to check if machine translations are good by comparing them to human translations. The method involves calculating the precision of n-grams in the machine-generated translation by comparing them to the reference translations. A brevity penalty is then applied to account for translations that are shorter than the reference translation. This is how you calculate the BLEU score: BLEU = BP * exp(∑ pn) Where BP = Brevity Penalty and pn = precision of n-grams Range: 0 to 1, with higher values indicating better translation quality. source: https://medium.com/@sthanikamsanthosh1994/understanding-bleu-and-rouge-score-for-nlp-evaluation-1ab334ecadcb</span>
+  </div>
+  <dl class="description">
+   <dt>
+    é equivalente a
+   </dt>
+   <dd>
+    <a href="#bleuValue" title="http://purl.org/milto/onto#bleuValue">bleu Value</a> <sup class="type-dp" title="propriedade de dados">dp</sup> <span class="logic">some</span> <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+   </dd>
+   <dt>
+    tem super classes
+   </dt>
+   <dd>
+    <a href="#/Metric" title="http://purl.org/milto/onto/Metric">Metric</a> <sup class="type-c" title="classe">c</sup>
    </dd>
   </dl>
  </div>
@@ -299,7 +324,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <h3>Confusion Matrix<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Confusion_Matrix</p>
   <div class="comment">
-   <span class="markdown">matrix used to record the number of correct and incorrect classifications of samples. source: https://www.iso.org/obp/ui#search</span>
+   <span class="markdown">Matrix used to record the number of correct and incorrect classifications (3.1.1) of samples. source: ISO/IEC TS 4213:2022(en), 3.2.7</span>
   </div>
   <dl class="description">
    <dt>
@@ -404,7 +429,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <h3>F1 score<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/F1-score</p>
   <div class="comment">
-   <span class="markdown">Performance metric used to evaluate a classifier , which provides a balance (the harmonic average) between recall and precision. source: https://www.iso.org/obp/ui#search</span>
+   <span class="markdown">Performance metric used to evaluate a classifier , which provides a balance (the harmonic average) between recall and precision. source: ISO/IEC TR 29119-11:2020(en), 3.1.33</span>
   </div>
   <dl class="description">
    <dt>
@@ -724,9 +749,24 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
    </dd>
   </dl>
  </div>
+ <div class="entity" id="METEOR">
+  <h3>M E T E O R<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto#METEOR</p>
+  <dl class="description">
+   <dt>
+    tem super classes
+   </dt>
+   <dd>
+    <a href="#/Metric" title="http://purl.org/milto/onto/Metric">Metric</a> <sup class="type-c" title="classe">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="/Metric">
   <h3>Metric<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Metric</p>
+  <div class="comment">
+   <span class="markdown">Standard of measurement that defines the conditions and the rules for performing the measurement and for understanding the results of a measurement. ISO/IEC 22123-1:2023(en), 3.7.9</span>
+  </div>
   <dl class="description">
    <dt>
     tem super classes
@@ -738,7 +778,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
     tem sub classes
    </dt>
    <dd>
-    <a href="#/Accuracy" title="http://purl.org/milto/onto/Accuracy">Accuracy</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Confusion_Matrix" title="http://purl.org/milto/onto/Confusion_Matrix">Confusion Matrix</a> <sup class="type-c" title="classe">c</sup>, <a href="#/F1-score" title="http://purl.org/milto/onto/F1-score">F1 score</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Recall" title="http://purl.org/milto/onto/Recall">Recall</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Sensitivity" title="http://purl.org/milto/onto/Sensitivity">Sensitivity</a> <sup class="type-c" title="classe">c</sup>
+    <a href="#/Accuracy" title="http://purl.org/milto/onto/Accuracy">Accuracy</a> <sup class="type-c" title="classe">c</sup>, <a href="#BLEU" title="http://purl.org/milto/onto#BLEU">B L E U</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Confusion_Matrix" title="http://purl.org/milto/onto/Confusion_Matrix">Confusion Matrix</a> <sup class="type-c" title="classe">c</sup>, <a href="#/F1-score" title="http://purl.org/milto/onto/F1-score">F1 score</a> <sup class="type-c" title="classe">c</sup>, <a href="#METEOR" title="http://purl.org/milto/onto#METEOR">M E T E O R</a> <sup class="type-c" title="classe">c</sup>, <a href="#Precision" title="http://purl.org/milto/onto#Precision">Precision</a> <sup class="type-c" title="classe">c</sup>, <a href="#ROUGE" title="http://purl.org/milto/onto#ROUGE">R O U G E</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Recall" title="http://purl.org/milto/onto/Recall">Recall</a> <sup class="type-c" title="classe">c</sup>, <a href="#/Sensitivity" title="http://purl.org/milto/onto/Sensitivity">Sensitivity</a> <sup class="type-c" title="classe">c</sup>
    </dd>
   </dl>
  </div>
@@ -1270,6 +1310,21 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Precision">
+  <h3>Precision<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto#Precision</p>
+  <div class="comment">
+   <span class="markdown">Performance metric used to evaluate a classifier, which measures the proportion of predicted positives that were correct. source: ISO/IEC TR 29119-11:2020(en), 3.1.55</span>
+  </div>
+  <dl class="description">
+   <dt>
+    tem super classes
+   </dt>
+   <dd>
+    <a href="#/Metric" title="http://purl.org/milto/onto/Metric">Metric</a> <sup class="type-c" title="classe">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="/Preprocessing_of_Trainning_Data">
   <h3>Preprocessing of Trainning Data<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Preprocessing_of_Trainning_Data</p>
@@ -1321,11 +1376,23 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
    </dd>
   </dl>
  </div>
+ <div class="entity" id="ROUGE">
+  <h3>R O U G E<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto#ROUGE</p>
+  <dl class="description">
+   <dt>
+    tem super classes
+   </dt>
+   <dd>
+    <a href="#/Metric" title="http://purl.org/milto/onto/Metric">Metric</a> <sup class="type-c" title="classe">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="/Recall">
   <h3>Recall<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Recall</p>
   <div class="comment">
-   <span class="markdown">Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly. source: https://www.iso.org/obp/ui#search</span>
+   <span class="markdown">Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly. source: ISO/IEC TR 29119-11:2020(en), 3.1.6</span>
   </div>
   <dl class="description">
    <dt>
@@ -1423,6 +1490,9 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
  <div class="entity" id="/Sensitivity">
   <h3>Sensitivity<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Sensitivity</p>
+  <div class="comment">
+   <span class="markdown">Performance metric used to evaluate a classifier, which measures the proportion of actual positives that were predicted correctly. source: ISO/IEC TR 29119-11:2020(en), 3.1.6</span>
+  </div>
   <dl class="description">
    <dt>
     tem super classes
@@ -1453,6 +1523,9 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
  <div class="entity" id="/Split-run_testing">
   <h3>Split run testing<sup class="type-c" title="classe">c</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#classes">Índice do classes</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/milto/onto/Split-run_testing</p>
+  <div class="comment">
+   <span class="markdown">Statistical testing approach that allows testers to determine which of two systems or components performs better source: ISO/IEC TR 29119-11:2020(en), 3.1.1</span>
+  </div>
   <dl class="description">
    <dt>
     é equivalente a
@@ -2687,6 +2760,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
   <li><a href="#/abbreviation" title="http://purl.org/milto/onto/abbreviation"></a></li>
   <li><a href="#/accuracyValue" title="http://purl.org/milto/onto/accuracyValue"> <span>accuracy Value</span> </a></li>
   <li><a href="#/activationValue" title="http://purl.org/milto/onto/activationValue"> <span>activation Value</span> </a></li>
+  <li><a href="#bleuValue" title="http://purl.org/milto/onto#bleuValue"> <span>bleu Value</span> </a></li>
   <li><a href="#/gpuTypes" title="http://purl.org/milto/onto/gpuTypes"> <span>gpu Types</span> </a></li>
   <li><a href="#/nameSO" title="http://purl.org/milto/onto/nameSO"> <span>name S O</span> </a></li>
   <li><a href="#/neuronsNumberPerLayer" title="http://purl.org/milto/onto/neuronsNumberPerLayer"> <span>neurons Number Per Layer</span> </a></li>
@@ -2722,7 +2796,7 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
      tem super-propriedades
     </dt>
     <dd>
-     <a href="http://purl.org/milto/onto/setting" target="_blank" title="http://purl.org/milto/onto/setting">setting</a> <sup class="type-dp" title="propriedade de dados">dp</sup>
+     <a href="http://purl.org/milto/onto#metric" target="_blank" title="http://purl.org/milto/onto#metric">metric</a> <sup class="type-dp" title="propriedade de dados">dp</sup>
     </dd>
    </dl>
   </div>
@@ -2740,6 +2814,30 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
     </dt>
     <dd>
      <a href="http://purl.org/milto/onto/setting" target="_blank" title="http://purl.org/milto/onto/setting">setting</a> <sup class="type-dp" title="propriedade de dados">dp</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="bleuValue">
+  <h3>bleu Value<sup class="type-dp" title="propriedade de dados">dp</sup> <span class="backlink"> de volta a <a href="#toc">índice</a> ou <a href="#dataproperties">Índice do Propriedade do Dados</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/milto/onto#bleuValue</p>
+  <div class="comment">
+   <span class="markdown">Range: 0 to 1, with higher values indicating better translation quality.</span>
+  </div>
+  <div class="description">
+   <p><strong>tem características: </strong> funcional</p>
+   <dl>
+    <dt>
+     tem super-propriedades
+    </dt>
+    <dd>
+     <a href="http://purl.org/milto/onto#metric" target="_blank" title="http://purl.org/milto/onto#metric">metric</a> <sup class="type-dp" title="propriedade de dados">dp</sup>
+    </dd>
+    <dt>
+     tem alcance
+    </dt>
+    <dd>
+     () <span class="logic">and</span> ()
     </dd>
    </dl>
   </div>
@@ -2855,6 +2953,12 @@ Esta se&ccedil;&atilde;o fornece detalhes sobre cada classe e propriedade defini
    </dt>
    <dd>
     <a href="#/Failure" title="http://purl.org/milto/onto/Failure">Failure</a> <sup class="type-c" title="classe">c</sup>
+   </dd>
+   <dt>
+    tem fatos
+   </dt>
+   <dd>
+    <a href="#bleuValue" title="http://purl.org/milto/onto#bleuValue">bleu Value</a> <sup class="type-dp" title="propriedade de dados">dp</sup> <span class="literal">"0.5"^^<a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a> </span>
    </dd>
   </dl>
  </div>
