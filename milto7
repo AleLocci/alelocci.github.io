@@ -113,11 +113,92 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/milto/onto#calculationBasisFor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#calculationBasisFor">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Precision"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto/Accuracy"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto/F1-score"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto/Recall"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#hasRequirementTest -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#hasRequirementTest"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#hasTestingStrategy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#hasTestingStrategy">
+        <rdfs:range rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isSubsume -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isSubsume">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isUsed -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isUsed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#runOn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#runOn">
+        <rdfs:range rdf:resource="http://purl.org/milto/onto#SO"/>
+    </owl:ObjectProperty>
     
 
 
@@ -133,14 +214,6 @@
     <!-- http://purl.org/milto/onto/isActive -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isActive">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/milto/onto/isDeprecated -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto/isDeprecated">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -195,6 +268,14 @@
     
 
 
+    <!-- http://purl.org/milto/onto#version -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto#version">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/milto/onto/abbreviation -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/abbreviation">
@@ -239,14 +320,6 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     <!-- http://purl.org/milto/onto/hardwareType -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/hardwareType"/>
-    
-
-
-    <!-- http://purl.org/milto/onto/nameSO -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/nameSO">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -309,12 +382,6 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     
 
 
-    <!-- http://purl.org/milto/onto/typeSO -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/milto/onto/typeSO"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -323,6 +390,73 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/milto/onto#Adaptability -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Adaptability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#NonFunctionalRequirementTest"/>
+        <owl:disjointWith rdf:resource="http://purl.org/milto/onto#Flexibillity"/>
+        <rdfs:comment xml:lang="en">Degree to which an AI system can accurately acquire information from data, or the result of previous actions, and use that information in future predictions
+
+source: ISO/IEC 25059:2023</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Adversarial_Attack -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Adversarial_Attack">
+        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto#Adversarial_Testing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+        <rdfs:comment xml:lang="en">Deliberate use of adversarial examples  to cause a ML model to fail.
+
+Note 1 to entry: Typically targets ML models in the form of a neural network.
+
+source: ISO/IEC TR 29119-11:2020(en), 3.1.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Adversarial_Exemple -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Adversarial_Exemple">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Adversarial_Testing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Case"/>
+        <rdfs:comment xml:lang="en">Input to an ML model  created by applying small perturbations to a working example that results in the model outputting an incorrect result with high confidence.
+
+Note 1 to entry: Typically applies to ML models in the form of a neural network
+
+source: ISO/IEC TR 29119-11:2020(en), 3.1.7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Adversarial_Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Adversarial_Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+        <rdfs:comment xml:lang="en">Testing approach based on the attempted creation and execution of adversarial examples (3.1.7) to identify defects in an ML model (3.1.46)
+Note 1 to entry: Typically applied to ML models in the form of a neural network (3.1.48).
+ISO/IEC TR 29119-11:2020(en), 3.1.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Algorithim -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Algorithim">
+        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto#ML_Algorithm"/>
+        <rdfs:comment xml:lang="en">Algorithm used to create an ML model from the training data.
+
+source:  ISO/IEC TR 29119-11:2020(en)</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -353,10 +487,79 @@ source: https://medium.com/@sthanikamsanthosh1994/understanding-bleu-and-rouge-s
     
 
 
+    <!-- http://purl.org/milto/onto#Back_to_Back -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Back_to_Back">
+        <owl:equivalentClass rdf:resource="http://purl.org/milto/onto#Differential_Testing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Black_Bock -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Black_Bock">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Combimatorial_Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Combimatorial_Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Black_Bock"/>
+        <rdfs:comment xml:lang="en">Black-box test design technique in which test cases are designed to execute specific combinations of values of several parameters.
+EXAMPLE: Pairwise testing (3.1.52), all combinations testing, each choice testing, base choice testing.
+
+source: ISO/IEC TR 29119-11:2020(en)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Confusion_Matrix -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Confusion_Matrix">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#calculationBasisFor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Precision"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#calculationBasisFor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#calculationBasisFor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/F1-score"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#calculationBasisFor"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Recall"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Matrix used to record the number of correct and incorrect classifications  of samples.
+
+source: ISO/IEC TS 4213:2022(en)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Differential_Testing -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Differential_Testing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto#Eexploratory_Testing -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Eexploratory_Testing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
         <rdfs:comment xml:lang="en">Experience-based testing in which the tester spontaneously designs and executes tests based on the tester&apos;s existing relevant knowledge, prior exploration of the test item  (including the results of previous tests), and heuristic “rules of thumb” regarding common software behaviours and types of failure.
 
 Note 1 to entry: Exploratory testing hunts for hidden properties (including hidden behaviours) that, while quite possibly benign by themselves, can interfere with other properties of the software under test, and so constitute a risk that the software will fail.
@@ -366,10 +569,62 @@ source: ISO/IEC/IEEE 29119-1:2022(en), 3.37</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto#Layer -->
+    <!-- http://purl.org/milto/onto#Flexibillity -->
 
-    <owl:Class rdf:about="http://purl.org/milto/onto#Layer">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Coverage"/>
+    <owl:Class rdf:about="http://purl.org/milto/onto#Flexibillity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#NonFunctionalRequirementTest"/>
+        <rdfs:comment>Ability of a system to work in contexts outside its initial specification (i.e. change its behaviour according to its actual situation to satisfy its objectives)
+
+source:ISO/IEC TR 29119-11:2020</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Framework -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Framework"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#FunctionalRequirementTest -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#FunctionalRequirementTest">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#RequirementTest"/>
+        <owl:disjointWith rdf:resource="http://purl.org/milto/onto#NonFunctionalRequirementTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Layer_Coverage -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Layer_Coverage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Sign-Sign"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Sign_Change"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Threshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Value_Change"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Case"/>
     </owl:Class>
     
 
@@ -382,10 +637,16 @@ source: ISO/IEC/IEEE 29119-1:2022(en), 3.37</rdfs:comment>
     
 
 
+    <!-- http://purl.org/milto/onto#ML_Algorithm -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#ML_Algorithm"/>
+    
+
+
     <!-- http://purl.org/milto/onto#Metamorfic_Testing -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Metamorfic_Testing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
         <rdfs:comment xml:lang="en">Specification-based test case design technique based on generating test cases based on existing test cases and metamorphic relations.
 
 source: ISO/IEC/IEEE 29119-1:2022(en), 3.49</rdfs:comment>
@@ -393,20 +654,40 @@ source: ISO/IEC/IEEE 29119-1:2022(en), 3.49</rdfs:comment>
     
 
 
+    <!-- http://purl.org/milto/onto#Model -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Model">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Settings"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto#Neuron -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Neuron">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#StructuralTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#NonFunctionalRequirementTest -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#NonFunctionalRequirementTest">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#RequirementTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Parameters -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Parameters">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign-Sign"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign_Change"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Threshold"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Value_Change"/>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Combimatorial_Testing"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Case"/>
     </owl:Class>
     
 
@@ -429,10 +710,45 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
     
 
 
+    <!-- http://purl.org/milto/onto#RequirementTest -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#RequirementTest"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#SO -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#SO">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Linux"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Windows"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#ScikitLearn -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#ScikitLearn">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#Settings -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Settings"/>
+    
+
+
     <!-- http://purl.org/milto/onto#Sign-Sign -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Sign-Sign">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#StructuralTest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
@@ -445,36 +761,87 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
 
     <!-- http://purl.org/milto/onto#Sign_Change -->
 
-    <owl:Class rdf:about="http://purl.org/milto/onto#Sign_Change">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+    <owl:Class rdf:about="http://purl.org/milto/onto#Sign_Change"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#StructuralTest -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#StructuralTest">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#RequirementTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#TensorFlow -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#TensorFlow">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#Framework"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#isUsed"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#runOn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#SO"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#version"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
+    <!-- http://purl.org/milto/onto#Test_Case -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#Test_Case"/>
+    
+
+
     <!-- http://purl.org/milto/onto#Test_Coverage -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Test_Coverage">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#TestingStrategy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#hasRequirementTest"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#StructuralTest"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/milto/onto#Testing_Strategy -->
+    <!-- http://purl.org/milto/onto#TestingStrategy -->
 
-    <owl:Class rdf:about="http://purl.org/milto/onto#Testing_Strategy"/>
+    <owl:Class rdf:about="http://purl.org/milto/onto#TestingStrategy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#hasTestingStrategy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#RequirementTest"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/milto/onto#Threshold -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Threshold">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#StructuralTest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
@@ -488,7 +855,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
     <!-- http://purl.org/milto/onto#Value_Change -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#Value_Change">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#StructuralTest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/milto/onto#subsume"/>
@@ -502,7 +869,21 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
     <!-- http://purl.org/milto/onto#White-box_Testing_of_Neurla_Networks -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto#White-box_Testing_of_Neurla_Networks">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/milto/onto#testeA -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto#testeA">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Test_Coverage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#hasRequirementTest"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -511,7 +892,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.55</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/milto/onto#A/B_testing">
         <owl:equivalentClass rdf:resource="http://purl.org/milto/onto/Split-run_testing"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
     </owl:Class>
     
 
@@ -582,25 +963,11 @@ source:https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:
     
 
 
-    <!-- http://purl.org/milto/onto/CPU -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/CPU">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Kernel"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/GPU_Usage"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/ClassTest -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/ClassTest"/>
     
 
 
@@ -678,17 +1045,8 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.33</rdfs:comment>
     <!-- http://purl.org/milto/onto/Functions -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Functions">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
         <rdfs:comment xml:lang="en">Smallest composition of an automated valet parking system (AVPS) described in this document which contributes to the system outputs.
 source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term:3.3</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/GPU -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/GPU">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Kernel"/>
     </owl:Class>
     
 
@@ -727,7 +1085,7 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     <!-- http://purl.org/milto/onto/Image_Classification -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Image_Classification">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Purpose"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
     </owl:Class>
     
 
@@ -756,25 +1114,22 @@ source: https://www.iso.org/obp/ui#iso:std:iso-iec-ieee:29119:-1:ed-2:v1:en:term
     
 
 
-    <!-- http://purl.org/milto/onto/Keras_Version -->
+    <!-- http://purl.org/milto/onto/Keras -->
 
-    <owl:Class rdf:about="http://purl.org/milto/onto/Keras_Version">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="http://purl.org/milto/onto/Keras">
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Framework"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberVersion"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#runOn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#SO"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Version"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/Kernel -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Kernel">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#version"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1007,9 +1362,7 @@ ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
 
     <!-- http://purl.org/milto/onto/Model_Tf -->
 
-    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Tf">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.org/milto/onto/Model_Tf"/>
     
 
 
@@ -1032,7 +1385,7 @@ ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
     <!-- http://purl.org/milto/onto/Natural_Language_Processing -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Natural_Language_Processing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Purpose"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
     </owl:Class>
     
 
@@ -1041,21 +1394,6 @@ ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Not_Enough_Training_Data">
         <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Trainning_Data"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/Operating_System_Version -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Operating_System_Version">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberVersion"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Version"/>
     </owl:Class>
     
 
@@ -1084,14 +1422,6 @@ ISO/IEC 22123-1:2023(en), 3.7.9</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/Purpose -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Purpose">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Recall -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Recall">
@@ -1106,7 +1436,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.6</rdfs:comment>
     <!-- http://purl.org/milto/onto/Recommender_System -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Recommender_System">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Purpose"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
     </owl:Class>
     
 
@@ -1164,7 +1494,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.6</rdfs:comment>
     <!-- http://purl.org/milto/onto/Split-run_testing -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Split-run_testing">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#Testing_Strategy"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
         <rdfs:comment xml:lang="en">Statistical testing approach that allows testers to determine which of two systems or components performs better
 source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     </owl:Class>
@@ -1219,37 +1549,6 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/TCU -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/TCU">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Kernel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/TensorFlow -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow">
-        <rdfs:comment xml:lang="en">TensorFlow is an open-source platform developed by Google for machine learning and deep learning. It is commonly used to develop and train machine learning models.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/TensorFlow_Version -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/TensorFlow_Version">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/numberVersion"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Version"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Tensor_Shape_Mismatch -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Tensor_Shape_Mismatch">
@@ -1261,7 +1560,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     <!-- http://purl.org/milto/onto/Time_Series_Forecasting -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Time_Series_Forecasting">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Purpose"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Use_Cases"/>
     </owl:Class>
     
 
@@ -1311,38 +1610,6 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto/Type -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/Type">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/milto/onto/nameSO"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/Operating_System_Version"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/TypeA -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/TypeA">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/ClassTest"/>
-        <owl:disjointWith rdf:resource="http://purl.org/milto/onto/TypeB"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/milto/onto/TypeB -->
-
-    <owl:Class rdf:about="http://purl.org/milto/onto/TypeB">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/ClassTest"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/milto/onto/Unbalanced_Training_Data -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Unbalanced_Training_Data">
@@ -1351,10 +1618,23 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
+    <!-- http://purl.org/milto/onto/Use_Cases -->
+
+    <owl:Class rdf:about="http://purl.org/milto/onto/Use_Cases">
+        <rdfs:comment xml:lang="en">Definition of Framework Usage is provided.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/milto/onto/Version -->
 
     <owl:Class rdf:about="http://purl.org/milto/onto/Version">
-        <rdfs:subClassOf rdf:resource="http://purl.org/milto/onto/TensorFlow"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/milto/onto#version"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -1790,46 +2070,106 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
     
 
 
-    <!-- http://purl.org/milto/onto#testSignSign -->
+    <!-- http://purl.org/milto/onto#Imagem -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testSignSign">
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign-Sign"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#Imagem">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/Image_Classification"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/milto/onto#testSubsumesBy -->
+    <!-- http://purl.org/milto/onto#Linux -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testSubsumesBy">
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#Linux">
+        <owl:differentFrom rdf:resource="http://purl.org/milto/onto#Windows"/>
+        <version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</version>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#Natural -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#Natural">
+        <rdf:type rdf:resource="http://purl.org/milto/onto/Natural_Language_Processing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#Neuron -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#Neuron">
         <rdf:type rdf:resource="http://purl.org/milto/onto#Neuron"/>
-        <subsume rdf:resource="http://purl.org/milto/onto#testSignSign"/>
-        <subsume rdf:resource="http://purl.org/milto/onto#testeSignChange"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/milto/onto#testeSignChange -->
+    <!-- http://purl.org/milto/onto#SC -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testeSignChange">
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#SC">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Sign_Change"/>
+        <subsume rdf:resource="http://purl.org/milto/onto#Neuron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#SS -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#SS">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Sign-Sign"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#TensorFlowImagem -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#TensorFlowImagem">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Framework"/>
+        <isUsed rdf:resource="http://purl.org/milto/onto#Imagem"/>
+        <runOn rdf:resource="http://purl.org/milto/onto#Windows"/>
+        <version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</version>
+        <rdfs:comment xml:lang="en">Test the framework to identify what it is used for.
+
+result: OK
+
+09/10/2024</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#TensorFlowNL -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#TensorFlowNL">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Framework"/>
+        <isUsed rdf:resource="http://purl.org/milto/onto#Natural"/>
+        <runOn rdf:resource="http://purl.org/milto/onto#Linux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#TestCoverage -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#TestCoverage">
+        <rdf:type rdf:resource="http://purl.org/milto/onto#TestingStrategy"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign_Change"/>
+                    <rdf:Description rdf:about="http://purl.org/milto/onto#testeA"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/milto/onto#hasRequirementTest"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/milto/onto#Neuron"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
-        <rdfs:comment xml:lang="en">Subsume function test. 
-Expected result: Individual must be an instance of Neuron.
-Observed Result: OK
-9/3/2028</rdfs:comment>
+        <hasRequirementTest rdf:resource="http://purl.org/milto/onto#Neuron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/milto/onto#Windows -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#Windows">
+        <version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</version>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>Project creation date.</rdfs:comment>
@@ -1848,11 +2188,28 @@ Observed Result: OK
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/milto/onto#Adversarial_Exemple"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto#Layer_Coverage"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto#Parameters"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/milto/onto/API"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/GPU_Usage"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/Model"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/Trainning"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/Tensors_&amp;_Inputs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Activation"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Initializer"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Loss"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Restriction"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1921,6 +2278,15 @@ Observed Result: OK
             <rdf:Description rdf:about="http://purl.org/milto/onto/Unbalanced_Training_Data"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/Wrong_Labels_for_Training_Data"/>
             <rdf:Description rdf:about="http://purl.org/milto/onto/Wrong_Slection_of_Feature"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Image_Classification"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Natural_Language_Processing"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Recommender_System"/>
+            <rdf:Description rdf:about="http://purl.org/milto/onto/Time_Series_Forecasting"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
