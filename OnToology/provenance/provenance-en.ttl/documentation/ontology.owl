@@ -52,6 +52,20 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasGeneratedAt -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedAt"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasRevisionOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasRevisionOf"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -83,19 +97,21 @@
     
 
 
-    <!-- file:/home/ahmad/repos/alelocci@ime.usp.br/provenance/purl.org/milto/onto -->
+    <!-- http://purl.org/milto/onto/6.0.0 -->
 
 
-    <NamedIndividual rdf:about="file:/home/ahmad/repos/alelocci@ime.usp.br/provenance/purl.org/milto/onto">
+    <NamedIndividual rdf:about="http://purl.org/milto/onto/6.0.0">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <terms:creator rdf:resource="https://alexandrelocci.wixsite.com/locci"/>
+        <terms:creator rdf:resource="https://alexandrelocci.wixsite.com/locci				https://alexandrelocci.wixsite.com/locci				"/>
         <terms:creator rdf:resource="https://www.ime.usp.br/acvm/"/>
-        <terms:title>Machine Learning Test Ontology - MiLTO</terms:title>
-        <prov:specializationOf rdf:resource="http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8"/>
+        <terms:title>Machine Learning Test Ontology</terms:title>
+        <prov:specializationOf rdf:resource="http://purl.org/milto/onto"/>
         <prov:wasAttributedTo rdf:resource="http://www.essepuntato.it/lode/"/>
-        <prov:wasAttributedTo rdf:resource="https://alexandrelocci.wixsite.com/locci"/>
+        <prov:wasAttributedTo rdf:resource="https://alexandrelocci.wixsite.com/locci				https://alexandrelocci.wixsite.com/locci				"/>
         <prov:wasAttributedTo rdf:resource="https://github.com/dgarijo/Widoco/"/>
         <prov:wasAttributedTo rdf:resource="https://www.ime.usp.br/acvm/"/>
+        <prov:wasGeneratedAt>2024-04-05T08:00:00Z</prov:wasGeneratedAt>
+        <prov:wasRevisionOf rdf:resource="file:/home/ahmad/repos/alelocci@ime.usp.br/provenance/4.0"/>
     </NamedIndividual>
 </rdf:RDF>
 

@@ -3,11 +3,17 @@
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
     },
+    "wasRevisionOf" : {
+      "@id" : "http://www.w3.org/ns/prov#wasRevisionOf"
+    },
     "wasAttributedTo" : {
       "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "wasGeneratedAt" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedAt"
     },
     "specializationOf" : {
       "@id" : "http://www.w3.org/ns/prov#specializationOf"
