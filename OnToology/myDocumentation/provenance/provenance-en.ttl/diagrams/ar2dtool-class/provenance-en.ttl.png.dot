@@ -1,12 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8" [ label = "prov:specializationOf" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "https://www.ime.usp.br/acvm/" [ label = "dc:creator" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "https://www.ime.usp.br/acvm/" [ label = "prov:wasAttributedTo" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "https://alexandrelocci.wixsite.com/locci" [ label = "dc:creator" ];
-	"file:///home/ahmad/OnToology/purl.org/milto/onto" -> "https://alexandrelocci.wixsite.com/locci" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/milto/onto/6.0.0" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/milto/onto/6.0.0" -> "https://www.ime.usp.br/acvm/" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/milto/onto/6.0.0" -> "http://purl.org/milto/onto" [ label = "prov:specializationOf" ];
+	"http://purl.org/milto/onto/6.0.0" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/milto/onto/6.0.0" -> "file:///home/ahmad/OnToology/4.0" [ label = "prov:wasRevisionOf" ];
+	"http://purl.org/milto/onto/6.0.0" -> "https://alexandrelocci.wixsite.com/locci				https://alexandrelocci.wixsite.com/locci				" [ label = "dc:creator" ];
+	"http://purl.org/milto/onto/6.0.0" -> "https://www.ime.usp.br/acvm/" [ label = "dc:creator" ];
+	"http://purl.org/milto/onto/6.0.0" -> "https://alexandrelocci.wixsite.com/locci				https://alexandrelocci.wixsite.com/locci				" [ label = "prov:wasAttributedTo" ];
 
 }

@@ -2,37 +2,43 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "file:/home/ahmad/repos/alelocci@ime.usp.br/myDocumentation/provenance/purl.org/milto/onto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://alexandrelocci.wixsite.com/locci"
-  }, {
-    "@id" : "https://www.ime.usp.br/acvm/"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Machine Learning Test Ontology - MiLTO"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/prov#Entity"
-  } ],
-  "http://www.w3.org/ns/prov#specializationOf" : [ {
-    "@id" : "http://www.semanticweb.org/alelo/ontologies/2024/5/untitled-ontology-8"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "http://www.essepuntato.it/lode/"
-  }, {
-    "@id" : "https://alexandrelocci.wixsite.com/locci"
-  }, {
-    "@id" : "https://github.com/dgarijo/Widoco/"
-  }, {
-    "@id" : "https://www.ime.usp.br/acvm/"
-  } ]
-}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/milto/onto/6.0.0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://alexandrelocci.wixsite.com/locci\t\t\t\thttps://alexandrelocci.wixsite.com/locci\t\t\t\t"
+  }, {
+    "@id" : "https://www.ime.usp.br/acvm/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Machine Learning Test Ontology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/ns/prov#specializationOf" : [ {
+    "@id" : "http://purl.org/milto/onto"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "http://www.essepuntato.it/lode/"
+  }, {
+    "@id" : "https://alexandrelocci.wixsite.com/locci\t\t\t\thttps://alexandrelocci.wixsite.com/locci\t\t\t\t"
+  }, {
+    "@id" : "https://github.com/dgarijo/Widoco/"
+  }, {
+    "@id" : "https://www.ime.usp.br/acvm/"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedAt" : [ {
+    "@value" : "2024-04-05T08:00:00Z"
+  } ],
+  "http://www.w3.org/ns/prov#wasRevisionOf" : [ {
+    "@id" : "file:/home/ahmad/repos/alelocci@ime.usp.br/myDocumentation/provenance/4.0"
+  } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -41,5 +47,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasAttributedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasGeneratedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasRevisionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
