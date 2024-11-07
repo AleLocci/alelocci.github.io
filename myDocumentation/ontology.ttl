@@ -76,10 +76,135 @@
 #    Object Properties
 #################################################################
 
+###  http://purl.org/milto/onto#Action
+:Action rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/milto/onto#Conduct
+:Conduct rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :Processes ;
+         rdfs:comment "We conducted several tests on the model."@en .
+
+
+###  http://purl.org/milto/onto#Contrast
+:Contrast rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/milto/onto#Explore
+:Explore rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :Understanding .
+
+
+###  http://purl.org/milto/onto#Processes
+:Processes rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/milto/onto#Understand
+:Understand rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Understanding .
+
+
+###  http://purl.org/milto/onto#Understanding
+:Understanding rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/milto/onto#hasPerform
+:hasPerform rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Processes ;
+            rdfs:comment "We performed a series of experiments."@en .
+
+
+###  http://purl.org/milto/onto#hasSolve
+:hasSolve rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :Action .
+
+
+###  http://purl.org/milto/onto#isAnalyze
+:isAnalyze rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Processes .
+
+
+###  http://purl.org/milto/onto#isAssess
+:isAssess rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :Processes .
+
+
+###  http://purl.org/milto/onto#isCompare
+:isCompare rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Processes .
+
+
+###  http://purl.org/milto/onto#isDiffer
+:isDiffer rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :Contrast .
+
+
+###  http://purl.org/milto/onto#isEvaluate
+:isEvaluate rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Processes ;
+            rdfs:comment "We evaluate the model's performance on different datasets."@en .
+
+
+###  http://purl.org/milto/onto#isExamine
+:isExamine rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Understanding .
+
+
+###  http://purl.org/milto/onto#isFix
+:isFix rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :Action .
+
+
+###  http://purl.org/milto/onto#isIdentify
+:isIdentify rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Processes .
+
+
+###  http://purl.org/milto/onto#isInvestigate
+:isInvestigate rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :Understanding .
+
+
+###  http://purl.org/milto/onto#isMeasure
+:isMeasure rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Processes ;
+           rdfs:comment "We measure the coverage rate."@en .
+
+
+###  http://purl.org/milto/onto#isOptimize
+:isOptimize rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Processes .
+
+
+###  http://purl.org/milto/onto#isUtilize
+:isUtilize rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Action .
+
+
+###  http://purl.org/milto/onto#isValidate
+:isValidate rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Action .
+
+
+###  http://purl.org/milto/onto#isVary
+:isVary rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :Contrast .
+
+
+###  http://purl.org/milto/onto#lsDetermine
+:lsDetermine rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :Processes .
+
+
 ###  http://purl.org/milto/onto#subsume
 :subsume rdf:type owl:ObjectProperty ,
                   owl:TransitiveProperty ;
          rdfs:range :Neuron .
+
+
+###  http://purl.org/milto/onto#toContrast
+:toContrast rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Contrast .
 
 
 ###  http://purl.org/milto/onto/isActive
@@ -1154,11 +1279,8 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1"""@en .
 
 ###  http://purl.org/milto/onto#testSignSign
 :testSignSign rdf:type owl:NamedIndividual ,
-                       [ owl:intersectionOf ( :Layer
-                                              :Sign-Sign
-                                            ) ;
-                         rdf:type owl:Class
-                       ] .
+                       :Layer ;
+              :subsume :testeSignChange .
 
 
 ###  http://purl.org/milto/onto#testSubsumesBy
@@ -1175,6 +1297,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1"""@en .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
+                 :subsume :testSubsumesBy ;
                  rdfs:comment """Subsume function test. 
 Expected result: Individual must be an instance of Neuron.
 Observed Result: OK

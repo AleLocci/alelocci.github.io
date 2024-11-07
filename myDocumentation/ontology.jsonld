@@ -22,40 +22,7 @@
     "@id" : "http://purl.org/milto/onto/numberOfLayers"
   } ]
 }, {
-  "@id" : "_:genid101",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Incorrect_State_Sharing"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Missing_Destination_GPU_Devise"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Missing_Transfer_to_GPU"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"
-    }, {
-      "@id" : "http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/milto/onto#bleuValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#double"
-  } ]
-}, {
-  "@id" : "_:genid111",
+  "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -75,7 +42,16 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/milto/onto#bleuValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid116",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -115,7 +91,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid129",
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -139,7 +115,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid139",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -151,7 +127,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid143",
+  "@id" : "_:genid140",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -175,7 +151,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid153",
+  "@id" : "_:genid150",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -191,7 +167,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid159",
+  "@id" : "_:genid156",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -205,7 +181,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid164",
+  "@id" : "_:genid161",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -217,7 +193,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid168",
+  "@id" : "_:genid165",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -235,7 +211,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid175",
+  "@id" : "_:genid172",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -516,26 +492,16 @@
     "@list" : [ {
       "@id" : "http://purl.org/milto/onto#Layer"
     }, {
-      "@id" : "http://purl.org/milto/onto#Sign-Sign"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid81",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/milto/onto#Layer"
-    }, {
       "@id" : "http://purl.org/milto/onto#Sign_Change"
     } ]
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid81",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Project creation date."
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -551,13 +517,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid9",
-  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "0.0"
-  } ]
-}, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -578,6 +538,36 @@
       "@id" : "http://purl.org/milto/onto/Wrong_Amount_&_type_of_Pooling_in_Convolutional_Layer"
     }, {
       "@id" : "http://purl.org/milto/onto/Wrong_Defined_Input_&_Output_Shape"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/milto/onto/Calling_Unsupported_Operations_on_CUDA_Tensors"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Incorrect_State_Sharing"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Missing_Destination_GPU_Devise"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Missing_Transfer_to_GPU"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Wrong_Data_Parallelism_On_GPUs"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Wrong_Reference_to_GPU_Device"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Wrong_Tensor_Tranfer_to_GPU"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Wrongly_Implemented_Data_Transfer_Function_CPU-GPU"
+    }, {
+      "@id" : "http://purl.org/milto/onto/Conversion_to_CUDA_Tensor_Inside_The_Training_&_Test_Loop"
     } ]
   } ]
 }, {
@@ -658,6 +648,9 @@
     "@id" : "http://purl.org/milto/onto/Split-run_testing"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://purl.org/milto/onto#BLEU",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -671,6 +664,19 @@
     "@id" : "_:genid11"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto#Conduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "We conducted several tests on the model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#Contrast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://purl.org/milto/onto#Eexploratory_Testing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -679,6 +685,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/milto/onto#Testing_Strategy"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#Explore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Understanding"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto#Layer",
@@ -719,6 +731,9 @@
     "@id" : "http://purl.org/milto/onto/Metric"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto#Processes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://purl.org/milto/onto#ROUGE",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -758,6 +773,15 @@
     "@id" : "_:genid20"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto#Understand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Understanding"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#Understanding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://purl.org/milto/onto#Value_Change",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -785,6 +809,120 @@
     "@id" : "http://purl.org/milto/onto#metric"
   } ]
 }, {
+  "@id" : "http://purl.org/milto/onto#hasPerform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "We performed a series of experiments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#hasSolve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Action"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isAnalyze",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isAssess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isCompare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isDiffer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Contrast"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isEvaluate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "We evaluate the model's performance on different datasets."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isExamine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Understanding"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isFix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Action"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isIdentify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isInvestigate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Understanding"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "We measure the coverage rate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isOptimize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isUtilize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Action"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isValidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Action"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#isVary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Contrast"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#lsDetermine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Processes"
+  } ]
+}, {
   "@id" : "http://purl.org/milto/onto#metric",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
@@ -796,8 +934,11 @@
 }, {
   "@id" : "http://purl.org/milto/onto#testSignSign",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto#subsume" : [ {
+    "@id" : "http://purl.org/milto/onto#testeSignChange"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "_:genid78"
+    "@id" : "http://purl.org/milto/onto#Layer"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto#testSubsumesBy",
@@ -813,12 +954,21 @@
 }, {
   "@id" : "http://purl.org/milto/onto#testeSignChange",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/milto/onto#subsume" : [ {
+    "@id" : "http://purl.org/milto/onto#testSubsumesBy"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "_:genid81"
+    "@id" : "_:genid78"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Subsume function test. \nExpected result: Individual must be an instance of Neuron.\nObserved Result: OK\n9/3/2028"
+  } ]
+}, {
+  "@id" : "http://purl.org/milto/onto#toContrast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/milto/onto#Contrast"
   } ]
 }, {
   "@id" : "http://purl.org/milto/onto/API",

@@ -136,12 +136,233 @@
     
 
 
+    <!-- http://purl.org/milto/onto#Action -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Action"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#Conduct -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Conduct">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+        <rdfs:comment xml:lang="en">We conducted several tests on the model.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#Contrast -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Contrast"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#Explore -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Explore">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Understanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#Processes -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Processes"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#Understand -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Understand">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Understanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#Understanding -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#Understanding"/>
+    
+
+
+    <!-- http://purl.org/milto/onto#hasPerform -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#hasPerform">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+        <rdfs:comment xml:lang="en">We performed a series of experiments.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#hasSolve -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#hasSolve">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isAnalyze -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isAnalyze">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isAssess -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isAssess">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isCompare -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isCompare">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isDiffer -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isDiffer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Contrast"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isEvaluate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isEvaluate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+        <rdfs:comment xml:lang="en">We evaluate the model&apos;s performance on different datasets.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isExamine -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isExamine">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Understanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isFix -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isFix">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isIdentify -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isIdentify">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isInvestigate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isInvestigate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Understanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isMeasure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+        <rdfs:comment xml:lang="en">We measure the coverage rate.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isOptimize -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isOptimize">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isUtilize -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isUtilize">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isValidate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isValidate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#isVary -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#isVary">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Contrast"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#lsDetermine -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#lsDetermine">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Processes"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/milto/onto#subsume -->
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#subsume">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:range rdf:resource="http://purl.org/milto/onto#Neuron"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/milto/onto#toContrast -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/milto/onto#toContrast">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/milto/onto#Contrast"/>
     </owl:ObjectProperty>
     
 
@@ -1986,14 +2207,8 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://purl.org/milto/onto#testSignSign">
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Layer"/>
-                    <rdf:Description rdf:about="http://purl.org/milto/onto#Sign-Sign"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.org/milto/onto#Layer"/>
+        <subsume rdf:resource="http://purl.org/milto/onto#testeSignChange"/>
     </owl:NamedIndividual>
     
 
@@ -2021,6 +2236,7 @@ source: ISO/IEC TR 29119-11:2020(en), 3.1.1</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
+        <subsume rdf:resource="http://purl.org/milto/onto#testSubsumesBy"/>
         <rdfs:comment xml:lang="en">Subsume function test. 
 Expected result: Individual must be an instance of Neuron.
 Observed Result: OK
